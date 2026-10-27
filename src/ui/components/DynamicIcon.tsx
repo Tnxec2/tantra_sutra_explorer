@@ -14,12 +14,15 @@ import {
   Layers,
   Moon,
   VolumeX,
-  Mic} from 'lucide-react';
+  Mic,
+  MessageSquare,
+  BookOpen} from 'lucide-react';
 
 // Helper Icon Renderer Component
 export const DynamicIcon = ({ name, className = "w-5 h-5" }: { name: string; className?: string }) => {
   switch (name) {
     case 'Activity': return <Activity className={className} />;
+    case 'BookOpen': return <BookOpen className={className} />;
     case 'Compass': return <Compass className={className} />;
     case 'Eye': return <Eye className={className} />;
     case 'Flame': return <Flame className={className} />;
@@ -27,6 +30,7 @@ export const DynamicIcon = ({ name, className = "w-5 h-5" }: { name: string; cla
     case "Headphones": return <Headphones className={className} />;
     case "Home": return <Home className={className} />;
     case "Layers": return <Layers className={className} />;
+    case "MessageSquare": return <MessageSquare className={className} />;
     case "Moon": return <Moon className={className} />;
     case "Mic": return <Mic className={className} />;
     case 'ShieldAlert': return <ShieldAlert className={className} />;
