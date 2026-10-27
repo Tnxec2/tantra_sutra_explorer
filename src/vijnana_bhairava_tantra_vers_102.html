@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="de" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijnana Bhairava Tantra – Vers 102 | Das Tor der Intensität</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#f6d365',
+                            500: '#fda085',
+                            600: '#d4af37',
+                            700: '#aa820a',
+                        },
+                        cosmic: {
+                            900: '#0b091a',
+                            800: '#14102b',
+                            700: '#1d173d',
+                            accent: '#795294',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b091a;
+            color: #e2e8f0;
+            overflow: hidden;
+        }
+
+        /* Custom Scrollbar for inner cards */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.6);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(212, 175, 55, 0.3);
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(212, 175, 55, 0.6);
+        }
+
+        /* Glassmorphism Styles */
+        .glass-card {
+            background: rgba(20, 16, 43, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        .glass-card-active {
+            border-color: rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fff2aa 0%, #d4af37 50%, #aa820a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cosmic-glow {
+            box-shadow: 0 0 50px rgba(121, 82, 148, 0.25);
+        }
+
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.05); }
+        }
+
+        .animate-pulse-glow {
+            animation: pulse-slow 4s ease-in-out infinite;
+        }
+
+        /* Breathing Circle Simulator */
+        .breath-circle {
+            transition: transform 4s cubic-bezier(0.4, 0, 0.2, 1), border-color 1s ease;
+        }
+
+        /* Slide Transition setup */
+        .slide {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+            transform: scale(0.98);
+        }
+
+        .slide.active {
+            display: flex;
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body class="h-screen w-screen relative select-none bg-cosmic-900 text-slate-100 flex flex-col justify-between">
+
+    <!-- Ambient Glowing Background Canvas/Elements -->
+    <canvas id="canvas-particles" class="absolute inset-0 z-0 pointer-events-none opacity-40"></canvas>
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-900/20 rounded-full blur-3xl pointer-events-none animate-pulse-glow"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-amber-600/10 rounded-full blur-3xl pointer-events-none animate-pulse-glow" style="animation-delay: 2s;"></div>
+
+    <!-- Header / Branding -->
+    <header class="relative z-10 w-full px-6 py-4 flex justify-between items-center border-b border-gold-600/10 bg-cosmic-900/40 backdrop-blur-md">
+        <div class="flex items-center space-x-3">
+            <i data-lucide="sparkles" class="w-6 h-6 text-gold-400"></i>
+            <span class="font-serif text-lg md:text-xl font-semibold tracking-wider text-amber-100">Vijñāna Bhairava Tantra</span>
+        </div>
+        <div class="text-xs md:text-sm tracking-widest text-gold-400/80 font-medium uppercase">
+            Vers 102 • Das Tor der Intensität
+        </div>
+    </header>
+
+    <!-- Main Content Area / Slides Deck -->
+    <main class="relative z-10 flex-1 w-full max-w-6xl mx-auto px-4 md:px-8 py-4 md:py-6 flex flex-col justify-center overflow-hidden">
+        
+        <!-- SLIDE 1: TITLE & SANSKRIT SUTRA -->
+        <section id="slide-1" class="slide active flex-col items-center justify-center text-center space-y-6 md:space-y-8 my-auto">
+            <div class="inline-block px-4 py-1.5 rounded-full glass-card border border-gold-600/30 text-gold-400 text-xs md:text-sm font-medium tracking-widest uppercase mb-2">
+                Dharana 79 • Meditationsanweisung
+            </div>
+            
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-slate-100 max-w-4xl leading-tight">
+                Das Erwachen im Augenblick der <span class="gold-gradient-text">Höchsten Intensität</span>
+            </h1>
+
+            <!-- Sanskrit Card -->
+            <div class="w-full max-w-3xl glass-card rounded-2xl p-6 md:p-8 space-y-4 border border-gold-600/30 cosmic-glow relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent"></div>
+                
+                <p class="font-serif text-2xl md:text-3xl lg:text-4xl text-amber-200/90 leading-relaxed tracking-wide">
+                    क्षुताद्यन्ते भये शोके गहवरे वा रणाद्द्रुते ।<br>
+                    कुतूहले क्षुधाद्यन्ते ब्रह्मसत्तामयी दशा ॥ १०२ ॥
+                </p>
+                <div class="h-px w-24 bg-gold-600/30 mx-auto my-2"></div>
+                <p class="font-serif italic text-lg md:text-xl text-slate-300/90 tracking-wide">
+                    kṣutādyante bhaye śoke gahvare vā raṇāddrute ।<br>
+                    kutūhale kṣudhādyante brahmasattāmayī daśā ॥ 102 ॥
+                </p>
+            </div>
+
+            <p class="text-sm md:text-base text-slate-400 max-w-2xl font-light">
+                Ein zeitloser Schlüssel aus dem Kaschmir-Shivaismus: Wie Schock, Angst, Hunger und Freude das Ego in Sekundenbruchteilen auflösen und reine Präsenz offenbaren.
+            </p>
+
+            <button onclick="changeSlide(1)" class="mt-4 px-6 py-3 rounded-full bg-gradient-to-r from-gold-600 to-amber-600 hover:from-gold-500 hover:to-amber-500 text-cosmic-900 font-semibold transition-all shadow-lg hover:shadow-gold-500/25 flex items-center space-x-2 group cursor-pointer">
+                <span>Erkundung starten</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+            </button>
+        </section>
+
+        <!-- SLIDE 2: TRANSLATION & VOCABULARY BREAKDOWN -->
+        <section id="slide-2" class="slide flex-col items-center justify-center space-y-6 my-auto">
+            <div class="text-center space-y-2">
+                <h2 class="text-2xl md:text-4xl font-serif font-bold text-slate-100">Übersetzung & Wortanalyse</h2>
+                <p class="text-xs md:text-sm text-gold-400/80">Klicke auf die Sanskrit-Begriffe für tiefere Bedeutungen</p>
+            </div>
+
+            <!-- Main Translation Box -->
+            <div class="w-full glass-card rounded-2xl p-6 md:p-8 text-center border border-gold-600/20">
+                <p class="font-serif text-xl md:text-2xl text-amber-100/95 leading-relaxed">
+                    „Beim Niesen, im Zustand von <span class="vocab-highlight text-gold-400 underline decoration-gold-400/50 cursor-pointer font-semibold px-1 py-0.5 rounded hover:bg-gold-600/20 transition-all" onclick="showVocabDetail('bhaya')">Angst</span>, <span class="vocab-highlight text-gold-400 underline decoration-gold-400/50 cursor-pointer font-semibold px-1 py-0.5 rounded hover:bg-gold-600/20 transition-all" onclick="showVocabDetail('soka')">Kummer</span> oder in einem tiefen Abgrund, im wilden Getümmel der Schlacht, in freudiger <span class="vocab-highlight text-gold-400 underline decoration-gold-400/50 cursor-pointer font-semibold px-1 py-0.5 rounded hover:bg-gold-600/20 transition-all" onclick="showVocabDetail('kutuhale')">Neugier</span> oder beim Aufkommen von <span class="vocab-highlight text-gold-400 underline decoration-gold-400/50 cursor-pointer font-semibold px-1 py-0.5 rounded hover:bg-gold-600/20 transition-all" onclick="showVocabDetail('ksut')">extremem Hunger</span> – genau in diesen Momenten offenbart sich die <span class="vocab-highlight text-gold-400 underline decoration-gold-400/50 cursor-pointer font-semibold px-1 py-0.5 rounded hover:bg-gold-600/20 transition-all" onclick="showVocabDetail('brahma')">essenzielle Natur des Höchsten</span>.“
+                </p>
+            </div>
+
+            <!-- Vocabulary Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
+                <div id="card-ksut" class="vocab-card glass-card rounded-xl p-4 transition-all duration-300 hover:border-gold-500/50 cursor-pointer" onclick="showVocabDetail('ksut')">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="font-serif text-lg font-bold text-amber-200">Kṣutādyante</span>
+                        <i data-lucide="zap" class="w-4 h-4 text-gold-400"></i>
+                    </div>
+                    <div class="text-xs text-gold-400/80 mb-2">Er-schütterung / Niesen</div>
+                    <p class="text-xs text-slate-300">Der Moment kurz vor oder nach einem Niesen oder Schock, in dem der Verstand komplett innefährt.</p>
+                </div>
+
+                <div id="card-bhaya" class="vocab-card glass-card rounded-xl p-4 transition-all duration-300 hover:border-gold-500/50 cursor-pointer" onclick="showVocabDetail('bhaya')">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="font-serif text-lg font-bold text-amber-200">Bhaye & Śoke</span>
+                        <i data-lucide="heart-off" class="w-4 h-4 text-gold-400"></i>
+                    </div>
+                    <div class="text-xs text-gold-400/80 mb-2">Angst & Trauer</div>
+                    <p class="text-xs text-slate-300">Intensive emotionale Zustände, die das kognitive Alltags-Denken schockartig durchbrechen.</p>
+                </div>
+
+                <div id="card-kutuhale" class="vocab-card glass-card rounded-xl p-4 transition-all duration-300 hover:border-gold-500/50 cursor-pointer" onclick="showVocabDetail('kutuhale')">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="font-serif text-lg font-bold text-amber-200">Kutūhale</span>
+                        <i data-lucide="sparkle" class="w-4 h-4 text-gold-400"></i>
+                    </div>
+                    <div class="text-xs text-gold-400/80 mb-2">Staunen / Neugier</div>
+                    <p class="text-xs text-slate-300">Das plötzliche, begeisterte Erstaunen, welches das Ego momentarily in Bewunderung auflöst.</p>
+                </div>
+
+                <div id="card-ranaddrute" class="vocab-card glass-card rounded-xl p-4 transition-all duration-300 hover:border-gold-500/50 cursor-pointer" onclick="showVocabDetail('ranaddrute')">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="font-serif text-lg font-bold text-amber-200">Raṇāddrute</span>
+                        <i data-lucide="flame" class="w-4 h-4 text-gold-400"></i>
+                    </div>
+                    <div class="text-xs text-gold-400/80 mb-2">Getümmel / Flucht</div>
+                    <p class="text-xs text-slate-300">Extremes äußeres Chaos oder Gefahr (Schlachtfeld), wo nur noch reine Gegenwart existiert.</p>
+                </div>
+
+                <div id="card-brahma" class="vocab-card glass-card rounded-xl p-4 transition-all duration-300 hover:border-gold-500/50 cursor-pointer sm:col-span-2 lg:col-span-2" onclick="showVocabDetail('brahma')">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="font-serif text-lg font-bold text-amber-200">Brahmasattāmayī daśā</span>
+                        <i data-lucide="sun" class="w-4 h-4 text-gold-400"></i>
+                    </div>
+                    <div class="text-xs text-gold-400/80 mb-2">Göttlicher Seinszustand</div>
+                    <p class="text-xs text-slate-300">Der Zustand, der vollständig von der reinen Bewusstseinsfülle des Höchsten durchdrungen ist.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: PHILOSOPHY & CORE MESSAGE -->
+        <section id="slide-3" class="slide flex-col items-center justify-center space-y-6 my-auto">
+            <div class="text-center space-y-2">
+                <h2 class="text-2xl md:text-4xl font-serif font-bold text-slate-100">Die Kernbotschaft der Sutra</h2>
+                <p class="text-xs md:text-sm text-gold-400/80">Warum Ausnahmezustände Tore zur Erleuchtung sind</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
+                <div class="glass-card rounded-2xl p-6 flex flex-col items-center text-center space-y-3 border-t-2 border-t-gold-500">
+                    <div class="w-12 h-12 rounded-full bg-gold-600/10 flex items-center justify-center text-gold-400 mb-1">
+                        <i data-lucide="pause-circle" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-amber-100">Der Abreißmoment</h3>
+                    <p class="text-xs md:text-sm text-slate-300 leading-relaxed">
+                        Im Alltag läuft unser Verstand auf Autopilot. In Momenten extremer Intensität (Schock, Niesen, Panik) reißt die Kette der Alltagsgedanken augenblicklich ab.
+                    </p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6 flex flex-col items-center text-center space-y-3 border-t-2 border-t-purple-500">
+                    <div class="w-12 h-12 rounded-full bg-purple-600/10 flex items-center justify-center text-purple-300 mb-1">
+                        <i data-lucide="eye" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-amber-100">Die bewusste Lücke</h3>
+                    <p class="text-xs md:text-sm text-slate-300 leading-relaxed">
+                        Das Ego wird durch die Wucht des Moments kurzzeitig gelähmt. Genau in dieser "Lücke" (Madhya) zwischen den Konzepten offenbart sich reine Bewusstheit.
+                    </p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6 flex flex-col items-center text-center space-y-3 border-t-2 border-t-amber-500">
+                    <div class="w-12 h-12 rounded-full bg-amber-600/10 flex items-center justify-center text-amber-400 mb-1">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-amber-100">Keine Flucht nötig</h3>
+                    <p class="text-xs md:text-sm text-slate-300 leading-relaxed">
+                        Tantra bewertet Gefühle nicht als "gut" oder "schlecht". Auch Angst, Schmerz oder Wut sind reine Lebensenergie – Tore zum Höchsten Selbst.
+                    </p>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-xl p-4 md:p-6 w-full max-w-5xl border border-gold-600/20 bg-cosmic-800/40">
+                <div class="flex items-start space-x-4">
+                    <i data-lucide="quote" class="w-8 h-8 text-gold-400 flex-shrink-0 mt-1"></i>
+                    <p class="text-xs md:text-sm text-slate-200 italic leading-relaxed">
+                        "Die meisten Menschen versuchen in Momenten der Angst oder des Schmerzes zu fliehen. Das Tantra lehrt uns das Gegenteil: Verweile genau in der Spitze der Intensität, ohne sie zu bewerten. Dort wartet die Stille des Seins."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: PRACTICAL APPLICATIONS IN DAILY LIFE -->
+        <section id="slide-4" class="slide flex-col items-center justify-center space-y-6 my-auto">
+            <div class="text-center space-y-1">
+                <h2 class="text-2xl md:text-4xl font-serif font-bold text-slate-100">Praxis im modernen Alltag</h2>
+                <p class="text-xs md:text-sm text-gold-400/80">Wähle eine Karte für die konkrete Umsetzung</p>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 max-w-4xl">
+                <button onclick="setTab(0)" class="tab-btn px-4 py-2 rounded-full text-xs md:text-sm font-medium transition-all bg-gold-600/20 text-gold-300 border border-gold-600/40 flex items-center space-x-2">
+                    <i data-lucide="zap" class="w-4 h-4"></i>
+                    <span>1. Der Stopp-Effekt</span>
+                </button>
+                <button onclick="setTab(1)" class="tab-btn px-4 py-2 rounded-full text-xs md:text-sm font-medium transition-all bg-cosmic-800 text-slate-400 border border-slate-700/50 flex items-center space-x-2">
+                    <i data-lucide="shield-alert" class="w-4 h-4"></i>
+                    <span>2. Angst als Wecker</span>
+                </button>
+                <button onclick="setTab(2)" class="tab-btn px-4 py-2 rounded-full text-xs md:text-sm font-medium transition-all bg-cosmic-800 text-slate-400 border border-slate-700/50 flex items-center space-x-2">
+                    <i data-lucide="activity" class="w-4 h-4"></i>
+                    <span>3. Körperanker</span>
+                </button>
+                <button onclick="setTab(3)" class="tab-btn px-4 py-2 rounded-full text-xs md:text-sm font-medium transition-all bg-cosmic-800 text-slate-400 border border-slate-700/50 flex items-center space-x-2">
+                    <i data-lucide="compass" class="w-4 h-4"></i>
+                    <span>4. Auge des Sturms</span>
+                </button>
+            </div>
+
+            <!-- Tab Content Display Card -->
+            <div class="w-full max-w-4xl glass-card rounded-2xl p-6 md:p-8 min-h-[260px] flex flex-col justify-between border border-gold-600/30">
+                <div id="tab-content" class="space-y-4">
+                    <!-- Dynamic Javascript Content -->
+                </div>
+
+                <div class="pt-4 mt-4 border-t border-slate-700/40 flex justify-between items-center text-xs text-slate-400">
+                    <span id="tab-counter">Anwendung 1 von 4</span>
+                    <span class="text-gold-400 font-medium">Kaschmir-Shivaismus Praxis</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: INTERACTIVE BREATH & PRESENCE MEDITATION -->
+        <section id="slide-5" class="slide flex-col items-center justify-center space-y-6 my-auto text-center">
+            <div class="space-y-1">
+                <h2 class="text-2xl md:text-4xl font-serif font-bold text-slate-100">Erfahrung: Die Lücke finden</h2>
+                <p class="text-xs md:text-sm text-gold-400/80">Spüre die Pause der Intensität zwischen Ein- und Ausatmung</p>
+            </div>
+
+            <!-- Visual Breathing Simulator Container -->
+            <div class="relative flex items-center justify-center my-4">
+                <!-- Outer Pulsing Glow -->
+                <div id="breath-glow" class="absolute w-64 h-64 md:w-80 md:h-80 rounded-full bg-gold-600/10 blur-2xl transition-all duration-1000"></div>
+                
+                <!-- Main Animated Circle -->
+                <div id="breath-circle" class="breath-circle w-48 h-48 md:w-64 md:h-64 rounded-full border-2 border-gold-500/40 flex flex-col items-center justify-center p-4 glass-card relative z-10">
+                    <span id="breath-status" class="font-serif text-xl md:text-2xl font-bold text-amber-200 mb-1">Bereit?</span>
+                    <span id="breath-timer" class="text-xs text-gold-400 font-mono tracking-widest uppercase">Klicke Start</span>
+                </div>
+            </div>
+
+            <p id="breath-instruction" class="text-xs md:text-sm text-slate-300 max-w-lg min-h-[40px] px-4">
+                Diese Übung simuliert den Zustand der Sutra: Wenn der Atem für einen Moment anhält, entsteht absolute Stille im Bewusstsein.
+            </p>
+
+            <div class="flex items-center space-x-4">
+                <button id="start-breath-btn" onclick="toggleBreathing()" class="px-6 py-2.5 rounded-full bg-gradient-to-r from-gold-600 to-amber-600 hover:from-gold-500 hover:to-amber-500 text-cosmic-900 font-semibold text-sm transition-all shadow-lg flex items-center space-x-2">
+                    <i data-lucide="play" class="w-4 h-4"></i>
+                    <span>Übung Starten</span>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Navigation & Footer Controls -->
+    <footer class="relative z-10 w-full px-6 py-4 bg-cosmic-900/60 backdrop-blur-md border-t border-gold-600/10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <!-- Progress Bar -->
+        <div class="w-full md:w-1/3 bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+            <div id="progress-bar" class="bg-gradient-to-r from-gold-500 to-amber-400 h-full w-1/5 transition-all duration-300"></div>
+        </div>
+
+        <!-- Counter Indicator -->
+        <div class="text-xs text-slate-400 font-mono">
+            Folie <span id="current-slide-num" class="text-gold-400 font-bold">1</span> von <span>5</span>
+        </div>
+
+        <!-- Next / Prev Controls -->
+        <div class="flex items-center space-x-3">
+            <button onclick="changeSlide(-1)" class="p-2.5 rounded-full glass-card hover:bg-gold-600/20 text-slate-300 hover:text-gold-300 transition-all border border-slate-700/60 disabled:opacity-30 cursor-pointer" id="prev-btn">
+                <i data-lucide="chevron-left" class="w-5 h-5"></i>
+            </button>
+            <button onclick="changeSlide(1)" class="p-2.5 rounded-full glass-card hover:bg-gold-600/20 text-slate-300 hover:text-gold-300 transition-all border border-slate-700/60 disabled:opacity-30 cursor-pointer" id="next-btn">
+                <i data-lucide="chevron-right" class="w-5 h-5"></i>
+            </button>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // State Management
+        let currentSlide = 1;
+        const totalSlides = 5;
+
+        // Content for Practical Tabs
+        const tabData = [
+            {
+                title: "Der Moment des 'Stopps' (Überraschungseffekt)",
+                icon: "zap",
+                situation: "Du niesen musst heftig, erschrickst dich plötzlich oder stolperst kurz.",
+                practice: "Nutze den Sekundenbruchteil, in dem der Denkapparat schockiert stoppt. Statt sofort in Ärgern oder Ablenkung zu verfallen, bleibe exakt für eine Sekunde in diesem plötzlichen 'Loch' der Stille. Hier ist kein Gedanke – nur reines Bewusstsein.",
+                quote: "In der Lücke zwischen zwei Gedanken liegt das Tor zur Ewigkeit."
+            },
+            {
+                title: "Angst & Sorge als Aufwach-Wecker",
+                icon: "shield-alert",
+                situation: "Ein plötzlicher Sorgen-Gedanke oder Herzklopfen vor einer Prüfung/Präsentation.",
+                practice: "Versuche nicht, die Angst wegzudrücken. Richte deinen Fokus direkt auf die physische Empfindung im Körper (Enge, Kribbeln). Indem du die pure Energie der Angst ohne Urteil bezeugst, löst sich das Drama auf und reine Präsenz bleibt zurück.",
+                quote: "Fühle die Energie der Angst, ohne der Geschichte der Angst zu glauben."
+            },
+            {
+                title: "Hunger & Körpergefühl als Anker",
+                icon: "activity",
+                situation: "Extremer Magen-Hunger oder starke körperliche Erschöpfung.",
+                practice: "Anstatt ungeduldig oder genervt ('hangry') zu werden, nimm die brennende Intensität des Hungers als Wecker wahr. Spüre die rohe körperliche Sensation. Das zieht das Bewusstsein schlagartig aus dem Kopf zurück in den Körper.",
+                quote: "Der Körper leidet nie im Verstand – er ist immer im Jetzt."
+            },
+            {
+                title: "Das Auge des Sturms (Verkehr & Lärm)",
+                icon: "compass",
+                situation: "Ein lauter Streit, Berufsverkehr, Hektik an der Supermarktkasse ('Schlachtfeld').",
+                practice: "Versuche nicht, die Hektik draußen zu verändern. Verlager dein Bewusstsein für 3 Atemzüge komplett nach innen. Nimm den unberührten Raum in dir wahr, der wie das stille Auge eines Wirbelsturms mitten im Chaos existiert.",
+                quote: "Im Zentrum des Hurrikans ist es vollkommen still."
+            }
+        ];
+
+        let currentTab = 0;
+
+        // Initialize Page
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+            initParticles();
+            renderTabContent(0);
+            updateSlideUI();
+
+            // Keyboard Navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight' || e.key === 'Space') {
+                    changeSlide(1);
+                } else if (e.key === 'ArrowLeft') {
+                    changeSlide(-1);
+                }
+            });
+        });
+
+        // Slide Navigation Logic
+        function changeSlide(direction) {
+            const newSlide = currentSlide + direction;
+            if (newSlide >= 1 && newSlide <= totalSlides) {
+                // Hide active slide
+                const activeSlideEl = document.getElementById(`slide-${currentSlide}`);
+                activeSlideEl.classList.remove('active');
+
+                currentSlide = newSlide;
+
+                // Show new slide
+                const nextSlideEl = document.getElementById(`slide-${currentSlide}`);
+                nextSlideEl.classList.add('active');
+
+                updateSlideUI();
+            }
+        }
+
+        function updateSlideUI() {
+            // Update slide counter
+            document.getElementById('current-slide-num').textContent = currentSlide;
+
+            // Update Progress Bar
+            const progressPercent = (currentSlide / totalSlides) * 100;
+            document.getElementById('progress-bar').style.width = `${progressPercent}%`;
+
+            // Navigation Buttons Disabled State
+            document.getElementById('prev-btn').disabled = currentSlide === 1;
+            document.getElementById('next-btn').disabled = currentSlide === totalSlides;
+        }
+
+        // Tab Content Switching
+        function setTab(index) {
+            currentTab = index;
+            renderTabContent(index);
+
+            // Update tab button styles
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach((btn, idx) => {
+                if (idx === index) {
+                    btn.className = "tab-btn px-4 py-2 rounded-full text-xs md:text-sm font-medium transition-all bg-gold-600/20 text-gold-300 border border-gold-600/40 flex items-center space-x-2";
+                } else {
+                    btn.className = "tab-btn px-4 py-2 rounded-full text-xs md:text-sm font-medium transition-all bg-cosmic-800 text-slate-400 border border-slate-700/50 flex items-center space-x-2";
+                }
+            });
+        }
+
+        function renderTabContent(index) {
+            const data = tabData[index];
+            const container = document.getElementById('tab-content');
+            
+            container.innerHTML = `
+                <div class="flex items-center space-x-3 mb-2">
+                    <div class="p-2 rounded-lg bg-gold-600/10 text-gold-400 border border-gold-600/30">
+                        <i data-lucide="${data.icon}" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-serif text-xl md:text-2xl font-bold text-amber-100">${data.title}</h3>
+                </div>
+                
+                <div class="space-y-3 text-xs md:text-sm">
+                    <div class="p-3 rounded-lg bg-cosmic-900/60 border border-slate-800">
+                        <span class="text-gold-400 font-semibold block mb-1">Die Alltags-Situation:</span>
+                        <p class="text-slate-300">${data.situation}</p>
+                    </div>
+
+                    <div class="p-3 rounded-lg bg-gold-600/5 border border-gold-600/20">
+                        <span class="text-amber-300 font-semibold block mb-1">Die Tantra-Praxis:</span>
+                        <p class="text-slate-200 leading-relaxed">${data.practice}</p>
+                    </div>
+
+                    <p class="italic text-xs text-slate-400 pt-1 text-center font-serif">"${data.quote}"</p>
+                </div>
+            `;
+
+            document.getElementById('tab-counter').textContent = `Anwendung ${index + 1} von ${tabData.length}`;
+            lucide.createIcons();
+        }
+
+        // Vocabulary Detail Highlight Interactive
+        function showVocabDetail(vocabKey) {
+            // Remove previous highlights
+            document.querySelectorAll('.vocab-card').forEach(card => card.classList.remove('glass-card-active'));
+
+            const card = document.getElementById(`card-${vocabKey}`);
+            if (card) {
+                card.classList.add('glass-card-active');
+                card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+
+        // Breathing Exercise Simulator Logic
+        let isBreathing = false;
+        let breathInterval = null;
+
+        function toggleBreathing() {
+            const btn = document.getElementById('start-breath-btn');
+            const status = document.getElementById('breath-status');
+            const timer = document.getElementById('breath-timer');
+            const circle = document.getElementById('breath-circle');
+            const glow = document.getElementById('breath-glow');
+            const instruction = document.getElementById('breath-instruction');
+
+            if (!isBreathing) {
+                isBreathing = true;
+                btn.innerHTML = `<i data-lucide="square" class="w-4 h-4"></i><span>Stoppen</span>`;
+                lucide.createIcons();
+
+                let step = 0; // 0: Inhale, 1: Pause (The Gap), 2: Exhale
+
+                const runCycle = () => {
+                    if (!isBreathing) return;
+
+                    if (step === 0) {
+                        // Inhale
+                        status.textContent = "Einatmen...";
+                        timer.textContent = "Intensität sammelt sich";
+                        circle.style.transform = "scale(1.25)";
+                        circle.style.borderColor = "rgba(212, 175, 55, 0.8)";
+                        glow.style.transform = "scale(1.4)";
+                        glow.style.opacity = "0.6";
+                        instruction.textContent = "Atme tief ein und spüre, wie sich Spannung & Energie im Körper aufbauen...";
+                        step = 1;
+                        breathInterval = setTimeout(runCycle, 4000);
+                    } else if (step === 1) {
+                        // PAUSE - BRAHMASATTA
+                        status.textContent = "DIE LÜCKE";
+                        timer.textContent = "Stille & Reine Präsenz";
+                        circle.style.transform = "scale(1.25)";
+                        circle.style.borderColor = "rgba(255, 255, 255, 0.9)";
+                        glow.style.transform = "scale(1.6)";
+                        glow.style.opacity = "0.9";
+                        instruction.textContent = "HALTE INNE. Genau in diesem Moment des Stopps existieren keine Gedanken – nur reine Bewusstheit!";
+                        step = 2;
+                        breathInterval = setTimeout(runCycle, 3500);
+                    } else {
+                        // Exhale
+                        status.textContent = "Ausatmen...";
+                        timer.textContent = "Loslassen";
+                        circle.style.transform = "scale(1.0)";
+                        circle.style.borderColor = "rgba(212, 175, 55, 0.3)";
+                        glow.style.transform = "scale(1.0)";
+                        glow.style.opacity = "0.3";
+                        instruction.textContent = "Lass vollkommen los. Das Bewusstsein bleibt weit und unberührt.";
+                        step = 0;
+                        breathInterval = setTimeout(runCycle, 4000);
+                    }
+                };
+
+                runCycle();
+            } else {
+                isBreathing = false;
+                clearTimeout(breathInterval);
+                btn.innerHTML = `<i data-lucide="play" class="w-4 h-4"></i><span>Übung Starten</span>`;
+                lucide.createIcons();
+
+                status.textContent = "Bereit?";
+                timer.textContent = "Klicke Start";
+                circle.style.transform = "scale(1.0)";
+                circle.style.borderColor = "rgba(212, 175, 55, 0.4)";
+                glow.style.transform = "scale(1.0)";
+                glow.style.opacity = "0.3";
+                instruction.textContent = "Diese Übung simuliert den Zustand der Sutra: Wenn der Atem für einen Moment anhält, entsteht absolute Stille im Bewusstsein.";
+            }
+        }
+
+        // Background Particles Animation
+        function initParticles() {
+            const canvas = document.getElementById('canvas-particles');
+            const ctx = canvas.getContext('2d');
+
+            function resize() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            resize();
+            window.addEventListener('resize', resize);
+
+            const particles = Array.from({ length: 45 }, () => ({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                radius: Math.random() * 2 + 0.5,
+                alpha: Math.random() * 0.5 + 0.2,
+                speedY: -Math.random() * 0.3 - 0.1,
+                speedX: (Math.random() - 0.5) * 0.2
+            }));
+
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                particles.forEach(p => {
+                    p.y += p.speedY;
+                    p.x += p.speedX;
+
+                    if (p.y < 0) p.y = canvas.height;
+                    if (p.x < 0) p.x = canvas.width;
+                    if (p.x > canvas.width) p.x = 0;
+
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(212, 175, 55, ${p.alpha})`;
+                    ctx.shadowBlur = 10;
+                    ctx.shadowColor = '#d4af37';
+                    ctx.fill();
+                });
+
+                requestAnimationFrame(animate);
+            }
+            animate();
+        }
+    </script>
+</body>
+</html>
