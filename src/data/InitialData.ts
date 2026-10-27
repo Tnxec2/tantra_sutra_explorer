@@ -14,6 +14,11 @@ import { vers31 } from "./vers31";
 import { vers32 } from "./vers32";
 import { vers33 } from "./vers33";
 import { vers34 } from "./vers34";
+import { vers35 } from "./vers35";
+import { vers36 } from "./vers36";
+import { vers37 } from "./vers37";
+import { vers38 } from "./vers38";
+import { vers39 } from "./vers39";
 
 // ==========================================
 export const INITIAL_SUTRAS_DATA: SUTRA[] = [
@@ -28,5 +33,10 @@ export const INITIAL_SUTRAS_DATA: SUTRA[] = [
   vers32,
   vers33,
   vers34,
+  vers35,
+  vers36,
+  vers37,
+  vers38,
+  vers39,
   vers102
 ];

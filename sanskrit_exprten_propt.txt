@@ -72,7 +72,16 @@ Verwende exakt die folgende JSON-Struktur:
 }
 
 Hier ist die Sanskrit-Sutra, die du verarbeiten sollst:
-kapālāntarmano nyasya tiṣṭhanmīlitalocanaḥ I krameṇa manaso dārḍyāt lakṣayetlaṣyamuttamamII 34 II
+praṇavādisamuccārāt plutānte śūnyabhāvanāt I
+śūnyayā parayā śaktyā śūnyatāmeti bhairavi II 39 II
+
+
+
+
+
+
+
+
 
 
 
