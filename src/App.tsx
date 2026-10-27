@@ -1,19 +1,10 @@
 import { useState, useEffect, useMemo } from 'react';
 
-import {
-  Sparkles,
-  BookOpen,
-  Code,
-  Activity,
-  FileText,
-  Sliders
-} from 'lucide-react';
 
 import { SUTRA } from './model/Sutra';
 import { INITIAL_SUTRAS_DATA } from './data/InitialData';
 import { CustomSutraEditor } from './ui/components/CustomSutraEditor';
 import { MeditationTool } from './ui/components/MeditationTool';
-import { Footer } from './ui/components/Footer';
 import { DailyLifePractice } from './ui/components/DailyLivePratcices';
 import { TranslationAndCommentary } from './ui/components/TranslationAndCommentary';
 import { VocabularyBreakdownGrid } from './ui/components/VocabularyBreakdownGrid';
@@ -78,8 +69,7 @@ function App() {
     return saved ? JSON.parse(saved) : INITIAL_SUTRAS_DATA;
   });
 
-  const initId = useMemo(() => (Math.ceil(Math.random() * sutras?.length-1)), [])
-  console.log(initId, sutras[initId]?.id);
+  const initId = useMemo(() => (Math.ceil(Math.random() * sutras?.length-1)), [sutras?.length])
   
   const [activeSutraId, setActiveSutraId] = useState(sutras[initId]?.id);
   const [activeSlide, setActiveSlide] = useState(1);
@@ -146,7 +136,7 @@ function App() {
       <Header 
         sutras={sutras}
         activeSutraId={activeSutraId}
-        handleSelectSutra={(id) => setActiveSutraId(id)}
+        handleSelectSutra={(id) => handleSelectSutra(id)}
         handleOpenEditor={() => handleOpenEditor() }
       />
 
@@ -196,12 +186,6 @@ function App() {
 
         </div>
       </main>
-
-{/* 
-      <Footer
-        activeSlide={activeSlide}
-        setActiveSlide={(n) => setActiveSlide(n)}
-      /> */}
 
       {showJsonEditor && (
         <CustomSutraEditor
