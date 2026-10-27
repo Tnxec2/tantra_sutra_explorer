@@ -26,7 +26,7 @@ export const TranslationAndCommentary = ({ translationGerman, philosophicalNotes
                             <Sparkles className="w-4 h-4 text-amber-400" />
                             <span>{note.title}</span>
                         </div>
-                        <p className="text-xs md:text-sm text-slate-300 leading-relaxed">
+                        <p className="text-sm md:text-sm text-slate-300 leading-relaxed">
                             {note.text}
                         </p>
                     </div>

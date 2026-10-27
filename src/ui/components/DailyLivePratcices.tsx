@@ -14,7 +14,7 @@ export const DailyLifePractice = ({ dailyPractices }:
             </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className={`grid gap-4 ${dailyPractices?.length === 1 ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2"}`}>
             {dailyPractices?.map((prac, idx) =>
                 <DailyLifePracticeCard prac={prac} key={idx} />
             )}

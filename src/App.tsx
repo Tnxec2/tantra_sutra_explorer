@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 
 import {
   Sparkles,
@@ -78,7 +78,10 @@ function App() {
     return saved ? JSON.parse(saved) : INITIAL_SUTRAS_DATA;
   });
 
-  const [activeSutraId, setActiveSutraId] = useState(sutras[0]?.id || "vbt-102");
+  const initId = useMemo(() => (Math.ceil(Math.random() * sutras?.length-1)), [])
+  console.log(initId, sutras[initId]?.id);
+  
+  const [activeSutraId, setActiveSutraId] = useState(sutras[initId]?.id);
   const [activeSlide, setActiveSlide] = useState(1);
   const [showJsonEditor, setShowJsonEditor] = useState(false);
   const [jsonText, setJsonText] = useState("");
@@ -194,11 +197,11 @@ function App() {
         </div>
       </main>
 
-
+{/* 
       <Footer
         activeSlide={activeSlide}
         setActiveSlide={(n) => setActiveSlide(n)}
-      />
+      /> */}
 
       {showJsonEditor && (
         <CustomSutraEditor

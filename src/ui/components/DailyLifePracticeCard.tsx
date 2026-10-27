@@ -16,19 +16,19 @@ export const DailyLifePracticeCard = ({ prac }:
         <h4 className="font-serif font-bold text-amber-100 text-base">{prac.title}</h4>
       </div>
 
-      <div className="text-xs bg-[#0b091a]/60 p-2.5 rounded-lg border border-slate-800">
+      <div className="text-sm bg-[#0b091a]/60 p-2.5 rounded-lg border border-slate-800">
         <span className="text-amber-400 font-semibold block mb-0.5">Situation:</span>
         <span className="text-slate-300">{prac.situation}</span>
       </div>
 
-      <div className="text-xs text-slate-200 leading-relaxed">
+      <div className="text-sm text-slate-200 leading-relaxed">
         <span className="text-amber-300 font-semibold block mb-0.5">Praxis:</span>
         {prac.practice}
       </div>
     </div>
 
     {prac.quote && (
-      <p className="italic text-xs text-slate-400 border-t border-slate-800 pt-2 font-serif">
+      <p className="italic text-sm text-slate-400 border-t border-slate-800 pt-2 font-serif">
         "{prac.quote}"
       </p>
     )}

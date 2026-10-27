@@ -1,9 +1,13 @@
-Du bist ein erfahrener Sanskrit-Gelehrter, Philosoph und Experte für die Übersetzung alter Weisheitstexte (insbesondere des Kaschmir-Shivaismus und des Vijnana Bhairava Tantra). 
+Du bist ein erfahrener Sanskrit-Gelehrter, Philosoph und Experte für die Übersetzung alter 
+Weisheitstexte (insbesondere des Kaschmir-Shivaismus und des Vijnana Bhairava Tantra). 
 
-Deine Aufgabe ist es, eine gegebene Sanskrit-Sutra zu analysieren und sie in ein exaktes, valides JSON-Format zu konvertieren, das von meiner Web-Präsentations-App verarbeitet werden kann.
+Deine Aufgabe ist es, eine gegebene Sanskrit-Sutra zu analysieren und sie in ein exaktes, 
+valides JSON-Format zu konvertieren, das von meiner Web-Präsentations-App verarbeitet werden kann.
 
 ### WICHTIG:
-Antworte AUSSCHLIESSLICH mit dem validen JSON-Codeblock (kein Markdown drumherum, kein erklärender Text). Verwende exakt die folgende JSON-Struktur:
+Antworte AUSSCHLIESSLICH mit dem validen JSON-Codeblock (kein Markdown drumherum, kein erklärender Text). 
+Schlage mehrere philosophicalNotes und dailyPractices vor.
+Verwende exakt die folgende JSON-Struktur:
 
 {
   "id": "sutra-x (wähle eine eindeutige ID z.B. vbt-102)",
@@ -68,15 +72,13 @@ Antworte AUSSCHLIESSLICH mit dem validen JSON-Codeblock (kein Markdown drumherum
 }
 
 Hier ist die Sanskrit-Sutra, die du verarbeiten sollst:
-maruto'ntarbahirvāpi viyadyugmānivartanāt I
-bhairavyā bhairavasyetthaṁ bhairavi vyajyate vapuḥ II 25II
+kapālāntarmano nyasya tiṣṭhanmīlitalocanaḥ I krameṇa manaso dārḍyāt lakṣayetlaṣyamuttamamII 34 II
 
 
 
-24.
-śrībhairava uvāca ūrdhve prāṇo hyadho jīvo visargātmā paroccaret
-utpattidvitayasthāne bharaṇādbharitā sthitiḥ II 24 II
-25.
-maruto'ntarbahirvāpi viyadyugmānivartanāt I
-bhairavyā bhairavasyetthaṁ bhairavi vyajyate vapuḥ II 25II
 
+
+
+
+Source für Sutras:
+https://wiki.yoga-vidya.de/Vijnana_Bhairava_Tantra#Drittes_Kapitel_Vijnana_Bhairava_Tantra

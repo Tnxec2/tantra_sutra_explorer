@@ -35,7 +35,7 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras, handleOpenEdi
                 onChange={(e) => handleSelectSutra(e.target.value)}
                 className="bg-[#1b1537] text-amber-200 border border-amber-500/30 
             rounded-lg px-3 py-2 text-sm font-serif focus:outline-none focus:border-amber-400 
-            cursor-pointer w-full md:w-64"
+            cursor-pointer w-full"
             >
                 {sutras.map(s => (
                     <option key={s.id} value={s.id}>
