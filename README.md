@@ -1,46 +1,64 @@
-# Getting Started with Create React App
+# Tantra Sutra Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Eine React-Anwendung zum Erkunden ausgewählter Verse aus dem *Vijnana Bhairava Tantra*. Zu jeder Sutra gibt es den Sanskrit-Text, Worterklärungen, Übersetzung und Kommentare, Alltagspraxis sowie eine geführte Atemmeditation.
 
-## Available Scripts
+## Funktionen
 
-In the project directory, you can run:
+- **Original & Sanskrit:** Devanagari-Text, IAST-Umschrift und Wortschatz.
+- **Übersetzung:** deutsche Übersetzung mit philosophischen Anmerkungen.
+- **Alltags-Praxis:** praktische Impulse zur jeweiligen Sutra.
+- **Meditation:** geführter Atemzyklus mit animiertem Kreis und dynamischem Zeitring.
+- **Zufallspraxis:** wählt eine Alltagspraxis aus allen Sutras aus. Der Link im Dialog öffnet ihre Ursprungsutra.
+- **Sutra-Auswahl:** Verse direkt über das Auswahlfeld im Header wechseln.
+- **JSON-Editor:** Sutra-Daten während der laufenden Sitzung bearbeiten.
+- **Responsive Bedienung:** Abschnittsnavigation und Inhalte passen sich auch kleinen Bildschirmen an.
 
-### `npm start`
+Die Rezitations-Schaltfläche simuliert derzeit die Wiedergabe; sie spielt keine Audiodatei ab.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Voraussetzungen
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Node.js
+- npm
 
-### `npm test`
+## Installation und Start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+npm start
+```
 
-### `npm run build`
+Die Entwicklungsanwendung ist anschließend unter [http://localhost:3000](http://localhost:3000) erreichbar. Änderungen am Quellcode werden automatisch neu geladen.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Verfügbare Befehle
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Befehl | Beschreibung |
+| --- | --- |
+| `npm start` | Startet den Entwicklungsserver. |
+| `npm test` | Startet den Test-Runner im Watch-Modus. |
+| `npm run build` | Erstellt den optimierten Produktions-Build im Verzeichnis `build/`. |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Sutra-Daten
 
-### `npm run eject`
+Die TypeScript-Datensätze liegen in `src/data/`. `src/data/InitialData.ts` importiert die einzelnen Verse und führt sie in `INITIAL_SUTRAS_DATA` zusammen. Um eine Sutra dauerhaft hinzuzufügen oder zu ändern:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Einen Datensatz entsprechend dem Modell in `src/model/Sutra.ts` erstellen oder bearbeiten.
+2. Den Datensatz in `src/data/InitialData.ts` importieren und in `INITIAL_SUTRAS_DATA` aufnehmen.
+3. Die Anwendung starten und die Sutra im Header auswählen.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Der JSON-Editor nimmt ein Array von Sutra-Datensätzen entgegen und gilt für die aktuelle Sitzung. Für dauerhafte Änderungen die Datensätze in `src/data/` aktualisieren.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Jeder Sutra-Datensatz enthält:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Metadaten: `id`, `chapter`, `verseNum`, `title` und `subtitle`
+- Sanskrit: `sanskrit` und `iast` (optional: `audioUrl`)
+- Wortschatz: `vocabulary` mit `term`, `translation` und `meaning`
+- Übersetzung: `translationGerman`
+- Kommentare: `philosophicalNotes` mit `title` und `text`
+- Alltagspraxis: `dailyPractices` mit `icon`, `title`, `situation`, `practice` und `quote`
+- Meditation: `meditationConfig` mit `type`, `title`, `instruction` sowie vier Atemphasen. Jede Phase hat `name`, `duration` (Sekunden) und `instruction`.
 
-## Learn More
+Die TypeScript-Modelle unter `src/model/` definieren die vollständigen Datentypen.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologie
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+React, TypeScript, Tailwind CSS und [Lucide](https://lucide.dev/) für Symbole.
