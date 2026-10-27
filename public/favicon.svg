@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Dunkler kosmischer Hintergrund-Verlauf -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+
+    <!-- Goldener Magie-Verlauf für die Augenlinien -->
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <!-- Leuchtender Pupillen-Verlauf (Bindu) -->
+    <radialGradient id="binduGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#b45309" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Weichzeichner-Filter für den Aura-Glow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Abgerundeter Hintergrund für Browser-Tabs & App-Icons -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGlow)" />
+
+  <!-- Äußere Aura-Ringe (Kosmische Schwingung) -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#6366f1" stroke-opacity="0.2" stroke-width="2" stroke-dasharray="6 8" />
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#f59e0b" stroke-opacity="0.15" stroke-width="1.5" />
+
+  <!-- Äußeres Auge / Mandorla (Symbol der Wahrnehmung) -->
+  <g filter="url(#glow)">
+    <path d="M 96 256 C 160 150, 352 150, 416 256 C 352 362, 160 362, 96 256 Z" fill="none" stroke="url(#goldGlow)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Innerer Lichtkreis -->
+    <circle cx="256" cy="256" r="64" fill="none" stroke="url(#goldGlow)" stroke-width="8" />
+
+    <!-- Zentrailes Bindu (Das göttliche Bewusstsein) -->
+    <circle cx="256" cy="256" r="28" fill="url(#binduGlow)" />
+    <circle cx="256" cy="256" r="14" fill="#ffffff" />
+
+    <!-- Oberer Erleuchtungs-Punkt (Lotus / Trinetra Akzent) -->
+    <circle cx="256" cy="118" r="10" fill="#fef08a" />
+  </g>
+</svg>
