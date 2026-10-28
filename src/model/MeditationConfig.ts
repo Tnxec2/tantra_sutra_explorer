@@ -1,7 +1,7 @@
 
 
 export interface MeditationConfig {
-  type: string
+  type: string // "gap" | "breath" | "sound"
   title: string
   instruction: string
   phases: MeditationPhase[] // 4 Phases: inhale, hold, exhale, hold

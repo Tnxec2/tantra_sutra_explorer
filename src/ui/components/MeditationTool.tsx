@@ -47,7 +47,14 @@ export function MeditationTool({ config }: { config: MeditationConfig}) {
 
         timeoutId = setTimeout(() => {
           clearInterval(intervalId);
-          runPhase((phaseIndex + 1) % phaseDetails.length);
+          const nextPhaseIndex = phaseIndex + 1;
+          if (nextPhaseIndex < phaseDetails.length) {
+            runPhase(nextPhaseIndex);
+          } else if (c.type === "breath") {
+            runPhase(0);
+          } else {
+            setIsActive(false);
+          }
         }, duration);
       };
 
