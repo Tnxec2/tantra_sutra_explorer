@@ -20,6 +20,17 @@ import { vers37 } from "./vers37";
 import { vers38 } from "./vers38";
 import { vers39 } from "./vers39";
 import { vers40 } from "./vers40";
+import { vers41 } from "./vers41";
+import { vers42 } from "./vers42";
+import { vers43 } from "./vers43";
+import { vers44 } from "./vers44";
+import { vers45 } from "./vers45";
+import { vers46 } from "./vers46";
+import { vers47 } from "./vers47";
+import { vers48 } from "./vers48";
+import { vers49 } from "./vers49";
+import { vers50 } from "./vers50";
+import { vers51 } from "./vers51";
 
 // ==========================================
 export const INITIAL_SUTRAS_DATA: SUTRA[] = [
@@ -40,5 +51,16 @@ export const INITIAL_SUTRAS_DATA: SUTRA[] = [
   vers38,
   vers39,
   vers40,
+  vers41,
+  vers42,
+  vers43,
+  vers44,
+  vers45,
+  vers46,
+  vers47,
+  vers48,
+  vers49,
+  vers50,
+  vers51,
   vers102
 ];
