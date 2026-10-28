@@ -30,6 +30,7 @@ export const vers102: SUTRA = {
         title: "1. Der Stopp-Effekt",
         situation: "Du musst heftig niesen, erschrickst dich plötzlich oder stolperst.",
         practice: "Nutze den Sekundenbruchteil, in dem der Denkapparat schockiert stoppt. Bleibe exakt in dieser 'Lücke' der Stille – dort ist nur klares Gewahrsein.",
+        tags: ["Niesen", "Schreck", "Schock", "Gedankenpause", "Gewahrsein"],
         quote: "In der Lücke zwischen zwei Gedanken liegt das Tor zur Ewigkeit."
       },
       {
@@ -37,6 +38,7 @@ export const vers102: SUTRA = {
         title: "2. Angst als Wecker",
         situation: "Plötzliche Sorgen, Herzklopfen vor Prüfungen oder schwierigen Gesprächen.",
         practice: "Richte den Fokus direkt auf die physische Empfindung im Körper (Enge, Kribbeln). Indem du die pure Energie bezeugst, bleibt reine Präsenz zurück.",
+        tags: ["Angst", "Sorgen", "Herzklopfen", "Emotionen", "Achtsamkeit"],
         quote: "Fühle die Energie der Angst, ohne der Geschichte der Angst zu glauben."
       },
       {
@@ -44,6 +46,7 @@ export const vers102: SUTRA = {
         title: "3. Körperanker",
         situation: "Extremer Hunger oder starke körperliche Erschöpfung.",
         practice: "Nimm die brennende Intensität des Hungers als Wecker wahr. Spüre die rohe körperliche Sensation. Das zieht das Bewusstsein aus dem Kopf in den Körper.",
+        tags: ["Hunger", "Körper", "Erschöpfung", "Empfindung", "Achtsamkeit"],
         quote: "Der Körper leidet nie im Verstand – er ist immer im Jetzt."
       },
       {
@@ -51,6 +54,7 @@ export const vers102: SUTRA = {
         title: "4. Auge des Sturms",
         situation: "Berufsverkehr, Hektik an der Kasse oder emotional geladene Streitigkeiten.",
         practice: "Verlagere dein Bewusstsein für 3 Atemzüge komplett nach innen. Spüre den unberührten Raum in dir, der wie das ruhige Auge eines Wirbelsturms existiert.",
+        tags: ["Stress", "Verkehr", "Konflikt", "Hektik", "Atem"],
         quote: "Im Zentrum des Hurrikans ist es vollkommen still."
       }
     ],

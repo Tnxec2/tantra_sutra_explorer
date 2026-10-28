@@ -133,6 +133,7 @@ export const vers41: SUTRA = {
      "title": "Der letzte Ton eines Musikstücks",
      "situation": "Wenn ein Lied, eine Instrumentalmelodie oder ein Konzertstück endet, greift man häufig sofort zum nächsten Titel oder beginnt wieder zu sprechen.",
      "practice": "Lass nach dem Ende des Musikstücks das Gerät unangetastet. Bleibe für 30 bis 60 Sekunden sitzen und lausche dem Nachklang. Nimm wahr, wie der hörbare Ton allmählich schwächer wird und schließlich nicht mehr deutlich wahrnehmbar ist. Richte anschließend deine Aufmerksamkeit auf die Stille und auf das fortbestehende Gewahrsein. Versuche nicht, einen besonderen Zustand zu erzwingen.",
+     "tags": ["Musik", "Klang", "Stille", "Nachklang", "Hören"],
      "quote": "Wenn der Klang verklingt, darf die Aufmerksamkeit offen bleiben."
    },
    {
@@ -140,6 +141,7 @@ export const vers41: SUTRA = {
      "title": "Bewusstes Musikhören",
      "situation": "Während der Fahrt mit öffentlichen Verkehrsmitteln, in einer Pause oder am Abend wird Musik häufig nebenbei konsumiert, während die Gedanken mit anderen Dingen beschäftigt sind.",
      "practice": "Wähle einen ruhigen Abschnitt eines Musikstücks mit einem lang anhaltenden Ton. Höre eine Minute lang, ohne gleichzeitig zu lesen oder Nachrichten anzusehen. Folge dem Ton von seinem Beginn über seine Veränderungen bis zu seinem Ende. Wenn Gedanken auftauchen, erkenne sie kurz und kehre zum tatsächlichen Hören zurück. Beobachte, wie sich deine Aufmerksamkeit verändert, wenn du nicht ständig zwischen verschiedenen Tätigkeiten wechselst.",
+     "tags": ["Musik", "Hören", "Aufmerksamkeit", "Klang", "Gegenwart"],
      "quote": "Höre nicht nur, was erklingt; bemerke auch, wie du hörst."
    },
    {
@@ -147,6 +149,7 @@ export const vers41: SUTRA = {
      "title": "Die Stille nach einer Klangschale",
      "situation": "Zu Beginn einer Meditation, nach einer Yogaeinheit oder bei einem kurzen Moment der Ruhe kann eine Klangschale oder eine kleine Glocke verwendet werden.",
      "practice": "Schlage die Klangschale sanft an oder lasse eine Glocke einmal erklingen. Verfolge den Ton ohne Anstrengung, während er sich verändert und allmählich verklingt. Sobald er nicht mehr hörbar ist, bleibe für drei ruhige Atemzüge aufmerksam. Achte auf die Offenheit der Erfahrung, ohne dir einzureden, dass du etwas Besonderes empfinden musst. Wiederhole die Übung zwei- bis dreimal.",
+     "tags": ["Klangschale", "Nachklang", "Stille", "Hören", "Meditation"],
      "quote": "Ein einzelner Ton kann genügen, um die Aufmerksamkeit zu sammeln."
    },
    {
@@ -154,6 +157,7 @@ export const vers41: SUTRA = {
      "title": "Dem Klang der Umgebung lauschen",
      "situation": "Beim Spazierengehen, im Garten oder am geöffneten Fenster sind Vogelstimmen, Windgeräusche und entfernte Verkehrsklänge wahrnehmbar.",
      "practice": "Halte für eine Minute inne und wähle einen einzelnen, möglichst kontinuierlichen Klang aus deiner Umgebung. Verfolge seine Lautstärke, Tonhöhe und Dauer, ohne die Quelle sofort benennen zu müssen. Wenn der Klang endet, bemerke die übrigen Geräusche und die Stille zwischen ihnen. Bleibe offen für das gesamte Hörfeld, statt dich an einen bestimmten Klang zu klammern.",
+     "tags": ["Umgebungsgeräusche", "Hören", "Klang", "Alltag", "Achtsamkeit"],
      "quote": "Die Welt erklingt, und die Aufmerksamkeit darf weit werden."
    },
    {
@@ -161,6 +165,7 @@ export const vers41: SUTRA = {
      "title": "Die Stimme im Raum",
      "situation": "Im Gespräch, beim Vorlesen oder beim Singen klingt die menschliche Stimme über einen gewissen Zeitraum und verändert sich fortlaufend.",
      "practice": "Nimm dir in einem ruhigen Moment Zeit, einen gesprochenen Satz bewusst zu hören, ohne ihn sofort inhaltlich zu analysieren. Achte auf den Beginn, den Klangverlauf und das Ende der Stimme. Warte nach dem letzten Wort einen Augenblick, bevor du antwortest oder zum nächsten Gedanken übergehst. Bleibe dabei natürlich und aufmerksam; die Übung soll das Gespräch nicht unterbrechen oder die andere Person zum Meditationsobjekt machen.",
+     "tags": ["Stimme", "Gespräch", "Klang", "Hören", "Raum"],
      "quote": "Zwischen Hören und Antworten liegt Raum für bewusste Präsenz."
    },
    {
@@ -168,6 +173,7 @@ export const vers41: SUTRA = {
      "title": "Der Nachklang eines Alltagsgeräuschs",
      "situation": "Eine Tür schließt sich, ein Glas wird abgestellt oder ein Gegenstand erzeugt beim Berühren einen kurzen Ton.",
      "practice": "Nutze ein natürlich auftretendes Geräusch als Erinnerung an die Gegenwart. Höre genau hin, bis der Ton verklungen ist. Beobachte anschließend für einige Sekunden, was noch wahrnehmbar ist: andere Geräusche, deinen Atem, Körperempfindungen oder Gedanken. Gehe danach bewusst zu deiner Tätigkeit zurück. Erzeuge keine lauten Geräusche und vermeide es, andere Menschen durch die Übung zu stören.",
+     "tags": ["Alltagsgeräusch", "Nachklang", "Hören", "Aufmerksamkeit", "Stille"],
      "quote": "Auch ein unscheinbarer Klang kann die Aufmerksamkeit in die Gegenwart zurückführen."
    },
    {
@@ -175,6 +181,7 @@ export const vers41: SUTRA = {
      "title": "Klang und emotionale Resonanz",
      "situation": "Ein Musikstück berührt dich emotional, weckt Erinnerungen oder löst Freude, Traurigkeit oder Sehnsucht aus.",
      "practice": "Wähle einen Klangabschnitt, der eine erkennbare emotionale Reaktion hervorruft. Höre aufmerksam und nimm gleichzeitig wahr, welche Körperempfindungen und Gefühle entstehen. Versuche weder, die Emotion zu verstärken, noch sie zu unterdrücken. Wenn der Ton endet, beobachte, ob das Gefühl sich verändert, nachklingt oder allmählich abnimmt. Unterscheide dabei zwischen dem unmittelbaren Erleben und den Geschichten, die dein Geist darüber erzählt.",
+     "tags": ["Emotionen", "Klang", "Musik", "Gefühle", "Achtsamkeit"],
      "quote": "Nimm die Resonanz wahr, ohne dich in ihr zu verlieren."
    },
    {
@@ -182,6 +189,7 @@ export const vers41: SUTRA = {
      "title": "Der erste Klang am Morgen",
      "situation": "Am Morgen beginnt der Tag oft mit Weckertönen, Benachrichtigungen oder dem unmittelbaren Griff zum Smartphone.",
      "practice": "Bevor du dein Smartphone öffnest, höre einen natürlichen oder sanften Klang, etwa Vogelgesang oder einen einzelnen Ton eines Instruments. Folge diesem Klang für dreißig Sekunden und warte nach seinem Ende noch einen Atemzug. Nimm wahr, dass der neue Tag bereits erlebt wird, bevor du Aufgaben und Nachrichten gedanklich ordnest. Beginne anschließend deine Routine mit etwas mehr Ruhe.",
+     "tags": ["Morgen", "Klang", "Hören", "Achtsamkeit", "Tagesbeginn"],
      "quote": "Beginne den Tag mit Wahrnehmung, nicht mit Zerstreuung."
    }
  ],

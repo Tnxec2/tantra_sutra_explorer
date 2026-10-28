@@ -147,6 +147,7 @@ export const vers42: SUTRA = {
      "title": "Ein Mantra bewusst wiederholen",
      "situation": "Am Morgen, vor einer Meditation oder in einem ruhigen Augenblick möchtest du deinen Geist sammeln und aus der gewohnten gedanklichen Unruhe heraustreten.",
      "practice": "Wähle ein Mantra, das du bereits kennst und dessen Verwendung für dich angemessen ist. Wiederhole es fünf Minuten lang langsam und aufmerksam. Nimm jeden Laut einzeln wahr, ohne die Rezitation unnötig zu beschleunigen. Wenn du abschließt, bleibe für einige Atemzüge still und beobachte den Nachklang. Wenn du kein Mantra verwenden möchtest, kannst du stattdessen eine einfache, neutrale Silbe wählen.",
+     "tags": ["Mantra", "Wiederholung", "Klang", "Aufmerksamkeit", "Meditation"],
      "quote": "Wiederhole den Klang nicht nur mit der Stimme, sondern mit deiner ganzen Aufmerksamkeit."
    },
    {
@@ -154,6 +155,7 @@ export const vers42: SUTRA = {
      "title": "Den letzten Laut auskosten",
      "situation": "Beim Sprechen, Singen, Summen oder Rezitieren endet ein Wort oder ein Ton, und die Aufmerksamkeit springt gewöhnlich sofort zum nächsten Gedanken.",
      "practice": "Sprich eine kurze, vertraute Silbe langsam aus oder summe einen angenehmen Ton. Beobachte seinen Beginn, seine Dauer und sein allmähliches Verklingen. Wenn er nicht mehr hörbar ist, bleibe für fünf bis zehn Sekunden aufmerksam. Nimm die Stille wahr, ohne sie gedanklich zu kommentieren. Wiederhole die Übung drei Mal und kehre danach bewusst zu deiner Tätigkeit zurück.",
+     "tags": ["Klang", "Nachklang", "Stille", "Hören", "Achtsamkeit"],
      "quote": "Folge dem Laut bis an seine Grenze und empfange, was danach hörbar wird."
    },
    {
@@ -161,6 +163,7 @@ export const vers42: SUTRA = {
      "title": "Vom hörbaren Klang zum Nachklang",
      "situation": "Du hörst einen Ton einer Klangschale, eines Instruments oder eines anderen Klanggebers, dessen Schwingung allmählich abnimmt.",
      "practice": "Lass einen einzelnen, angenehmen Ton erklingen oder wähle einen bereits vorhandenen Klang. Verfolge ihn aufmerksam, ohne seine Dauer zu beeinflussen. Wenn er leiser wird, richte dich auf seine feinsten wahrnehmbaren Veränderungen aus. Nach dem Verklingen nimm für einige Augenblicke die gesamte Hörsituation wahr: Stille, entfernte Geräusche und das eigene Hören. Erzwinge keine besondere Erfahrung.",
+     "tags": ["Klang", "Stille", "Hören", "Nachklang", "Meditation"],
      "quote": "Der Nachklang zeigt, wie fein Aufmerksamkeit werden kann."
    },
    {
@@ -168,6 +171,7 @@ export const vers42: SUTRA = {
      "title": "Den Atem als stillen Rhythmus nutzen",
      "situation": "Vor einem schwierigen Gespräch, zwischen zwei Aufgaben oder in einer kurzen Pause bemerkst du, dass deine Aufmerksamkeit zerstreut ist.",
      "practice": "Setze dich bequem hin und nimm drei natürliche Atemzüge wahr. Verbinde jeden Ausatemzug mit einer stillen, inneren Wiederholung einer vertrauten Silbe, ohne den Atem zu verlängern oder anzuhalten. Nach dem dritten Ausatmen lass die Wiederholung ausklingen und bleibe einen Augenblick bei der offenen Wahrnehmung. Fahre anschließend mit deiner Tätigkeit fort.",
+     "tags": ["Atem", "Rhythmus", "Achtsamkeit", "Stille", "Körper"],
      "quote": "Wenn die innere Wiederholung endet, muss die Aufmerksamkeit nicht enden."
    },
    {
@@ -175,6 +179,7 @@ export const vers42: SUTRA = {
      "title": "Eine bewusste Pause im Gespräch",
      "situation": "Nach einem Gesprächsbeitrag, einer Frage oder einer emotionalen Aussage entsteht ein kurzer Moment, bevor du antwortest.",
      "practice": "Höre den letzten Satz deines Gegenübers vollständig zu Ende. Nimm wahr, wie die Stimme endet und welche Stille unmittelbar danach entsteht. Nutze diese kurze Pause, um deine erste Reaktion zu erkennen, ohne sie sofort auszusprechen. Antworte anschließend aufrichtig und passend zur Situation. Die Übung soll Präsenz und Zuhören vertiefen, nicht das Gespräch künstlich verzögern.",
+     "tags": ["Gespräch", "Pause", "Zuhören", "Achtsamkeit", "Kommunikation"],
      "quote": "Zwischen dem letzten Wort und deiner Antwort liegt ein Moment der Freiheit."
    },
    {
@@ -182,6 +187,7 @@ export const vers42: SUTRA = {
      "title": "Ein Wort in seiner ganzen Klanggestalt erfahren",
      "situation": "Beim Lesen eines Gedichts, beim Rezitieren eines Textes oder beim bewussten Aussprechen eines einzelnen Wortes kannst du Sprache unmittelbar wahrnehmen.",
      "practice": "Wähle ein kurzes Wort und sprich es langsam und deutlich aus. Achte auf die einzelnen Laute, ihre Reihenfolge und die Übergänge zwischen ihnen. Wiederhole das Wort drei Mal mit entspannter Stimme. Beende die Übung, indem du einen Moment lang nicht weiterredest und wahrnimmst, wie das Wort in deiner Erinnerung nachklingt. Unterscheide zwischen dem Klang selbst und den Bedeutungen, die du mit ihm verbindest.",
+     "tags": ["Wort", "Sprache", "Klang", "Aufmerksamkeit", "Hören"],
      "quote": "Ein Wort ist zugleich Bedeutung und Klangereignis."
    },
    {
@@ -189,6 +195,7 @@ export const vers42: SUTRA = {
      "title": "Die Stille vor dem Einschlafen",
      "situation": "Am Abend kreisen die Gedanken um Erlebnisse des Tages, unerledigte Aufgaben oder die Erwartungen für den nächsten Morgen.",
      "practice": "Lege dich bequem hin und wiederhole innerlich für ein bis zwei Minuten eine vertraute, beruhigende Silbe. Halte die Aufmerksamkeit weich und entspannt. Beende die Wiederholung, sobald es sich natürlich anfühlt, und nimm wahr, welche Geräusche, Empfindungen oder Gedanken weiterhin vorhanden sind. Du musst nichts unterdrücken und nicht versuchen, sofort einzuschlafen. Lass die Übung ruhig ausklingen.",
+     "tags": ["Schlaf", "Stille", "Gedanken", "Entspannung", "Abend"],
      "quote": "Lass den letzten inneren Klang vergehen, ohne die Stille festhalten zu müssen."
    },
    {
@@ -196,6 +203,7 @@ export const vers42: SUTRA = {
      "title": "Ein stiller Anfang vor der ersten Aufgabe",
      "situation": "Vor dem Öffnen von E-Mails, dem Einschalten des Computers oder dem Beginn einer arbeitsreichen Routine besteht die Möglichkeit für einen kurzen Moment der Sammlung.",
      "practice": "Setze dich aufrecht hin und wiederhole innerlich für etwa eine Minute eine einfache Silbe oder ein vertrautes Mantra. Achte auf den Klang und die kurzen Übergänge zwischen den Wiederholungen. Beende die Rezitation bewusst und bleibe für zwei natürliche Atemzüge still. Beginne danach deine erste Aufgabe, ohne die meditative Erfahrung bewerten zu müssen.",
+     "tags": ["Morgenroutine", "Stille", "Achtsamkeit", "Tagesbeginn", "Meditation"],
      "quote": "Ein bewusster Anfang verändert die Art, wie du den Tag betrittst."
    }
  ],

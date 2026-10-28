@@ -69,6 +69,7 @@ export const vers29: SUTRA = {
             "title": "Der blitzartige Aufstieg der Energie",
             "situation": "In einer intensiven Meditationssitzung zur Weitung des Bewusstseins.",
             "practice": "Visualisiere den Strom deiner Lebensenergie wie einen strahlenden Lichtblitz, der in raschen, bewussten Schritten von den unteren Zentren durch das Herz und die Kehle bis weit über den Scheitel (drei Handbreit nach oben) emporsteigt. Verweile dort in der plötzlichen Stille.",
+            "tags": ["Energie", "Kundalini", "Chakras", "Licht", "Meditation"],
             "quote": "Im Blitz des Erwachens verbrennt die Illusion von Raum und Zeit."
         }
     ],

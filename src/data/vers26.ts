@@ -76,6 +76,7 @@ export const vers26: SUTRA = {
 "title": "Die zentrierte Pause inmitten des Handelns",
 "situation": "Wenn du im Alltag von vielen Reizen oder Aufgaben umgeben bist und das Gefühl hast, den Boden unter den Füßen zu verlieren.",
 "practice": "Richte deine Aufmerksamkeit für einen Moment auf den Raum zwischen den Gedanken und den Atemzügen. Lass den Drang los, etwas zu tun oder zu korrigieren, und verweile in der absoluten Mitte der Stille.",
+"tags": ["Atem", "Gedankenpause", "Zentrierung", "Stress", "Mitte"],
 "quote": "Wer in der Mitte ruht, wird vom Sturm der Welt nicht berührt."
 }
 ],

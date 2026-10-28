@@ -73,6 +73,7 @@ export const vers35: SUTRA = {
 "title": "Die innere Mittelachse spüren",
 "situation": "In Momenten der Hektik, wenn das Gefühl von Zentrierung verloren geht.",
 "practice": "Setze dich aufrecht hin und richte deine Aufmerksamkeit auf die feine senkrechte Linie, die exakt durch die Mitte deines Körpers verläuft – vom Beckenboden bis zum Scheitel. Spüre diesen inneren Kanal als einen hauchzarten, lichten Faden voll absoluter Stille.",
+"tags": ["Atem", "Wirbelsäule", "Mittelkanal", "Zentrierung", "Stress"],
 "quote": "Wer in der Mitte ruht, wird vom Sturm der Welt nicht berührt."
 },
 {
@@ -80,6 +81,7 @@ export const vers35: SUTRA = {
 "title": "Ausrichtung im Zentrum",
 "situation": "Vor dem Beginn einer wichtigen Aufgabe oder einer Entscheidung.",
 "practice": "Atme tief ein und verlagere den Fokus von den Gedanken im Kopf in die hohle Mitte deines Rumpfes. Verweile für ein paar Atemzüge in dieser inneren Weite, fein wie eine Lotosfaser.",
+"tags": ["Mitte", "Körper", "Atem", "Entscheidung", "Fokus"],
 "quote": "In der Mitte des Sturms liegt die unendliche Weite des Himmels."
 }
 ],

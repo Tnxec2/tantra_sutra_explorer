@@ -59,6 +59,7 @@ export const vers30: SUTRA = {
 "title": "Das schrittweise Abstreifen der Ebenen",
 "situation": "In einer tiefen Kontemplation, wenn der Geist zur Ruhe kommt.",
 "practice": "Betrachte deine Erfahrungen und lass sie bewusst eine nach der anderen los: Nimm den groben Körper wahr und lass ihn los; nimm den subtilen Atem und die Gedanken wahr und lass sie los; ruhe im transzendenten Raum und lass selbst diesen Begriff los, bis nur noch reine Präsenz bleibt.",
+"tags": ["Loslassen", "Körper", "Atem", "Gedanken", "Kontemplation"],
 "quote": "Wer alles loslässt, gewinnt das Alles."
 }
 ],

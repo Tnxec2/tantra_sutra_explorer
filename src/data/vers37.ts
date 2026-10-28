@@ -73,6 +73,7 @@ export const vers37: SUTRA = {
 "title": "Der feine Funke im Herzen",
 "situation": "In einer ruhigen Kontemplation am Morgen oder Abend.",
 "practice": "Richte deine Aufmerksamkeit in den Raum deines Herzens. Stelle dir dort oder am Ende eines tiefen Ausatmens einen winzigen, leuchtenden Licht- und Feuerpunkt vor. Lass den Geist in diesem feurigen Funken völlig zur Ruhe kommen.",
+"tags": ["Herz", "Licht", "Kontemplation", "Bewusstsein", "Stille"],
 "quote": "Im winzigen Funken des Herzens brennt das Feuer der Ewigkeit."
 },
 {
@@ -80,6 +81,7 @@ export const vers37: SUTRA = {
 "title": "Das innere Leuchten am Scheitel",
 "situation": "Während einer fortgeschrittenen Meditationsphase zur Vertiefung des Gewahrseins.",
 "practice": "Führe den Fokus an den Scheitelpunkt über dem Kopf. Visualisiere dort einen feinen, strahlenden Punkt, der wie ein winziges Mal aus reinem Licht glänzt, und verweile im Moment des Verlöschens aller Gedanken.",
+"tags": ["Scheitel", "Licht", "Bewusstsein", "Meditation", "Kundalini"],
 "quote": "Wer das innere Feuer nährt, verbrennt die Illusion der Trennung."
 }
 ],

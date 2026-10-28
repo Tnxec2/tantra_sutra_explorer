@@ -93,6 +93,7 @@ export const vers25: SUTRA = {
 "title": "Der Wendepunkt des Atems im Alltag",
 "situation": "In Momenten der Übergabe, des Wartens oder wenn du das Gefühl hast, den Überblick im Alltag zu verlieren.",
 "practice": "Richte deine Aufmerksamkeit auf das Ende deiner Ausatmung – genau den Punkt, bevor die Einatmung von selbst beginnt. Verweile dort für eine Sekunde im leeren Raum. Erlaube dem Atem, sich von dort aus wie von selbst umzukehren.",
+"tags": ["Atem", "Ausatmen", "Wendepunkt", "Stille", "Loslassen"],
 "quote": "Wer im Wendepunkt des Atems verweilt, berührt den Ursprung aller Bewegung."
 }
 ],

@@ -112,6 +112,7 @@ export const vers49: SUTRA = {
      "title": "Im Herzraum ankommen",
      "situation": "Wenn du dich innerlich zerstreut fühlst, zwischen vielen Aufgaben wechselst oder dich von äußeren Anforderungen überwältigt fühlst.",
      "practice": "Setze dich bequem hin und atme natürlich. Richte die Aufmerksamkeit sanft auf den Bereich der Brustmitte, ohne Druck auszuüben oder eine bestimmte Empfindung hervorrufen zu müssen. Stelle dir dort einen weiten, stillen Raum vor. Bleibe für zehn Atemzüge bei diesem Bild und kehre freundlich zurück, sobald du abschweifst.",
+     "tags": ["Herzraum", "Herz", "Atem", "Meditation", "Achtsamkeit"],
      "quote": "Die Mitte wird nicht durch Anstrengung gefunden, sondern durch stilles Verweilen."
    },
    {
@@ -119,6 +120,7 @@ export const vers49: SUTRA = {
      "title": "Im inneren Lotus verweilen",
      "situation": "Wenn du vor einer Meditation einen einfachen und poetischen Fokus brauchst.",
      "practice": "Stelle dir einen geschlossenen Lotuskelch im Raum des Herzens vor. Lenke die Aufmerksamkeit nicht auf seine äußere Form, sondern auf die stille Mitte. Lass das Bild mit jedem Atemzug einfacher werden. Wenn keine Vorstellung entsteht, genügt es, die Brustregion und die natürliche Präsenz des Augenblicks wahrzunehmen.",
+     "tags": ["Lotus", "Herz", "Vorstellung", "Meditation", "Konzentration"],
      "quote": "Ruhe im Zentrum, ohne die Entfaltung erzwingen zu wollen."
    },
    {
@@ -126,6 +128,7 @@ export const vers49: SUTRA = {
      "title": "Die Sinne sanft nach innen sammeln",
      "situation": "Wenn Lärm, Nachrichten oder viele visuelle Eindrücke deine Aufmerksamkeit beanspruchen.",
      "practice": "Nimm zunächst alle Geräusche und Sinneseindrücke wahr, ohne sie zu bewerten. Lass dann die Augen ruhen oder schließe sie, sofern es angenehm und sicher ist. Spüre den Atem und die Empfindungen im Körper. Du musst die Außenwelt nicht ausblenden; sammle die Aufmerksamkeit einfach wieder in der unmittelbaren Erfahrung.",
+     "tags": ["Sinne", "Wahrnehmung", "Rückzug", "Achtsamkeit", "Stille"],
      "quote": "Die Sinne dürfen offen bleiben, während der Geist zur Ruhe kommt."
    },
    {
@@ -133,6 +136,7 @@ export const vers49: SUTRA = {
      "title": "Eine Sache mit ganzer Aufmerksamkeit",
      "situation": "Beim Schreiben, Kochen, Lesen oder bei jeder Tätigkeit, die durch ständiges Wechseln zwischen Aufgaben unterbrochen wird.",
      "practice": "Wähle für fünf Minuten eine einzige Tätigkeit. Lege unnötige Ablenkungen beiseite und nimm bewusst wahr, was du gerade tust. Wenn du bemerkst, dass der Geist zu einer anderen Aufgabe springt, kehre ohne Selbstkritik zurück. Übe nicht Perfektion, sondern die wiederholte Rückkehr zur ungeteilten Aufmerksamkeit.",
+     "tags": ["Fokus", "Aufmerksamkeit", "Arbeit", "Achtsamkeit", "Konzentration"],
      "quote": "Was du ganz wahrnimmst, braucht nicht zugleich mit tausend Dingen zu konkurrieren."
    },
    {
@@ -140,6 +144,7 @@ export const vers49: SUTRA = {
      "title": "Ein stiller Moment im Alltag",
      "situation": "Während du Tee oder Kaffee trinkst und gedanklich bereits bei der nächsten Verpflichtung bist.",
      "practice": "Halte die Tasse bewusst in den Händen. Nimm Wärme, Duft und Geschmack wahr. Spüre für einige Atemzüge den Raum des Herzens und lass die nächste Aufgabe warten. Wenn Gedanken auftauchen, erkenne sie und kehre zu diesem einfachen Moment zurück.",
+     "tags": ["Pause", "Alltag", "Stille", "Achtsamkeit", "Gegenwart"],
      "quote": "Auch ein gewöhnlicher Augenblick kann zum Ort innerer Sammlung werden."
    },
    {
@@ -147,6 +152,7 @@ export const vers49: SUTRA = {
      "title": "Ganz zuhören",
      "situation": "Wenn jemand mit dir spricht und du bereits deine Antwort vorbereitest oder innerlich widersprichst.",
      "practice": "Lass die andere Person ausreden. Spüre deine Füße am Boden und atme ruhig, während du zuhörst. Richte die Aufmerksamkeit auf die Worte und den Sinn, ohne sofort zu urteilen. Antworte erst, wenn du wirklich aufgenommen hast, was gesagt wurde.",
+     "tags": ["Zuhören", "Gespräch", "Hören", "Präsenz", "Kommunikation"],
      "quote": "Ungeteilte Aufmerksamkeit ist eine Form der Achtung."
    },
    {
@@ -154,6 +160,7 @@ export const vers49: SUTRA = {
      "title": "Vor dem Einschlafen nach innen lauschen",
      "situation": "Wenn der Tag zu Ende geht, aber Gedanken und unerledigte Aufgaben weiterlaufen.",
      "practice": "Lege dich bequem hin und lass den Atem natürlich fließen. Stelle dir den Herzraum als weite, stille Umgebung vor. Du musst keine Probleme lösen und keine besondere Erfahrung erreichen. Verweile einige Minuten in diesem inneren Raum und kehre bei Bedarf sanft zur Empfindung des Atems zurück.",
+     "tags": ["Schlaf", "Abend", "Stille", "Körper", "Entspannung"],
      "quote": "Du darfst den Tag loslassen, ohne jeden Gedanken zu Ende zu führen."
    },
    {
@@ -161,6 +168,7 @@ export const vers49: SUTRA = {
      "title": "Den Tag aus der inneren Mitte beginnen",
      "situation": "Am Morgen, bevor du Nachrichten liest oder dich den Anforderungen des Tages zuwendest.",
      "practice": "Bleibe nach dem Aufwachen für eine Minute ruhig sitzen. Spüre den Atem und richte die Aufmerksamkeit auf die Mitte des Brustkorbs. Formuliere eine einfache Ausrichtung für den Tag, etwa: „Ich möchte heute aufmerksam handeln.“ Beginne anschließend die erste Aufgabe, ohne sofort mehrere Dinge gleichzeitig aufzunehmen.",
+     "tags": ["Morgen", "Tagesbeginn", "Achtsamkeit", "Herz", "Intention"],
      "quote": "Ein gesammelter Anfang gibt dem Tag eine stille Richtung."
    }
  ],

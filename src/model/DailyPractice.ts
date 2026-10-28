@@ -4,4 +4,5 @@ export interface DailyPractice {
   situation: string
   practice: string
   quote: string
+  tags?: string[]
 }

@@ -68,6 +68,7 @@ export const vers34: SUTRA = {
 "title": "Rückzug nach innen",
 "situation": "In einer Pause am Tag oder vor dem Einschlafen, wenn der Reizüberfluss des Alltags spürbar ist.",
 "practice": "Schließe die Augen und lenke deine gesamte Aufmerksamkeit in das Innere deines Kopfes, so als ob du im Zentrum deines Geistes sitzt. Verweile dort in völliger Stille und beobachte den inneren Raum.",
+"tags": ["Sinne", "Reizüberflutung", "Rückzug", "Stille", "Meditation"],
 "quote": "Wer die Augen schließt, öffnet das Tor zur wahren Wirklichkeit."
 },
 {
@@ -75,6 +76,7 @@ export const vers34: SUTRA = {
 "title": "Der innere Fokus im Schädelraum",
 "situation": "Während einer strukturierten Meditation zur Zentrierung.",
 "practice": "Führe den Atem und das Bewusstsein gezielt in die Mitte des Schädels. Halte den Geist dort stabil und lass alle Gedanken an die Außenwelt an der Schädeldecke abperlen.",
+"tags": ["Kopf", "Schädelraum", "Fokus", "Meditation", "Konzentration"],
 "quote": "Im tiefsten Inneren des Geistes leuchtet das unvergängliche Licht."
 }
 ],

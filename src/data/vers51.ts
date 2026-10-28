@@ -102,6 +102,7 @@ export const vers51: SUTRA = {
      "title": "An jedem Ort ankommen",
      "situation": "Du betrittst einen neuen Raum, wartest an einer Haltestelle oder befindest dich an einem ungewohnten Ort.",
      "practice": "Halte kurz inne. Spüre deine Füße und den natürlichen Atem. Lass den Blick weich werden und richte die Aufmerksamkeit anschließend auf den offenen Raum um dich herum. Verweile einige Atemzüge, ohne etwas Besonderes erreichen zu wollen.",
+     "tags": ["Ankommen", "Ortswechsel", "Raum", "Präsenz", "Achtsamkeit", "ungewohnter Ort", "Haltestelle"],
      "quote": "Jeder Ort kann zum Eingang in die Stille werden."
    },
    {
@@ -109,6 +110,7 @@ export const vers51: SUTRA = {
      "title": "Die Atemgrenze wahrnehmen",
      "situation": "Zwischen zwei Aufgaben entsteht eine kurze Pause, in der du deinen Atem bewusst bemerkst.",
      "practice": "Beobachte zwei oder drei natürliche Atemzüge. Nimm den Moment wahr, in dem die Einatmung in die Ausatmung übergeht und umgekehrt. Erzwinge keine Atempause. Spüre stattdessen die stille Offenheit, die auch zwischen den Bewegungen gegenwärtig ist.",
+     "tags": ["Atem", "Atempause", "Einatmen", "Ausatmen", "Stille"],
      "quote": "In jeder Bewegung liegt eine Schwelle zur Ruhe."
    },
    {
@@ -116,6 +118,7 @@ export const vers51: SUTRA = {
      "title": "Gedanken ziehen lassen",
      "situation": "Du bemerkst, dass sich deine Gedanken im Kreis drehen oder eine Sorge immer wiederkehrt.",
      "practice": "Benenne innerlich sanft „Gedanke“ oder „Sorge“. Folge dem Inhalt nicht sofort weiter. Richte die Aufmerksamkeit für einige Sekunden auf den Raum des Gewahrseins, in dem der Gedanke auftaucht und wieder vergeht.",
+     "tags": ["Gedanken", "Loslassen", "Grübeln", "Achtsamkeit", "Stille", "Sorgen"],
      "quote": "Du musst nicht jeder Bewegung des Geistes folgen."
    },
    {
@@ -123,6 +126,7 @@ export const vers51: SUTRA = {
      "title": "Die kleine tägliche Rückkehr",
      "situation": "Du hast nur wenige Sekunden Zeit und glaubst, für Meditation sei gerade kein Raum.",
      "practice": "Wähle dreimal am Tag einen kurzen Moment, etwa vor dem Öffnen einer Tür oder vor einer Nachricht. Halte für zehn bis zwanzig Sekunden inne, entspanne den Kiefer und richte die Aufmerksamkeit auf Weite statt auf den nächsten Gedanken.",
+     "tags": ["Alltag", "Achtsamkeit", "Pause", "Gegenwart", "Gewohnheit", "Nachricht"],
      "quote": "Beständigkeit wächst aus kleinen, bewussten Rückkehrbewegungen."
    },
    {
@@ -130,6 +134,7 @@ export const vers51: SUTRA = {
      "title": "Den Raum hinter dem Blick spüren",
      "situation": "Du blickst aus dem Fenster, gehst durch eine Straße oder schaust in einen weiten Raum.",
      "practice": "Lass den Blick natürlich und entspannt. Nimm nicht nur einzelne Gegenstände wahr, sondern auch den Raum zwischen ihnen und um sie herum. Erinnere dich daran, dass Wahrnehmen weiter ist als das einzelne Objekt, auf das du dich konzentrierst.",
+     "tags": ["Blick", "Raum", "Wahrnehmung", "Weite", "Aufmerksamkeit"],
      "quote": "Sieh nicht nur die Dinge; bemerke auch die Weite, in der sie erscheinen."
    },
    {
@@ -137,6 +142,7 @@ export const vers51: SUTRA = {
      "title": "Vor einer Reaktion innehalten",
      "situation": "Eine Nachricht, Kritik oder unerwartete Bemerkung löst Ärger, Angst oder den Impuls aus, sofort zu antworten.",
      "practice": "Warte, wenn es die Situation erlaubt, einen Atemzug lang. Spüre die körperliche Reaktion, ohne sie zu unterdrücken. Weite anschließend die Aufmerksamkeit auf den gesamten gegenwärtigen Moment. Antworte erst, wenn du wieder etwas mehr Wahlfreiheit spürst.",
+     "tags": ["Reaktion", "Pause", "Emotionen", "Selbstregulation", "Achtsamkeit"],
      "quote": "Zwischen Impuls und Handlung kann Freiheit aufscheinen."
    },
    {
@@ -144,6 +150,7 @@ export const vers51: SUTRA = {
      "title": "Mit offener Aufmerksamkeit einschlafen",
      "situation": "Am Abend liegst du im Bett und bemerkst, dass der Geist den Tag wiederholt oder den nächsten Tag plant.",
      "practice": "Lass den Körper schwer in die Unterlage sinken. Nimm die natürlichen Atembewegungen wahr und spüre anschließend den stillen Raum um die Gedanken herum. Du musst den Geist nicht leer machen; lass Gedanken auftauchen und weiterziehen, während du dich ausruhst.",
+     "tags": ["Schlaf", "Abend", "Entspannung", "Atem", "Gedanken"],
      "quote": "Ruhe entsteht nicht durch Kampf, sondern durch Loslassen."
    },
    {
@@ -151,6 +158,7 @@ export const vers51: SUTRA = {
      "title": "Meditation beim Gehen",
      "situation": "Du gehst einen vertrauten Weg zur Arbeit, zum Einkaufen oder durch einen Park.",
      "practice": "Gehe in deinem normalen Tempo und bleibe aufmerksam auf deine Umgebung. Spüre abwechselnd die Schritte, den Atem und die Weite des Raums. Lass die Aufmerksamkeit zwischen diesen Wahrnehmungen frei fließen, ohne den Weg oder deine Sicherheit aus den Augen zu verlieren.",
+     "tags": ["Gehen", "Spaziergang", "Atem", "Körper", "Achtsamkeit"],
      "quote": "Auch Bewegung kann ein Tor zur stillen Gegenwart sein."
    }
  ],

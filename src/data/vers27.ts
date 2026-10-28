@@ -84,6 +84,7 @@ export const vers27: SUTRA = {
 "title": "Die Atempause im Alltag",
 "situation": "In Momenten des Wartens, vor einer wichtigen Entscheidung oder bei einer kurzen Atempause am Arbeitsplatz.",
 "practice": "Richte deine Aufmerksamkeit ganz auf deinen Atem. Beobachte bewusst das Ende der Einatmung oder das Ende der Ausatmung. Verweile für einen Herzschlag in der absoluten Stille dieser Atempause, bevor der nächste Atemzug von selbst entsteht.",
+"tags": ["Atempause", "Atem", "Warten", "Entscheidung", "Stille"],
 "quote": "Im Herzschlag zwischen den Atemzügen liegt die Ewigkeit."
 }
 ],

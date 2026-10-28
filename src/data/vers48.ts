@@ -98,6 +98,7 @@ export const vers48: SUTRA = {
      "title": "Die Grenze bewusst wahrnehmen",
      "situation": "Wenn du einem Menschen gegenübersitzt und bemerkst, wie schnell du ihn auf sein Aussehen oder deine erste Einschätzung reduzierst.",
      "practice": "Nimm für einige Atemzüge die sichtbare Gestalt des Gegenübers wahr, ohne sie zu bewerten. Bemerke anschließend die gedankliche Vorstellung von einer Grenze zwischen dir und diesem Menschen. Erkenne sie als hilfreiche Orientierung, ohne daraus eine absolute Trennung des Erlebens abzuleiten.",
+     "tags": ["Körpergrenze", "Raum", "Wahrnehmung", "Körper", "Achtsamkeit"],
      "quote": "Sieh die Grenze, ohne sie für die ganze Wirklichkeit zu halten."
    },
    {
@@ -105,6 +106,7 @@ export const vers48: SUTRA = {
      "title": "Den Raum zwischen zwei Menschen spüren",
      "situation": "Bei einem ruhigen Gespräch, wenn du dich stark auf deine eigenen Antworten oder die Reaktion des Gegenübers konzentrierst.",
      "practice": "Lass die Schultern locker und spüre den Atem. Nimm gleichzeitig die Anwesenheit des anderen und den gemeinsamen Raum wahr. Versuche nicht, eine besondere Erfahrung zu erzwingen. Ruhe für drei Atemzüge in der offenen Aufmerksamkeit, die beide einschließt.",
+     "tags": ["Gespräch", "Beziehung", "Verbundenheit", "Grenzen", "Zuhören"],
      "quote": "Offenheit beginnt dort, wo das Gegenüber nicht zum bloßen Objekt wird."
    },
    {
@@ -112,6 +114,7 @@ export const vers48: SUTRA = {
      "title": "Vorstellung und unmittelbare Wahrnehmung unterscheiden",
      "situation": "Wenn du über jemanden urteilst oder glaubst, genau zu wissen, wie dieser Mensch ist.",
      "practice": "Halte kurz inne und frage dich: Was nehme ich gerade tatsächlich wahr, und was ergänze ich durch meine Vorstellung? Betrachte deine Einschätzung für einige Sekunden als Gedanken, nicht als endgültige Wahrheit. Kehre dann zu einer neugierigen, respektvollen Wahrnehmung zurück.",
+     "tags": ["Vorstellung", "Wahrnehmung", "Imagination", "Achtsamkeit", "Meditation"],
      "quote": "Der Gedanke über einen Menschen ist nicht der Mensch selbst."
    },
    {
@@ -119,6 +122,7 @@ export const vers48: SUTRA = {
      "title": "Verbundenheit ohne Vereinnahmung",
      "situation": "Wenn du einem nahestehenden Menschen helfen möchtest und dabei Gefahr läufst, seine Gefühle oder Bedürfnisse für ihn festzulegen.",
      "practice": "Spüre deine eigene Körperhaltung und höre aufmerksam zu. Lass die Vorstellung los, bereits zu wissen, was im anderen vorgeht. Frage offen nach, statt zu interpretieren. Übe Verbundenheit, ohne die innere Erfahrung des anderen für dich zu beanspruchen.",
+     "tags": ["Beziehung", "Gespräch", "Mitgefühl", "Grenzen", "Verbundenheit"],
      "quote": "Nähe wächst, wenn wir den anderen nicht auf unsere Vorstellung von ihm begrenzen."
    },
    {
@@ -126,6 +130,7 @@ export const vers48: SUTRA = {
      "title": "Die Stille hinter dem inneren Bild",
      "situation": "Wenn du in einer Meditation fortwährend Bilder, Gedanken und Erklärungen über deinen Körper erzeugst.",
      "practice": "Lass das innere Körperbild für einen Moment in den Hintergrund treten. Nimm Geräusche, Atem und Empfindungen wahr, ohne sie sofort zu benennen. Wenn Gedanken auftauchen, erkenne sie freundlich als Gedanken und verweile in der offenen Wahrnehmung, die sie bemerkt.",
+     "tags": ["Gedankenbild", "Stille", "Vorstellung", "Loslassen", "Meditation"],
      "quote": "Du musst die Offenheit nicht herstellen; du kannst aufhören, sie zu überdecken."
    },
    {
@@ -133,6 +138,7 @@ export const vers48: SUTRA = {
      "title": "Den anderen nicht auf eine Rolle reduzieren",
      "situation": "Bei der Arbeit, in der Familie oder im öffentlichen Raum, wenn du Menschen nur als Kollegin, Kunden, Vorgesetzten oder Fremde wahrnimmst.",
      "practice": "Bemerke die Rolle, die du einer Person zuschreibst, und lockere sie innerlich. Erinnere dich daran, dass dein Bild nur einen Ausschnitt umfasst. Begegne der Person mit einer konkreten Geste der Aufmerksamkeit, etwa indem du ausreden lässt oder eine ehrliche Frage stellst.",
+     "tags": ["Vorurteile", "Beziehung", "Zuhören", "Achtsamkeit", "Mitgefühl"],
      "quote": "Hinter jeder Rolle bleibt mehr, als dein Blick erfassen kann."
    },
    {
@@ -140,6 +146,7 @@ export const vers48: SUTRA = {
      "title": "Gedanken ziehen lassen",
      "situation": "Wenn du dich in der Vorstellung verlierst, was ein anderer denkt, fühlt oder beabsichtigt.",
      "practice": "Erkenne die Vermutung als mentale Konstruktion. Lass sie wie eine Wolke vorbeiziehen, ohne sie zu unterdrücken oder für eine Tatsache zu halten. Kehre zu dem zurück, was tatsächlich gesagt oder getan wurde, und bleibe offen für das, was du noch nicht weißt.",
+     "tags": ["Gedanken", "Loslassen", "Grübeln", "Achtsamkeit", "Stille"],
      "quote": "Lass Raum für das, was du noch nicht weißt."
    }
  ],

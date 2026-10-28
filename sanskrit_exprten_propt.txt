@@ -6,7 +6,9 @@ valides JSON-Format zu konvertieren, das von meiner Web-Präsentations-App verar
 
 ### WICHTIG:
 Antworte AUSSCHLIESSLICH mit dem validen JSON-Codeblock (kein Markdown drumherum, kein erklärender Text). 
-Schlage mehrere philosophicalNotes und dailyPractices vor.
+Schlage mehrere philosophicalNotes und dailyPractices vor. Bei jeder dailyPractic erstelle mehrere Tags um die 
+Suche nach Praxis zu erleichtern.
+
 Verwende exakt die folgende JSON-Struktur:
 
 {
@@ -39,7 +41,10 @@ Verwende exakt die folgende JSON-Struktur:
       "title": "Titel der Alltagssituation (z.B. Der Überraschungseffekt)",
       "situation": "Beschreibung, wann diese Situation im Alltag auftritt.",
       "practice": "Konkrete, handlungsanweisende Meditations- oder Achtsamkeitsübung dafür.",
-      "quote": "Eine Zitat, passend für die Praxis"
+      "quote": "Eine Zitat, passend für die Praxis",
+      "tags": [
+        "ein Schlüsselwort für die Praxis für die Suche"
+      ]
     }
   ],
   "meditationConfig": {
@@ -73,8 +78,10 @@ Verwende exakt die folgende JSON-Struktur:
 
 Hier ist die Sanskrit-Sutra, die du verarbeiten sollst:
 
-yathā tathā yatra tatra dvādaśānte manaḥ kṣipet I
-pratikṣaṇaṁ kṣīṇavṛttervailakṣaṇyaṁ dinairbhavet II 51 II
+jñānaprakāśakaṁ sarvaṁ sarveṇātmā prakāśakaḥ I
+ekamekasvabhāvatvāt jñānaṁ jñeyaṁ vibhāvyate II 137 II
+
+
 
 
 

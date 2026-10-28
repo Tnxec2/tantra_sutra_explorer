@@ -127,6 +127,7 @@ export const vers43: SUTRA = {
      "title": "Der weite Blick am Fenster",
      "situation": "Während einer Arbeitspause, am Morgen oder nach längerer Bildschirmarbeit schaust du aus dem Fenster und bemerkst, wie stark deine Aufmerksamkeit auf einen kleinen Bereich konzentriert war.",
      "practice": "Lass den Blick weich werden, ohne einen bestimmten Gegenstand anzustarren. Nimm gleichzeitig den Raum vor dir, die seitlichen Bereiche deines Sichtfeldes und den weiteren Hintergrund wahr. Spüre dabei den Kontakt deiner Füße mit dem Boden und die Haltung deines Körpers. Versuche für etwa eine Minute, das gesamte Sichtfeld wahrzunehmen, ohne es fortlaufend zu benennen. Kehre danach entspannt zu deiner Aufgabe zurück.",
+     "tags": ["Sehen", "Blick", "Gewahrsein", "Fenster", "Aufmerksamkeit"],
      "quote": "Wenn der Blick weit wird, darf auch die Aufmerksamkeit weit werden."
    },
    {
@@ -134,6 +135,7 @@ export const vers43: SUTRA = {
      "title": "Den Körper im Raum spüren",
      "situation": "Beim Warten an einer Haltestelle, in einer Schlange oder vor dem Beginn einer Besprechung hast du einen kurzen Moment, in dem du nichts aktiv tun musst.",
      "practice": "Stehe bequem und nimm die Berührung deiner Füße mit dem Boden wahr. Spüre anschließend gleichzeitig den Kopf, den Rumpf, die Arme und die Beine. Erweitere deine Aufmerksamkeit dann auf den Raum vor, hinter und neben dir. Versuche nicht, jede Richtung einzeln abzuarbeiten. Lass Körperempfindungen und räumliche Wahrnehmung nebeneinander bestehen, während du natürlich weiteratmest.",
+     "tags": ["Körper", "Raum", "Körperwahrnehmung", "Warten", "Erdung"],
      "quote": "Der Körper ist nicht nur eine Form, sondern auch ein Feld lebendiger Wahrnehmung."
    },
    {
@@ -141,6 +143,7 @@ export const vers43: SUTRA = {
      "title": "Die Offenheit beim Spaziergang",
      "situation": "Bei einem Spaziergang im Park, auf einem ruhigen Weg oder in einer offenen Landschaft kannst du den umgebenden Raum bewusst wahrnehmen.",
      "practice": "Gehe in einem sicheren, natürlichen Tempo und behalte den Weg im Blick. Nimm gleichzeitig Geräusche aus verschiedenen Richtungen, den Raum über dir und die Weite vor dir wahr. Spüre gelegentlich den Boden unter deinen Füßen. Vermeide es, beim Gehen die Augen zu schließen oder die Aufmerksamkeit so stark nach innen zu richten, dass du Hindernisse übersiehst. Lass die Wahrnehmung weit und zugleich mit der Umgebung verbunden bleiben.",
+     "tags": ["Spaziergang", "Gehen", "Natur", "Weite", "Achtsamkeit"],
      "quote": "Weite bedeutet nicht, die Welt aus den Augen zu verlieren."
    },
    {
@@ -148,6 +151,7 @@ export const vers43: SUTRA = {
      "title": "Gedanken als Ereignisse im offenen Raum",
      "situation": "Du bemerkst, dass du dich in Sorgen, Planungen oder wiederkehrenden inneren Dialogen verfangen hast.",
      "practice": "Halte kurz inne und benenne innerlich schlicht: Denken. Versuche nicht, den Gedanken zu widerlegen oder zu unterdrücken. Richte die Aufmerksamkeit anschließend auf drei gleichzeitig wahrnehmbare Dinge, etwa den Kontakt deiner Füße mit dem Boden, ein Geräusch im Raum und das Licht in deinem Sichtfeld. Bemerke, dass der Gedanke nur ein Teil deiner gegenwärtigen Erfahrung ist. Fahre danach mit dem fort, was tatsächlich zu tun ist.",
+     "tags": ["Gedanken", "Grübeln", "Achtsamkeit", "Raum", "Gewahrsein"],
      "quote": "Ein Gedanke ist ein Ereignis im Bewusstsein, nicht dessen gesamte Weite."
    },
    {
@@ -155,6 +159,7 @@ export const vers43: SUTRA = {
      "title": "Die kurze Raummeditation",
      "situation": "Zu Hause, im Büro oder an einem ruhigen Ort möchtest du zwischen zwei Tätigkeiten bewusst innehalten.",
      "practice": "Setze dich bequem hin und nimm zunächst deinen Körper als Ganzes wahr. Stelle dir anschließend vor, dass sich der Raum in deinem Erfahrungsfeld gleichzeitig nach allen Seiten öffnet. Du musst dir keine exakten räumlichen Grenzen vorstellen. Bemerke einfach den Körper, den umgebenden Raum und die Geräusche, die darin wahrnehmbar sind. Verweile ein bis zwei Minuten in dieser offenen Aufmerksamkeit und beende die Übung, indem du wieder bewusst deine unmittelbare Umgebung wahrnimmst.",
+     "tags": ["Raummeditation", "Körper", "Weite", "Stille", "Meditation"],
      "quote": "Beginne mit dem Körper und entdecke die Weite, in der du ihn erfährst."
    },
    {
@@ -162,6 +167,7 @@ export const vers43: SUTRA = {
      "title": "Weite im schwierigen Gespräch",
      "situation": "In einem angespannten Gespräch verengt sich die Aufmerksamkeit häufig auf einzelne Worte, Gesichtsausdrücke oder die eigene spontane Reaktion.",
      "practice": "Während du zuhörst, bleibe mit einem Teil deiner Aufmerksamkeit bei den Füßen auf dem Boden und nimm gleichzeitig die Stimme des Gegenübers und den Raum wahr. Versuche nicht, jede Äußerung sofort zu bewerten oder eine Antwort vorzubereiten. Wenn starke Gefühle entstehen, erkenne sie an und lass dir einen Augenblick Zeit, bevor du sprichst. Die Übung unterstützt Präsenz und Selbstregulation, ohne die Bedeutung des Gesprächsinhalts zu vernachlässigen.",
+     "tags": ["Gespräch", "Zuhören", "Stress", "Selbstregulation", "Präsenz"],
      "quote": "Ein weiter Geist kann klar unterscheiden, ohne sich in jeder Reaktion zu verlieren."
    },
    {
@@ -169,6 +175,7 @@ export const vers43: SUTRA = {
      "title": "Der Himmel als tägliche Erinnerung",
      "situation": "Du gehst nach draußen, siehst den Himmel zwischen Gebäuden oder bemerkst Wolken über einer Landschaft.",
      "practice": "Halte für einen kurzen, sicheren Moment inne und betrachte die Weite des Himmels. Beobachte, wie Wolken und Licht sich verändern, ohne den gesamten Himmel auf eine einzelne Erscheinung zu reduzieren. Spüre zugleich deinen Körper und den Boden unter dir. Nutze den Himmel als Erinnerung daran, dass wechselnde Gedanken und Gefühle nicht die gesamte Erfahrung ausmachen. Schließe die Übung ab, indem du deine Umgebung wieder bewusst wahrnimmst.",
+     "tags": ["Himmel", "Natur", "Weite", "Aufmerksamkeit", "Kontemplation"],
      "quote": "Die Wolken verändern sich; die Weite bleibt als Bild der Offenheit."
    },
    {
@@ -176,6 +183,7 @@ export const vers43: SUTRA = {
      "title": "Offene Aufmerksamkeit bei einer Alltagspause",
      "situation": "Während du Tee oder Kaffee trinkst oder kurz zwischen Aufgaben innehältst, kannst du aus der automatischen gedanklichen Beschäftigung heraustreten.",
      "practice": "Nimm die Tasse in deinen Händen wahr, spüre ihre Temperatur und beachte den Kontakt deiner Füße mit dem Boden. Erweitere anschließend deine Aufmerksamkeit auf die Geräusche, das Licht und den Raum um dich herum. Versuche, nicht nur die Tasse oder deine Gedanken, sondern mehrere Aspekte der Situation gleichzeitig wahrzunehmen. Bleibe dabei für drei natürliche Atemzüge und setze deine Pause anschließend bewusst fort.",
+     "tags": ["Pause", "Alltag", "Achtsamkeit", "Körper", "Raum"],
      "quote": "Auch in einem kleinen Augenblick kann die Wahrnehmung sich öffnen."
    }
  ],

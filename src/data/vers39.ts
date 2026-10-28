@@ -63,6 +63,7 @@ export const vers39: SUTRA = {
 "title": "Das verklingende Om",
 "situation": "Zu Beginn einer Meditationssitzung oder in einem ruhigen Moment des Innehaltens.",
 "practice": "Atme tief ein und intoniere die Silbe 'Om' lang und gedehnt. Richte die Aufmerksamkeit ganz auf das Ende des Lautes, wo der Ton leiser wird und schließlich in absolute Stille übergeht. Verweile in dieser Stille.",
+"tags": ["Om", "Mantra", "Klang", "Stille", "Meditation"],
 "quote": "Im Verklingen des Lautes offenbart sich die Stimme der Ewigkeit."
 },
 {
@@ -70,6 +71,7 @@ export const vers39: SUTRA = {
 "title": "Die innere Ton-Kontemplation",
 "situation": "Wenn du den Tag in innerer Sammlung beginnen oder ausklingen lassen möchtest.",
 "practice": "Töne das Om mental oder leise im Atemrhythmus. Spüre, wie der Klang den Körper durchdringt und sich am Ende im unendlichen Raum des Kopfes und Herzens auflöst.",
+"tags": ["innerer Ton", "Hören", "Achtsamkeit", "Morgenritual", "Abendritual"],
 "quote": "Wer den Laut in der Stille ruhen lässt, erfährt die Einheit des Seins."
 }
 ],

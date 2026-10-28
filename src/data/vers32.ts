@@ -69,6 +69,7 @@ export const vers32: SUTRA = {
 "title": "Das Schauen durch die Farben",
 "situation": "Beim Betrachten von kunstvollen Mustern, Mandalas oder der Natur (z.B. bunten Blumen oder Federn).",
 "practice": "Richte den Blick auf ein farbreiches, kreisrundes Muster. Schue über die äußere Form hinaus in das Zentrum jedes Kreises und spüre die stille Weite (die Leere), die hinter und in den Farben liegt.",
+"tags": ["Farben", "Muster", "Mandala", "Sehen", "Stille"],
 "quote": "In der buntesten Form verbirgt sich die reinste Stille."
 }
 ],

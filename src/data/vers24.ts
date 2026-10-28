@@ -79,6 +79,7 @@ export const vers24: SUTRA = {
         "title": "Die Atempause im Alltag",
         "situation": "Wenn du während der Arbeit oder im Trubel des Tages kurz inneheilst oder merkst, dass dein Atem flach wird.",
         "practice": "Schließe für drei Atemzüge die Augen. Verfolge die Aufwärtsbewegung der Einatmung und die Abwärtsbewegung der Ausatmung. Richte deine volle Aufmerksamkeit auf die Atempause – den exakten Wendepunkt zwischen Ein- und Ausatmung.",
+        "tags": ["Atembeobachtung", "Atempause", "Einatmen", "Ausatmen", "Präsenz"],
         "quote": "In der Stille zwischen den Atemzügen offenbart sich die unendliche Fülle des Seins."
       }
     ],

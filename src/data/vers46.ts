@@ -102,6 +102,7 @@ export const vers46: SUTRA = {
      "title": "Ein Augenblick vor der nächsten Aufgabe",
      "situation": "Du wechselst zwischen zwei Aufgaben, schließt eine E-Mail oder greifst bereits zum Telefon, obwohl deine Aufmerksamkeit noch bei der vorherigen Tätigkeit ist.",
      "practice": "Halte für einen kurzen Moment inne. Spüre den Körper als Ganzes, einschließlich des Rückens, der Brust und des unteren Körperbereichs. Nimm wahr, dass Empfindungen vorhanden sind, ohne sofort jede einzelne zu benennen. Erlaube deiner Aufmerksamkeit, den gesamten Körperraum zu umfassen. Bleibe zwei bis drei natürliche Atemzüge dabei und beginne dann die nächste Aufgabe bewusst.",
+     "tags": ["Aufgabenwechsel", "Pause", "Körperwahrnehmung", "Präsenz", "Achtsamkeit"],
      "quote": "Ein einziger bewusster Augenblick kann den Übergang von Gewohnheit zu Gegenwärtigkeit öffnen."
    },
    {
@@ -109,6 +110,7 @@ export const vers46: SUTRA = {
      "title": "Leerheit im natürlichen Atem",
      "situation": "Wenn du auf etwas warten musst oder bemerkst, dass du innerlich unter Zeitdruck stehst, wird der Atem häufig unbewusst schneller oder flacher.",
      "practice": "Lass den Atem zunächst so fließen, wie er von selbst kommt. Spüre, wie sich der Körper beim Einatmen und Ausatmen bewegt. Richte die Aufmerksamkeit anschließend auf den gesamten Körperraum, nicht nur auf die Bewegung der Brust. Bemerke, dass die Empfindungen sich ständig verändern und nicht auf eine einzige feste Form reduziert werden müssen. Verweile für etwa eine Minute in dieser offenen Wahrnehmung, ohne den Atem anzuhalten oder zu kontrollieren.",
+     "tags": ["Atem", "Körperraum", "Leerheit", "Wahrnehmung", "Achtsamkeit"],
      "quote": "Die Gegenwart muss nicht festgehalten werden; sie darf sich in jedem Atemzug erneuern."
    },
    {
@@ -116,6 +118,7 @@ export const vers46: SUTRA = {
      "title": "Gefühle wahrnehmen, ohne sie festzuschreiben",
      "situation": "Du bist enttäuscht, verärgert oder unsicher und bemerkst, dass du aus einem vorübergehenden Gefühl eine feste Aussage über dich selbst machst.",
      "practice": "Erkenne das Gefühl zunächst freundlich an. Spüre, wo es sich im Körper bemerkbar macht, und nimm zugleich den übrigen Körperraum wahr. Statt zu denken, dass du grundsätzlich ängstlich oder wütend bist, beobachte die konkrete Empfindung als etwas, das gerade erscheint. Versuche nicht, sie wegzumachen. Atme natürlich und frage dich nach einigen Augenblicken, welche Handlung jetzt hilfreich und angemessen wäre.",
+     "tags": ["Gefühle", "Emotionen", "Körper", "Loslassen", "Selbstwahrnehmung"],
      "quote": "Ein Gefühl ist wirklich als Erfahrung, aber es muss nicht deine ganze Identität bestimmen."
    },
    {
@@ -123,6 +126,7 @@ export const vers46: SUTRA = {
      "title": "Den Körperraum beim Sehen entdecken",
      "situation": "Du schaust aus dem Fenster, gehst durch eine Straße oder sitzt in einem Raum und bist so auf äußere Gegenstände konzentriert, dass du deinen eigenen Körper kaum bemerkst.",
      "practice": "Lass deinen Blick entspannt auf der Umgebung ruhen. Nimm Farben, Formen und Licht wahr. Erweitere anschließend deine Aufmerksamkeit auf den Körper, ohne das Sehen zu unterbrechen. Spüre den Rücken, die Brust und den unteren Körperbereich gleichzeitig. Erlaube äußerer Wahrnehmung und innerer Körperwahrnehmung, nebeneinander zu bestehen. Übe etwa eine Minute, ohne eine besondere Erfahrung erzeugen zu wollen.",
+     "tags": ["Körper", "Sehen", "Wahrnehmung", "Achtsamkeit", "Gegenwart"],
      "quote": "Die Welt wird nicht weniger lebendig, wenn du den Raum deiner eigenen Wahrnehmung entdeckst."
    },
    {
@@ -130,6 +134,7 @@ export const vers46: SUTRA = {
      "title": "Ein Schritt in die offene Wahrnehmung",
      "situation": "Du gehst zur Arbeit, holst etwas aus einem anderen Zimmer oder bewegst dich zwischen verschiedenen Terminen und bist gedanklich bereits bei der nächsten Aufgabe.",
      "practice": "Nimm für drei bis fünf Schritte den Kontakt deiner Füße mit dem Boden wahr. Spüre gleichzeitig den gesamten Körper, einschließlich des Rückens und der Brust. Lass die Geräusche der Umgebung zu dir kommen, ohne ihnen sofort gedanklich zu folgen. Vergegenwärtige für einen Augenblick den Körperraum als offen und gegenwärtig. Setze deinen Weg anschließend in normalem Tempo fort.",
+     "tags": ["Gehen", "Schritte", "Körper", "Aufmerksamkeit", "Raum"],
      "quote": "Auch ein gewöhnlicher Schritt kann ein Augenblick ungeteilter Aufmerksamkeit sein."
    },
    {
@@ -137,6 +142,7 @@ export const vers46: SUTRA = {
      "title": "Gedanken nicht zu festen Wahrheiten machen",
      "situation": "Du grübelst über ein Gespräch, erwartest eine schwierige Entscheidung oder wiederholst innerlich eine Situation, die bereits vergangen ist.",
      "practice": "Bemerke den gegenwärtigen Gedanken, ohne seinen Inhalt sofort zu bekämpfen. Spüre gleichzeitig den Körperraum und den Kontakt mit der Sitzfläche oder dem Boden. Erkenne, dass der Gedanke auftritt und sich verändert. Du brauchst ihn weder zu verdrängen noch weiterzuentwickeln. Kehre für einige Atemzüge zur unmittelbaren Wahrnehmung zurück und entscheide anschließend, ob eine konkrete Handlung erforderlich ist.",
+     "tags": ["Gedanken", "Sorgen", "Loslassen", "Grübeln", "Achtsamkeit"],
      "quote": "Du darfst einen Gedanken erkennen, ohne dich in ihm einzurichten."
    },
    {
@@ -144,6 +150,7 @@ export const vers46: SUTRA = {
      "title": "Eine Tasse in voller Gegenwärtigkeit",
      "situation": "Beim morgendlichen Tee, Kaffee oder Wassertrinken erledigst du häufig gleichzeitig andere Dinge und bemerkst kaum, wie du dich gerade fühlst.",
      "practice": "Halte die Tasse in den Händen und spüre ihre Temperatur und ihr Gewicht. Nimm den Kontakt der Füße mit dem Boden und den Körperraum wahr. Betrachte die Tasse, ohne sofort eine Geschichte über den kommenden Tag zu beginnen. Trinke einen Schluck und spüre die Bewegung im Mund und Hals. Halte für einen einzigen Moment die gesamte Erfahrung offen, ohne sie gedanklich zu zerlegen.",
+     "tags": ["Tee", "Kaffee", "Trinken", "Achtsamkeit", "Gegenwart"],
      "quote": "Das Gewöhnliche wird zum Ort der Übung, wenn du ihm wirklich begegnest."
    },
    {
@@ -151,6 +158,7 @@ export const vers46: SUTRA = {
      "title": "Ein stiller Augenblick vor dem Schlafen",
      "situation": "Am Ende des Tages kreisen die Gedanken um unerledigte Aufgaben, vergangene Gespräche und mögliche Schwierigkeiten des nächsten Morgens.",
      "practice": "Lege dich bequem hin und nimm den Kontakt des Körpers mit der Unterlage wahr. Spüre Rücken, Brust und Beine als zusammenhängenden Körperraum. Versuche nicht, die Gedanken vollständig auszuschalten. Vergegenwärtige für einen kurzen Augenblick die Offenheit der Erfahrung, in der Empfindungen und Gedanken erscheinen dürfen. Wenn du müde wirst, beende die Übung und erlaube dir, ganz gewöhnlich einzuschlafen.",
+     "tags": ["Schlaf", "Abend", "Stille", "Körper", "Entspannung"],
      "quote": "Du musst nicht jede Frage des Tages beantworten, bevor du zur Ruhe kommen darfst."
    }
  ],

@@ -68,6 +68,7 @@ export const vers36: SUTRA = {
 "title": "Das bewusste Abschirmen der Sinne",
 "situation": "In einer Pause oder nach einem überreizten Arbeitstag voller visueller Ablenkungen.",
 "practice": "Setze dich bequem hin, lege deine handflächen sanft über die geschlossenen Augen (ohne Druck auf die Augäpfel auszuüben) und atme tief ein. Richte den inneren Blick auf den Raum zwischen den Augenbrauen und warte geduldig, bis sich Dunkelheit in ein subtiles inneres Licht verwandelt.",
+"tags": ["Sinne", "Augen", "Reizüberflutung", "Rückzug", "Stille"],
 "quote": "Wer das Äußere abdunkelt, entzündet die innere Sonne."
 },
 {
@@ -75,6 +76,7 @@ export const vers36: SUTRA = {
 "title": "Die Kontemplation des inneren Lichtpunkts",
 "situation": "In der abendlichen Meditation zur Vertiefung des Geistes.",
 "practice": "Schließe alle Sinneskanäle ab, indem du den Atem beruhigst und den Blick im Scheitel- oder Stirnbereich zentrierst. Suche nach dem feinen Schimmer oder Punkt im inneren Blickfeld und erlaube ihm, sich in der unendlichen Weite aufzulösen.",
+"tags": ["Licht", "Blick", "Stirn", "Meditation", "Konzentration"],
 "quote": "Im winzigen Punkt des Lichts verbirgt sich die unendliche Weite des Kosmos."
 }
 ],

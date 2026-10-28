@@ -112,6 +112,7 @@ export const vers47: SUTRA = {
      "title": "Der Körper im Atemraum",
      "situation": "Du sitzt am Morgen ruhig da oder bemerkst zwischen zwei Aufgaben, dass deine Aufmerksamkeit eng auf deine Gedanken gerichtet ist.",
      "practice": "Atme natürlich und spüre die Bewegung des Brustkorbs und des Bauches. Erweitere die Wahrnehmung auf den gesamten Körper, einschließlich Rücken, Schultern, Hände und Beine. Nimm anschließend den Raum um deinen Körper wahr. Stelle dir sanft vor, dass der Körperraum nicht isoliert ist, sondern von Weite umgeben und durchdrungen erscheint. Verweile eine Minute in dieser Wahrnehmung, ohne den Atem zu verändern.",
+     "tags": ["Atem", "Körper", "Raum", "Achtsamkeit", "Weite"],
      "quote": "Der Körper wird nicht kleiner, wenn deine Aufmerksamkeit weiter wird."
    },
    {
@@ -119,6 +120,7 @@ export const vers47: SUTRA = {
      "title": "Weite in einer kurzen Pause",
      "situation": "Du trinkst Tee oder Kaffee, wartest auf eine Nachricht oder sitzt für einige Minuten ohne konkrete Aufgabe.",
      "practice": "Lege das Getränk für einen Moment ab und spüre deine Füße, Hände und den Kontakt zur Sitzfläche. Nimm die körperlichen Empfindungen wahr, ohne sie einzeln zu analysieren. Erweitere dann deine Aufmerksamkeit auf den Raum vor, neben und hinter dir. Lass Körper und Umgebung als zusammenhängendes Wahrnehmungsfeld erscheinen. Kehre danach ruhig zu deiner Tätigkeit zurück.",
+     "tags": ["Pause", "Alltag", "Weite", "Körperwahrnehmung", "Stille"],
      "quote": "Eine kleine Pause kann den Blick auf das Ganze öffnen."
    },
    {
@@ -126,6 +128,7 @@ export const vers47: SUTRA = {
      "title": "Der Raum beim Gehen",
      "situation": "Du gehst zur Arbeit, durch einen Park oder von einem Raum in den anderen und bist gedanklich bereits bei der nächsten Aufgabe.",
      "practice": "Spüre für einige Schritte den Kontakt deiner Füße mit dem Boden. Nimm gleichzeitig den ganzen Körper und den Raum um dich herum wahr. Lass Geräusche, Licht und Bewegungen Teil deiner Wahrnehmung sein, ohne sie einzeln festhalten zu müssen. Erinnere dich daran, dass du dich innerhalb eines größeren Raumes bewegst. Gehe in deinem natürlichen Tempo weiter und achte auf deine Umgebung.",
+     "tags": ["Gehen", "Spaziergang", "Raum", "Bewegung", "Aufmerksamkeit"],
      "quote": "Jeder Schritt findet in einer Weite statt, die größer ist als der Schritt selbst."
    },
    {
@@ -133,6 +136,7 @@ export const vers47: SUTRA = {
      "title": "Emotionen in einem weiten Raum halten",
      "situation": "Du bemerkst Anspannung vor einem Gespräch, Ärger nach einer Nachricht oder Unsicherheit angesichts einer Entscheidung.",
      "practice": "Erkenne die Emotion an und spüre, wo sie sich körperlich zeigt. Vielleicht bemerkst du Druck in der Brust, Spannung im Bauch oder Wärme im Gesicht. Versuche nicht, diese Empfindung sofort zu verändern. Nimm gleichzeitig den restlichen Körper und den Raum um dich herum wahr. Erlaube dem Gefühl, innerhalb dieser größeren Aufmerksamkeit vorhanden zu sein, ohne deine gesamte Wahrnehmung einzunehmen.",
+     "tags": ["Emotionen", "Gefühle", "Raum", "Achtsamkeit", "Selbstregulation"],
      "quote": "Ein Gefühl darf intensiv sein, ohne den gesamten inneren Raum zu beherrschen."
    },
    {
@@ -140,6 +144,7 @@ export const vers47: SUTRA = {
      "title": "Den Himmel als Spiegel der Weite",
      "situation": "Du bist draußen und blickst in den Himmel, auf eine offene Landschaft oder zwischen Gebäuden hindurch in die Ferne.",
      "practice": "Lass deinen Blick entspannt auf der Weite ruhen. Nimm wahr, wie Wolken, Licht und Farben erscheinen und sich verändern. Spüre gleichzeitig deinen Körper und den Boden unter deinen Füßen. Verbinde die äußere Weite mit der Wahrnehmung des eigenen Körperraumes, ohne beide gedanklich gleichsetzen zu müssen. Verweile einige Atemzüge in dieser offenen Aufmerksamkeit.",
+     "tags": ["Himmel", "Weite", "Natur", "Kontemplation", "Sehen"],
      "quote": "Die Weite des Himmels erinnert dich daran, dass Wahrnehmung nicht an einem einzigen Punkt enden muss."
    },
    {
@@ -147,6 +152,7 @@ export const vers47: SUTRA = {
      "title": "Gedanken in der Weite erscheinen lassen",
      "situation": "Du grübelst über ein Problem oder wiederholst gedanklich ein Gespräch und bemerkst, dass du dich immer stärker auf einzelne Gedanken konzentrierst.",
      "practice": "Bemerke den Gedanken, ohne ihn zu bekämpfen. Spüre dann den ganzen Körper und erweitere die Aufmerksamkeit auf die Umgebung. Lass den Gedanken innerhalb dieser umfassenderen Wahrnehmung vorhanden sein. Du musst keine Leere erzwingen und auch keine Lösung sofort finden. Wenn eine konkrete Handlung notwendig ist, wende dich ihr anschließend bewusst zu.",
+     "tags": ["Gedanken", "Grübeln", "Loslassen", "Weite", "Achtsamkeit"],
      "quote": "Gedanken dürfen kommen und gehen, während die Aufmerksamkeit weit bleibt."
    },
    {
@@ -154,6 +160,7 @@ export const vers47: SUTRA = {
      "title": "Weite während der Arbeit",
      "situation": "Bei konzentrierter Bildschirmarbeit oder in einer längeren Besprechung bemerkst du, dass sich Schultern, Kiefer und Atem anspannen.",
      "practice": "Unterbrich deine Tätigkeit für einige Sekunden, sofern es die Situation erlaubt. Spüre den Kontakt des Körpers mit dem Stuhl und den Boden unter deinen Füßen. Nimm die Schultern, den Rücken und den Bauch wahr, ohne sie gewaltsam zu entspannen. Erweitere deine Aufmerksamkeit auf den gesamten Raum. Setze die Arbeit fort und überprüfe, ob du mit etwas mehr Ruhe und Übersicht handeln kannst.",
+     "tags": ["Arbeit", "Pause", "Aufmerksamkeit", "Körper", "Stress"],
      "quote": "Weite bedeutet nicht, die Aufgabe loszulassen, sondern ihr mit einer weniger engen Aufmerksamkeit zu begegnen."
    },
    {
@@ -161,6 +168,7 @@ export const vers47: SUTRA = {
      "title": "Der offene Körper vor dem Schlafen",
      "situation": "Am Abend liegst du im Bett und bemerkst, dass Gedanken über den vergangenen Tag oder die Aufgaben von morgen deine Aufmerksamkeit beanspruchen.",
      "practice": "Spüre die Unterlage unter deinem Körper. Nimm die Berührungspunkte von Kopf, Rücken, Becken und Beinen wahr. Erweitere die Aufmerksamkeit auf den Körper als Ganzes und auf den Raum um dich herum. Du musst dir keine besondere Leere vorstellen. Lass die Empfindungen des Körpers und die Geräusche der Umgebung einfach in einer weiten Wahrnehmung bestehen. Beende die Übung, wenn du müde wirst, und erlaube dir zu schlafen.",
+     "tags": ["Schlaf", "Körper", "Entspannung", "Atem", "Abend"],
      "quote": "Ruhe entsteht nicht immer dadurch, dass alle Gedanken verschwinden, sondern auch dadurch, dass sie mehr Raum erhalten."
    }
  ],

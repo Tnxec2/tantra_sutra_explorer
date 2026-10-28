@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
-import { Code, Shuffle, Sparkles, X } from "lucide-react"
+import { Code, Search, Shuffle, Sparkles, X } from "lucide-react"
 import { DailyPractice } from "../../model/DailyPractice"
 import { SUTRA } from "../../model/Sutra"
+import { DailyPracticeSearch } from "./DailyPracticeSearch"
 
 type PracticeSelection = {
     practice: DailyPractice
@@ -17,6 +18,7 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras, handleOpenEdi
         handleOpenEditor: () => void,
     }) => {
     const [randomPractice, setRandomPractice] = useState<PracticeSelection | null>(null)
+        const [isSearchOpen, setIsSearchOpen] = useState(false)
 
     useEffect(() => {
         if (!randomPractice) return
@@ -75,6 +77,19 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras, handleOpenEdi
 
                 <button
                     type="button"
+                    onClick={() => setIsSearchOpen(true)}
+                    title="Alltagspraktiken nach Tag suchen"
+                    aria-label="Alltagspraktiken nach Tag suchen"
+                    className="p-2 rounded-lg bg-[#1b1537] hover:bg-amber-500/20 border
+            border-amber-500/30 text-amber-300 transition-all flex items-center gap-1.5
+            text-xs shrink-0"
+                >
+                    <Search className="w-4 h-4" />
+                    <span className="hidden sm:inline">Suchen</span>
+                </button>
+
+                <button
+                    type="button"
                     onClick={showRandomPractice}
                     disabled={!sutras.some(sutra => sutra.dailyPractices?.length)}
                     title="Zufällige Alltagspraxis anzeigen"
@@ -99,6 +114,13 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras, handleOpenEdi
                 </button>
             </div>
         </header>
+        {isSearchOpen && (
+            <DailyPracticeSearch
+                sutras={sutras}
+                onClose={() => setIsSearchOpen(false)}
+                onSelectSutra={handleSelectSutra}
+            />
+        )}
         {randomPractice && (
             <div
                 className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 backdrop-blur-sm p-4"

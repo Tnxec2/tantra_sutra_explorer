@@ -78,6 +78,7 @@ export const vers33: SUTRA = {
 "title": "Meditation an der Wand",
 "situation": "Im Alltag, wenn man vor einer blanken Wand steht oder sitzt.",
 "practice": "Richte deinen Blick sanft auf eine unifarbene Wand. Anstatt sie nur oberflächlich wahrzunehmen, lass den Blick weich werden und verweile in der Leere zwischen dir und der Wand, bis der Geist in dieser Stille ruht.",
+"tags": ["Wand", "Blick", "Sehen", "Raum", "Achtsamkeit"],
 "quote": "Jeder Ort ist ein Tempel, wenn das Auge erwacht ist."
 },
 {
@@ -85,6 +86,7 @@ export const vers33: SUTRA = {
 "title": "Objektlose Achtsamkeit",
 "situation": "Bei der alltäglichen Arbeit mit beliebigen Gegenständen.",
 "practice": "Betrachte einen alltäglichen Gegenstand in deiner Umgebung. Erkenne ihn nicht nur über seinen Nutzen, sondern spüre den Raum, der ihn umgibt, und lass den Geist für einen Moment in diesem Raum aufgehen.",
+"tags": ["Alltagsgegenstand", "Wahrnehmung", "Loslassen", "Raum", "Achtsamkeit"],
 "quote": "In der Berührung mit dem Gewöhnlichen offenbart sich das Göttliche."
 }
 ],

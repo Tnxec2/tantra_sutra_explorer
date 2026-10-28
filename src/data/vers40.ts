@@ -73,6 +73,7 @@ export const vers40: SUTRA = {
 "title": "Das Gewahrsein vor und nach dem Wort",
 "situation": "Mitten im täglichen Gespräch oder beim Lesen von Texten.",
 "practice": "Achte bei jedem Wort, das du sprichst oder hörst, auf die absolute Stille, die unmittelbar vor dem Aussprechen liegt, und auf das plötzliche Verklingen danach. Lass das Wort wie eine Welle aus der Leere aufsteigen und in sie zurücksinken.",
+"tags": ["Stille", "Wort", "Klang", "Atem", "Aufmerksamkeit"],
 "quote": "Jedes gesprochene Wort schwimmt auf dem Ozean der Stille."
 },
 {
@@ -80,6 +81,7 @@ export const vers40: SUTRA = {
 "title": "Die Kontemplation der Schriftzeichen",
 "situation": "Beim Schreiben, Lesen oder beim Betrachten von Buchstaben.",
 "practice": "Betrachte einen einzelnen Buchstaben oder Laut. Schaue auf den leeren Raum, der ihn umgibt, und spüre, wie der Laut selbst aus der Leere geboren wird und sich in ihr auflöst.",
+"tags": ["Schriftzeichen", "Buchstaben", "Sehen", "Kontemplation", "Meditation"],
 "quote": "In der Stille zwischen den Buchstaben wohnt die Weisheit des Universums."
 }
 ],

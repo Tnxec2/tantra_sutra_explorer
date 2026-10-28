@@ -98,6 +98,7 @@ export const vers45: SUTRA = {
      "title": "Der offene Raum hinter dem Rücken",
      "situation": "Wenn du am Schreibtisch sitzt, in einer Besprechung bist oder dich stark auf einen Bildschirm konzentrierst, richtet sich deine Aufmerksamkeit häufig ausschließlich nach vorn. Der Raum hinter dir bleibt unbemerkt.",
      "practice": "Bleibe aufrecht und entspannt sitzen. Spüre für einige Atemzüge den Kontakt des Rückens mit der Lehne oder die Luft an deinem Rücken. Stelle dir anschließend den Raum hinter deinem Körper vor, ohne ihn genau vermessen zu müssen. Nimm gleichzeitig den Raum vor dir und die Empfindungen im Brustbereich wahr. Halte alle drei Bereiche für 30 bis 60 Sekunden in einer offenen Aufmerksamkeit, ohne sie gedanklich kommentieren zu müssen.",
+     "tags": ["Rücken", "Raum", "Weite", "Körperwahrnehmung", "Aufmerksamkeit"],
      "quote": "Wo die Aufmerksamkeit nicht an einem einzigen Punkt haftet, kann sich ein weiterer Raum der Erfahrung öffnen."
    },
    {
@@ -105,6 +106,7 @@ export const vers45: SUTRA = {
      "title": "Das Herz ohne Urteil",
      "situation": "Wenn Freude, Enttäuschung, Nervosität oder Traurigkeit auftreten, entstehen häufig sofort innere Kommentare: Das darf nicht sein, das muss anders werden oder ich sollte mich anders fühlen.",
      "practice": "Halte inne und nimm die körperlichen Empfindungen im Brustraum wahr. Erlaube ihnen, da zu sein, ohne sie zu verdrängen oder zu verstärken. Spüre zugleich den Rücken und die untere Körperregion. Lasse diese drei Bereiche gemeinsam in deiner Aufmerksamkeit bestehen. Frage dich nicht, ob du bereits einen besonderen Bewusstseinszustand erreicht hast. Kehre einfach zur unmittelbaren Wahrnehmung zurück.",
+     "tags": ["Herz", "Gefühle", "Urteilsfreiheit", "Mitgefühl", "Achtsamkeit"],
      "quote": "Nicht jede Empfindung verlangt nach einem Urteil; manches darf einfach erscheinen und vergehen."
    },
    {
@@ -112,6 +114,7 @@ export const vers45: SUTRA = {
      "title": "Die Pause zwischen zwei Atemzügen",
      "situation": "Beim Warten an einer Ampel, vor einem Telefonat oder beim Wechsel zwischen zwei Aufgaben entstehen kurze Momente, in denen du nicht sofort handeln musst.",
      "practice": "Nimm zwei oder drei natürliche Atemzüge wahr. Beobachte, ob sich zwischen Ein- und Ausatmen oder nach dem Ausatmen eine kleine Ruhephase zeigt. Erzwinge keine Atempause. Nimm zugleich den Rücken, den unteren Körperbereich und den Brustraum wahr. Lasse die Aufmerksamkeit weit werden, statt den Atem kontrollieren zu wollen. Fahre anschließend bewusst mit deiner Tätigkeit fort.",
+     "tags": ["Atem", "Atempause", "Stille", "Einatmen", "Ausatmen"],
      "quote": "Die Stille muss nicht hergestellt werden; manchmal genügt es, sie nicht zu übergehen."
    },
    {
@@ -119,6 +122,7 @@ export const vers45: SUTRA = {
      "title": "Gedanken wie vorüberziehende Wolken",
      "situation": "Wenn du grübelst, einen Fehler wieder und wieder durchgehst oder dich in Zukunftssorgen verlierst, kann sich jeder Gedanke wie eine unumstößliche Tatsache anfühlen.",
      "practice": "Benenne innerlich einmal sanft: Denken. Kehre dann zur räumlichen Wahrnehmung des Rückens, der unteren Körperregion und des Herzens zurück. Nimm die drei Bereiche gleichzeitig wahr und lasse Gedanken im Hintergrund auftauchen und verschwinden. Du musst den Geist nicht leer machen. Übe lediglich, nicht jedem Gedanken sofort zu folgen.",
+     "tags": ["Gedanken", "Loslassen", "Grübeln", "Achtsamkeit", "Stille"],
      "quote": "Ein Gedanke darf erscheinen, ohne dass du ihm folgen musst."
    },
    {
@@ -126,6 +130,7 @@ export const vers45: SUTRA = {
      "title": "Sehen ohne sofortiges Benennen",
      "situation": "Beim Spaziergang, beim Blick aus dem Fenster oder beim Betrachten eines Baumes benennt und bewertet der Geist die Umgebung meist automatisch.",
      "practice": "Wähle einen Gegenstand in deiner Umgebung und betrachte ihn für einige Atemzüge. Bemerke Farben, Formen, Licht und räumliche Beziehungen, bevor du dich in Bewertungen verlierst. Erweitere dann deine Aufmerksamkeit auf den Raum hinter dir und die Empfindungen im Brust- und unteren Körperbereich. Halte die Wahrnehmung weit und klar. Wenn Gedanken auftreten, kehre freundlich zum unmittelbaren Sehen zurück.",
+     "tags": ["Sehen", "Blick", "Benennen", "Wahrnehmung", "Achtsamkeit"],
      "quote": "Bevor du die Welt benennst, ist sie bereits gegenwärtig."
    },
    {
@@ -133,6 +138,7 @@ export const vers45: SUTRA = {
      "title": "Geerdet und offen gehen",
      "situation": "Beim Gehen zwischen Terminen oder auf dem Weg nach Hause kreisen die Gedanken oft um Vergangenes und Zukünftiges, während der Körper kaum wahrgenommen wird.",
      "practice": "Gehe in deinem gewöhnlichen Tempo. Spüre den Kontakt der Füße mit dem Boden und nimm zugleich den unteren Körperbereich, den Rücken und den Brustraum wahr. Erlaube deiner Aufmerksamkeit, diese Empfindungen gemeinsam zu umfassen, ohne den Gang zu verändern. Bemerke Geräusche und den umgebenden Raum, ohne dich in ihnen zu verlieren. Übe ein bis zwei Minuten und kehre dann vollständig zu deiner Umgebung zurück.",
+     "tags": ["Gehen", "Erdung", "Körper", "Weite", "Spaziergang"],
      "quote": "Du kannst im Körper verwurzelt sein, ohne deine Wahrnehmung einzuengen."
    },
    {
@@ -140,6 +146,7 @@ export const vers45: SUTRA = {
      "title": "Vor der Antwort einen Augenblick verweilen",
      "situation": "Wenn eine Nachricht dich ärgert oder jemand eine unerwartete Bemerkung macht, entsteht oft der Impuls, sofort zu reagieren.",
      "practice": "Warte, wenn es die Situation erlaubt, einen Atemzug lang, bevor du antwortest. Spüre den Rücken, den unteren Körperbereich und das Herz zugleich. Bemerke Ärger, Anspannung oder den Wunsch, dich zu rechtfertigen, ohne diese Impulse mit deinem gesamten Selbst gleichzusetzen. Wähle anschließend eine klare und angemessene Antwort. Die Übung dient nicht dazu, berechtigte Grenzen zu unterdrücken, sondern dazu, bewusster zu handeln.",
+     "tags": ["Gespräch", "Reaktion", "Pause", "Zuhören", "Kommunikation"],
      "quote": "Zwischen Impuls und Handlung liegt ein Raum, in dem eine bewusste Antwort möglich wird."
    },
    {
@@ -147,6 +154,7 @@ export const vers45: SUTRA = {
      "title": "Den Tag in Weite ausklingen lassen",
      "situation": "Am Abend, wenn der Tag voller Gespräche, Aufgaben und Eindrücke war, fällt es manchmal schwer, die gedankliche Aktivität loszulassen.",
      "practice": "Setze dich für drei Minuten bequem hin. Nimm zunächst den Rücken wahr, dann die untere Körperregion und anschließend den Brustraum. Halte diese drei Bereiche gleichzeitig in einer sanften, offenen Aufmerksamkeit. Versuche nicht, alle Gedanken zu beseitigen. Lass stattdessen die Ereignisse des Tages auftauchen, ohne jede Szene erneut auszuwerten. Beende die Übung, indem du den ganzen Körper und den Raum um dich herum wahrnimmst.",
+     "tags": ["Abend", "Tagesrückblick", "Weite", "Entspannung", "Schlaf"],
      "quote": "Du musst den Tag nicht aus deinem Geist vertreiben; du darfst ihn in Ruhe ausklingen lassen."
    }
  ],

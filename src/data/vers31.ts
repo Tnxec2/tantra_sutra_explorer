@@ -74,6 +74,7 @@ export const vers31: SUTRA = {
 "title": "Die Brücke des Blicks",
 "situation": "In einer konzentrierten Meditationsphase zur Zentrierung des Geistes.",
 "practice": "Richte deine Aufmerksamkeit sanft auf den Punkt zwischen deinen Augenbrauen. Führe den Atemstrom von der Basis bis in diesen Raum und darüber hinaus zum Scheitel. Lasse dabei alle begrifflichen Gedanken los und verweile im raumartigen Bewusstsein.",
+"tags": ["Blick", "Stirn", "Augenbrauen", "Fokus", "Meditation"],
 "quote": "Im Zentrum der Stirn öffnet sich das Tor zur grenzenlosen Weite."
 }
 ],

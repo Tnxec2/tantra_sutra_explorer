@@ -102,6 +102,7 @@ export const vers50: SUTRA = {
      "title": "Die Weite am Ende des Atems",
      "situation": "Wenn du einige Minuten Ruhe brauchst, etwa vor einer anspruchsvollen Aufgabe oder nach einem hektischen Gespräch.",
      "practice": "Atme natürlich und richte die Aufmerksamkeit sanft auf den Raum unmittelbar vor der Nasenspitze. Nimm wahr, wie der Atem kommt und geht, ohne ihn zu verlängern oder anzuhalten. Lass die Aufmerksamkeit anschließend auch den umgebenden Raum einschließen. Verweile für fünf bis zehn Atemzüge in dieser offenen Wahrnehmung.",
+     "tags": ["Atem", "Atempause", "Weite", "Stille", "Meditation"],
      "quote": "Am Rand des Atems beginnt nicht Leere, sondern Weite."
    },
    {
@@ -109,6 +110,7 @@ export const vers50: SUTRA = {
      "title": "Die Grenzen des Körpers bewusst wahrnehmen",
      "situation": "Wenn du dich angespannt fühlst oder das Gefühl hast, ganz in Gedanken gefangen zu sein.",
      "practice": "Spüre nacheinander die Füße, Hände, Schultern und den Kopf. Nimm wahr, wo der Körper im Raum endet und wo die Umgebung beginnt. Erweitere dann die Aufmerksamkeit auf den Raum um dich herum. Versuche nicht, die Grenze verschwinden zu lassen; bemerke einfach, dass Körperempfindungen und räumliche Wahrnehmung gleichzeitig präsent sein können.",
+     "tags": ["Körper", "Körpergrenze", "Wahrnehmung", "Raum", "Achtsamkeit"],
      "quote": "Der Körper gibt Orientierung; die Aufmerksamkeit darf weiter werden."
    },
    {
@@ -116,6 +118,7 @@ export const vers50: SUTRA = {
      "title": "Eine Gedankenpause zulassen",
      "situation": "Wenn sich Gedanken im Kreis drehen und du immer wieder dieselbe Sorge durchgehst.",
      "practice": "Halte kurz inne und spüre beide Füße am Boden. Lass den Atem in seinem eigenen Rhythmus fließen. Statt den Gedanken zu bekämpfen, richte die Aufmerksamkeit auf den Raum, in dem du gerade sitzt, und auf die Empfindungen deines Körpers. Wenn der Gedanke zurückkehrt, erkenne ihn freundlich und kehre zur offenen Wahrnehmung zurück.",
+     "tags": ["Gedanken", "Pause", "Stille", "Grübeln", "Aufmerksamkeit"],
      "quote": "Du musst einen Gedanken nicht beenden, um ihm nicht folgen zu müssen."
    },
    {
@@ -123,6 +126,7 @@ export const vers50: SUTRA = {
      "title": "Offen wahrnehmen statt verengen",
      "situation": "Wenn du dich auf ein einzelnes Problem fixierst und dadurch andere Möglichkeiten kaum noch wahrnimmst.",
      "practice": "Benenne das Problem innerlich in einem kurzen Satz. Weite dann die Aufmerksamkeit: Nimm deinen Körper, die Geräusche im Raum und die Umgebung wahr. Frage dich anschließend, welche weiteren Aspekte der Situation du bisher übersehen hast. Nutze die Weite nicht, um das Problem zu vermeiden, sondern um es klarer betrachten zu können.",
+     "tags": ["Wahrnehmung", "Aufmerksamkeit", "Weite", "Achtsamkeit", "Sinne"],
      "quote": "Ein weiter Blick schafft Raum für eine klarere Antwort."
    },
    {
@@ -130,6 +134,7 @@ export const vers50: SUTRA = {
      "title": "Gehen mit räumlicher Präsenz",
      "situation": "Auf dem Weg zur Arbeit, beim Spaziergang oder zwischen zwei Terminen.",
      "practice": "Spüre einige Schritte lang den Kontakt der Füße mit dem Boden. Nimm danach zugleich den Körper und den Raum um dich herum wahr: Geräusche, Licht, Entfernungen und Bewegungen. Lass die Aufmerksamkeit weit und ruhig bleiben, während du sicher gehst und auf deine Umgebung achtest.",
+     "tags": ["Gehen", "Spaziergang", "Raum", "Körper", "Bewegung"],
      "quote": "Jeder Schritt kann im offenen Raum des Gewahrseins stattfinden."
    },
    {
@@ -137,6 +142,7 @@ export const vers50: SUTRA = {
      "title": "Innere Stabilität in einer schwierigen Situation",
      "situation": "Wenn Kritik, ein Konflikt oder eine unerwartete Nachricht starke Gefühle auslöst.",
      "practice": "Bevor du reagierst, nimm drei natürliche Atemzüge. Spüre deine Füße und die Empfindungen im Körper. Lass deine Aufmerksamkeit auch den Raum um dich herum einschließen. Beobachte den ersten Impuls, ohne ihm sofort zu folgen, und entscheide dann bewusst, was du sagen oder tun möchtest.",
+     "tags": ["Stress", "Emotionen", "Stabilität", "Körper", "Selbstregulation"],
      "quote": "Festigkeit bedeutet, bewusst antworten zu können, statt automatisch zu reagieren."
    },
    {
@@ -144,6 +150,7 @@ export const vers50: SUTRA = {
      "title": "Gedanken als vorübergehende Erscheinungen",
      "situation": "Wenn du bemerkst, dass du dich mit einer Erinnerung, einer Befürchtung oder einer inneren Geschichte identifizierst.",
      "practice": "Erkenne den Gedanken mit einer einfachen Formulierung wie „Da ist eine Erinnerung“ oder „Da ist eine Sorge“. Spüre zugleich den Atem und den Raum um dich herum. Lass den Gedanken da sein, ohne ihn weiter auszubauen. Kehre zur Wahrnehmung zurück, die den Gedanken bemerkt.",
+     "tags": ["Gedanken", "Sorgen", "Loslassen", "Achtsamkeit", "Gewahrsein"],
      "quote": "Ein Gedanke erscheint im Gewahrsein; er muss es nicht beherrschen."
    },
    {
@@ -151,6 +158,7 @@ export const vers50: SUTRA = {
      "title": "Die Ausrichtung auf das Wesentliche",
      "situation": "Am Beginn des Tages, bevor du dich von Nachrichten, Aufgaben und Erwartungen bestimmen lässt.",
      "practice": "Setze dich für zwei Minuten ruhig hin. Nimm den Körper wahr und erweitere die Aufmerksamkeit auf den Raum um dich herum. Frage dich: „Was ist heute wirklich wesentlich?“ Warte einen Moment, ohne sofort eine Antwort zu erzwingen. Wähle anschließend eine konkrete Handlung, die deiner Einsicht entspricht.",
+     "tags": ["Morgen", "Tagesbeginn", "Werte", "Intention", "Achtsamkeit"],
      "quote": "Wenn die Aufmerksamkeit stiller wird, kann das Wesentliche deutlicher hervortreten."
    }
  ],

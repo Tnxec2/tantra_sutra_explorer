@@ -68,6 +68,7 @@ export const vers38: SUTRA = {
 "title": "Das Lauschen auf den inneren Ton",
 "situation": "In einer ruhigen Umgebung oder vor dem Einschlafen, wenn Stille einkehrt.",
 "practice": "Verschließe sanft deine Ohren mit den Zeigefingern, schließe die Augen und lausche auf den feinen, hochfrequenten Summton oder Rauschen im Inneren des Kopfes. Lass dich von diesem kontinuierlichen Strom tragen wie von einem sanften Fluss.",
+"tags": ["Klang", "innerer Ton", "Hören", "Stille", "Meditation"],
 "quote": "Wer dem inneren Strom des Klangs lauscht, verlässt das Ufer der Illusion."
 },
 {
@@ -75,6 +76,7 @@ export const vers38: SUTRA = {
 "title": "Die Klangvertiefung im Alltag",
 "situation": "In Momenten des Übergangs, um den Geist von äußerer Unruhe abzuziehen.",
 "practice": "Richte deine Aufmerksamkeit mitten in den Trubel des Tages für eine Minute nach innen. Suche hinter allen lauten Geräuschen den feinen, ununterbrochenen Hintergrundton auf und ruhe in dieser schützenden Strömung.",
+"tags": ["Klang", "Hören", "Alltag", "Aufmerksamkeit", "Stille"],
 "quote": "Im Herzen des Geräuschs wohnt die unendliche Stille des Urklangs."
 }
 ],

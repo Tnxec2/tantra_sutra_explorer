@@ -137,6 +137,7 @@ export const vers44: SUTRA = {
      "title": "Den Raum hinter dem Rücken entdecken",
      "situation": "Du sitzt am Schreibtisch, auf einer Bank oder zu Hause und bemerkst, dass deine Aufmerksamkeit vollständig auf den Bildschirm oder den Bereich vor dir gerichtet ist.",
      "practice": "Lass die Augen geöffnet und nimm zunächst deine Sitzhaltung wahr. Spüre dann den Rücken, ohne ihn anzuspannen. Erweitere deine Aufmerksamkeit auf den Raum hinter dir, auch wenn du ihn nicht sehen kannst. Versuche, gleichzeitig den Körperkontakt mit der Sitzfläche und die Offenheit hinter deinem Rücken wahrzunehmen. Bleibe für drei bis fünf natürliche Atemzüge dabei und kehre dann entspannt zu deiner Tätigkeit zurück.",
+     "tags": ["Rücken", "Körperraum", "Raumwahrnehmung", "Aufmerksamkeit", "Weite"],
      "quote": "Auch das, was du nicht siehst, darf Teil deiner Wahrnehmung sein."
    },
    {
@@ -144,6 +145,7 @@ export const vers44: SUTRA = {
      "title": "Die Grundlage des Körpers spüren",
      "situation": "Du stehst an einer Haltestelle, wartest auf einen Termin oder bemerkst, dass du gedanklich unruhig bist.",
      "practice": "Richte deine Aufmerksamkeit auf die Fußsohlen und den Kontakt zum Boden. Spüre die körperliche Basis, ohne etwas Besonderes hervorrufen zu wollen. Nimm danach den Raum hinter dir hinzu. Halte beide Wahrnehmungen gleichzeitig im Bewusstsein: die konkrete Stütze unter deinen Füßen und die offene Weite hinter dem Körper. Atme normal weiter und beende die Übung, indem du deine Umgebung bewusst wahrnimmst.",
+     "tags": ["Körper", "Erdung", "Sitzen", "Körperwahrnehmung", "Präsenz"],
      "quote": "Verwurzelung und Weite können im selben Augenblick gegenwärtig sein."
    },
    {
@@ -151,6 +153,7 @@ export const vers44: SUTRA = {
      "title": "Die unbekannte Seite beim Gehen",
      "situation": "Du gehst auf einem vertrauten, sicheren Weg und möchtest für einen Moment aus automatischem Denken und Planen aussteigen.",
      "practice": "Gehe in deinem üblichen Tempo und behalte den Weg im Blick. Spüre deine Schritte und erweitere zugleich deine Wahrnehmung auf Geräusche und den Raum hinter deinem Körper. Du musst dich nicht umdrehen und nicht versuchen, die Umgebung vollständig zu kontrollieren. Lass die Wahrnehmung für einige Schritte offen sein und richte sie danach wieder bewusst auf deinen Weg. Wende diese Übung nur dort an, wo sie deine Aufmerksamkeit für die Sicherheit nicht beeinträchtigt.",
+     "tags": ["Gehen", "Spaziergang", "Raum", "Aufmerksamkeit", "Bewegung"],
      "quote": "Offenheit beginnt dort, wo du nicht alles kontrollieren musst."
    },
    {
@@ -158,6 +161,7 @@ export const vers44: SUTRA = {
      "title": "Die stille Pause im Sitzen",
      "situation": "Zwischen zwei Aufgaben oder am Ende eines Arbeitstages kannst du dich für kurze Zeit ruhig hinsetzen.",
      "practice": "Setze dich bequem hin und spüre die Auflageflächen des Körpers. Vergegenwärtige dir gleichzeitig den Raum hinter deinem Rücken und den unteren Bereich deiner Körperwahrnehmung. Halte beide Aspekte sanft im Gewahrsein, ohne sie bildlich erzwingen zu müssen. Wenn Gedanken auftauchen, erkenne sie und kehre zur offenen Wahrnehmung zurück. Verweile ein bis zwei Minuten und beende die Übung mit einem bewussten Blick auf deine Umgebung.",
+     "tags": ["Sitzen", "Stille", "Meditation", "Körper", "Achtsamkeit"],
      "quote": "Du musst die Stille nicht herstellen; du kannst ihr Raum geben."
    },
    {
@@ -165,6 +169,7 @@ export const vers44: SUTRA = {
      "title": "Gedanken nicht sofort ausfüllen",
      "situation": "Du wartest auf eine Nachricht, machst dir Sorgen über eine Entscheidung oder ertappst dich dabei, ein Gespräch im Kopf wieder und wieder durchzugehen.",
      "practice": "Bemerke, dass der Geist gerade Geschichten und mögliche Zukunftsszenarien erzeugt. Versuche nicht, die Gedanken zu unterdrücken. Spüre stattdessen den Rücken und den Kontakt deines Körpers mit der Sitzfläche oder dem Boden. Nimm zugleich den Raum um dich herum wahr. Lass die Gedanken im Hintergrund vorhanden sein, ohne ihnen sofort zu folgen. Frage dich anschließend, ob es jetzt eine konkrete Handlung gibt, die tatsächlich erforderlich ist.",
+     "tags": ["Gedanken", "Stille", "Pause", "Grübeln", "Aufmerksamkeit"],
      "quote": "Nicht jeder freie Augenblick muss mit einem Gedanken gefüllt werden."
    },
    {
@@ -172,6 +177,7 @@ export const vers44: SUTRA = {
      "title": "Hören ohne einen Mittelpunkt",
      "situation": "Du sitzt in einem Raum, in dem mehrere Geräusche zu hören sind, etwa Stimmen, Verkehr oder das Summen eines Geräts.",
      "practice": "Lass die Augen geöffnet und höre zunächst ein einzelnes Geräusch. Erweitere dann die Aufmerksamkeit auf mehrere Geräusche und auf den Raum, in dem sie erklingen. Beziehe den Rücken und den Bodenkontakt mit ein, ohne dich ausschließlich auf einen Punkt zu konzentrieren. Versuche, die Geräusche nicht sofort zu bewerten. Nimm sie als Ereignisse wahr, die im offenen Feld deiner Erfahrung auftauchen und wieder verschwinden.",
+     "tags": ["Hören", "Klang", "Stille", "Achtsamkeit", "Wahrnehmung"],
      "quote": "Ein Geräusch kommt und geht; die Fähigkeit zu hören bleibt gegenwärtig."
    },
    {
@@ -179,6 +185,7 @@ export const vers44: SUTRA = {
      "title": "Die Leere zwischen den Dingen",
      "situation": "Du bist draußen oder in einem Raum mit etwas Abstand zwischen den Gegenständen und bemerkst, wie dein Blick gewöhnlich von Objekt zu Objekt springt.",
      "practice": "Wähle einen Gegenstand in deiner Umgebung und nimm ihn kurz wahr. Erweitere dann deine Aufmerksamkeit auf den freien Raum um ihn herum und auf die Bereiche, die du nicht direkt ansiehst. Spüre gleichzeitig deinen eigenen Körper. Versuche nicht, den Raum als besondere Energie oder als übernatürliche Erscheinung zu deuten. Erfahre ihn schlicht als Offenheit, in der verschiedene Dinge wahrnehmbar sind.",
+     "tags": ["Leere", "Raum", "Dinge", "Wahrnehmung", "Kontemplation"],
      "quote": "Auch der Zwischenraum gehört zu dem, was du wahrnimmst."
    },
    {
@@ -186,6 +193,7 @@ export const vers44: SUTRA = {
      "title": "Raum vor einer emotionalen Reaktion",
      "situation": "Eine kritische Bemerkung, eine unerwartete Nachricht oder eine stressige Situation löst Ärger, Angst oder Anspannung aus.",
      "practice": "Wenn es die Situation erlaubt, halte für einen Moment inne. Spüre deine Füße und den Rücken. Nimm wahr, dass die Emotion vorhanden ist, ohne sie zu verurteilen oder sofort auszuleben. Erweitere deine Aufmerksamkeit auf den Raum um dich herum und lass einen oder zwei natürliche Atemzüge verstreichen. Prüfe dann, welche Reaktion hilfreich und angemessen ist. Die Übung soll klares Handeln unterstützen, nicht berechtigte Gefühle oder notwendige Grenzen unterdrücken.",
+     "tags": ["Emotionen", "Reaktion", "Pause", "Achtsamkeit", "Selbstregulation"],
      "quote": "Ein wenig innerer Raum kann aus einer unmittelbaren Reaktion eine bewusste Antwort machen."
    }
  ],

@@ -74,6 +74,7 @@ export const vers28: SUTRA = {
             "title": "Das innere Licht aufsteigen lassen",
             "situation": "In einer ruhigen Morgenmeditation oder am Abend zur Zentrierung.",
             "practice": "Schließe die Augen und stelle dir vor, wie ein feiner Strahl reinen Lichts aus dem Becken bzw. dem untersten Punkt der Wirbelsäule bis weit über den Scheitel hinauszieht. Verweile im Raum jenseits des Kopfes, wo das Licht sich in grenzenloser Stille auflöst.",
+            "tags": ["Licht", "Kundalini", "Wirbelsäule", "Meditation", "Bewusstsein"],
             "quote": "Das Licht des Bewusstseins strahlt von Ewigkeit her in dir."
         }
     ],
