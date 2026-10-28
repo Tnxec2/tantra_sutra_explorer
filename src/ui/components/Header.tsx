@@ -3,6 +3,7 @@ import { Code, Search, Shuffle, Sparkles, X } from "lucide-react"
 import { DailyPractice } from "../../model/DailyPractice"
 import { SUTRA } from "../../model/Sutra"
 import { DailyPracticeSearch } from "./DailyPracticeSearch"
+import { DynamicIcon } from "./DynamicIcon"
 
 type PracticeSelection = {
     practice: DailyPractice
@@ -18,7 +19,7 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras, handleOpenEdi
         handleOpenEditor: () => void,
     }) => {
     const [randomPractice, setRandomPractice] = useState<PracticeSelection | null>(null)
-        const [isSearchOpen, setIsSearchOpen] = useState(false)
+    const [isSearchOpen, setIsSearchOpen] = useState(false)
 
     useEffect(() => {
         if (!randomPractice) return
@@ -137,10 +138,8 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras, handleOpenEdi
                     <div className="flex items-center justify-between gap-4 border-b border-amber-500/20 bg-[#1b1537] p-4">
                         <h2 id="random-practice-title" className="font-serif font-bold text-amber-100">
                             Zufällige Alltagspraxis
-
-
                         </h2>
-                        <div className="flex"><button
+                        <div className="flex gap-2"><button
                             type="button"
                             onClick={showRandomPractice}
                             disabled={!sutras.some(sutra => sutra.dailyPractices?.length)}
@@ -153,19 +152,24 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras, handleOpenEdi
                             <Shuffle className="w-4 h-4" />
                             <span className="hidden sm:inline">Zufallspraxis</span>
                         </button>
-                            <button
-                                type="button"
-                                onClick={() => setRandomPractice(null)}
-                                aria-label="Modal schließen"
-                                className="rounded-lg p-2 text-slate-400 transition-colors hover:bg-slate-800 hover:text-slate-100"
-                            >
-                                <X className="h-5 w-5" />
-                            </button></div>
+                        <button
+                            type="button"
+                            onClick={() => setRandomPractice(null)}
+                            aria-label="Modal schließen"
+                            className="rounded-lg p-2 text-slate-400 transition-colors hover:bg-slate-800 hover:text-slate-100"
+                        >
+                            <X className="h-5 w-5" />
+                        </button></div>
                     </div>
                     <div className="space-y-4 p-5">
-                        <h3 className="font-serif text-lg font-bold text-amber-200">
-                            {randomPractice.practice.title}
-                        </h3>
+                        <div className="flex items-center space-x-2">
+                            <div className="p-2 rounded-lg bg-amber-500/10 text-amber-400">
+                                <DynamicIcon name={randomPractice.practice.icon} className="w-4 h-4" />
+                            </div>
+                            <h3 className="font-serif text-lg font-bold text-amber-200">
+                                {randomPractice.practice.title}
+                            </h3>
+                        </div>
                         <div className="rounded-lg border border-slate-800 bg-[#0b091a]/60 p-3 text-sm">
                             <p className="mb-1 font-semibold text-amber-400">Situation</p>
                             <p className="text-slate-300">{randomPractice.practice.situation}</p>

@@ -1,95 +1,144 @@
-import { 
-  Sparkles, 
-  Zap, 
-  ShieldAlert, 
-  Activity, 
-  Compass, 
-  Sun, 
-  Eye,
-  Wind,
-  Flame,
-  Headphones,
-  Hand,
-  Home,
-  Layers,
-  Moon,
-  VolumeX,
-  Mic,
-  MessageSquare,
-  BookOpen,
-  Bell,
+import {
+  Activity,
   Armchair,
+  ArrowLeftRight,
+  Bell,
+  BookOpen,
   Brain,
   Briefcase,
+  Circle,
   CircleDot,
+  CircleHelp,
   Clock,
   Cloud,
+  CloudOff,
   Coffee,
+  Compass,
+  Droplets,
   Ear,
+  Eye,
+  Feather,
+  Flame,
   Flower2,
   Focus,
   Footprints,
+  GitCompare,
+  Globe,
+  Hand,
+  HandHeart,
+  Headphones,
+  Heart,
+  Home,
+  Hourglass,
+  Layers,
+  Leaf,
+  ListOrdered,
+  LockOpen,
   MapPin,
   Maximize,
   MessageCircle,
+  MessageSquare,
+  Mic,
+  Moon,
+  Mountain,
   Move,
-  Heart,
   Music,
+  Network,
   Pause,
   Repeat,
+  Scale,
   Scan,
+  ShieldAlert,
+  Sparkles,
+  Sun,
   Sunrise,
   Target,
   Users,
-  Waves} from 'lucide-react';
+  VolumeX,
+  Wallet,
+  Waves,
+  Wind,
+  Zap,
+  type LucideIcon,
+} from "lucide-react"
 
-// Helper Icon Renderer Component
-export const DynamicIcon = ({ name, className = "w-5 h-5" }: { name: string; className?: string }) => {
-  switch (name.replaceAll('-', '').toLowerCase()) {
-    case 'activity': return <Activity className={className} />;
-    case 'armchair': return <Armchair className={className} />;
-    case 'bell': return <Bell className={className} />;
-    case 'bookopen': return <BookOpen className={className} />;
-    case 'brain': return <Brain className={className} />;
-    case 'briefcase': return <Briefcase className={className} />;
-    case 'circledot': return <CircleDot className={className} />;
-    case 'clock': return <Clock className={className} />;
-    case 'cloud': return <Cloud className={className} />;
-    case 'coffee': return <Coffee className={className} />;
-    case 'compass': return <Compass className={className} />;
-    case 'ear': return <Ear className={className} />;
-    case 'eye': return <Eye className={className} />;
-    case 'flame': return <Flame className={className} />;
-    case 'flower2': return <Flower2 className={className} />;
-    case 'focus': return <Focus className={className} />;
-    case 'footprints': return <Footprints className={className} />;
-    case 'hand': return <Hand className={className} />;
-    case "headphones": return <Headphones className={className} />;
-    case "heart": return <Heart className={className} />;
-    case "home": return <Home className={className} />;
-    case "layers": return <Layers className={className} />;
-    case 'mappin': return <MapPin className={className} />;
-    case 'maximize': return <Maximize className={className} />;
-    case 'messagecircle': return <MessageCircle className={className} />;
-    case "messagesquare": return <MessageSquare className={className} />;
-    case "mic": return <Mic className={className} />;
-    case "moon": return <Moon className={className} />;
-    case "move": return <Move className={className} />;
-    case "music": return <Music className={className} />;
-    case "pause": return <Pause className={className} />;
-    case "repeat": return <Repeat className={className} />;
-    case "scan": return <Scan className={className} />;
-    case 'shieldalert': return <ShieldAlert className={className} />;
-    case 'sparkles': return <Sparkles className={className} />;
-    case 'sun': return <Sun className={className} />;
-    case "sunrise": return <Sunrise className={className} />;
-    case "target": return <Target className={className} />;
-    case "users": return <Users className={className} />;
-    case 'volumex': return <VolumeX className={className} />;
-    case "waves": return <Waves className={className} />;
-    case "wind": return <Wind className={className} />;
-    case 'zap': return <Zap className={className} />;
-    default: return null; <Sparkles className={className} />;
-  }
-};
+const iconRegistry: Record<string, LucideIcon> = {
+  activity: Activity,
+  armchair: Armchair,
+  arrowleftright: ArrowLeftRight,
+  bell: Bell,
+  bookopen: BookOpen,
+  brain: Brain,
+  briefcase: Briefcase,
+  circle: Circle,
+  circledot: CircleDot,
+  circlehelp: CircleHelp,
+  clock: Clock,
+  cloud: Cloud,
+  cloudoff: CloudOff,
+  coffee: Coffee,
+  compass: Compass,
+  droplets: Droplets,
+  ear: Ear,
+  eye: Eye,
+  feather: Feather,
+  flame: Flame,
+  flower2: Flower2,
+  focus: Focus,
+  footprints: Footprints,
+  gitcompare: GitCompare,
+  globe: Globe,
+  hand: Hand,
+  handheart: HandHeart,
+  headphones: Headphones,
+  heart: Heart,
+  home: Home,
+  hourglass: Hourglass,
+  layers: Layers,
+  leaf: Leaf,
+  listordered: ListOrdered,
+  lockopen: LockOpen,
+  mappin: MapPin,
+  maximize: Maximize,
+  messagecircle: MessageCircle,
+  messagesquare: MessageSquare,
+  mic: Mic,
+  moon: Moon,
+  mountain: Mountain,
+  move: Move,
+  music: Music,
+  network: Network,
+  pause: Pause,
+  repeat: Repeat,
+  scale: Scale,
+  scan: Scan,
+  shieldalert: ShieldAlert,
+  sparkles: Sparkles,
+  sun: Sun,
+  sunrise: Sunrise,
+  target: Target,
+  users: Users,
+  volumex: VolumeX,
+  wall: Wallet,
+  wallet: Wallet,
+  waves: Waves,
+  wind: Wind,
+  zap: Zap,
+}
 
+const normalizeIconName = (name: string) =>
+  name.trim().replace(/[-_\s]/g, "").toLowerCase()
+
+export const hasDynamicIcon = (name: string) =>
+  Object.hasOwn(iconRegistry, normalizeIconName(name))
+
+export const DynamicIcon = ({
+  name,
+  className = "w-5 h-5",
+}: {
+  name: string
+  className?: string
+}) => {
+  const Icon = iconRegistry[normalizeIconName(name)]
+  return Icon ? <Icon className={className} /> : <Sparkles className={className} />
+}

@@ -1,4 +1,4 @@
-import { Sparkles } from "lucide-react"
+
 import { DailyPractice } from "../../model/DailyPractice"
 import { DynamicIcon } from "./DynamicIcon"
 
@@ -12,8 +12,7 @@ export const DailyLifePracticeCard = ({ prac }:
     <div className="space-y-2">
       <div className="flex items-center space-x-2">
         <div className="p-2 rounded-lg bg-amber-500/10 text-amber-400">
-         { DynamicIcon({name: prac.icon}) == null ? <Sparkles className="w-4 h-4" /> :
-          <DynamicIcon name={prac.icon} className="w-4 h-4" /> }
+         <DynamicIcon name={prac.icon} className="w-4 h-4" />
         </div>
         <h4 className="font-serif font-bold text-amber-100 text-base">{prac.title}</h4>
       </div>

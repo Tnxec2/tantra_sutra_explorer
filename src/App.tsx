@@ -11,7 +11,7 @@ import { VocabularyBreakdownGrid } from './ui/components/VocabularyBreakdownGrid
 import { OriginalSanskrit } from './ui/components/OriginalSanskrit';
 import { Header } from './ui/components/Header';
 import { SlideNavigation } from './ui/components/SlideNavigation';
-import { DynamicIcon } from './ui/components/DynamicIcon';
+import { hasDynamicIcon } from './ui/components/DynamicIcon';
 
 
 // Background Particles Animation
@@ -75,7 +75,7 @@ function App() {
   console.log(new Set(
     sutras.flatMap(s => s.dailyPractices)
     .map(p => p.icon.replaceAll('-', '').toLowerCase())
-    .filter(icon => DynamicIcon({name: icon}) == null)
+    .filter(icon => !hasDynamicIcon(icon))
     .sort()
   ))
   
