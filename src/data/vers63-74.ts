@@ -531,7 +531,7 @@ export const vers6374: SUTRA[] = [
        "meaning": "Verweist auf das Sichtbarwerden einer Einsicht, die zuvor nicht unmittelbar erkannt wurde."
      }
    ],
-   "translationGerman": "Durch einen überraschenden Kunstgriff, o du mit gazellenhaften Augen, erhebt sich unmittelbar große Glückseligkeit, durch die die wahre Wirklichkeit offenbar wird.",
+   "translationGerman": "Durch einen überraschenden Kunstgriff, wenn du von einer magischen Show verzaubert wirst, erhebt sich unmittelbar große Glückseligkeit, durch die die wahre Wirklichkeit offenbar wird.",
    "philosophicalNotes": [
      {
        "title": "Der Augenblick, in dem Gewohnheit unterbrochen wird",
