@@ -15,6 +15,13 @@ Eine React-Anwendung zum Erkunden ausgewählter Verse aus dem *Vijnana Bhairava 
 
 Die Rezitations-Schaltfläche simuliert derzeit die Wiedergabe; sie spielt keine Audiodatei ab.
 
+
+## Static online version
+
+Die online App ist hier erreichbar:
+
+[tantra_sutra_explorer](https://tnxec2.github.io/tantra_sutra_explorer/)
+
 ## Voraussetzungen
 
 - Node.js
