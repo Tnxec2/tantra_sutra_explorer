@@ -2,6 +2,7 @@
   "name": "tantra_sutra_explorer",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "lucide-react": "^1.62.0",
     "react": "^19.3.1",
