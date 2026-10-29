@@ -2,7 +2,7 @@
 // UNIVERSAL SUTRA DATASET (JSON SCHEMA)
 
 import { SUTRA } from "../model/Sutra";
-import { vers102 } from "./vers102";
+
 import { vers24 } from "./vers24";
 import { vers25 } from "./vers25";
 import { vers26 } from "./vers26";
@@ -39,6 +39,11 @@ import { vers133 } from "./vers133";
 import { vers5262 } from "./vers52-62";
 import { vers6374 } from "./vers63-74";
 import { vers7582 } from "./vers75-82";
+import { vers8392 } from "./vers83-92";
+import { vers93103 } from "./vers93-103";
+import { vers104114 } from "./vers104-114";
+import { vers115124 } from "./vers115-124";
+import { vers125132 } from "./vers125-132";
 
 // ==========================================
 export const INITIAL_SUTRAS_DATA: SUTRA[] = [
@@ -73,8 +78,11 @@ export const INITIAL_SUTRAS_DATA: SUTRA[] = [
   ...vers5262,
   ...vers6374,
   ...vers7582,
-  vers102,
-
+  ...vers8392,
+  ...vers93103,
+  ...vers104114,
+  ...vers115124,
+  ...vers125132,
   vers133,
   vers134,
   vers135,

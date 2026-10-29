@@ -78,78 +78,10 @@ Verwende exakt die folgende JSON-Struktur:
 
 Hier ist die Sanskrit-Sutras, die du verarbeiten sollst. Mache für jede Sutra einzelnen JSON Object:
 
-83)
-calāsane sthitasyātha śanairvā dehacālanāt I
-praśānte mānase bhāve devi divyaughamāpnuyāt II 83 II;
 
-84)
-ākāśaṁ vimalaṁ paśyan kṛtvā dṛṣṭiṁ nirantarām I
-stabdhātmā tatkṣaṇāddevi bhairavaṁ vapurāpnuyāt II 84 II;
-
-85)
-līnaṁ mūrdhni viyatsarvaṁ bhairavatvena bhāvayet I
-tatsarvaṁ bhairavākāratejastattvaṁ samāviśet II 85 II;
-
-
-86)
-kiñcijjñātaṁ dvaitadāyi bāhyālokastamaḥ punaḥ I
-viśvādi bhairavaṁ rūpaṁ jñātvānantaprakāśabhṛt II 86 II;
-
-87)
-evameva durniśāyāṁ kṛṣṇapakṣāgame ciram I
-taimiraṁ bhāvayan rūpaṁ bhairavaṁ rūpameṣyati II 87 II;
-
-88)
-evameva nimīlyādau netre kṛṣṇābhamagrataḥ I
-prasārya bhairavaṁ rūpaṁ bhāvayaṁstanmayo bhavet II 88 II;
-
-89)
-yasya kasyendriyasyāpi vyāghātācca nirodhataḥ I
-praviṣṭasyādvaye śūnye tatraivātmā prakāśate II 89 II
-
-90)
-abindumavisargaṁ ca akāraṁ japato mahān I
-udeti devi sahasā jñānaughaḥ parameśvaraḥ II 90 II;
-
-91)
-varṇasya savisargasya visargāntaṁ citiṁ kuru I
-nirādhāreṇa cittena spṛśedbrahma sanātanam II 91 II;
-
-92)
-vyomākāraṁ svāmātmānaṁ dhyāyeddigbhiranāvṛtam I
-nirāśrayā citiḥ śaktiḥ svarūpaṁ darśayettadā II 92 II;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+125)
+samaḥ śatrau ca mitre ca samo mānāvamānayoḥ I
+brahmaṇaḥ paripūrṇatvāditi jñātvā sukhī bhavet II 125 II;
 
 
 
