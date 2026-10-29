@@ -1,8 +1,6 @@
 import { Shuffle, X } from "lucide-react"
 import { DailyPractice } from "../../model/DailyPractice"
-import { DynamicIcon } from "./DynamicIcon"
-import { PracticeShareMenu } from "./PracticeShareMenu"
-import { useCallback, useEffect, useRef, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 import { SUTRA } from "../../model/Sutra"
 import { DailyLifePracticeCard } from "./DailyLifePracticeCard"
 
@@ -21,18 +19,30 @@ type PracticeSelection = {
 export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose }: RandomPracticeProps) => {
 
     const [randomPractice, setRandomPractice] = useState<PracticeSelection | null>(null)
-    const randomPracticeRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
-        if (!randomPractice) return
+        const body = document.body
+        const previousOverflow = body.style.overflow
+        const previousPaddingRight = body.style.paddingRight
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth
+
+        body.style.overflow = "hidden"
+        if (scrollbarWidth > 0) {
+            const currentPaddingRight = Number.parseFloat(window.getComputedStyle(body).paddingRight) || 0
+            body.style.paddingRight = `${currentPaddingRight + scrollbarWidth}px`
+        }
 
         const handleKeyDown = (event: KeyboardEvent) => {
-            if (event.key === "Escape") setRandomPractice(null)
+            if (event.key === "Escape") onClose()
         }
 
         window.addEventListener("keydown", handleKeyDown)
-        return () => window.removeEventListener("keydown", handleKeyDown)
-    }, [randomPractice])
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown)
+            body.style.overflow = previousOverflow
+            body.style.paddingRight = previousPaddingRight
+        }
+    }, [onClose])
 
     const showRandomPractice = useCallback(() => {
         const options = sutras.flatMap(sutra =>
@@ -45,12 +55,12 @@ export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose }:
 
     useEffect(() => {
         showRandomPractice()
-    }, [])
+    }, [showRandomPractice])
 
     return <div
-        className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 backdrop-blur-sm p-4"
+        className="fixed inset-0 z-50 flex items-center justify-center overscroll-contain bg-black/75 backdrop-blur-sm p-4"
         onMouseDown={event => {
-            if (event.target === event.currentTarget) setRandomPractice(null)
+            if (event.target === event.currentTarget) onClose()
         }}
     >
         <section

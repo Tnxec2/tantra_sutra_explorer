@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useCallback, useState } from "react"
 import { Code, Search, Shuffle, Sparkles } from "lucide-react"
 import { SUTRA } from "../../model/Sutra"
 import { DailyPracticeSearch } from "./DailyPracticeSearch"
@@ -16,6 +16,7 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras, handleOpenEdi
     
     const [isSearchOpen, setIsSearchOpen] = useState(false)
     const [isRandomPracticeOpen, setIsRandomPracticeOpen] = useState(false)
+    const closeRandomPractice = useCallback(() => setIsRandomPracticeOpen(false), [])
 
 
     return <>
@@ -103,7 +104,7 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras, handleOpenEdi
                 <RandomPractice
                     sutras={sutras}
                     handleSelectSutra={handleSelectSutra}
-                    onClose={() => setIsRandomPracticeOpen(false)}
+                    onClose={closeRandomPractice}
                     disabled={!sutras.some(sutra => sutra.dailyPractices?.length)}
                 />
         )}
