@@ -11,7 +11,7 @@ import { VocabularyBreakdownGrid } from './ui/components/VocabularyBreakdownGrid
 import { OriginalSanskrit } from './ui/components/OriginalSanskrit';
 import { Header } from './ui/components/Header';
 import { SlideNavigation } from './ui/components/SlideNavigation';
-import { hasDynamicIcon } from './ui/components/DynamicIcon';
+// import { hasDynamicIcon } from './ui/components/DynamicIcon';
 
 
 // Background Particles Animation
@@ -72,12 +72,12 @@ function App() {
 
   const initId = useMemo(() => (Math.ceil(Math.random() * sutras?.length-1)), [sutras?.length])
 
-  console.log(new Set(
-    sutras.flatMap(s => s.dailyPractices)
-    .map(p => p.icon.replaceAll('-', '').toLowerCase())
-    .filter(icon => !hasDynamicIcon(icon))
-    .sort()
-  ))
+  // console.log(new Set(
+  //   sutras.flatMap(s => s.dailyPractices)
+  //   .map(p => p.icon.replaceAll('-', '').toLowerCase())
+  //   .filter(icon => !hasDynamicIcon(icon))
+  //   .sort()
+  // ))
   
   const [activeSutraId, setActiveSutraId] = useState(sutras[initId]?.id);
   const [activeSlide, setActiveSlide] = useState(1);
