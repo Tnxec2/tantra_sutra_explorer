@@ -46,13 +46,32 @@ export const PracticeShareMenu = ({ prac, targetRef }: PracticeShareMenuProps) =
         inlineStyle.setProperty(property, computedStyle.getPropertyValue(property))
       })
     })
+    clone.querySelectorAll("[data-export-ignore]").forEach(element => element.remove())
 
-    const { width, height } = target.getBoundingClientRect()
+    const { width } = target.getBoundingClientRect()
     clone.setAttribute("xmlns", "http://www.w3.org/1999/xhtml")
     clone.style.width = `${width}px`
-    clone.style.height = `${height}px`
     clone.style.margin = "0"
     clone.style.backgroundColor = "#14102b"
+    const originalPosition = clone.style.position
+    const originalTop = clone.style.top
+    const originalLeft = clone.style.left
+    const originalVisibility = clone.style.visibility
+    // position clone in browser to calculate height
+    clone.style.position = "fixed"
+    clone.style.top = "0"
+    clone.style.left = "-10000px"
+    clone.style.visibility = "hidden"
+    clone.style.height = "auto"
+    document.body.appendChild(clone)
+    const height = clone.getBoundingClientRect().height
+    clone.remove()
+    clone.style.position = originalPosition
+    clone.style.top = originalTop
+    clone.style.left = originalLeft
+    clone.style.visibility = originalVisibility
+    clone.style.height = `${height}px`
+
     const markup = new XMLSerializer().serializeToString(clone)
     const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}"><foreignObject width="100%" height="100%">${markup}</foreignObject></svg>`
     const image = new Image()

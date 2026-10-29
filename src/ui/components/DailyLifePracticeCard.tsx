@@ -35,6 +35,19 @@ export const DailyLifePracticeCard = ({ prac }: { prac: DailyPractice }) => {
           "{prac.quote}"
         </p>
       )}
+
+      {prac.tags && prac.tags.length > 0 && (
+        <div data-export-ignore className="flex flex-wrap gap-2 border-t border-slate-800 pt-3" aria-label="Tags">
+          {prac.tags.map(tag => (
+            <span
+              key={tag}
+              className="inline-flex items-center rounded-full border border-amber-400/20 bg-amber-400/10 px-2.5 py-1 text-xs font-medium text-amber-200"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
     </div>
 
     <PracticeShareMenu prac={prac} targetRef={cardRef} />
