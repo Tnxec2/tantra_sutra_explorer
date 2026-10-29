@@ -36,6 +36,16 @@ npm start
 
 Die Entwicklungsanwendung ist anschließend unter [http://localhost:3000](http://localhost:3000) erreichbar. Änderungen am Quellcode werden automatisch neu geladen.
 
+## Als PWA installieren und offline nutzen
+
+Die Produktionsversion enthält ein Web-App-Manifest und einen Service Worker. Nach dem ersten erfolgreichen Laden werden die App-Shell und Build-Dateien zwischengespeichert, sodass die App bei späteren Besuchen auch offline geöffnet werden kann.
+
+1. Produktionsversion mit `npm run build` erstellen und über HTTPS veröffentlichen (GitHub Pages stellt HTTPS bereit).
+2. Die veröffentlichte App in einem unterstützten Browser öffnen.
+3. Im Browser **Installieren** bzw. **Zum Startbildschirm hinzufügen** auswählen. Der Eintrag ist je nach Browser und Betriebssystem unterschiedlich benannt.
+
+Der Service Worker wird nur in Produktions-Builds registriert, nicht beim lokalen Entwicklungsserver. Nach Änderungen kann es nötig sein, die App einmal online neu zu laden, damit der Offline-Cache aktualisiert wird.
+
 ## Verfügbare Befehle
 
 | Befehl | Beschreibung |
