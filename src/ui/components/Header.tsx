@@ -4,6 +4,7 @@ import { SUTRA } from "../../model/Sutra"
 import { DailyPracticeSearch } from "./DailyPracticeSearch"
 import { RandomPractice, SavedData } from "./RandomPractice"
 import { KEY_ACTIVE_RANDOM_PRACTICE } from "../../App"
+import { VERSION } from "../../constant"
 
 
 
@@ -39,8 +40,8 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras }:
                     <h1 className="font-serif text-lg md:text-xl font-bold tracking-wider text-amber-100">
                         Tantra Sutra Explorer
                     </h1>
-                    <p className="text-xs text-amber-400/70 font-medium">
-                        {/* Subtitel */}
+                    <p className="text-xs text-amber-400/70 font-xs">
+                        version: {VERSION}
                     </p>
                 </div>
             </div>
