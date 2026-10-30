@@ -3,7 +3,6 @@ import { useState, useEffect, useMemo } from 'react';
 
 import { SUTRA } from './model/Sutra';
 import { INITIAL_SUTRAS_DATA } from './data/InitialData';
-import { CustomSutraEditor } from './ui/components/CustomSutraEditor';
 import { MeditationTool } from './ui/components/MeditationTool';
 import { DailyLifePractice } from './ui/components/DailyLivePratcices';
 import { TranslationAndCommentary } from './ui/components/TranslationAndCommentary';
@@ -11,7 +10,8 @@ import { VocabularyBreakdownGrid } from './ui/components/VocabularyBreakdownGrid
 import { OriginalSanskrit } from './ui/components/OriginalSanskrit';
 import { Header } from './ui/components/Header';
 import { SlideNavigation } from './ui/components/SlideNavigation';
-// import { hasDynamicIcon } from './ui/components/DynamicIcon';
+import { hasDynamicIcon } from './ui/components/DynamicIcon';
+
 
 
 // Background Particles Animation
@@ -63,38 +63,46 @@ function initParticles() {
   animate();
 }
 
+
+function debugDynamicIcons(sutras: SUTRA[]){
+  console.log(new Set(
+    sutras.flatMap(s => s.dailyPractices)
+    .map(p => p.icon.replaceAll('-', '').toLowerCase())
+    .filter(icon => !hasDynamicIcon(icon))
+    .sort()
+  ))
+}
+
+const KEY_ACTIVE_SUTRA_ID = 'tantra_sutras_explorer.active_sutra_id';
+const KEY_ACTIVE_SLIDE = 'tantra_sutras_explorer.active_slide';
+export const KEY_ACTIVE_RANDOM_PRACTICE = 'tantra_sutras_explorer.active_random_practice';
+
 function App() {
   // Application States
-  const [sutras, setSutras] = useState<SUTRA[]>(() => {
-    const saved = undefined; // localStorage.getItem('tantra_sutras_data');
-    return saved ? JSON.parse(saved) : INITIAL_SUTRAS_DATA;
+  const sutras = useMemo(() => INITIAL_SUTRAS_DATA, []);
+
+  //debugDynamicIcons(sutras);
+  
+  const [activeSutraId, setActiveSutraId] = useState(() => {
+    let initId = sutras[Math.ceil(Math.random() * sutras?.length-1)].id;
+    return localStorage.getItem(KEY_ACTIVE_SUTRA_ID) || initId;
   });
 
-  const initId = useMemo(() => (Math.ceil(Math.random() * sutras?.length-1)), [sutras?.length])
-
-  // console.log(new Set(
-  //   sutras.flatMap(s => s.dailyPractices)
-  //   .map(p => p.icon.replaceAll('-', '').toLowerCase())
-  //   .filter(icon => !hasDynamicIcon(icon))
-  //   .sort()
-  // ))
-  
-  const [activeSutraId, setActiveSutraId] = useState(sutras[initId]?.id);
-  const [activeSlide, setActiveSlide] = useState(1);
-  const [showJsonEditor, setShowJsonEditor] = useState(false);
-  const [jsonText, setJsonText] = useState("");
-  const [jsonError, setJsonError] = useState<string | undefined>("");
-
-  // Audio state simulation
-  const [isPlayingAudio, setIsPlayingAudio] = useState(false);
+  const [activeSlide, setActiveSlide] = useState(() => 
+    Number(localStorage.getItem(KEY_ACTIVE_SLIDE)) || 1
+  );
 
   // Active Sutra Object
   const currentSutra = sutras.find(s => s.id === activeSutraId) || sutras[0];
 
   // Persist to local storage
   useEffect(() => {
-    localStorage.setItem('tantra_sutras_data', JSON.stringify(sutras));
-  }, [sutras]);
+    localStorage.setItem(KEY_ACTIVE_SUTRA_ID, activeSutraId);
+  }, [activeSutraId]);
+
+  useEffect(() => {
+    localStorage.setItem(KEY_ACTIVE_SLIDE, activeSlide.toString());
+  }, [activeSlide]);
 
   useEffect(() => {
     initParticles();
@@ -104,30 +112,6 @@ function App() {
   const handleSelectSutra = (id: string) => {
     setActiveSutraId(id);
     setActiveSlide(1);
-    setIsPlayingAudio(false);
-  };
-
-  // JSON Editor Handlers
-  const handleOpenEditor = () => {
-    setJsonText(JSON.stringify(sutras, null, 2));
-    setJsonError("");
-    setShowJsonEditor(true);
-  };
-
-  const handleSaveJson = (jsonTextToSave: string) => {
-    try {
-      const parsed = JSON.parse(jsonTextToSave);
-      if (!Array.isArray(parsed) || parsed.length === 0) {
-        throw new Error("Das JSON muss ein Array mit mindestens einer Sutra enthalten.");
-      }
-      setJsonText("");
-      setSutras(parsed);
-      setActiveSutraId(parsed[0].id);
-      setShowJsonEditor(false);
-      setJsonError("");
-    } catch (err: any) {
-      setJsonError(err.message);
-    }
   };
 
   return (
@@ -145,7 +129,6 @@ function App() {
         sutras={sutras}
         activeSutraId={activeSutraId}
         handleSelectSutra={(id) => handleSelectSutra(id)}
-        handleOpenEditor={() => handleOpenEditor() }
       />
 
       {/* MAIN CONTAINER */}
@@ -176,8 +159,6 @@ function App() {
               <OriginalSanskrit
                 sanskritDevanagari={currentSutra.sanskrit}
                 sanskritIAST={currentSutra.iast}
-                isPlayingAudio={isPlayingAudio}
-                togglePlayingAudio={() => setIsPlayingAudio(!isPlayingAudio)}
               />
 
               <VocabularyBreakdownGrid vocabulary={currentSutra.vocabulary} />
@@ -195,14 +176,6 @@ function App() {
         </div>
       </main>
 
-      {showJsonEditor && (
-        <CustomSutraEditor
-          close={() => setShowJsonEditor(false)}
-          onSave={(jsonText) => handleSaveJson(jsonText)}
-          initJsonText={jsonText}
-          jsonError={jsonError}
-        />
-      )}
     </div>
   );
 }

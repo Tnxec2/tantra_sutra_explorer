@@ -3,6 +3,7 @@ import { DailyPractice } from "../../model/DailyPractice"
 import { useCallback, useEffect, useState } from "react"
 import { SUTRA } from "../../model/Sutra"
 import { DailyLifePracticeCard } from "./DailyLifePracticeCard"
+import { KEY_ACTIVE_RANDOM_PRACTICE } from "../../App"
 
 type RandomPracticeProps = {
     disabled: boolean,
@@ -12,13 +13,50 @@ type RandomPracticeProps = {
 }
 
 type PracticeSelection = {
-    practice: DailyPractice
     sutra: SUTRA
+    practiceIndex: number
+    practice: DailyPractice
 }
 
+export type SavedData = {
+    sutraId: string
+    practiceIndex: number
+}
 export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose }: RandomPracticeProps) => {
 
-    const [randomPractice, setRandomPractice] = useState<PracticeSelection | null>(null)
+    const [randomPractice, setRandomPractice] = useState<PracticeSelection | null>(() => {
+        const savedData = localStorage.getItem(KEY_ACTIVE_RANDOM_PRACTICE);
+        
+        if (savedData) {
+            const data: SavedData = JSON.parse(savedData);
+            const sutra = sutras.find(s => s.id === data.sutraId);
+            if (sutra) {
+                return {
+                    sutra: sutra,
+                    practiceIndex: data.practiceIndex,
+                    practice: sutra.dailyPractices[data.practiceIndex]
+                }
+            }
+        }
+        return null;
+    })
+
+    useEffect(() => {
+        if (randomPractice) {
+            localStorage.setItem(KEY_ACTIVE_RANDOM_PRACTICE, JSON.stringify({
+                sutraId: randomPractice.sutra.id,
+                practiceIndex: randomPractice.practiceIndex
+            } as SavedData));
+        } else {
+            localStorage.removeItem(KEY_ACTIVE_RANDOM_PRACTICE);
+        }
+    }, [randomPractice])
+
+    const handleClose = useCallback(() => {
+        setRandomPractice(null);
+        localStorage.removeItem(KEY_ACTIVE_RANDOM_PRACTICE);
+        onClose();
+    }, [setRandomPractice, onClose])
 
     useEffect(() => {
         const body = document.body
@@ -33,7 +71,7 @@ export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose }:
         }
 
         const handleKeyDown = (event: KeyboardEvent) => {
-            if (event.key === "Escape") onClose()
+            if (event.key === "Escape") handleClose()
         }
 
         window.addEventListener("keydown", handleKeyDown)
@@ -42,11 +80,15 @@ export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose }:
             body.style.overflow = previousOverflow
             body.style.paddingRight = previousPaddingRight
         }
-    }, [onClose])
+    }, [handleClose])
 
     const showRandomPractice = useCallback(() => {
-        const options = sutras.flatMap(sutra =>
-            (sutra.dailyPractices || []).map(practice => ({ practice, sutra }))
+        const options: PracticeSelection[] = sutras.flatMap(sutra =>
+            (sutra.dailyPractices || []).map((practice, idx) => ({ 
+                practiceIndex: idx,
+                practice: practice, 
+                sutra: sutra 
+            }))
         )
         if (options.length === 0) return
 
@@ -54,13 +96,17 @@ export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose }:
     }, [sutras])
 
     useEffect(() => {
-        showRandomPractice()
+        const savedData = localStorage.getItem(KEY_ACTIVE_RANDOM_PRACTICE);
+        
+        if (!savedData) {
+            showRandomPractice()
+        }
     }, [showRandomPractice])
 
     return <div
         className="fixed inset-0 z-50 flex items-center justify-center overscroll-contain bg-black/75 backdrop-blur-sm p-4"
         onMouseDown={event => {
-            if (event.target === event.currentTarget) onClose()
+            if (event.target === event.currentTarget) handleClose()
         }}
     >
         <section
@@ -88,7 +134,7 @@ export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose }:
                 </button>
                     <button
                         type="button"
-                        onClick={() => onClose()}
+                        onClick={() => handleClose()}
                         aria-label="Modal schließen"
                         className="rounded-lg p-2 text-slate-400 transition-colors hover:bg-slate-800 hover:text-slate-100"
                     >
@@ -108,8 +154,7 @@ export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose }:
                             type="button"
                             onClick={() => {
                                 handleSelectSutra(randomPractice.sutra.id)
-                                setRandomPractice(null)
-                                onClose()
+                                handleClose()
                             }}
                             className="font-medium text-amber-300 underline decoration-amber-500/50 underline-offset-4 
                             hover:text-amber-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber-400"

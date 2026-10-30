@@ -1,23 +1,30 @@
-import { useCallback, useState } from "react"
-import { Code, Search, Shuffle, Sparkles } from "lucide-react"
+import { useCallback, useEffect, useState } from "react"
+import { Search, Shuffle, Sparkles } from "lucide-react"
 import { SUTRA } from "../../model/Sutra"
 import { DailyPracticeSearch } from "./DailyPracticeSearch"
-import { RandomPractice } from "./RandomPractice"
+import { RandomPractice, SavedData } from "./RandomPractice"
+import { KEY_ACTIVE_RANDOM_PRACTICE } from "../../App"
 
 
 
-export const Header = ({ activeSutraId, handleSelectSutra, sutras, handleOpenEditor }:
+export const Header = ({ activeSutraId, handleSelectSutra, sutras }:
     {
         sutras: SUTRA[],
         activeSutraId: string,
         handleSelectSutra: (id: string) => void,
-        handleOpenEditor: () => void,
     }) => {
     
     const [isSearchOpen, setIsSearchOpen] = useState(false)
     const [isRandomPracticeOpen, setIsRandomPracticeOpen] = useState(false)
     const closeRandomPractice = useCallback(() => setIsRandomPracticeOpen(false), [])
 
+    useEffect(() => {
+        const savedData = localStorage.getItem(KEY_ACTIVE_RANDOM_PRACTICE);
+        if (savedData) {
+            const data: SavedData = JSON.parse(savedData);
+            setIsRandomPracticeOpen( data !== undefined)
+        }    
+    }, []);
 
     return <>
         <header className="relative z-20 w-full px-4 md:px-8 py-4 bg-[#14102b]/60
@@ -38,7 +45,6 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras, handleOpenEdi
                 </div>
             </div>
 
-            {/* Sutra Selector Controls */}
             <div className="flex items-center gap-2 sm:gap-3 w-full md:w-auto justify-end">
                 <select
                     value={activeSutraId}
@@ -80,17 +86,6 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras, handleOpenEdi
                     <Shuffle className="w-4 h-4" />
                     <span className="hidden sm:inline">Zufallspraxis</span>
                 </button>
-
-                <button
-                    onClick={handleOpenEditor}
-                    title="Sutra Data JSON bearbeiten"
-                    aria-label="Sutra Data JSON bearbeiten"
-                    className="p-2 rounded-lg bg-[#1b1537] hover:bg-amber-500/20 border 
-            border-amber-500/30 text-amber-300 transition-all flex items-center gap-1 text-xs shrink-0"
-                >
-                    <Code className="w-4 h-4" />
-                    <span className="hidden sm:inline">JSON</span>
-                </button>
             </div>
         </header>
         {isSearchOpen && (
@@ -101,12 +96,12 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras, handleOpenEdi
             />
         )}
         {isRandomPracticeOpen && (
-                <RandomPractice
-                    sutras={sutras}
-                    handleSelectSutra={handleSelectSutra}
-                    onClose={closeRandomPractice}
-                    disabled={!sutras.some(sutra => sutra.dailyPractices?.length)}
-                />
+            <RandomPractice
+                sutras={sutras}
+                handleSelectSutra={handleSelectSutra}
+                onClose={closeRandomPractice}
+                disabled={!sutras.some(sutra => sutra.dailyPractices?.length)}
+            />
         )}
     </>
 }
