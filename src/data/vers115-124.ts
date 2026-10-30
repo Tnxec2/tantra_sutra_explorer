@@ -454,11 +454,11 @@ export const vers115124: SUTRA[] = [
        "meaning": "Eine bestimmte innere Verfassung oder Erfahrungsweise."
      }
    ],
-   "translationGerman": "Am Ende eines Hungerimpulses, in Furcht oder Kummer, in einer tiefen Schlucht oder angesichts eines plötzlichen Kampfes, ebenso im Staunen und am Ende des Hungers, kann ein Zustand aufleuchten, der von der Wirklichkeit des Absoluten erfüllt ist.",
+   "translationGerman": "Am Ende eines Niesensimpulses, in Furcht oder Kummer, in einer tiefen Schlucht oder angesichts eines plötzlichen Kampfes, ebenso im Staunen und am Ende des Hungers, kann ein Zustand aufleuchten, der von der Wirklichkeit des Absoluten erfüllt ist.",
    "philosophicalNotes": [
      {
        "title": "Intensive Empfindungen als Schwellen",
-       "text": "Der Vers lenkt die Aufmerksamkeit auf Grenzmomente, in denen die gewohnte mentale Ordnung ins Wanken gerät. Angst, Trauer, Staunen oder körperliches Bedürfnis können die Aufmerksamkeit ungewöhnlich stark bündeln. Die spirituelle Möglichkeit besteht darin, den Moment bewusst wahrzunehmen, statt sich vollständig in die gedankliche Geschichte über das Gefühl zu verlieren."
+       "text": "Der Vers lenkt die Aufmerksamkeit auf Grenzmomente, in denen die gewohnte mentale Ordnung ins Wanken gerät. Angst, Trauer, Staunen oder körperliches Bedürfnis wie Niesen können die Aufmerksamkeit ungewöhnlich stark bündeln. Die spirituelle Möglichkeit besteht darin, den Moment bewusst wahrzunehmen, statt sich vollständig in die gedankliche Geschichte über das Gefühl zu verlieren."
      },
      {
        "title": "Die Pause am Ende eines Impulses",
