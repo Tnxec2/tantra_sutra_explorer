@@ -1,8 +1,8 @@
 import { DailyPractice } from "../../model/DailyPractice"
 import { DailyLifePracticeCard } from "./DailyLifePracticeCard"
 
-export const DailyLifePractice = ({ dailyPractices }:
-    { dailyPractices?: DailyPractice[] }) => {
+export const DailyLifePractice = ({ dailyPractices, verseNum, verseTitle }:
+    { dailyPractices?: DailyPractice[], verseNum: string, verseTitle: string }) => {
 
     return <div className="space-y-4 animate-fadeIn">
         <div className="text-center mb-2">
@@ -16,7 +16,7 @@ export const DailyLifePractice = ({ dailyPractices }:
 
         <div className='grid gap-4 grid-cols-1 sm:grid-cols-2'>
             {dailyPractices?.map((prac, idx) =>
-                <DailyLifePracticeCard prac={prac} key={idx} />
+                <DailyLifePracticeCard prac={prac} key={idx} verseNum={verseNum} verseTitle={verseTitle} />
             )}
         </div>
     </div>

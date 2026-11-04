@@ -167,9 +167,14 @@ function App() {
 
           {activeSlide === 2 && <TranslationAndCommentary
             translationGerman={currentSutra.translationGerman}
-            philosophicalNotes={currentSutra.philosophicalNotes} />}
+            philosophicalNotes={currentSutra.philosophicalNotes}
+            verseNum={currentSutra.verseNum}
+            verseTitle={currentSutra.title} />}
 
-          {activeSlide === 3 && <DailyLifePractice dailyPractices={currentSutra.dailyPractices} />}
+          {activeSlide === 3 && <DailyLifePractice 
+              dailyPractices={currentSutra.dailyPractices} 
+              verseNum={currentSutra.verseNum} 
+              verseTitle={currentSutra.title} />}
 
           {activeSlide === 4 && <MeditationTool config={currentSutra.meditationConfig} />}
 

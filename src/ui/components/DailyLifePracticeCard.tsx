@@ -1,16 +1,23 @@
 
-import { useRef } from "react"
+
 import { DailyPractice } from "../../model/DailyPractice"
 import { DynamicIcon } from "./DynamicIcon"
-import { PracticeShareMenu } from "./PracticeShareMenu"
+import { ShareableContent } from "./ShareableContent"
 
-export const DailyLifePracticeCard = ({ prac }: { prac: DailyPractice }) => {
-  const cardRef = useRef<HTMLDivElement>(null)
+export const DailyLifePracticeCard = ({ prac, verseNum, verseTitle }: { prac: DailyPractice, verseNum: string, verseTitle: string }) => {
+
 
   return <div className="relative h-full">
-    <div ref={cardRef} className="bg-[#14102b]/60 backdrop-blur-md p-5 rounded-xl
+    <ShareableContent
+      title={prac.title}
+      markdownContent={`# ${prac.title}\n\n**Situation:** ${prac.situation}\n\n**Praxis:** ${prac.practice}${prac.quote ? `\n\n> ${prac.quote}` : ""}`}
+      verseNum={verseNum}
+      verseTitle={verseTitle}
+      className="bg-[#14102b]/60 backdrop-blur-md p-5 rounded-xl
       border border-amber-500/20 hover:border-amber-500/40 transition-all flex flex-col
-      justify-between space-y-3">
+      justify-between space-y-3"
+    >
+
       <div className="space-y-2">
         <div className="flex items-center space-x-2 pr-10">
           <div className="p-2 rounded-lg bg-amber-500/10 text-amber-400">
@@ -48,8 +55,7 @@ export const DailyLifePracticeCard = ({ prac }: { prac: DailyPractice }) => {
           ))}
         </div>
       )}
-    </div>
-
-    <PracticeShareMenu prac={prac} targetRef={cardRef} />
+    </ShareableContent>
   </div>
+
 }

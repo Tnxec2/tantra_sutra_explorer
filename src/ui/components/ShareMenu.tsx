@@ -1,15 +1,14 @@
 import { RefObject, useEffect, useRef, useState } from "react"
 import { Code2, Download, Ellipsis, FileCode2, FileText, Image as ImageIcon } from "lucide-react"
-import { DailyPractice } from "../../model/DailyPractice"
-
 type ShareMode = "html" | "text" | "markdown"
 
-type PracticeShareMenuProps = {
-  prac: DailyPractice
+type ShareMenuProps = {
+  title: string
+  markdownContent: string
   targetRef: RefObject<HTMLElement | null>
 }
 
-export const PracticeShareMenu = ({ prac, targetRef }: PracticeShareMenuProps) => {
+export const ShareMenu = ({ title, markdownContent, targetRef }: ShareMenuProps) => {
   const menuRef = useRef<HTMLDivElement>(null)
   const [menuOpen, setMenuOpen] = useState(false)
   const [message, setMessage] = useState("")
@@ -104,7 +103,7 @@ export const PracticeShareMenu = ({ prac, targetRef }: PracticeShareMenuProps) =
     const url = URL.createObjectURL(png)
     const download = document.createElement("a")
     download.href = url
-    download.download = `${prac.title.trim().replace(/[^a-z0-9-_]+/gi, "-") || "praxis"}.png`
+    download.download = `${title.trim().replace(/[^a-z0-9-_]+/gi, "-") || "inhalt"}.png`
     download.click()
     window.setTimeout(() => URL.revokeObjectURL(url), 1000)
   }
@@ -122,10 +121,10 @@ export const PracticeShareMenu = ({ prac, targetRef }: PracticeShareMenuProps) =
   const sharePng = async () => {
     try {
       const png = await createPng()
-      const filename = `${prac.title.trim().replace(/[^a-z0-9-_]+/gi, "-") || "praxis"}.png`
+      const filename = `${title.trim().replace(/[^a-z0-9-_]+/gi, "-") || "inhalt"}.png`
       const file = new File([png], filename, { type: "image/png" })
       if (navigator.share && navigator.canShare?.({ files: [file] })) {
-        await navigator.share({ title: prac.title, files: [file] })
+        await navigator.share({ title, files: [file] })
         setMessage("PNG-Bild wurde geteilt.")
       } else {
         downloadPng(png)
@@ -148,11 +147,11 @@ export const PracticeShareMenu = ({ prac, targetRef }: PracticeShareMenuProps) =
     const content = mode === "html"
       ? target.outerHTML
       : mode === "markdown"
-        ? `# ${prac.title}\n\n**Situation:** ${prac.situation}\n\n**Praxis:** ${prac.practice}${prac.quote ? `\n\n> ${prac.quote}` : ""}`
+        ? markdownContent
         : target.innerText
     try {
       if (navigator.share) {
-        await navigator.share({ title: prac.title, text: content })
+        await navigator.share({ title, text: content })
         setMessage(mode === "html" ? "HTML-Text wurde geteilt." : mode === "markdown" ? "Markdown-Text wurde geteilt." : "Text wurde geteilt.")
       } else if (navigator.clipboard?.writeText) {
         await navigator.clipboard.writeText(content)
@@ -172,7 +171,7 @@ export const PracticeShareMenu = ({ prac, targetRef }: PracticeShareMenuProps) =
       <div className="absolute right-3 top-3" ref={menuRef}>
         <button
           type="button"
-          aria-label="Kartenmenü öffnen"
+          aria-label={`Teilen und exportieren: ${title}`}
           aria-haspopup="menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen(open => !open)}

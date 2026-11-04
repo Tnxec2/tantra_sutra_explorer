@@ -145,7 +145,8 @@ export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose }:
                 <div className="space-y-4 p-5">
                     <DailyLifePracticeCard 
                         prac={randomPractice.practice}
-                    
+                        verseNum={randomPractice.sutra.verseNum}
+                        verseTitle={randomPractice.sutra.title}
                     />
 
                     <div className="text-sm">
