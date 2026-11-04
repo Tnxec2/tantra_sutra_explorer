@@ -4,7 +4,7 @@ import { SUTRA } from "../../model/Sutra"
 import { DailyPracticeSearch } from "./DailyPracticeSearch"
 import { RandomPractice, SavedData } from "./RandomPractice"
 import { KEY_ACTIVE_RANDOM_PRACTICE } from "../../App"
-import { VERSION } from "../../constant"
+import { VERSION } from "../../index"
 
 
 
