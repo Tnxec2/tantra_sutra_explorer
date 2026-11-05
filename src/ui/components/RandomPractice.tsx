@@ -10,6 +10,7 @@ type RandomPracticeProps = {
     sutras: SUTRA[],
     handleSelectSutra: (id: string) => void
     onClose: () => void
+    onOpenSearch: (tag: string | undefined) => void
 }
 
 type PracticeSelection = {
@@ -22,7 +23,7 @@ export type SavedData = {
     sutraId: string
     practiceIndex: number
 }
-export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose }: RandomPracticeProps) => {
+export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose, onOpenSearch }: RandomPracticeProps) => {
 
     const [randomPractice, setRandomPractice] = useState<PracticeSelection | null>(() => {
         const savedData = localStorage.getItem(KEY_ACTIVE_RANDOM_PRACTICE);
@@ -147,6 +148,7 @@ export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose }:
                         prac={randomPractice.practice}
                         verseNum={randomPractice.sutra.verseNum}
                         verseTitle={randomPractice.sutra.title}
+                        onOpenSearch={(tag) => onOpenSearch(tag)}
                     />
 
                     <div className="text-sm">

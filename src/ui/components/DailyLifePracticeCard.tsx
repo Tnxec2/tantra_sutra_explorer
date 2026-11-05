@@ -4,7 +4,8 @@ import { DailyPractice } from "../../model/DailyPractice"
 import { DynamicIcon } from "./DynamicIcon"
 import { ShareableContent } from "./ShareableContent"
 
-export const DailyLifePracticeCard = ({ prac, verseNum, verseTitle }: { prac: DailyPractice, verseNum: string, verseTitle: string }) => {
+export const DailyLifePracticeCard = ({ prac, verseNum, verseTitle, onOpenSearch }: 
+  { prac: DailyPractice, verseNum: string, verseTitle: string, onOpenSearch: (tag: string) => void }) => {
 
 
   return <div className="relative h-full">
@@ -48,7 +49,9 @@ export const DailyLifePracticeCard = ({ prac, verseNum, verseTitle }: { prac: Da
           {prac.tags.map(tag => (
             <span
               key={tag}
-              className="inline-flex items-center rounded-full border border-amber-400/20 bg-amber-400/10 px-2.5 py-1 text-xs font-medium text-amber-200"
+              className="inline-flex items-center rounded-full border border-amber-400/20 bg-amber-400/10 
+              px-2.5 py-1 text-xs font-medium text-amber-200 cursor-pointer hover:bg-amber-400/20 transition-all"
+              onClick={() => onOpenSearch(tag)}
             >
               {tag}
             </span>

@@ -10,16 +10,18 @@ type PracticeResult = {
 }
 
 export const DailyPracticeSearch = ({
+    initialTag,
     sutras,
     onClose,
     onSelectSutra,
 }: {
+    initialTag?: string
     sutras: SUTRA[]
     onClose: () => void
     onSelectSutra: (id: string) => void
 }) => {
-    const [query, setQuery] = useState("")
-    const [selectedTag, setSelectedTag] = useState<string>()
+    const [query, setQuery] = useState(initialTag || "")
+    const [selectedTag, setSelectedTag] = useState<string | undefined>(initialTag)
     const [selectedPractice, setSelectedPractice] = useState<PracticeResult | null>(null)
 
     const tags = useMemo(() => {
@@ -36,7 +38,7 @@ export const DailyPracticeSearch = ({
             })
         })
         const t = Array.from(uniqueTags.values()).sort((a, b) => a.localeCompare(b, "de"))
-        console.log("tags", t);
+        // console.log("tags", t);
         
         return t;
     }, [sutras])
@@ -136,7 +138,6 @@ export const DailyPracticeSearch = ({
                                 }}
                                 aria-label="Nach einem Praxis-Tag suchen"
                                 aria-autocomplete="list"
-                                aria-expanded={suggestions.length > 0}
                                 className="w-full bg-transparent py-2.5 text-sm text-slate-100 
                                 outline-none placeholder:text-slate-500"
                                 placeholder="z. B. Atem, Klang oder Achtsamkeit"

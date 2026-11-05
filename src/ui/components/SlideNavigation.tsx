@@ -4,7 +4,7 @@ const tabs: { id: number; label: string; mobileLabel: string; icon: LucideIcon }
     { id: 1, label: "1. Original & Sanskrit", mobileLabel: "Original", icon: BookOpen },
     { id: 2, label: "2. Übersetzung", mobileLabel: "Übersetzung", icon: FileText },
     { id: 3, label: "3. Alltags-Praxis", mobileLabel: "Praxis", icon: Sliders },
-    { id: 4, label: "4. Meditation", mobileLabel: "Meditation", icon: Activity }
+    // { id: 4, label: "4. Meditation", mobileLabel: "Meditation", icon: Activity }
 ];
 
 export const SlideNavigation = ({ activeSlide, setActiveSlide }:

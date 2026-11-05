@@ -11,6 +11,8 @@ import { OriginalSanskrit } from './ui/components/OriginalSanskrit';
 import { Header } from './ui/components/Header';
 import { SlideNavigation } from './ui/components/SlideNavigation';
 import { hasDynamicIcon } from './ui/components/DynamicIcon';
+import { RandomPractice, SavedData } from './ui/components/RandomPractice';
+import { DailyPracticeSearch } from './ui/components/DailyPracticeSearch';
 
 
 
@@ -81,6 +83,8 @@ function App() {
   // Application States
   const sutras = useMemo(() => INITIAL_SUTRAS_DATA, []);
 
+  const [initialSearchTag, setInitialSearchTag] = useState<string | undefined>();
+  const [isRandomPracticeOpen, setIsRandomPracticeOpen] = useState(false)
   //debugDynamicIcons(sutras);
   
   const [activeSutraId, setActiveSutraId] = useState(() => {
@@ -91,6 +95,14 @@ function App() {
   const [activeSlide, setActiveSlide] = useState(() => 
     Number(localStorage.getItem(KEY_ACTIVE_SLIDE)) || 1
   );
+
+  useEffect(() => {
+      const savedData = localStorage.getItem(KEY_ACTIVE_RANDOM_PRACTICE);
+      if (savedData) {
+          const data: SavedData = JSON.parse(savedData);
+          setIsRandomPracticeOpen( data !== undefined)
+      }    
+  }, []);
 
   // Active Sutra Object
   const currentSutra = sutras.find(s => s.id === activeSutraId) || sutras[0];
@@ -129,6 +141,10 @@ function App() {
         sutras={sutras}
         activeSutraId={activeSutraId}
         handleSelectSutra={(id) => handleSelectSutra(id)}
+        onOpenSearch={() => {
+          setInitialSearchTag('');
+        }}
+        onOpenRandomPractice={() => setIsRandomPracticeOpen(true)}
       />
 
       {/* MAIN CONTAINER */}
@@ -174,13 +190,33 @@ function App() {
           {activeSlide === 3 && <DailyLifePractice 
               dailyPractices={currentSutra.dailyPractices} 
               verseNum={currentSutra.verseNum} 
-              verseTitle={currentSutra.title} />}
+              verseTitle={currentSutra.title} 
+              onOpenSearch={(tag) => setInitialSearchTag(tag)} />}
 
           {activeSlide === 4 && <MeditationTool config={currentSutra.meditationConfig} />}
 
         </div>
       </main>
-
+        {initialSearchTag !== undefined && (
+            <DailyPracticeSearch
+                initialTag={initialSearchTag}
+                sutras={sutras}
+                onClose={() => setInitialSearchTag(undefined)}
+                onSelectSutra={handleSelectSutra}
+            />
+        )}
+        {isRandomPracticeOpen && (
+            <RandomPractice
+                sutras={sutras}
+                handleSelectSutra={handleSelectSutra}
+                onClose={() => setIsRandomPracticeOpen(false)}
+                onOpenSearch={(tag) => {
+                  setIsRandomPracticeOpen(false);
+                  setInitialSearchTag(tag);
+                }}
+                disabled={!sutras.some(sutra => sutra.dailyPractices?.length)}
+            />
+        )}
     </div>
   );
 }

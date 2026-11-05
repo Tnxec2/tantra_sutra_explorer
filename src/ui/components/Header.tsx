@@ -1,31 +1,17 @@
-import { useCallback, useEffect, useState } from "react"
 import { Search, Shuffle, Sparkles } from "lucide-react"
 import { SUTRA } from "../../model/Sutra"
-import { DailyPracticeSearch } from "./DailyPracticeSearch"
-import { RandomPractice, SavedData } from "./RandomPractice"
-import { KEY_ACTIVE_RANDOM_PRACTICE } from "../../App"
 import { VERSION } from "../../index"
 
 
 
-export const Header = ({ activeSutraId, handleSelectSutra, sutras }:
+export const Header = ({ activeSutraId, handleSelectSutra, sutras, onOpenSearch, onOpenRandomPractice }:
     {
         sutras: SUTRA[],
         activeSutraId: string,
         handleSelectSutra: (id: string) => void,
+        onOpenSearch: () => void,
+        onOpenRandomPractice: () => void
     }) => {
-    
-    const [isSearchOpen, setIsSearchOpen] = useState(false)
-    const [isRandomPracticeOpen, setIsRandomPracticeOpen] = useState(false)
-    const closeRandomPractice = useCallback(() => setIsRandomPracticeOpen(false), [])
-
-    useEffect(() => {
-        const savedData = localStorage.getItem(KEY_ACTIVE_RANDOM_PRACTICE);
-        if (savedData) {
-            const data: SavedData = JSON.parse(savedData);
-            setIsRandomPracticeOpen( data !== undefined)
-        }    
-    }, []);
 
     return <>
         <header className="relative z-20 w-full px-4 md:px-8 py-4 bg-[#14102b]/60
@@ -63,7 +49,7 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras }:
 
                 <button
                     type="button"
-                    onClick={() => setIsSearchOpen(true)}
+                    onClick={() => onOpenSearch()}
                     title="Alltagspraktiken nach Tag suchen"
                     aria-label="Alltagspraktiken nach Tag suchen"
                     className="p-2 rounded-lg bg-[#1b1537] hover:bg-amber-500/20 border
@@ -76,7 +62,7 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras }:
 
                 <button
                     type="button"
-                    onClick={() => setIsRandomPracticeOpen(true)}
+                    onClick={() => onOpenRandomPractice()}
                     disabled={!sutras.some(sutra => sutra.dailyPractices?.length)}
                     title="Zufällige Alltagspraxis anzeigen"
                     aria-label="Zufällige Alltagspraxis anzeigen"
@@ -89,20 +75,6 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras }:
                 </button>
             </div>
         </header>
-        {isSearchOpen && (
-            <DailyPracticeSearch
-                sutras={sutras}
-                onClose={() => setIsSearchOpen(false)}
-                onSelectSutra={handleSelectSutra}
-            />
-        )}
-        {isRandomPracticeOpen && (
-            <RandomPractice
-                sutras={sutras}
-                handleSelectSutra={handleSelectSutra}
-                onClose={closeRandomPractice}
-                disabled={!sutras.some(sutra => sutra.dailyPractices?.length)}
-            />
-        )}
+
     </>
 }
