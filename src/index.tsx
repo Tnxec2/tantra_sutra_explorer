@@ -6,7 +6,7 @@ import { registerServiceWorker } from './serviceWorkerRegistration';
 import CacheBuster from './CacheBuster';
 
 
-export const VERSION = "1.0.1"; // Update this version whenever you want to force a cache refresh
+export const VERSION = "1.0.2"; // Update this version whenever you want to force a cache refresh
 // also update the version in public/meta.json
 
 
