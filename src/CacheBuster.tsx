@@ -96,7 +96,7 @@ export const CacheBuster = ({
         }
         
         // Nginx ensures meta.json is never cached, so no need for cache-busting
-        const metaUrl = metaJsonPath ?? "/meta.json";
+        const metaUrl = metaJsonPath ?? "./meta.json";
         const response = await fetch(metaUrl);
 
         // Handle missing meta.json (404 or other errors)
