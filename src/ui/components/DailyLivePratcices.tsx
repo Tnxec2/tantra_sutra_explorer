@@ -1,8 +1,14 @@
 import { DailyPractice } from "../../model/DailyPractice"
 import { DailyLifePracticeCard } from "./DailyLifePracticeCard"
 
-export const DailyLifePractice = ({ dailyPractices, verseNum, verseTitle, onOpenSearch }:
-    { dailyPractices?: DailyPractice[], verseNum: string, verseTitle: string, onOpenSearch: (tag: string) => void }) => {
+export const DailyLifePractice = ({ dailyPractices, verseNum, verseTitle, onOpenSearch, onOpenPractice }:
+    { 
+        dailyPractices?: DailyPractice[], 
+        verseNum: string,
+        verseTitle: string, 
+        onOpenSearch: (tag: string) => void,
+        onOpenPractice: (prac: DailyPractice, idx: number) => void
+    }) => {
 
     return <div className="space-y-4 animate-fadeIn">
         <div className="text-center mb-2">
@@ -21,7 +27,13 @@ export const DailyLifePractice = ({ dailyPractices, verseNum, verseTitle, onOpen
                 key={idx} 
                 verseNum={verseNum} 
                 verseTitle={verseTitle} 
-                onOpenSearch={onOpenSearch} />
+                onOpenSearch={onOpenSearch}
+                 
+                  // TODO: implementiere und aktiviere 
+                  // onOpenPractice={() => onOpenPractice(prac, idx)}
+                  
+                
+                 />
             )}
         </div>
     </div>

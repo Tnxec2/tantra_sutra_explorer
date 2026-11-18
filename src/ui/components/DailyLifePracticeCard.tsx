@@ -7,8 +7,13 @@ import { TagsBox } from "../shared/TagsBox"
 import { DynamicIcon } from "./DynamicIcon"
 import { ShareableContent } from "./ShareableContent"
 
-export const DailyLifePracticeCard = ({ prac, verseNum, verseTitle, onOpenSearch }: 
-  { prac: DailyPractice, verseNum: string, verseTitle: string, onOpenSearch: (tag: string) => void }) => {
+export const DailyLifePracticeCard = ({ prac, verseNum, verseTitle, onOpenSearch, onOpenPractice }: 
+  { 
+    prac: DailyPractice, 
+    verseNum: string, verseTitle: string, 
+    onOpenSearch: (tag: string) => void,
+    onOpenPractice?: () => void
+  }) => {
 
 
   return <div className="relative h-full">
@@ -19,7 +24,11 @@ export const DailyLifePracticeCard = ({ prac, verseNum, verseTitle, onOpenSearch
       verseTitle={verseTitle}
     >
       <Card>
-        <CardHeader icon={<DynamicIcon name={prac.icon} className="w-4 h-4" />} title={prac.title} />
+        <CardHeader 
+          icon={<DynamicIcon name={prac.icon} className="w-4 h-4" />} 
+          title={prac.title} 
+          onClick={onOpenPractice}
+          />
 
         <TextBoxBordered title="Situation:" >
           {prac.situation}

@@ -22,15 +22,16 @@ export const Card = ({children}: T) => {
     )
 }
 
-export const CardHeader = ({icon, title, uppercase, primary, children}: {
+export const CardHeader = ({icon, title, uppercase, primary, children, onClick}: {
     children?: ReactNode,
     icon?: ReactNode,
     title?: string,
     uppercase?: boolean,
-    primary?: boolean
+    primary?: boolean,
+    onClick?: () => void
 }) => {
     return (
-        <div className="flex items-center space-x-2 pr-10">
+        <div className={`flex items-center space-x-2 pr-10 ${onClick && 'cursor-pointer'}`} onClick={onClick}>
             { icon &&  <div className="p-2 rounded-lg bg-amber-500/10 text-amber-400">{icon}</div>}
             { title && <h4 className={`font-serif font-bold text-base 
                 ${primary ? 'text-amber-400/80' : 'text-amber-100'}

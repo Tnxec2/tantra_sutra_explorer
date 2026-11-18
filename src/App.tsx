@@ -191,7 +191,11 @@ function App() {
               dailyPractices={currentSutra.dailyPractices} 
               verseNum={currentSutra.verseNum} 
               verseTitle={currentSutra.title} 
-              onOpenSearch={(tag) => setInitialSearchTag(tag)} />}
+              onOpenSearch={(tag) => setInitialSearchTag(tag)} 
+              onOpenPractice={(prac, idx) => {
+                
+              }}
+              />}
 
           {activeSlide === 4 && <MeditationTool config={currentSutra.meditationConfig} />}
 
