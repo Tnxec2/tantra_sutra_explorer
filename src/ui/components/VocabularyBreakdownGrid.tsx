@@ -1,5 +1,6 @@
 
 import { Vocabulary } from "../../model/Vocabulary"
+import { Card } from "../shared/Card"
 
 export const VocabularyBreakdownGrid = ({ vocabulary }:
     { vocabulary?: Vocabulary[] }) => {
@@ -19,10 +20,10 @@ export const VocabularyCard = ({ vocabularyItem }:
     { vocabularyItem: Vocabulary }) => {
 
 
-    return <div className="bg-[#14102b]/50 backdrop-blur-md p-3.5 rounded-xl border border-amber-500/15">
+    return <Card>
         <div className="font-serif font-bold text-amber-200 text-sm">{vocabularyItem.term}</div>
         <div className="text-xs text-amber-400/80 mb-1">{vocabularyItem.translation}</div>
         <p className="text-xs text-slate-300 leading-snug">{vocabularyItem.meaning}</p>
-    </div>
+    </Card>
 
 }

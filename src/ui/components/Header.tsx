@@ -1,6 +1,8 @@
 import { Search, Shuffle, Sparkles } from "lucide-react"
 import { SUTRA } from "../../model/Sutra"
 import { VERSION } from "../../index"
+import { Button } from "../shared/Button"
+import { CustomSelect } from "../shared/CustomSelect"
 
 
 
@@ -33,46 +35,24 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras, onOpenSearch,
             </div>
 
             <div className="flex items-center gap-2 sm:gap-3 w-full md:w-auto justify-end">
-                <select
+                <CustomSelect
                     value={activeSutraId}
-                    onChange={(e) => handleSelectSutra(e.target.value)}
-                    className="bg-[#1b1537] text-amber-200 border border-amber-500/30 
-            rounded-lg px-3 py-2 text-sm font-serif focus:outline-none focus:border-amber-400 
-            cursor-pointer min-w-0 flex-1 md:w-56 md:flex-none"
-                >
-                    {sutras.map(s => (
-                        <option key={s.id} value={s.id}>
-                            {s.verseNum}: {s.title}
-                        </option>
-                    ))}
-                </select>
+                    onChange={handleSelectSutra}
+                    label="Sutra auswählen"
+                    options={sutras.map(s => ({
+                        value: s.id,
+                        label: `${s.verseNum}: ${s.title}`
+                    }))}
+                />
 
-                <button
-                    type="button"
-                    onClick={() => onOpenSearch()}
-                    title="Alltagspraktiken nach Tag suchen"
-                    aria-label="Alltagspraktiken nach Tag suchen"
-                    className="p-2 rounded-lg bg-[#1b1537] hover:bg-amber-500/20 border
-            border-amber-500/30 text-amber-300 transition-all flex items-center gap-1.5
-            text-xs shrink-0"
-                >
-                    <Search className="w-4 h-4" />
-                    <span className="hidden sm:inline">Suchen</span>
-                </button>
+                <Button title="Alltagspraktiken nach Tag suchen" 
+                        onClick={onOpenSearch} 
+                        icon={<Search className="w-4 h-4" />} >Suchen</Button>
 
-                <button
-                    type="button"
-                    onClick={() => onOpenRandomPractice()}
-                    disabled={!sutras.some(sutra => sutra.dailyPractices?.length)}
-                    title="Zufällige Alltagspraxis anzeigen"
-                    aria-label="Zufällige Alltagspraxis anzeigen"
-                    className="p-2 rounded-lg bg-[#1b1537] hover:bg-amber-500/20 border
-            border-amber-500/30 text-amber-300 transition-all flex items-center gap-1.5
-            text-xs shrink-0 disabled:opacity-40 disabled:cursor-not-allowed"
-                >
-                    <Shuffle className="w-4 h-4" />
-                    <span className="hidden sm:inline">Zufallspraxis</span>
-                </button>
+                <Button title="Zufällige Alltagspraxis anzeigen" 
+                        disabled={!sutras.some(sutra => sutra.dailyPractices?.length)}
+                        onClick={onOpenRandomPractice} 
+                        icon={<Shuffle className="w-4 h-4" />} >Zufallspraxis</Button>
             </div>
         </header>
 
