@@ -14,6 +14,13 @@ export const ShareMenu = ({ title, markdownContent, targetRef }: ShareMenuProps)
   const [message, setMessage] = useState("")
 
   useEffect(() => {
+    if (!message) return
+
+    const timeout = window.setTimeout(() => setMessage(""), 3500)
+    return () => window.clearTimeout(timeout)
+  }, [message])
+
+  useEffect(() => {
     if (!menuOpen) return
 
     const closeOnOutsideClick = (event: MouseEvent) => {
@@ -204,7 +211,15 @@ export const ShareMenu = ({ title, markdownContent, targetRef }: ShareMenuProps)
           </div>
         )}
       </div>
-      <span role="status" aria-live="polite" className="sr-only">{message}</span>
+      {message && (
+        <div
+          role="status"
+          aria-live="polite"
+          className="fixed bottom-5 left-1/2 z-[100] -translate-x-1/2 rounded-lg border border-amber-500/40 bg-[#14102b] px-4 py-3 text-center text-sm text-slate-100 shadow-2xl"
+        >
+          {message}
+        </div>
+      )}
     </>
   )
 }
