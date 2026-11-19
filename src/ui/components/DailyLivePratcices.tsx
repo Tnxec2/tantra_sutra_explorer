@@ -28,11 +28,7 @@ export const DailyLifePractice = ({ dailyPractices, verseNum, verseTitle, onOpen
                 verseNum={verseNum} 
                 verseTitle={verseTitle} 
                 onOpenSearch={onOpenSearch}
-                 
-                  // TODO: implementiere und aktiviere 
-                  // onOpenPractice={() => onOpenPractice(prac, idx)}
-                  
-                
+                onOpenPractice={() => onOpenPractice(prac, idx)}
                  />
             )}
         </div>

@@ -11,7 +11,7 @@ import { OriginalSanskrit } from './ui/components/OriginalSanskrit';
 import { Header } from './ui/components/Header';
 import { SlideNavigation } from './ui/components/SlideNavigation';
 import { hasDynamicIcon } from './ui/components/DynamicIcon';
-import { RandomPractice, SavedData } from './ui/components/RandomPractice';
+import { RandomPractice, SavedData, saveRandomSutra } from './ui/components/RandomPractice';
 import { DailyPracticeSearch } from './ui/components/DailyPracticeSearch';
 
 
@@ -193,7 +193,12 @@ function App() {
               verseTitle={currentSutra.title} 
               onOpenSearch={(tag) => setInitialSearchTag(tag)} 
               onOpenPractice={(prac, idx) => {
-                
+                saveRandomSutra({
+                    sutra: currentSutra,
+                    practiceIndex: idx,
+                    practice: prac
+                });
+                setIsRandomPracticeOpen(true);
               }}
               />}
 

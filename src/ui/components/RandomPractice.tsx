@@ -23,39 +23,46 @@ export type SavedData = {
     sutraId: string
     practiceIndex: number
 }
-export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose, onOpenSearch }: RandomPracticeProps) => {
 
-    const [randomPractice, setRandomPractice] = useState<PracticeSelection | null>(() => {
-        const savedData = localStorage.getItem(KEY_ACTIVE_RANDOM_PRACTICE);
-        
-        if (savedData) {
-            const data: SavedData = JSON.parse(savedData);
-            const sutra = sutras.find(s => s.id === data.sutraId);
-            if (sutra) {
-                return {
-                    sutra: sutra,
-                    practiceIndex: data.practiceIndex,
-                    practice: sutra.dailyPractices[data.practiceIndex]
-                }
+export const loadSavedRandomSutra = (sutras: SUTRA[]) => {
+    const savedData = localStorage.getItem(KEY_ACTIVE_RANDOM_PRACTICE);
+
+    if (savedData) {
+        const data: SavedData = JSON.parse(savedData);
+        const sutra = sutras.find(s => s.id === data.sutraId);
+        if (sutra) {
+            return {
+                sutra: sutra,
+                practiceIndex: data.practiceIndex,
+                practice: sutra.dailyPractices[data.practiceIndex]
             }
         }
-        return null;
-    })
+    }
+    return null;
+}
+
+export const saveRandomSutra = (prac: PracticeSelection | null) => {
+    if (prac) {
+        localStorage.setItem(KEY_ACTIVE_RANDOM_PRACTICE, JSON.stringify({
+            sutraId: prac.sutra.id,
+            practiceIndex: prac.practiceIndex
+        } as SavedData));
+    } else {
+        localStorage.removeItem(KEY_ACTIVE_RANDOM_PRACTICE);
+    }
+}
+
+export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose, onOpenSearch }: RandomPracticeProps) => {
+
+    const [randomPractice, setRandomPractice] = useState<PracticeSelection | null>(() => loadSavedRandomSutra(sutras))
 
     useEffect(() => {
-        if (randomPractice) {
-            localStorage.setItem(KEY_ACTIVE_RANDOM_PRACTICE, JSON.stringify({
-                sutraId: randomPractice.sutra.id,
-                practiceIndex: randomPractice.practiceIndex
-            } as SavedData));
-        } else {
-            localStorage.removeItem(KEY_ACTIVE_RANDOM_PRACTICE);
-        }
+        saveRandomSutra(randomPractice)
     }, [randomPractice])
 
     const handleClose = useCallback(() => {
         setRandomPractice(null);
-        localStorage.removeItem(KEY_ACTIVE_RANDOM_PRACTICE);
+        saveRandomSutra(null);
         onClose();
     }, [setRandomPractice, onClose])
 
@@ -85,10 +92,10 @@ export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose, o
 
     const showRandomPractice = useCallback(() => {
         const options: PracticeSelection[] = sutras.flatMap(sutra =>
-            (sutra.dailyPractices || []).map((practice, idx) => ({ 
+            (sutra.dailyPractices || []).map((practice, idx) => ({
                 practiceIndex: idx,
-                practice: practice, 
-                sutra: sutra 
+                practice: practice,
+                sutra: sutra
             }))
         )
         if (options.length === 0) return
@@ -98,7 +105,7 @@ export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose, o
 
     useEffect(() => {
         const savedData = localStorage.getItem(KEY_ACTIVE_RANDOM_PRACTICE);
-        
+
         if (!savedData) {
             showRandomPractice()
         }
@@ -144,7 +151,7 @@ export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose, o
             </div>
             {randomPractice &&
                 <div className="space-y-4 p-5">
-                    <DailyLifePracticeCard 
+                    <DailyLifePracticeCard
                         prac={randomPractice.practice}
                         verseNum={randomPractice.sutra.verseNum}
                         verseTitle={randomPractice.sutra.title}
