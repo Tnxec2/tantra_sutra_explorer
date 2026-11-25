@@ -1,4 +1,4 @@
-import { Search, Shuffle, Sparkles } from "lucide-react"
+import { Clock3, Search, Shuffle, Sparkles } from "lucide-react"
 import { SUTRA } from "../../model/Sutra"
 import { VERSION } from "../../index"
 import { Button } from "../shared/Button"
@@ -6,13 +6,14 @@ import { CustomSelect } from "../shared/CustomSelect"
 
 
 
-export const Header = ({ activeSutraId, handleSelectSutra, sutras, onOpenSearch, onOpenRandomPractice }:
+export const Header = ({ activeSutraId, handleSelectSutra, sutras, onOpenSearch, onOpenRandomPractice, onOpenMeditationTimer }:
     {
         sutras: SUTRA[],
         activeSutraId: string,
         handleSelectSutra: (id: string) => void,
         onOpenSearch: () => void,
-        onOpenRandomPractice: () => void
+        onOpenRandomPractice: () => void,
+        onOpenMeditationTimer: () => void
     }) => {
 
     return <>
@@ -53,6 +54,10 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras, onOpenSearch,
                         disabled={!sutras.some(sutra => sutra.dailyPractices?.length)}
                         onClick={onOpenRandomPractice} 
                         icon={<Shuffle className="w-4 h-4" />} >Zufallspraxis</Button>
+
+                <Button title="Meditationstimer öffnen"
+                        onClick={onOpenMeditationTimer}
+                        icon={<Clock3 className="w-4 h-4" />} >Timer</Button>
             </div>
         </header>
 

@@ -13,6 +13,7 @@ import { SlideNavigation } from './ui/components/SlideNavigation';
 import { hasDynamicIcon } from './ui/components/DynamicIcon';
 import { RandomPractice, SavedData, saveRandomSutra } from './ui/components/RandomPractice';
 import { DailyPracticeSearch } from './ui/components/DailyPracticeSearch';
+import { MeditationTimer } from './ui/components/timer/MeditationTimer';
 
 
 
@@ -85,6 +86,7 @@ function App() {
 
   const [initialSearchTag, setInitialSearchTag] = useState<string | undefined>();
   const [isRandomPracticeOpen, setIsRandomPracticeOpen] = useState(false)
+  const [isMeditationTimerOpen, setIsMeditationTimerOpen] = useState(false)
   //debugDynamicIcons(sutras);
   
   const [activeSutraId, setActiveSutraId] = useState(() => {
@@ -145,6 +147,7 @@ function App() {
           setInitialSearchTag('');
         }}
         onOpenRandomPractice={() => setIsRandomPracticeOpen(true)}
+        onOpenMeditationTimer={() => setIsMeditationTimerOpen(true)}
       />
 
       {/* MAIN CONTAINER */}
@@ -225,6 +228,9 @@ function App() {
                 }}
                 disabled={!sutras.some(sutra => sutra.dailyPractices?.length)}
             />
+        )}
+        {isMeditationTimerOpen && (
+            <MeditationTimer onClose={() => setIsMeditationTimerOpen(false)} />
         )}
     </div>
   );
