@@ -196,28 +196,12 @@ export const vers41: SUTRA = {
  "meditationConfig": {
    "type": "sound",
    "title": "Der Weg vom Klang in die Stille",
-   "instruction": "Verwende einen sanften, lang anhaltenden Instrumententon oder lausche einem gleichmäßigen Klang deiner Umgebung. Folge ihm mit ungeteilter, entspannter Aufmerksamkeit. Wenn er verklingt, bleibe bei der Stille und dem offenen Gewahrsein. Die Übung soll weder Atem noch Körperempfindungen erzwingen; beende sie jederzeit, wenn sie unangenehm wird.",
-   "phases": [
-     {
-       "name": "Den Klang empfangen",
-       "duration": 4,
-       "instruction": "Lass einen sanften Ton erklingen oder beginne aufmerksam zuzuhören. Nimm seine erste Schwingung wahr, ohne ihn sofort zu bewerten."
-     },
-     {
-       "name": "Dem Verlauf folgen",
-       "duration": 8,
-       "instruction": "Verfolge den Klang von Moment zu Moment. Achte auf seine Lautstärke, seine Schwingung und sein allmähliches Verklingen. Bleibe aufmerksam, ohne dich anzustrengen."
-     },
-     {
-       "name": "Die Schwelle des Verklingens",
-       "duration": 4,
-       "instruction": "Wenn der Klang schwächer wird, folge ihm bis an die Grenze seiner Hörbarkeit. Versuche nicht, ihn festzuhalten oder sein Ende vorwegzunehmen."
-     },
-     {
-       "name": "Im offenen Raum verweilen",
-       "duration": 8,
-       "instruction": "Lausche der Stille, die auf den Klang folgt. Bemerke Geräusche, Körperempfindungen und Gedanken, ohne ihnen folgen zu müssen. Verweile in der offenen Wahrnehmung, ohne einen besonderen spirituellen Zustand zu erwarten."
-     }
+   "desc": "Verwende einen sanften, lang anhaltenden Instrumententon oder lausche einem gleichmäßigen Klang deiner Umgebung. Folge ihm mit ungeteilter, entspannter Aufmerksamkeit. Wenn er verklingt, bleibe bei der Stille und dem offenen Gewahrsein. Die Übung soll weder Atem noch Körperempfindungen erzwingen; beende sie jederzeit, wenn sie unangenehm wird.",
+   "instructions": [
+    "Lass einen sanften Ton erklingen oder beginne aufmerksam zuzuhören. Nimm seine erste Schwingung wahr, ohne ihn sofort zu bewerten.",
+    "Verfolge den Klang von Moment zu Moment. Achte auf seine Lautstärke, seine Schwingung und sein allmähliches Verklingen. Bleibe aufmerksam, ohne dich anzustrengen.",
+    "Wenn der Klang schwächer wird, folge ihm bis an die Grenze seiner Hörbarkeit. Versuche nicht, ihn festzuhalten oder sein Ende vorwegzunehmen.",
+    "Lausche der Stille, die auf den Klang folgt. Bemerke Geräusche, Körperempfindungen und Gedanken, ohne ihnen folgen zu müssen. Verweile in der offenen Wahrnehmung, ohne einen besonderen spirituellen Zustand zu erwarten."
    ]
  }
 }

@@ -120,28 +120,12 @@ export const vers7582: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Die Schwelle zur Stille",
-     "instruction": "Beobachte das Zurücktreten der Gedanken und Sinneseindrücke, ohne den natürlichen Schlaf zu unterbrechen oder zu erzwingen.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Entspanne den Körper und nimm wahr, wie du atmest. Lass den Tag allmählich in den Hintergrund treten."
-       },
-       {
-         "name": "Zurücktreten",
-         "duration": 4,
-         "instruction": "Bemerke Geräusche, Gedanken und Empfindungen, ohne ihnen weiter zu folgen."
-       },
-       {
-         "name": "Die stille Schwelle",
-         "duration": 4,
-         "instruction": "Richte die Aufmerksamkeit auf den offenen Raum zwischen zwei Gedanken. Suche nichts und erwarte keine besondere Erfahrung."
-       },
-       {
-         "name": "Loslassen",
-         "duration": 4,
-         "instruction": "Lass auch die Beobachtung los. Wenn Müdigkeit eintritt, erlaube dir, auf natürliche Weise einzuschlafen."
-       }
+     "desc": "Beobachte das Zurücktreten der Gedanken und Sinneseindrücke, ohne den natürlichen Schlaf zu unterbrechen oder zu erzwingen.",
+     "instructions": [
+      "Entspanne den Körper und nimm wahr, wie du atmest. Lass den Tag allmählich in den Hintergrund treten.",
+      "Bemerke Geräusche, Gedanken und Empfindungen, ohne ihnen weiter zu folgen.",
+      "Richte die Aufmerksamkeit auf den offenen Raum zwischen zwei Gedanken. Suche nichts und erwarte keine besondere Erfahrung.",
+      "Lass auch die Beobachtung los. Wenn Müdigkeit eintritt, erlaube dir, auf natürliche Weise einzuschlafen."
      ]
    }
  },
@@ -269,28 +253,12 @@ export const vers7582: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Das Lichtfeld des Bewusstseins",
-     "instruction": "Lass den Blick in einem angenehmen Lichtfeld ruhen und richte die Aufmerksamkeit vom sichtbaren Gegenstand auf das unmittelbare Sehen.",
-     "phases": [
-       {
-         "name": "Blick öffnen",
-         "duration": 4,
-         "instruction": "Wähle einen angenehm beleuchteten Bereich. Halte die Augen entspannt und vermeide direktes Blicken in die Sonne oder in grelle Lichtquellen."
-       },
-       {
-         "name": "Licht wahrnehmen",
-         "duration": 4,
-         "instruction": "Nimm Helligkeit, Farben und Schatten als zusammenhängendes Feld wahr."
-       },
-       {
-         "name": "Das Sehen erkennen",
-         "duration": 4,
-         "instruction": "Lass die einzelnen Gegenstände in den Hintergrund treten und bemerke das unmittelbare Erleben des Sehens."
-       },
-       {
-         "name": "In Klarheit verweilen",
-         "duration": 4,
-         "instruction": "Löse die Konzentration und bleibe einige Atemzüge in offener, müheloser Aufmerksamkeit."
-       }
+     "desc": "Lass den Blick in einem angenehmen Lichtfeld ruhen und richte die Aufmerksamkeit vom sichtbaren Gegenstand auf das unmittelbare Sehen.",
+     "instructions": [
+      "Wähle einen angenehm beleuchteten Bereich. Halte die Augen entspannt und vermeide direktes Blicken in die Sonne oder in grelle Lichtquellen.",
+      "Nimm Helligkeit, Farben und Schatten als zusammenhängendes Feld wahr.",
+      "Lass die einzelnen Gegenstände in den Hintergrund treten und bemerke das unmittelbare Erleben des Sehens.",
+      "Löse die Konzentration und bleibe einige Atemzüge in offener, müheloser Aufmerksamkeit."
      ]
    }
  },
@@ -413,28 +381,12 @@ export const vers7582: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Der Augenblick des Sehens",
-     "instruction": "Erkenne den unmittelbaren Moment der Wahrnehmung, bevor Gedanken und Bewertungen ihn vollständig bestimmen.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Sitze bequem und spüre den Körper. Lasse den Blick weich und entspannt."
-       },
-       {
-         "name": "Wahrnehmen",
-         "duration": 4,
-         "instruction": "Nimm Farben, Formen oder einen neutralen Gegenstand wahr, ohne ihn intensiv anzustarren."
-       },
-       {
-         "name": "Der unmittelbare Augenblick",
-         "duration": 4,
-         "instruction": "Bemerke den Moment, in dem ein Eindruck erkannt wird, bevor du ihn ausführlich beurteilst."
-       },
-       {
-         "name": "Integration",
-         "duration": 4,
-         "instruction": "Erlaube Gedanken und Gefühle, sich zu zeigen. Kehre zur entspannten Gegenwärtigkeit zurück."
-       }
+     "desc": "Erkenne den unmittelbaren Moment der Wahrnehmung, bevor Gedanken und Bewertungen ihn vollständig bestimmen.",
+     "instructions": [
+      "Sitze bequem und spüre den Körper. Lasse den Blick weich und entspannt.",
+      "Nimm Farben, Formen oder einen neutralen Gegenstand wahr, ohne ihn intensiv anzustarren.",
+      "Bemerke den Moment, in dem ein Eindruck erkannt wird, bevor du ihn ausführlich beurteilst.",
+      "Erlaube Gedanken und Gefühle, sich zu zeigen. Kehre zur entspannten Gegenwärtigkeit zurück."
      ]
    }
  },
@@ -567,28 +519,12 @@ export const vers7582: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Die Haltung der Fülle",
-     "instruction": "Finde eine bequeme, stabile Sitzposition und untersuche, wie körperliche Ausrichtung und innere Sammlung zusammenwirken.",
-     "phases": [
-       {
-         "name": "Eine bequeme Haltung finden",
-         "duration": 4,
-         "instruction": "Setze dich auf eine weiche, stabile Unterlage. Wähle eine schmerzfreie Position und stütze dich bei Bedarf ab."
-       },
-       {
-         "name": "Den Körper spüren",
-         "duration": 4,
-         "instruction": "Nimm das Gewicht, die Kontaktpunkte und die Stellung deiner Hände und Füße wahr."
-       },
-       {
-         "name": "Sammlung",
-         "duration": 4,
-         "instruction": "Lass den Atem natürlich fließen. Bemerke, wie die Aufmerksamkeit ruhiger wird, wenn die Haltung bequem und stabil ist."
-       },
-       {
-         "name": "Fülle erkennen",
-         "duration": 4,
-         "instruction": "Spüre den gesamten Körper als zusammenhängendes Erleben. Verweile ohne den Anspruch, etwas Besonderes erreichen zu müssen."
-       }
+     "desc": "Finde eine bequeme, stabile Sitzposition und untersuche, wie körperliche Ausrichtung und innere Sammlung zusammenwirken.",
+     "instructions": [
+      "Setze dich auf eine weiche, stabile Unterlage. Wähle eine schmerzfreie Position und stütze dich bei Bedarf ab.",
+      "Nimm das Gewicht, die Kontaktpunkte und die Stellung deiner Hände und Füße wahr.",
+      "Lass den Atem natürlich fließen. Bemerke, wie die Aufmerksamkeit ruhiger wird, wenn die Haltung bequem und stabil ist.",
+      "Spüre den gesamten Körper als zusammenhängendes Erleben. Verweile ohne den Anspruch, etwas Besonderes erreichen zu müssen."
      ]
    }
  },
@@ -726,28 +662,12 @@ export const vers7582: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Der Raum unter den Armen",
-     "instruction": "Richte die Aufmerksamkeit auf den freien Raum unter den Oberarmen und beobachte, wie die Gedanken dabei ruhiger werden können.",
-     "phases": [
-       {
-         "name": "Sitz finden",
-         "duration": 4,
-         "instruction": "Setze dich bequem hin. Lass die Schultern locker und halte die Arme, wenn angenehm, leicht gebeugt."
-       },
-       {
-         "name": "Raum wahrnehmen",
-         "duration": 4,
-         "instruction": "Spüre die Luft und die räumliche Weite im Bereich unter den Oberarmen."
-       },
-       {
-         "name": "Aufmerksamkeit sammeln",
-         "duration": 4,
-         "instruction": "Kehre nach jeder Ablenkung freundlich zum wahrgenommenen Raum zurück."
-       },
-       {
-         "name": "In Ruhe verweilen",
-         "duration": 4,
-         "instruction": "Erweitere die Aufmerksamkeit auf den gesamten Körper und lass die Übung ohne Anstrengung ausklingen."
-       }
+     "desc": "Richte die Aufmerksamkeit auf den freien Raum unter den Oberarmen und beobachte, wie die Gedanken dabei ruhiger werden können.",
+     "instructions": [
+      "Setze dich bequem hin. Lass die Schultern locker und halte die Arme, wenn angenehm, leicht gebeugt.",
+      "Spüre die Luft und die räumliche Weite im Bereich unter den Oberarmen.",
+      "Kehre nach jeder Ablenkung freundlich zum wahrgenommenen Raum zurück.",
+      "Erweitere die Aufmerksamkeit auf den gesamten Körper und lass die Übung ohne Anstrengung ausklingen."
      ]
    }
  },
@@ -880,28 +800,12 @@ export const vers7582: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Vom festen Blick zur Freiheit",
-     "instruction": "Beginne mit einem ruhigen Blick auf eine sichtbare Form und öffne danach die Aufmerksamkeit für das gesamte Wahrnehmungsfeld.",
-     "phases": [
-       {
-         "name": "Einen Anker wählen",
-         "duration": 4,
-         "instruction": "Wähle einen neutralen Gegenstand und richte den Blick bequem auf ihn."
-       },
-       {
-         "name": "Ruhig betrachten",
-         "duration": 4,
-         "instruction": "Nimm Form und Farbe wahr. Blinzle natürlich und vermeide jede Anspannung."
-       },
-       {
-         "name": "Den Anker lösen",
-         "duration": 4,
-         "instruction": "Erweitere das Blickfeld und bemerke, dass auch die umgebenden Erscheinungen wahrgenommen werden."
-       },
-       {
-         "name": "Offen verweilen",
-         "duration": 4,
-         "instruction": "Lass die Konzentration weich werden. Verweile in offener Aufmerksamkeit, ohne Gedanken erzwingen oder unterdrücken zu wollen."
-       }
+     "desc": "Beginne mit einem ruhigen Blick auf eine sichtbare Form und öffne danach die Aufmerksamkeit für das gesamte Wahrnehmungsfeld.",
+     "instructions": [
+      "Wähle einen neutralen Gegenstand und richte den Blick bequem auf ihn.",
+      "Nimm Form und Farbe wahr. Blinzle natürlich und vermeide jede Anspannung.",
+      "Erweitere das Blickfeld und bemerke, dass auch die umgebenden Erscheinungen wahrgenommen werden.",
+      "Lass die Konzentration weich werden. Verweile in offener Aufmerksamkeit, ohne Gedanken erzwingen oder unterdrücken zu wollen."
      ]
    }
  },
@@ -1034,28 +938,12 @@ export const vers7582: SUTRA[] = [
    "meditationConfig": {
      "type": "sound",
      "title": "Vom Laut in die Stille",
-     "instruction": "Richte die Aufmerksamkeit auf einen sanften inneren Vokallaut und beobachte, wie die Stille nach seinem Verklingen erfahrbar wird.",
-     "phases": [
-       {
-         "name": "Körper vorbereiten",
-         "duration": 4,
-         "instruction": "Entspanne Kiefer und Zunge. Lass den Mund bequem geöffnet oder geschlossen, je nachdem, was angenehm ist."
-       },
-       {
-         "name": "Den Laut innerlich formen",
-         "duration": 4,
-         "instruction": "Stelle dir einen sanften Laut vor. Folge seiner inneren Klangqualität, ohne den Atem anzuhalten."
-       },
-       {
-         "name": "Verklingen lassen",
-         "duration": 4,
-         "instruction": "Lass den inneren Klang ausklingen und beobachte den Moment, in dem er nicht mehr bewusst wiederholt wird."
-       },
-       {
-         "name": "In Stille verweilen",
-         "duration": 4,
-         "instruction": "Verweile in der offenen Aufmerksamkeit nach dem Klang. Wiederhole ihn nur, wenn es sich natürlich ergibt."
-       }
+     "desc": "Richte die Aufmerksamkeit auf einen sanften inneren Vokallaut und beobachte, wie die Stille nach seinem Verklingen erfahrbar wird.",
+     "instructions": [
+      "Entspanne Kiefer und Zunge. Lass den Mund bequem geöffnet oder geschlossen, je nachdem, was angenehm ist.",
+      "Stelle dir einen sanften Laut vor. Folge seiner inneren Klangqualität, ohne den Atem anzuhalten.",
+      "Lass den inneren Klang ausklingen und beobachte den Moment, in dem er nicht mehr bewusst wiederholt wird.",
+      "Verweile in der offenen Aufmerksamkeit nach dem Klang. Wiederhole ihn nur, wenn es sich natürlich ergibt."
      ]
    }
  },
@@ -1213,28 +1101,12 @@ export const vers7582: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Der Körper im offenen Gewahrsein",
-     "instruction": "Wahrnimm den Körper sitzend oder liegend, ohne dich auf ein starres Körperbild festzulegen. Bleibe dabei wach, entspannt und mit deiner Umgebung verbunden.",
-     "phases": [
-       {
-         "name": "Eine bequeme Position finden",
-         "duration": 4,
-         "instruction": "Setze oder lege dich bequem hin. Spüre den Kontakt zur Unterlage und lass den Atem natürlich fließen."
-       },
-       {
-         "name": "Den Körper vergegenwärtigen",
-         "duration": 4,
-         "instruction": "Nimm Wärme, Gewicht, Berührung und Bewegung wahr, ohne jede Empfindung benennen zu müssen."
-       },
-       {
-         "name": "Feste Vorstellungen lockern",
-         "duration": 4,
-         "instruction": "Bemerke Gedanken über deinen Körper oder deine Identität als Gedanken. Kehre bei Bedarf zu den unmittelbaren Empfindungen zurück."
-       },
-       {
-         "name": "Offen und geerdet verweilen",
-         "duration": 4,
-         "instruction": "Lass die Aufmerksamkeit auf Körper und Umgebung ruhen. Wenn du dich unwohl oder unwirklich fühlst, öffne die Augen und orientiere dich bewusst im Raum."
-       }
+     "desc": "Wahrnimm den Körper sitzend oder liegend, ohne dich auf ein starres Körperbild festzulegen. Bleibe dabei wach, entspannt und mit deiner Umgebung verbunden.",
+     "instructions": [
+      "Setze oder lege dich bequem hin. Spüre den Kontakt zur Unterlage und lass den Atem natürlich fließen.",
+      "Nimm Wärme, Gewicht, Berührung und Bewegung wahr, ohne jede Empfindung benennen zu müssen.",
+      "Bemerke Gedanken über deinen Körper oder deine Identität als Gedanken. Kehre bei Bedarf zu den unmittelbaren Empfindungen zurück.",
+      "Lass die Aufmerksamkeit auf Körper und Umgebung ruhen. Wenn du dich unwohl oder unwirklich fühlst, öffne die Augen und orientiere dich bewusst im Raum."
      ]
    }
  }

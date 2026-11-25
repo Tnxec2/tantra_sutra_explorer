@@ -110,28 +110,12 @@ export const vers115124: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Das stille Fenster",
-     "instruction": "Lasse die Aufmerksamkeit weit werden und entdecke die stille Offenheit zwischen zwei Gedanken. Atme natürlich und erzwinge keine Gedankenfreiheit.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Sitze sicher und entspannt. Spüre deinen Körper und nimm den Raum um dich herum wahr."
-       },
-       {
-         "name": "Offenes Sehen",
-         "duration": 2,
-         "instruction": "Lasse den Blick weich werden. Nimm wahr, ohne sofort zu benennen oder zu bewerten."
-       },
-       {
-         "name": "Die Gedankenlücke",
-         "duration": 4,
-         "instruction": "Bemerke den kurzen Moment, bevor ein Gedanke den nächsten hervorbringt. Suche die Lücke nicht aktiv, sondern erkenne sie, wenn sie erscheint."
-       },
-       {
-         "name": "Weites Gewahrsein",
-         "duration": 4,
-         "instruction": "Lasse Wahrnehmung, Körper und Gedanken im offenen Bewusstsein erscheinen. Kehre ruhig zum natürlichen Atem zurück."
-       }
+     "desc": "Lasse die Aufmerksamkeit weit werden und entdecke die stille Offenheit zwischen zwei Gedanken. Atme natürlich und erzwinge keine Gedankenfreiheit.",
+     "instructions": [
+      "Sitze sicher und entspannt. Spüre deinen Körper und nimm den Raum um dich herum wahr.",
+      "Lasse den Blick weich werden. Nimm wahr, ohne sofort zu benennen oder zu bewerten.",
+      "Bemerke den kurzen Moment, bevor ein Gedanke den nächsten hervorbringt. Suche die Lücke nicht aktiv, sondern erkenne sie, wenn sie erscheint.",
+      "Lasse Wahrnehmung, Körper und Gedanken im offenen Bewusstsein erscheinen. Kehre ruhig zum natürlichen Atem zurück."
      ]
    }
  },
@@ -244,28 +228,12 @@ export const vers115124: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Das unbegrenzte Gewahrsein",
-     "instruction": "Erkenne innere und äußere Erfahrungen als Erscheinungen im selben offenen Feld des Gewahrseins.",
-     "phases": [
-       {
-         "name": "Äußere Wahrnehmung",
-         "duration": 4,
-         "instruction": "Nimm Geräusche, Farben und den Raum um dich herum wahr."
-       },
-       {
-         "name": "Innere Wahrnehmung",
-         "duration": 2,
-         "instruction": "Bemerke Gedanken, Gefühle und Körperempfindungen, ohne sie zu verändern."
-       },
-       {
-         "name": "Beides zugleich",
-         "duration": 4,
-         "instruction": "Lasse innere und äußere Erfahrungen gleichzeitig erscheinen. Weite deine Aufmerksamkeit, ohne dich anzustrengen."
-       },
-       {
-         "name": "Unbegrenzte Gegenwart",
-         "duration": 4,
-         "instruction": "Verweile im Erkennen selbst. Lass jede Erfahrung kommen und gehen."
-       }
+     "desc": "Erkenne innere und äußere Erfahrungen als Erscheinungen im selben offenen Feld des Gewahrseins.",
+     "instructions": [
+      "Nimm Geräusche, Farben und den Raum um dich herum wahr.",
+      "Bemerke Gedanken, Gefühle und Körperempfindungen, ohne sie zu verändern.",
+      "Lasse innere und äußere Erfahrungen gleichzeitig erscheinen. Weite deine Aufmerksamkeit, ohne dich anzustrengen.",
+      "Verweile im Erkennen selbst. Lass jede Erfahrung kommen und gehen."
      ]
    }
  },
@@ -383,28 +351,12 @@ export const vers115124: SUTRA[] = [
    "meditationConfig": {
      "type": "sound",
      "title": "Die Fülle des Hörens",
-     "instruction": "Nutze einen natürlichen Klang als Zugang zum unmittelbaren Bewusstsein. Du musst keinen besonderen Klang erzeugen.",
-     "phases": [
-       {
-         "name": "Lauschen",
-         "duration": 4,
-         "instruction": "Höre die vorhandenen Geräusche, ohne ihre Quelle zu suchen."
-       },
-       {
-         "name": "Reine Klangqualität",
-         "duration": 2,
-         "instruction": "Achte auf Tonhöhe, Dauer und Klangfarbe, bevor du den Klang benennst."
-       },
-       {
-         "name": "Das Verklingen",
-         "duration": 4,
-         "instruction": "Verfolge, wie ein Klang entsteht, sich verändert und verschwindet."
-       },
-       {
-         "name": "Das Hören selbst",
-         "duration": 4,
-         "instruction": "Lasse Klänge und Stille gleichermaßen erscheinen. Verweile in der Offenheit des Hörens."
-       }
+     "desc": "Nutze einen natürlichen Klang als Zugang zum unmittelbaren Bewusstsein. Du musst keinen besonderen Klang erzeugen.",
+     "instructions": [
+      "Höre die vorhandenen Geräusche, ohne ihre Quelle zu suchen.",
+      "Achte auf Tonhöhe, Dauer und Klangfarbe, bevor du den Klang benennst.",
+      "Verfolge, wie ein Klang entsteht, sich verändert und verschwindet.",
+      "Lasse Klänge und Stille gleichermaßen erscheinen. Verweile in der Offenheit des Hörens."
      ]
    }
  },
@@ -526,28 +478,12 @@ export const vers115124: SUTRA[] = [
    "meditationConfig": {
      "type": "breath",
      "title": "Die Welle und die Stille",
-     "instruction": "Beobachte den natürlichen Wechsel zwischen Empfindung und Ruhe. Verändere deinen Atem nicht und halte ihn nicht absichtlich an.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Spüre den Körper und nimm wahr, wie du dich im gegenwärtigen Moment fühlst."
-       },
-       {
-         "name": "Empfindung",
-         "duration": 2,
-         "instruction": "Bemerke eine gegenwärtige Empfindung, ohne sie absichtlich zu verstärken."
-       },
-       {
-         "name": "Wandel",
-         "duration": 4,
-         "instruction": "Beobachte, wie sich Empfindungen mit der Zeit verändern. Atme weiterhin natürlich."
-       },
-       {
-         "name": "Offene Ruhe",
-         "duration": 4,
-         "instruction": "Lasse die Erfahrung sich entfalten. Richte dich bei Bedarf wieder auf eine sichere, angenehme Wahrnehmung aus."
-       }
+     "desc": "Beobachte den natürlichen Wechsel zwischen Empfindung und Ruhe. Verändere deinen Atem nicht und halte ihn nicht absichtlich an.",
+     "instructions": [
+      "Spüre den Körper und nimm wahr, wie du dich im gegenwärtigen Moment fühlst.",
+      "Bemerke eine gegenwärtige Empfindung, ohne sie absichtlich zu verstärken.",
+      "Beobachte, wie sich Empfindungen mit der Zeit verändern. Atme weiterhin natürlich.",
+      "Lasse die Erfahrung sich entfalten. Richte dich bei Bedarf wieder auf eine sichere, angenehme Wahrnehmung aus."
      ]
    }
  },
@@ -670,28 +606,12 @@ export const vers115124: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Der Raum des Bewusstseins",
-     "instruction": "Erweitere die Aufmerksamkeit von einzelnen Gegenständen auf den Raum, in dem sie erscheinen, und auf die unmittelbare Körper-Raum-Erfahrung.",
-     "phases": [
-       {
-         "name": "Ein Gegenstand",
-         "duration": 4,
-         "instruction": "Wähle einen Gegenstand und betrachte ihn entspannt."
-       },
-       {
-         "name": "Der freie Raum",
-         "duration": 2,
-         "instruction": "Nimm den Raum um den Gegenstand und zwischen den Dingen wahr."
-       },
-       {
-         "name": "Körper und Umgebung",
-         "duration": 4,
-         "instruction": "Spüre deinen Körper und zugleich die räumliche Umgebung, ohne deine Körperempfindungen zu verleugnen."
-       },
-       {
-         "name": "Offene Weite",
-         "duration": 4,
-         "instruction": "Lasse Gegenstände, Körperempfindungen und Geräusche im offenen Gewahrsein erscheinen."
-       }
+     "desc": "Erweitere die Aufmerksamkeit von einzelnen Gegenständen auf den Raum, in dem sie erscheinen, und auf die unmittelbare Körper-Raum-Erfahrung.",
+     "instructions": [
+      "Wähle einen Gegenstand und betrachte ihn entspannt.",
+      "Nimm den Raum um den Gegenstand und zwischen den Dingen wahr.",
+      "Spüre deinen Körper und zugleich die räumliche Umgebung, ohne deine Körperempfindungen zu verleugnen.",
+      "Lasse Gegenstände, Körperempfindungen und Geräusche im offenen Gewahrsein erscheinen."
      ]
    }
  },
@@ -814,28 +734,12 @@ export const vers115124: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Vom Fokus in die offene Weite",
-     "instruction": "Sammle die Aufmerksamkeit auf einem Gegenstand und löse sie dann sanft, um offene Wahrnehmung zu erfahren.",
-     "phases": [
-       {
-         "name": "Fokussieren",
-         "duration": 4,
-         "instruction": "Betrachte einen Gegenstand, ohne dich körperlich anzuspannen."
-       },
-       {
-         "name": "Lösen",
-         "duration": 2,
-         "instruction": "Wende den Blick langsam ab und lockere die Fixierung."
-       },
-       {
-         "name": "Offenes Wahrnehmen",
-         "duration": 4,
-         "instruction": "Nimm das gesamte Sichtfeld sowie Geräusche und Körperempfindungen wahr."
-       },
-       {
-         "name": "In der Leere verweilen",
-         "duration": 4,
-         "instruction": "Lasse die Erfahrung offen sein. Du brauchst keinen besonderen Zustand hervorzubringen."
-       }
+     "desc": "Sammle die Aufmerksamkeit auf einem Gegenstand und löse sie dann sanft, um offene Wahrnehmung zu erfahren.",
+     "instructions": [
+      "Betrachte einen Gegenstand, ohne dich körperlich anzuspannen.",
+      "Wende den Blick langsam ab und lockere die Fixierung.",
+      "Nimm das gesamte Sichtfeld sowie Geräusche und Körperempfindungen wahr.",
+      "Lasse die Erfahrung offen sein. Du brauchst keinen besonderen Zustand hervorzubringen."
      ]
    }
  },
@@ -962,28 +866,12 @@ export const vers115124: SUTRA[] = [
    "meditationConfig": {
      "type": "breath",
      "title": "Die stille Hingabe",
-     "instruction": "Verbinde den natürlichen Atem mit einem Gefühl von Dankbarkeit, Hingabe oder liebevoller Offenheit. Erzwinge keine Emotion.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Sitze ruhig und spüre den natürlichen Atem."
-       },
-       {
-         "name": "Hingabe",
-         "duration": 2,
-         "instruction": "Erinnere dich an einen Menschen, einen Wert oder eine Wirklichkeit, der du dich verbunden fühlst."
-       },
-       {
-         "name": "Loslassen",
-         "duration": 4,
-         "instruction": "Lasse die Vorstellung los, ein bestimmtes Ergebnis erreichen zu müssen. Atme natürlich."
-       },
-       {
-         "name": "Verkörperung",
-         "duration": 4,
-         "instruction": "Spüre die Qualität von Offenheit und überlege, wie sie sich in einer konkreten Handlung ausdrücken kann."
-       }
+     "desc": "Verbinde den natürlichen Atem mit einem Gefühl von Dankbarkeit, Hingabe oder liebevoller Offenheit. Erzwinge keine Emotion.",
+     "instructions": [
+      "Sitze ruhig und spüre den natürlichen Atem.",
+      "Erinnere dich an einen Menschen, einen Wert oder eine Wirklichkeit, der du dich verbunden fühlst.",
+      "Lasse die Vorstellung los, ein bestimmtes Ergebnis erreichen zu müssen. Atme natürlich.",
+      "Spüre die Qualität von Offenheit und überlege, wie sie sich in einer konkreten Handlung ausdrücken kann."
      ]
    }
  },
@@ -1101,28 +989,12 @@ export const vers115124: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Die Offenheit der Dinge",
-     "instruction": "Betrachte einen Gegenstand, erkenne seine Beziehungen und lass die gewohnte Vorstellung einer festen, unabhängigen Eigenexistenz weicher werden.",
-     "phases": [
-       {
-         "name": "Betrachten",
-         "duration": 4,
-         "instruction": "Wähle einen Gegenstand und nimm seine sichtbaren Eigenschaften wahr."
-       },
-       {
-         "name": "Zusammenhänge",
-         "duration": 2,
-         "instruction": "Bemerke, welche Bedingungen, Beziehungen und Bedeutungen den Gegenstand mitbestimmen."
-       },
-       {
-         "name": "Offenheit",
-         "duration": 4,
-         "instruction": "Lasse deine feste Vorstellung des Gegenstands los, ohne seine praktische Wirklichkeit zu leugnen."
-       },
-       {
-         "name": "Zur Ruhe kommen",
-         "duration": 4,
-         "instruction": "Verweile in einer offenen Wahrnehmung, ohne eine abschließende Antwort erzwingen zu müssen."
-       }
+     "desc": "Betrachte einen Gegenstand, erkenne seine Beziehungen und lass die gewohnte Vorstellung einer festen, unabhängigen Eigenexistenz weicher werden.",
+     "instructions": [
+      "Wähle einen Gegenstand und nimm seine sichtbaren Eigenschaften wahr.",
+      "Bemerke, welche Bedingungen, Beziehungen und Bedeutungen den Gegenstand mitbestimmen.",
+      "Lasse deine feste Vorstellung des Gegenstands los, ohne seine praktische Wirklichkeit zu leugnen.",
+      "Verweile in einer offenen Wahrnehmung, ohne eine abschließende Antwort erzwingen zu müssen."
      ]
    }
  },
@@ -1254,28 +1126,12 @@ export const vers115124: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Jenseits der Gegensätze",
-     "instruction": "Bemerke Begriffe und Bewertungen, ohne dich vollständig mit ihnen zu identifizieren. Bewahre dabei deine praktische Urteilskraft.",
-     "phases": [
-       {
-         "name": "Wahrnehmen",
-         "duration": 4,
-         "instruction": "Nimm eine gegenwärtige Erfahrung wahr, ohne sie sofort zu bewerten."
-       },
-       {
-         "name": "Das Urteil erkennen",
-         "duration": 2,
-         "instruction": "Bemerke die Begriffe und Gegensätze, die dein Geist hervorbringt."
-       },
-       {
-         "name": "Die Kategorie lockern",
-         "duration": 4,
-         "instruction": "Erlaube, dass die Erfahrung mehr sein darf als das erste Urteil über sie."
-       },
-       {
-         "name": "Klar und offen",
-         "duration": 4,
-         "instruction": "Verweile in Offenheit und erinnere dich daran, dass Mitgefühl und verantwortliches Handeln weiterhin wichtig sind."
-       }
+     "desc": "Bemerke Begriffe und Bewertungen, ohne dich vollständig mit ihnen zu identifizieren. Bewahre dabei deine praktische Urteilskraft.",
+     "instructions": [
+      "Nimm eine gegenwärtige Erfahrung wahr, ohne sie sofort zu bewerten.",
+      "Bemerke die Begriffe und Gegensätze, die dein Geist hervorbringt.",
+      "Erlaube, dass die Erfahrung mehr sein darf als das erste Urteil über sie.",
+      "Verweile in Offenheit und erinnere dich daran, dass Mitgefühl und verantwortliches Handeln weiterhin wichtig sind."
      ]
    }
  },
@@ -1407,28 +1263,12 @@ export const vers115124: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Die nichtduale Gegenwart",
-     "instruction": "Erfahre eine gewöhnliche Wahrnehmung als unmittelbares Geschehen im Bewusstsein, ohne eine Trennung zwischen Alltag und spiritueller Praxis zu erzwingen.",
-     "phases": [
-       {
-         "name": "Das Gewöhnliche",
-         "duration": 4,
-         "instruction": "Nimm einen einfachen Gegenstand, ein Geräusch oder eine Körperempfindung wahr."
-       },
-       {
-         "name": "Das unmittelbare Erkennen",
-         "duration": 2,
-         "instruction": "Bemerke die Erfahrung, bevor du sie ausführlich bewertest oder interpretierst."
-       },
-       {
-         "name": "Verbundenheit",
-         "duration": 4,
-         "instruction": "Nimm wahr, wie Körper, Umgebung und Aufmerksamkeit gemeinsam die gegenwärtige Erfahrung bilden."
-       },
-       {
-         "name": "Nichtduale Offenheit",
-         "duration": 4,
-         "instruction": "Verweile in offener Gegenwärtigkeit und lasse die gewöhnliche Welt in ihrer Vielfalt bestehen."
-       }
+     "desc": "Erfahre eine gewöhnliche Wahrnehmung als unmittelbares Geschehen im Bewusstsein, ohne eine Trennung zwischen Alltag und spiritueller Praxis zu erzwingen.",
+     "instructions": [
+      "Nimm einen einfachen Gegenstand, ein Geräusch oder eine Körperempfindung wahr.",
+      "Bemerke die Erfahrung, bevor du sie ausführlich bewertest oder interpretierst.",
+      "Nimm wahr, wie Körper, Umgebung und Aufmerksamkeit gemeinsam die gegenwärtige Erfahrung bilden.",
+      "Verweile in offener Gegenwärtigkeit und lasse die gewöhnliche Welt in ihrer Vielfalt bestehen."
      ]
    }
  }

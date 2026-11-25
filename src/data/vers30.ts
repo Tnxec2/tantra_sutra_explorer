@@ -66,28 +66,13 @@ export const vers30: SUTRA = {
 "meditationConfig": {
 "type": "breath",
 "title": "Stufenweises Loslassen",
-"instruction": "Durchwandere die Ebenen von grob zu fein und lasse in jedem Schritt alles Verhaftete los.",
-"phases": [
-{
-"name": "Grobstoffliche Ebene",
-"duration": 4,
-"instruction": "Spüre den physischen Körper und verankere dich in ihm."
-},
-{
-"name": "Loslassen des Groben",
-"duration": 2,
-"instruction": "Lasse die Identifikation mit dem Körper vollkommen los."
-},
-{
-"name": "Feinstoffliche Ebene",
-"duration": 4,
-"instruction": "Wende dich dem feinen Strom von Atem und Energie zu."
-},
-{
-"name": "Shivas Zustand",
-"duration": 4,
-"instruction": "Lasse auch das Subtile los und ruhe im reinen Bewusstsein."
-}
+"desc": "Durchwandere die Ebenen von grob zu fein und lasse in jedem Schritt alles Verhaftete los.",
+"instructions": [
+    "Spüre den physischen Körper und verankere dich in ihm.",
+    "Lasse die Identifikation mit dem Körper vollkommen los.",
+    "Wende dich dem feinen Strom von Atem und Energie zu.",
+    "Lasse auch das Subtile los und ruhe im reinen Bewusstsein."
+
 ]
 }
 }

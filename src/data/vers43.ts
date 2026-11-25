@@ -190,28 +190,12 @@ export const vers43: SUTRA = {
  "meditationConfig": {
    "type": "gap",
    "title": "Der grenzenlose Raum im eigenen Körper",
-   "instruction": "Sitze bequem und nimm zunächst deinen Körper als Ganzes wahr. Vergegenwärtige dir dann den offenen Raum in allen Richtungen zugleich. Lass die Vorstellung allmählich in eine unmittelbare Wahrnehmung von Weite übergehen, ohne Gedanken zu unterdrücken. Bleibe zugleich körperlich verankert und kehre bei Unbehagen zu den Empfindungen deiner Füße oder Hände zurück.",
-   "phases": [
-     {
-       "name": "Im Körper ankommen",
-       "duration": 4,
-       "instruction": "Nimm deine Sitzhaltung, den Kontakt mit dem Boden und die natürlichen Atembewegungen wahr. Spüre den Körper als zusammenhängendes Erfahrungsfeld."
-     },
-     {
-       "name": "Die Richtungen öffnen",
-       "duration": 8,
-       "instruction": "Vergegenwärtige dir den Raum vor dir, hinter dir, zu beiden Seiten, über dir und unter dir. Versuche anschließend, die gesamte räumliche Weite gleichzeitig wahrzunehmen, ohne die Richtungen einzeln abzuarbeiten."
-     },
-     {
-       "name": "Im offenen Gewahrsein verweilen",
-       "duration": 8,
-       "instruction": "Lass die bewusste Vorstellung in den Hintergrund treten. Nimm Körperempfindungen, Geräusche und Gedanken als Teile eines umfassenden Erfahrungsfeldes wahr, ohne sie sofort begrifflich einzuordnen."
-     },
-     {
-       "name": "Zur unmittelbaren Erfahrung zurückkehren",
-       "duration": 4,
-       "instruction": "Spüre erneut deutlich deine Hände, Füße und die Sitzfläche. Nimm gleichzeitig den umgebenden Raum wahr und öffne dann die Aufmerksamkeit für deine nächste Tätigkeit."
-     }
+   "desc": "Sitze bequem und nimm zunächst deinen Körper als Ganzes wahr. Vergegenwärtige dir dann den offenen Raum in allen Richtungen zugleich. Lass die Vorstellung allmählich in eine unmittelbare Wahrnehmung von Weite übergehen, ohne Gedanken zu unterdrücken. Bleibe zugleich körperlich verankert und kehre bei Unbehagen zu den Empfindungen deiner Füße oder Hände zurück.",
+   "instructions": [
+    "Nimm deine Sitzhaltung, den Kontakt mit dem Boden und die natürlichen Atembewegungen wahr. Spüre den Körper als zusammenhängendes Erfahrungsfeld.",
+    "Vergegenwärtige dir den Raum vor dir, hinter dir, zu beiden Seiten, über dir und unter dir. Versuche anschließend, die gesamte räumliche Weite gleichzeitig wahrzunehmen, ohne die Richtungen einzeln abzuarbeiten.",
+    "Lass die bewusste Vorstellung in den Hintergrund treten. Nimm Körperempfindungen, Geräusche und Gedanken als Teile eines umfassenden Erfahrungsfeldes wahr, ohne sie sofort begrifflich einzuordnen.",
+    "Spüre erneut deutlich deine Hände, Füße und die Sitzfläche. Nimm gleichzeitig den umgebenden Raum wahr und öffne dann die Aufmerksamkeit für deine nächste Tätigkeit."
    ]
  }
 }

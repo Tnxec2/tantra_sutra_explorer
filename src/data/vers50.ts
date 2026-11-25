@@ -165,28 +165,12 @@ export const vers50: SUTRA = {
  "meditationConfig": {
    "type": "gap",
    "title": "Der Dvādaśānta – Ruhe am Rand des Körpers",
-   "instruction": "Sammle die Aufmerksamkeit zunächst im Körper und erweitere sie dann sanft auf den Raum an seinen Grenzen. Lass den Geist dort zur Ruhe kommen, ohne Atempausen zu erzwingen oder eine besondere Erfahrung zu erwarten. Verweile wach in der Weite, in der Körperempfindungen, Geräusche und Gedanken erscheinen.",
-   "phases": [
-     {
-       "name": "Im Körper ankommen",
-       "duration": 30,
-       "instruction": "Sitze bequem und spüre den Kontakt des Körpers mit dem Boden oder der Sitzfläche. Atme natürlich. Nimm die Körperempfindungen wahr, ohne sie verändern zu müssen."
-     },
-     {
-       "name": "Den Raum an den Grenzen wahrnehmen",
-       "duration": 40,
-       "instruction": "Erweitere die Aufmerksamkeit von den Körperempfindungen auf den Raum unmittelbar um dich herum. Du kannst den Bereich vor der Nasenspitze als Orientierung nutzen. Halte den Atem nicht an."
-     },
-     {
-       "name": "Den Geist zur Ruhe kommen lassen",
-       "duration": 40,
-       "instruction": "Lass die Aufmerksamkeit im offenen Raum ruhen. Wenn Gedanken auftauchen, erkenne sie, ohne ihnen zu folgen. Bemühe dich nicht, den Geist gewaltsam leer zu machen; kehre einfach zur ruhigen Wahrnehmung zurück."
-     },
-     {
-       "name": "Die Erkenntnis festigen",
-       "duration": 40,
-       "instruction": "Nimm Körper, Atem und Umgebung als Erscheinungen innerhalb eines weiten Wahrnehmungsfeldes wahr. Verweile in ruhiger Klarheit, ohne etwas festhalten zu müssen. Beende die Meditation, indem du den Körper bewusst spürst und dich wieder der Umgebung zuwendest."
-     }
+   "desc": "Sammle die Aufmerksamkeit zunächst im Körper und erweitere sie dann sanft auf den Raum an seinen Grenzen. Lass den Geist dort zur Ruhe kommen, ohne Atempausen zu erzwingen oder eine besondere Erfahrung zu erwarten. Verweile wach in der Weite, in der Körperempfindungen, Geräusche und Gedanken erscheinen.",
+   "instructions": [
+    "Sitze bequem und spüre den Kontakt des Körpers mit dem Boden oder der Sitzfläche. Atme natürlich. Nimm die Körperempfindungen wahr, ohne sie verändern zu müssen.",
+    "Erweitere die Aufmerksamkeit von den Körperempfindungen auf den Raum unmittelbar um dich herum. Du kannst den Bereich vor der Nasenspitze als Orientierung nutzen. Halte den Atem nicht an.",
+    "Lass die Aufmerksamkeit im offenen Raum ruhen. Wenn Gedanken auftauchen, erkenne sie, ohne ihnen zu folgen. Bemühe dich nicht, den Geist gewaltsam leer zu machen; kehre einfach zur ruhigen Wahrnehmung zurück.",
+    "Nimm Körper, Atem und Umgebung als Erscheinungen innerhalb eines weiten Wahrnehmungsfeldes wahr. Verweile in ruhiger Klarheit, ohne etwas festhalten zu müssen. Beende die Meditation, indem du den Körper bewusst spürst und dich wieder der Umgebung zuwendest."
    ]
  }
 }

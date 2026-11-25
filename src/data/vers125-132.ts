@@ -112,28 +112,12 @@ export const vers125132: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Die Mitte jenseits der Bewertung",
-     "instruction": "Beobachte, wie Lob und Kritik Gedanken und Körperempfindungen auslösen. Kehre zwischen Reiz und Reaktion zur stillen Wahrnehmung zurück.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Sitze bequem und nimm den natürlichen Atem wahr."
-       },
-       {
-         "name": "Bewertung erkennen",
-         "duration": 2,
-         "instruction": "Erinnere dich an Lob oder Kritik und beobachte die entstehende Reaktion, ohne sie zu verstärken."
-       },
-       {
-         "name": "Die stille Mitte",
-         "duration": 4,
-         "instruction": "Lass die Bewertung verblassen und ruhe in der Wahrnehmung, die sie erkennt."
-       },
-       {
-         "name": "Gleichmut verkörpern",
-         "duration": 4,
-         "instruction": "Kehre zur Umgebung zurück und nimm dir vor, aus Klarheit statt aus Kränkung zu handeln."
-       }
+     "desc": "Beobachte, wie Lob und Kritik Gedanken und Körperempfindungen auslösen. Kehre zwischen Reiz und Reaktion zur stillen Wahrnehmung zurück.",
+     "instructions": [
+       "Sitze bequem und nimm den natürlichen Atem wahr.",
+       "Erinnere dich an Lob oder Kritik und beobachte die entstehende Reaktion, ohne sie zu verstärken.",
+       "Lass die Bewertung verblassen und ruhe in der Wahrnehmung, die sie erkennt.",
+       "Kehre zur Umgebung zurück und nimm dir vor, aus Klarheit statt aus Kränkung zu handeln."
      ]
    }
  },
@@ -248,28 +232,12 @@ export const vers125132: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Der Raum zwischen Reiz und Reaktion",
-     "instruction": "Nimm eine Empfindung wahr, ohne sie festzuhalten oder wegzuschieben. Erfahre die offene Mitte, in der beide Bewegungen zur Ruhe kommen können.",
-     "phases": [
-       {
-         "name": "Wahrnehmen",
-         "duration": 4,
-         "instruction": "Beobachte Atem, Körper und gegenwärtige Stimmung."
-       },
-       {
-         "name": "Anziehung und Abwehr",
-         "duration": 2,
-         "instruction": "Erkenne, was du festhalten oder zurückweisen möchtest."
-       },
-       {
-         "name": "Die Mitte",
-         "duration": 4,
-         "instruction": "Lass beide Impulse bestehen, ohne ihnen unmittelbar zu folgen."
-       },
-       {
-         "name": "Offene Gegenwart",
-         "duration": 4,
-         "instruction": "Ruhe in der Wahrnehmung und kehre ohne Eile zur Tätigkeit zurück."
-       }
+     "desc": "Nimm eine Empfindung wahr, ohne sie festzuhalten oder wegzuschieben. Erfahre die offene Mitte, in der beide Bewegungen zur Ruhe kommen können.",
+     "instructions": [
+      "Beobachte Atem, Körper und gegenwärtige Stimmung.",
+      "Erkenne, was du festhalten oder zurückweisen möchtest.",
+      "Lass beide Impulse bestehen, ohne ihnen unmittelbar zu folgen.",
+      "Ruhe in der Wahrnehmung und kehre ohne Eile zur Tätigkeit zurück."
      ]
    }
  },
@@ -384,28 +352,12 @@ export const vers125132: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Im offenen Raum des Nichtwissens",
-     "instruction": "Lass Begriffe und Erwartungen für einige Augenblicke ruhen. Nimm wahr, was sich zeigt, und ebenso den offenen Raum, in dem es erscheint.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Nimm die Körperhaltung und den natürlichen Atem wahr."
-       },
-       {
-         "name": "Begriffe lockern",
-         "duration": 2,
-         "instruction": "Lass die Suche nach einer Erklärung kurz ruhen."
-       },
-       {
-         "name": "Offenheit erfahren",
-         "duration": 4,
-         "instruction": "Beobachte Empfindungen, Geräusche und Gedanken, ohne sie festzulegen."
-       },
-       {
-         "name": "Erkenntnis zulassen",
-         "duration": 4,
-         "instruction": "Verweile in stiller Aufmerksamkeit und kehre anschließend sanft zurück."
-       }
+     "desc": "Lass Begriffe und Erwartungen für einige Augenblicke ruhen. Nimm wahr, was sich zeigt, und ebenso den offenen Raum, in dem es erscheint.",
+     "instructions": [
+      "Nimm die Körperhaltung und den natürlichen Atem wahr.",
+      "Lass die Suche nach einer Erklärung kurz ruhen.",
+      "Beobachte Empfindungen, Geräusche und Gedanken, ohne sie festzulegen.",
+      "Verweile in stiller Aufmerksamkeit und kehre anschließend sanft zurück."
      ]
    }
  },
@@ -525,28 +477,12 @@ export const vers125132: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Vom Himmel in das Raumlose",
-     "instruction": "Nutze den äußeren Raum als Anker. Lass die Aufmerksamkeit allmählich weiter werden und untersuche den offenen Bewusstseinsraum, in dem der Himmel wahrgenommen wird.",
-     "phases": [
-       {
-         "name": "Den Himmel wahrnehmen",
-         "duration": 4,
-         "instruction": "Richte den Blick sanft auf den offenen Himmel oder stelle dir seine Weite vor."
-       },
-       {
-         "name": "Gedanken vorbeiziehen lassen",
-         "duration": 2,
-         "instruction": "Nimm Gedanken wahr, ohne ihnen eine Geschichte hinzuzufügen."
-       },
-       {
-         "name": "Die Weite vertiefen",
-         "duration": 4,
-         "instruction": "Lass die Aufmerksamkeit den gesamten Wahrnehmungsraum einschließen."
-       },
-       {
-         "name": "Im offenen Gewahrsein ruhen",
-         "duration": 4,
-         "instruction": "Verweile ohne Anstrengung und kehre behutsam in die Umgebung zurück."
-       }
+     "desc": "Nutze den äußeren Raum als Anker. Lass die Aufmerksamkeit allmählich weiter werden und untersuche den offenen Bewusstseinsraum, in dem der Himmel wahrgenommen wird.",
+     "instructions": [
+      "Richte den Blick sanft auf den offenen Himmel oder stelle dir seine Weite vor.",
+      "Nimm Gedanken wahr, ohne ihnen eine Geschichte hinzuzufügen.",
+      "Lass die Aufmerksamkeit den gesamten Wahrnehmungsraum einschließen.",
+      "Verweile ohne Anstrengung und kehre behutsam in die Umgebung zurück."
      ]
    }
  },
@@ -661,28 +597,12 @@ export const vers125132: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Die Wellen loslassen",
-     "instruction": "Beobachte Gedanken, Geräusche und Empfindungen. Erkenne jeden Vorgang, ohne ihn weiterzuführen, und kehre zur offenen Wahrnehmung zurück.",
-     "phases": [
-       {
-         "name": "Wahrnehmung öffnen",
-         "duration": 4,
-         "instruction": "Nimm Atem, Geräusche und Körperempfindungen gleichzeitig wahr."
-       },
-       {
-         "name": "Ein Inhalt erscheint",
-         "duration": 2,
-         "instruction": "Erkenne den nächsten Gedanken oder Eindruck, ohne ihn zu bewerten."
-       },
-       {
-         "name": "Loslassen",
-         "duration": 4,
-         "instruction": "Lass den Inhalt weiterziehen und verweile nicht in seiner Geschichte."
-       },
-       {
-         "name": "Wellenlose Ruhe",
-         "duration": 4,
-         "instruction": "Ruhe in der offenen Aufmerksamkeit, auch wenn weiterhin Gedanken auftauchen."
-       }
+     "desc": "Beobachte Gedanken, Geräusche und Empfindungen. Erkenne jeden Vorgang, ohne ihn weiterzuführen, und kehre zur offenen Wahrnehmung zurück.",
+     "instructions": [
+      "Nimm Atem, Geräusche und Körperempfindungen gleichzeitig wahr.",
+      "Erkenne den nächsten Gedanken oder Eindruck, ohne ihn zu bewerten.",
+      "Lass den Inhalt weiterziehen und verweile nicht in seiner Geschichte.",
+      "Ruhe in der offenen Aufmerksamkeit, auch wenn weiterhin Gedanken auftauchen."
      ]
    }
  },
@@ -802,28 +722,12 @@ export const vers125132: SUTRA[] = [
    "meditationConfig": {
      "type": "sound",
      "title": "Der Klang von Bhairava",
-     "instruction": "Rezitiere ein vertrautes Mantra oder lausche einem einzelnen Ton. Folge dem Klang aufmerksam bis zu seinem Verklingen und ruhe danach in der Stille.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Sitze ruhig und nimm den Atem wahr, ohne ihn zu verändern."
-       },
-       {
-         "name": "Klang entfalten",
-         "duration": 2,
-         "instruction": "Sprich das Mantra langsam oder höre einem Klang mit ungeteilter Aufmerksamkeit zu."
-       },
-       {
-         "name": "Verklingen",
-         "duration": 4,
-         "instruction": "Verfolge den Klang bis zu seinem Ende, ohne ihn gedanklich zu verlängern."
-       },
-       {
-         "name": "In der Stille verweilen",
-         "duration": 4,
-         "instruction": "Nimm die Stille nach dem Klang wahr und kehre anschließend behutsam zurück."
-       }
+     "desc": "Rezitiere ein vertrautes Mantra oder lausche einem einzelnen Ton. Folge dem Klang aufmerksam bis zu seinem Verklingen und ruhe danach in der Stille.",
+     "instructions": [
+      "Sitze ruhig und nimm den Atem wahr, ohne ihn zu verändern.",
+      "Sprich das Mantra langsam oder höre einem Klang mit ungeteilter Aufmerksamkeit zu.",
+      "Verfolge den Klang bis zu seinem Ende, ohne ihn gedanklich zu verlängern.",
+      "Nimm die Stille nach dem Klang wahr und kehre anschließend behutsam zurück."
      ]
    }
  },
@@ -943,28 +847,12 @@ export const vers125132: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Jenseits von Ich und Mein",
-     "instruction": "Beobachte die Vorstellungen von dir selbst und deinen Besitztümern. Lass sie als Gedanken erscheinen, ohne sie zu bekämpfen oder als endgültige Wahrheit festzuhalten.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Nimm die Körperempfindungen und den Atem wahr."
-       },
-       {
-         "name": "Ich und Mein erkennen",
-         "duration": 2,
-         "instruction": "Bemerke, welche Selbstbeschreibungen und Besitzvorstellungen gerade auftauchen."
-       },
-       {
-         "name": "Die Stütze lockern",
-         "duration": 4,
-         "instruction": "Lass die Gedanken bestehen, ohne ihnen eine weitere Geschichte hinzuzufügen."
-       },
-       {
-         "name": "Offenes Gewahrsein",
-         "duration": 4,
-         "instruction": "Ruhe in der unmittelbaren Wahrnehmung und kehre sanft zum Alltag zurück."
-       }
+     "desc": "Beobachte die Vorstellungen von dir selbst und deinen Besitztümern. Lass sie als Gedanken erscheinen, ohne sie zu bekämpfen oder als endgültige Wahrheit festzuhalten.",
+     "instructions": [
+      "Nimm die Körperempfindungen und den Atem wahr.",
+      "Bemerke, welche Selbstbeschreibungen und Besitzvorstellungen gerade auftauchen.",
+      "Lass die Gedanken bestehen, ohne ihnen eine weitere Geschichte hinzuzufügen.",
+      "Ruhe in der unmittelbaren Wahrnehmung und kehre sanft zum Alltag zurück."
      ]
    }
  },
@@ -1094,28 +982,12 @@ export const vers125132: SUTRA[] = [
    "meditationConfig": {
      "type": "sound",
      "title": "Das Wort im Raum des Bewusstseins",
-     "instruction": "Wähle ein Wort oder einen einfachen Ton. Beobachte Klang, Bedeutung und Verklingen, während du die Aufmerksamkeit für den gegenwärtigen Hörvorgang offenhältst.",
-     "phases": [
-       {
-         "name": "Stille Vorbereitung",
-         "duration": 4,
-         "instruction": "Sitze bequem und nimm den Atem wahr."
-       },
-       {
-         "name": "Das Wort hören",
-         "duration": 2,
-         "instruction": "Sprich ein Wort langsam aus oder höre einen Ton aufmerksam an."
-       },
-       {
-         "name": "Bedeutung und Klang",
-         "duration": 4,
-         "instruction": "Beobachte den Sinn des Wortes und zugleich seine hörbare Form."
-       },
-       {
-         "name": "Verklingen lassen",
-         "duration": 4,
-         "instruction": "Lass den Klang enden und verweile kurz in der stillen Aufmerksamkeit."
-       }
+     "desc": "Wähle ein Wort oder einen einfachen Ton. Beobachte Klang, Bedeutung und Verklingen, während du die Aufmerksamkeit für den gegenwärtigen Hörvorgang offenhältst.",
+     "instructions": [
+      "Sitze bequem und nimm den Atem wahr.",
+      "Sprich ein Wort langsam aus oder höre einen Ton aufmerksam an.",
+      "Beobachte den Sinn des Wortes und zugleich seine hörbare Form.",
+      "Lass den Klang enden und verweile kurz in der stillen Aufmerksamkeit."
      ]
    }
  }

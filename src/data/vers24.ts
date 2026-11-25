@@ -86,28 +86,12 @@ export const vers24: SUTRA = {
     "meditationConfig": {
       "type": "gap",
       "title": "Die Fülle in den Atempunkten",
-      "instruction": "Verfolge die Bewegung des Atems und verweile bewusst in der Stille der Wendepunkte.",
-      "phases": [
-        {
-          "name": "Aufstieg (Prana)",
-          "duration": 4,
-          "instruction": "Nimm den Atem wahr, wie er nach oben strömt."
-        },
-        {
-          "name": "Obere Lücke",
-          "duration": 2,
-          "instruction": "Verweile im Wendepunkt oben. Erfülle diesen Raum mit Präsenz."
-        },
-        {
-          "name": "Abstieg (Jiva)",
-          "duration": 4,
-          "instruction": "Folge dem Atem nach unten."
-        },
-        {
-          "name": "Untere Lücke",
-          "duration": 2,
-          "instruction": "Verweile im Wendepunkt unten und spüre die absolute Fülle."
-        }
+      "desc": "Verfolge die Bewegung des Atems und verweile bewusst in der Stille der Wendepunkte.",
+      "instructions": [
+        "Nimm den Atem wahr, wie er nach oben strömt.",
+        "Verweile im Wendepunkt oben. Erfülle diesen Raum mit Präsenz.", 
+        "Folge dem Atem nach unten.",
+        "Verweile im Wendepunkt unten und spüre die absolute Fülle."
       ]
     }
   }

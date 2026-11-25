@@ -83,28 +83,12 @@ export const vers26: SUTRA = {
 "meditationConfig": {
 "type": "breath",
 "title": "Das Verweilen in der unbewegten Mitte",
-"instruction": "Lass die Bewegung des Atems zur Ruhe kommen und ruhe im raumslosen Zentrum.",
-"phases": [
-{
-"name": "Sammeln",
-"duration": 4,
-"instruction": "Führe den Atem sanft in den zentralen Raum deines Brustraums."
-},
-{
-"name": "Die Mitte",
-"duration": 4,
-"instruction": "Verweile ohne Anstrengung im unbewegten Zentrum zwischen den Atemzügen."
-},
-{
-"name": "Ausdehnung",
-"duration": 4,
-"instruction": "Erlaube dem Bewusstsein, sich weit und gedankenlos zu öffnen."
-},
-{
-"name": "Ruhe",
-"duration": 4,
-"instruction": "Verbleibe im reinen, erfüllten Sein."
-}
+"desc": "Lass die Bewegung des Atems zur Ruhe kommen und ruhe im raumslosen Zentrum.",
+"instructions": [
+    "Führe den Atem sanft in den zentralen Raum deines Brustraums.",
+    "Verweile ohne Anstrengung im unbewegten Zentrum zwischen den Atemzügen.",
+    "Erlaube dem Bewusstsein, sich weit und gedankenlos zu öffnen.",
+    "Verbleibe im reinen, erfüllten Sein."
 ]
 }
 }

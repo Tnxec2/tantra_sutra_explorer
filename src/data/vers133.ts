@@ -277,28 +277,12 @@ export const vers133: SUTRA = {
  "meditationConfig": {
    "type": "gap",
    "title": "Hinter dem Zaubernetz",
-   "instruction": "Beobachte, wie Wahrnehmungen, Gedanken und Bewertungen auftauchen. Frage sanft nach dem Wesen dessen, was gerade erscheint, ohne eine intellektuelle Antwort erzwingen zu wollen. Lass die Frage den Geist öffnen, bis du die wechselnden Erscheinungen in ruhiger Aufmerksamkeit wahrnehmen kannst.",
-   "phases": [
-     {
-       "name": "Ankommen",
-       "duration": 4,
-       "instruction": "Sitze bequem und spüre deinen Körper. Nimm den Atem, Geräusche und Berührungen wahr. Lass die Umgebung so sein, wie sie gerade ist."
-     },
-     {
-       "name": "Das Erscheinen beobachten",
-       "duration": 4,
-       "instruction": "Beobachte Gedanken, Empfindungen und Sinneseindrücke. Erkenne, wie sie auftauchen, sich verändern und wieder verschwinden. Versuche nicht, sie zu kontrollieren."
-     },
-     {
-       "name": "Nach dem Wesen fragen",
-       "duration": 4,
-       "instruction": "Richte die stille Frage auf eine gegenwärtige Erfahrung: »Was ist ihr Wesen?« Suche nicht nach einer begrifflichen Antwort. Bemerke stattdessen, wie die Erfahrung unmittelbar gegenwärtig ist und zugleich ihre Gestalt verändert."
-     },
-     {
-       "name": "In ruhiger Offenheit verweilen",
-       "duration": 4,
-       "instruction": "Lass die Frage los und ruhe in offener Aufmerksamkeit. Gedanken und Empfindungen dürfen weiterhin erscheinen. Nimm sie wahr, ohne dich in ihnen zu verlieren, und kehre anschließend ruhig in den Alltag zurück."
-     }
+   "desc": "Beobachte, wie Wahrnehmungen, Gedanken und Bewertungen auftauchen. Frage sanft nach dem Wesen dessen, was gerade erscheint, ohne eine intellektuelle Antwort erzwingen zu wollen. Lass die Frage den Geist öffnen, bis du die wechselnden Erscheinungen in ruhiger Aufmerksamkeit wahrnehmen kannst.",
+   "instructions": [
+    "Sitze bequem und spüre deinen Körper. Nimm den Atem, Geräusche und Berührungen wahr. Lass die Umgebung so sein, wie sie gerade ist.",
+    "Beobachte Gedanken, Empfindungen und Sinneseindrücke. Erkenne, wie sie auftauchen, sich verändern und wieder verschwinden. Versuche nicht, sie zu kontrollieren.",
+    "Richte die stille Frage auf eine gegenwärtige Erfahrung: »Was ist ihr Wesen?« Suche nicht nach einer begrifflichen Antwort. Bemerke stattdessen, wie die Erfahrung unmittelbar gegenwärtig ist und zugleich ihre Gestalt verändert.",
+    "Lass die Frage los und ruhe in offener Aufmerksamkeit. Gedanken und Empfindungen dürfen weiterhin erscheinen. Nimm sie wahr, ohne dich in ihnen zu verlieren, und kehre anschließend ruhig in den Alltag zurück."
    ]
  }
 }

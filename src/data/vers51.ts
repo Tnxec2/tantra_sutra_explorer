@@ -165,33 +165,13 @@ export const vers51: SUTRA = {
  "meditationConfig": {
    "type": "gap",
    "title": "Die Schwelle zur Weite",
-   "instruction": "Richte die Aufmerksamkeit sanft auf den stillen Raum jenseits der gewöhnlichen Gedankenbewegungen. Atme natürlich und erzwinge keine Atempausen.",
-   "phases": [
-     {
-       "name": "Ankommen",
-       "duration": 30,
-       "instruction": "Setze oder stelle dich bequem hin. Spüre den Körper und lass den Atem seinen natürlichen Rhythmus finden."
-     },
-     {
-       "name": "Aufmerksamkeit ausrichten",
-       "duration": 40,
-       "instruction": "Richte deine Aufmerksamkeit behutsam auf einen vorgestellten offenen Punkt oberhalb des Scheitels oder auf die Weite, die du am Ende einer natürlichen Atembewegung wahrnimmst. Wähle die Variante, die sich entspannt und stimmig anfühlt."
-     },
-     {
-       "name": "Gedanken abklingen lassen",
-       "duration": 40,
-       "instruction": "Wenn Gedanken erscheinen, erkenne sie, ohne sie zu bekämpfen. Kehre sanft zur offenen Weite zurück und lass die geistigen Bewegungen von selbst nachlassen."
-     },
-     {
-       "name": "In der Offenheit verweilen",
-       "duration": 40,
-       "instruction": "Lass die gezielte Konzentration etwas weicher werden. Nimm wahr, dass Geräusche, Körperempfindungen und Gedanken im Gewahrsein erscheinen. Verweile ruhig, ohne ein besonderes Erlebnis zu erwarten."
-     },
-     {
-       "name": "Zurückkehren",
-       "duration": 30,
-       "instruction": "Spüre wieder den ganzen Körper, den Kontakt zum Boden und die Umgebung. Öffne die Augen, falls sie geschlossen waren, und nimm diese ruhigere Aufmerksamkeit mit in deinen Alltag."
-     }
+   "desc": "Richte die Aufmerksamkeit sanft auf den stillen Raum jenseits der gewöhnlichen Gedankenbewegungen. Atme natürlich und erzwinge keine Atempausen.",
+   "instructions": [
+    "Setze oder stelle dich bequem hin. Spüre den Körper und lass den Atem seinen natürlichen Rhythmus finden.",
+    "Richte deine Aufmerksamkeit behutsam auf einen vorgestellten offenen Punkt oberhalb des Scheitels oder auf die Weite, die du am Ende einer natürlichen Atembewegung wahrnimmst. Wähle die Variante, die sich entspannt und stimmig anfühlt.",
+    "Wenn Gedanken erscheinen, erkenne sie, ohne sie zu bekämpfen. Kehre sanft zur offenen Weite zurück und lass die geistigen Bewegungen von selbst nachlassen.",
+    "Lass die gezielte Konzentration etwas weicher werden. Nimm wahr, dass Geräusche, Körperempfindungen und Gedanken im Gewahrsein erscheinen. Verweile ruhig, ohne ein besonderes Erlebnis zu erwarten.",
+    "Spüre wieder den ganzen Körper, den Kontakt zum Boden und die Umgebung. Öffne die Augen, falls sie geschlossen waren, und nimm diese ruhigere Aufmerksamkeit mit in deinen Alltag."
    ]
  }
 }

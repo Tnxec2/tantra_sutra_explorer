@@ -226,33 +226,13 @@ export const vers136: SUTRA = {
  "meditationConfig": {
    "type": "gap",
    "title": "Die Sinne und das ruhende Selbst",
-   "instruction": "Nimm Sinneseindrücke wahr, ohne sie zu unterdrücken oder ihnen automatisch zu folgen. Beobachte, wie angenehme und unangenehme Erfahrungen entstehen und vergehen, während du im Gewahrsein gesammelt bleibst.",
-   "phases": [
-     {
-       "name": "Ankommen",
-       "duration": 30,
-       "instruction": "Setze dich bequem hin. Spüre den Körper und den natürlichen Atem. Lass die Sinne offen und nimm die Geräusche deiner Umgebung wahr."
-     },
-     {
-       "name": "Die Sinnestore öffnen",
-       "duration": 40,
-       "instruction": "Bemerke nacheinander Geräusche, sichtbare Eindrücke und Körperempfindungen. Versuche nicht, etwas auszuschließen. Erkenne einfach, was gerade wahrgenommen wird."
-     },
-     {
-       "name": "Anziehung und Abwehr erkennen",
-       "duration": 40,
-       "instruction": "Beobachte, ob eine Empfindung angenehm, unangenehm oder neutral wirkt. Nimm mögliche Wünsche und Widerstände wahr, ohne ihnen sofort zu folgen."
-     },
-     {
-       "name": "Im Selbst verweilen",
-       "duration": 40,
-       "instruction": "Lass die Eindrücke kommen und gehen. Richte die Aufmerksamkeit auf das offene Gewahrsein, in dem sie erkannt werden. Entspanne dich, ohne die Sinne zu unterdrücken."
-     },
-     {
-       "name": "Bewusst zurückkehren",
-       "duration": 30,
-       "instruction": "Spüre den ganzen Körper und die Umgebung. Öffne die Augen, falls sie geschlossen waren. Nimm dir vor, auch im Alltag zwischen Wahrnehmung und Reaktion einen Moment bewusster Freiheit zu lassen."
-     }
+   "desc": "Nimm Sinneseindrücke wahr, ohne sie zu unterdrücken oder ihnen automatisch zu folgen. Beobachte, wie angenehme und unangenehme Erfahrungen entstehen und vergehen, während du im Gewahrsein gesammelt bleibst.",
+   "instructions": [
+    "Setze dich bequem hin. Spüre den Körper und den natürlichen Atem. Lass die Sinne offen und nimm die Geräusche deiner Umgebung wahr.",
+    "Bemerke nacheinander Geräusche, sichtbare Eindrücke und Körperempfindungen. Versuche nicht, etwas auszuschließen. Erkenne einfach, was gerade wahrgenommen wird.",
+    "Beobachte, ob eine Empfindung angenehm, unangenehm oder neutral wirkt. Nimm mögliche Wünsche und Widerstände wahr, ohne ihnen sofort zu folgen.",
+    "Lass die Eindrücke kommen und gehen. Richte die Aufmerksamkeit auf das offene Gewahrsein, in dem sie erkannt werden. Entspanne dich, ohne die Sinne zu unterdrücken.",
+    "Spüre den ganzen Körper und die Umgebung. Öffne die Augen, falls sie geschlossen waren. Nimm dir vor, auch im Alltag zwischen Wahrnehmung und Reaktion einen Moment bewusster Freiheit zu lassen."
    ]
  }
 }

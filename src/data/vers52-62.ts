@@ -133,28 +133,12 @@ export const vers5262: SUTRA[] =
    "meditationConfig": {
      "type": "gap",
      "title": "Die Flamme und die stille Präsenz",
-     "instruction": "Beobachte symbolisch, wie ein begrenztes Selbstbild vergeht, und ruhe anschließend in der stillen Wahrnehmung. Halte den Atem nicht gewaltsam an.",
-     "phases": [
-       {
-         "name": "Die Gestalt des Ich",
-         "duration": 4,
-         "instruction": "Nimm wahr, welche Vorstellung von dir gerade besonders präsent ist. Beobachte sie, ohne sie zu bewerten."
-       },
-       {
-         "name": "Das Feuer der Zeit",
-         "duration": 4,
-         "instruction": "Stelle dir vor, dass diese Vorstellung im Licht der Vergänglichkeit ihre feste Gestalt verliert."
-       },
-       {
-         "name": "Die stille Lücke",
-         "duration": 4,
-         "instruction": "Lass die Visualisierung los. Nimm wahr, was jetzt gegenwärtig ist, bevor du es gedanklich benennst."
-       },
-       {
-         "name": "Ruhiges Gewahrsein",
-         "duration": 4,
-         "instruction": "Spüre den Körper und den natürlichen Atem. Verweile ohne Anstrengung in der stillen Aufmerksamkeit."
-       }
+     "desc": "Beobachte symbolisch, wie ein begrenztes Selbstbild vergeht, und ruhe anschließend in der stillen Wahrnehmung. Halte den Atem nicht gewaltsam an.",
+     "instructions": [
+      "Nimm wahr, welche Vorstellung von dir gerade besonders präsent ist. Beobachte sie, ohne sie zu bewerten.",
+      "Stelle dir vor, dass diese Vorstellung im Licht der Vergänglichkeit ihre feste Gestalt verliert.",
+      "Lass die Visualisierung los. Nimm wahr, was jetzt gegenwärtig ist, bevor du es gedanklich benennst.",
+      "Spüre den Körper und den natürlichen Atem. Verweile ohne Anstrengung in der stillen Aufmerksamkeit."
      ]
    }
  },
@@ -293,28 +277,12 @@ export const vers5262: SUTRA[] =
    "meditationConfig": {
      "type": "gap",
      "title": "Das Gedankenfeuer und die Einheit",
-     "instruction": "Beobachte, wie begriffliche Festlegungen auftauchen und wieder vergehen. Suche keine erzwungene Leere; erkenne die Offenheit, in der die Gedanken erscheinen.",
-     "phases": [
-       {
-         "name": "Die Vielfalt wahrnehmen",
-         "duration": 4,
-         "instruction": "Nimm Gedanken, Geräusche und Körperempfindungen wahr, ohne etwas auszuschließen."
-       },
-       {
-         "name": "Die Unterscheidungen lockern",
-         "duration": 4,
-         "instruction": "Erkenne die Etiketten, die der Geist den Eindrücken gibt. Lass sie für einen Moment unvollendet."
-       },
-       {
-         "name": "Das ungeteilte Feld",
-         "duration": 4,
-         "instruction": "Spüre, dass alle Eindrücke gleichzeitig in deinem Gewahrsein erscheinen können."
-       },
-       {
-         "name": "Verweilen ohne Festlegung",
-         "duration": 4,
-         "instruction": "Ruhe in der offenen Aufmerksamkeit. Kehre bei Ablenkung sanft zur unmittelbaren Erfahrung zurück."
-       }
+     "desc": "Beobachte, wie begriffliche Festlegungen auftauchen und wieder vergehen. Suche keine erzwungene Leere; erkenne die Offenheit, in der die Gedanken erscheinen.",
+     "instructions": [
+      "Nimm Gedanken, Geräusche und Körperempfindungen wahr, ohne etwas auszuschließen.",
+      "Erkenne die Etiketten, die der Geist den Eindrücken gibt. Lass sie für einen Moment unvollendet.",
+      "Spüre, dass alle Eindrücke gleichzeitig in deinem Gewahrsein erscheinen können.",
+      "Ruhe in der offenen Aufmerksamkeit. Kehre bei Ablenkung sanft zur unmittelbaren Erfahrung zurück."
      ]
    }
  },
@@ -453,28 +421,12 @@ export const vers5262: SUTRA[] =
    "meditationConfig": {
      "type": "gap",
      "title": "Vom Groben zum Subtilen",
-     "instruction": "Erkunde die Erfahrung in mehreren Ebenen: Körper, feine Empfindung und offenes Gewahrsein. Bleibe entspannt und zwinge keine besondere Erfahrung herbei.",
-     "phases": [
-       {
-         "name": "Die grobe Ebene",
-         "duration": 4,
-         "instruction": "Spüre den Körper, seine Haltung und die Berührungspunkte mit deiner Umgebung."
-       },
-       {
-         "name": "Die feine Ebene",
-         "duration": 4,
-         "instruction": "Nimm Temperatur, Pulsieren, Muskeltonus oder andere subtile Empfindungsqualitäten wahr."
-       },
-       {
-         "name": "Der Ruheort",
-         "duration": 4,
-         "instruction": "Lass die Suche nach immer neuen Empfindungen los und bemerke das Gewahrsein, in dem sie erscheinen."
-       },
-       {
-         "name": "Das Offenbarwerden",
-         "duration": 4,
-         "instruction": "Verweile offen und ruhig. Lass die Erfahrung sich zeigen, ohne sie sofort erklären zu müssen."
-       }
+     "desc": "Erkunde die Erfahrung in mehreren Ebenen: Körper, feine Empfindung und offenes Gewahrsein. Bleibe entspannt und zwinge keine besondere Erfahrung herbei.",
+     "instructions": [
+      "Spüre den Körper, seine Haltung und die Berührungspunkte mit deiner Umgebung.",
+      "Nimm Temperatur, Pulsieren, Muskeltonus oder andere subtile Empfindungsqualitäten wahr.",
+      "Lass die Suche nach immer neuen Empfindungen los und bemerke das Gewahrsein, in dem sie erscheinen.",
+      "Verweile offen und ruhig. Lass die Erfahrung sich zeigen, ohne sie sofort erklären zu müssen."
      ]
    }
  },
@@ -613,28 +565,12 @@ export const vers5262: SUTRA[] =
    "meditationConfig": {
      "type": "breath",
      "title": "Die Kraft im Herzraum",
-     "instruction": "Richte deine Aufmerksamkeit sanft auf die Herzregion und beobachte die natürliche Atembewegung. Die Phasen sind Zeitabschnitte der Aufmerksamkeit, keine Aufforderung zum Atemanhalten.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Spüre den Kontakt des Körpers mit der Unterlage und lass den Atem frei fließen."
-       },
-       {
-         "name": "Kräftige Śakti",
-         "duration": 4,
-         "instruction": "Bemerke lebendige oder deutliche Empfindungen im Brustraum, ohne sie zu verstärken."
-       },
-       {
-         "name": "Zarte Śakti",
-         "duration": 4,
-         "instruction": "Achte auf feine, kaum bemerkbare Empfindungen und erlaube auch neutraler Stille ihren Platz."
-       },
-       {
-         "name": "Innere Freiheit",
-         "duration": 4,
-         "instruction": "Lass die gezielte Suche los und verweile mit ruhiger, offener Aufmerksamkeit im Herzraum."
-       }
+     "desc": "Richte deine Aufmerksamkeit sanft auf die Herzregion und beobachte die natürliche Atembewegung. Die Phasen sind Zeitabschnitte der Aufmerksamkeit, keine Aufforderung zum Atemanhalten.",
+     "instructions": [
+      "Spüre den Kontakt des Körpers mit der Unterlage und lass den Atem frei fließen.",
+      "Bemerke lebendige oder deutliche Empfindungen im Brustraum, ohne sie zu verstärken.",
+      "Achte auf feine, kaum bemerkbare Empfindungen und erlaube auch neutraler Stille ihren Platz.",
+      "Lass die gezielte Suche los und verweile mit ruhiger, offener Aufmerksamkeit im Herzraum."
      ]
    }
  },
@@ -778,28 +714,12 @@ export const vers5262: SUTRA[] =
    "meditationConfig": {
      "type": "gap",
      "title": "Der Weg durch die Ebenen",
-     "instruction": "Gehe von der äußeren Wahrnehmung zu subtileren Erfahrungen und lasse die Aufmerksamkeit schließlich in offener Ruhe verweilen.",
-     "phases": [
-       {
-         "name": "Die grobe Ebene",
-         "duration": 4,
-         "instruction": "Nimm den Raum, den Körper und die unmittelbar wahrnehmbaren Gegenstände wahr."
-       },
-       {
-         "name": "Die subtile Ebene",
-         "duration": 4,
-         "instruction": "Bemerke Gefühle, Gedanken und feine Empfindungen, ohne sie ausführlich zu analysieren."
-       },
-       {
-         "name": "Die höchste Betrachtung",
-         "duration": 4,
-         "instruction": "Erkenne, dass äußere Eindrücke und innere Vorgänge gemeinsam im Gewahrsein erscheinen."
-       },
-       {
-         "name": "Ruhe des Geistes",
-         "duration": 4,
-         "instruction": "Lass das Ordnen und Benennen los. Verweile in wacher, entspannter Aufmerksamkeit."
-       }
+     "desc": "Gehe von der äußeren Wahrnehmung zu subtileren Erfahrungen und lasse die Aufmerksamkeit schließlich in offener Ruhe verweilen.",
+     "instructions": [
+      "Nimm den Raum, den Körper und die unmittelbar wahrnehmbaren Gegenstände wahr.",
+      "Bemerke Gefühle, Gedanken und feine Empfindungen, ohne sie ausführlich zu analysieren.",
+      "Erkenne, dass äußere Eindrücke und innere Vorgänge gemeinsam im Gewahrsein erscheinen.",
+      "Lass das Ordnen und Benennen los. Verweile in wacher, entspannter Aufmerksamkeit."
      ]
    }
  },
@@ -933,28 +853,12 @@ export const vers5262: SUTRA[] =
    "meditationConfig": {
      "type": "gap",
      "title": "Die allseitige Wirklichkeit",
-     "instruction": "Erweitere die Aufmerksamkeit von einzelnen Eindrücken auf das gesamte Erfahrungsfeld und verweile in der Wahrnehmung seines Zusammenhangs.",
-     "phases": [
-       {
-         "name": "Einzelne Erscheinungen",
-         "duration": 4,
-         "instruction": "Nimm einzelne Gegenstände, Geräusche oder Körperempfindungen wahr."
-       },
-       {
-         "name": "Die Zusammenhänge",
-         "duration": 4,
-         "instruction": "Bemerke, wie verschiedene Eindrücke gleichzeitig auftreten und sich gegenseitig beeinflussen."
-       },
-       {
-         "name": "Das gesamte Feld",
-         "duration": 4,
-         "instruction": "Erweitere die Aufmerksamkeit, sodass das ganze gegenwärtige Umfeld einbezogen wird."
-       },
-       {
-         "name": "Das innere Aufleuchten",
-         "duration": 4,
-         "instruction": "Verweile offen in der Erfahrung des Ganzen, ohne daraus eine starre Vorstellung zu machen."
-       }
+     "desc": "Erweitere die Aufmerksamkeit von einzelnen Eindrücken auf das gesamte Erfahrungsfeld und verweile in der Wahrnehmung seines Zusammenhangs.",
+     "instructions": [
+      "Nimm einzelne Gegenstände, Geräusche oder Körperempfindungen wahr.",
+      "Bemerke, wie verschiedene Eindrücke gleichzeitig auftreten und sich gegenseitig beeinflussen.",
+      "Erweitere die Aufmerksamkeit, sodass das ganze gegenwärtige Umfeld einbezogen wird.",
+      "Verweile offen in der Erfahrung des Ganzen, ohne daraus eine starre Vorstellung zu machen."
      ]
    }
  },
@@ -1088,28 +992,12 @@ export const vers5262: SUTRA[] =
    "meditationConfig": {
      "type": "gap",
      "title": "Die Weite der Leere",
-     "instruction": "Erfahre Leere als offene, lebendige Wahrnehmung und nicht als erzwungene Abwesenheit von Gedanken. Bleibe mit dem Körper und dem gegenwärtigen Moment verbunden.",
-     "phases": [
-       {
-         "name": "Die Erscheinungen",
-         "duration": 4,
-         "instruction": "Nimm Gegenstände, Geräusche, Gedanken und Empfindungen wahr."
-       },
-       {
-         "name": "Die offene Weite",
-         "duration": 4,
-         "instruction": "Bemerke den Raum, in dem alle Eindrücke erscheinen, ohne dich auf einen davon festzulegen."
-       },
-       {
-         "name": "Das Zur-Ruhe-Kommen",
-         "duration": 4,
-         "instruction": "Lass die Gedanken kommen und gehen. Versuche nicht, den Geist gewaltsam leer zu machen."
-       },
-       {
-         "name": "In der Offenheit verweilen",
-         "duration": 4,
-         "instruction": "Spüre den Körper und ruhe in einer weiten, klaren Aufmerksamkeit."
-       }
+     "desc": "Erfahre Leere als offene, lebendige Wahrnehmung und nicht als erzwungene Abwesenheit von Gedanken. Bleibe mit dem Körper und dem gegenwärtigen Moment verbunden.",
+     "instructions": [
+      "Nimm Gegenstände, Geräusche, Gedanken und Empfindungen wahr.",
+      "Bemerke den Raum, in dem alle Eindrücke erscheinen, ohne dich auf einen davon festzulegen.",
+      "Lass die Gedanken kommen und gehen. Versuche nicht, den Geist gewaltsam leer zu machen.",
+      "Spüre den Körper und ruhe in einer weiten, klaren Aufmerksamkeit."
      ]
    }
  },
@@ -1248,28 +1136,12 @@ export const vers5262: SUTRA[] =
    "meditationConfig": {
      "type": "gap",
      "title": "Der offene Blick",
-     "instruction": "Nutze einen Gegenstand als Ausgangspunkt und erweitere die Wahrnehmung sanft auf den Raum. Halte die Augen entspannt und vermeide starres Fixieren.",
-     "phases": [
-       {
-         "name": "Den Gegenstand sehen",
-         "duration": 4,
-         "instruction": "Betrachte einen neutralen Gegenstand und nimm seine Form und Farbe wahr."
-       },
-       {
-         "name": "Die Begrenzung lockern",
-         "duration": 4,
-         "instruction": "Lass den Blick weich werden und nimm die Umgebung des Gegenstands hinzu."
-       },
-       {
-         "name": "Das weite Sehen",
-         "duration": 4,
-         "instruction": "Erfasse Gegenstand und Zwischenräume gemeinsam, ohne etwas scharf festzuhalten."
-       },
-       {
-         "name": "Im Gewahrsein ruhen",
-         "duration": 4,
-         "instruction": "Lass die gezielte Betrachtung los und verweile mit entspannter, wacher Wahrnehmung."
-       }
+     "desc": "Nutze einen Gegenstand als Ausgangspunkt und erweitere die Wahrnehmung sanft auf den Raum. Halte die Augen entspannt und vermeide starres Fixieren.",
+     "instructions": [
+      "Betrachte einen neutralen Gegenstand und nimm seine Form und Farbe wahr.",
+      "Lass den Blick weich werden und nimm die Umgebung des Gegenstands hinzu.",
+      "Erfasse Gegenstand und Zwischenräume gemeinsam, ohne etwas scharf festzuhalten.",
+      "Lass die gezielte Betrachtung los und verweile mit entspannter, wacher Wahrnehmung."
      ]
    }
  },
@@ -1418,28 +1290,12 @@ export const vers5262: SUTRA[] =
    "meditationConfig": {
      "type": "gap",
      "title": "Die ruhige Landschaft",
-     "instruction": "Nutze eine einfache visuelle Fläche als Anker und beobachte das allmähliche Nachlassen gedanklicher Aktivität, ohne Gedanken zu unterdrücken.",
-     "phases": [
-       {
-         "name": "Den Ort finden",
-         "duration": 4,
-         "instruction": "Wähle eine ruhige Landschaft oder eine schlichte Fläche und richte den Blick entspannt darauf."
-       },
-       {
-         "name": "Das Sehen beruhigen",
-         "duration": 4,
-         "instruction": "Bemerke Formen, Licht und Raum, ohne fortlaufend zu benennen oder zu bewerten."
-       },
-       {
-         "name": "Die Gedanken ausklingen lassen",
-         "duration": 4,
-         "instruction": "Erkenne Gedanken als vorübergehende Ereignisse und kehre sanft zum visuellen Anker zurück."
-       },
-       {
-         "name": "In Klarheit verweilen",
-         "duration": 4,
-         "instruction": "Lass die gezielte Betrachtung lockerer werden und ruhe in entspannter, wacher Aufmerksamkeit."
-       }
+     "desc": "Nutze eine einfache visuelle Fläche als Anker und beobachte das allmähliche Nachlassen gedanklicher Aktivität, ohne Gedanken zu unterdrücken.",
+     "instructions": [
+      "Wähle eine ruhige Landschaft oder eine schlichte Fläche und richte den Blick entspannt darauf.",
+      "Bemerke Formen, Licht und Raum, ohne fortlaufend zu benennen oder zu bewerten.",
+      "Erkenne Gedanken als vorübergehende Ereignisse und kehre sanft zum visuellen Anker zurück.",
+      "Lass die gezielte Betrachtung lockerer werden und ruhe in entspannter, wacher Aufmerksamkeit."
      ]
    }
  },
@@ -1578,28 +1434,13 @@ export const vers5262: SUTRA[] =
    "meditationConfig": {
      "type": "breath",
      "title": "Die Mitte des Atems",
-     "instruction": "Beobachte die natürlichen Übergänge zwischen Ein- und Ausatmen. Halte den Atem nicht absichtlich an und erzwinge keine besondere Erfahrung.",
-     "phases": [
-       {
-         "name": "Einatmen",
-         "duration": 4,
-         "instruction": "Nimm den natürlichen Einatem wahr und spüre die sanfte Bewegung des Körpers."
-       },
-       {
-         "name": "Der Übergang",
-         "duration": 2,
-         "instruction": "Bemerke den Moment, in dem das Einatmen von selbst ausklingt. Verändere den Atem nicht."
-       },
-       {
-         "name": "Ausatmen",
-         "duration": 4,
-         "instruction": "Lass den Ausatem natürlich geschehen und spüre, wie sich der Körper bewegt."
-       },
-       {
-         "name": "Die nächste Wende",
-         "duration": 2,
-         "instruction": "Bemerke den Übergang zum nächsten Atemzug, ohne eine Pause zu erzwingen."
-       }
+     "desc": "Beobachte die natürlichen Übergänge zwischen Ein- und Ausatmen. Halte den Atem nicht absichtlich an und erzwinge keine besondere Erfahrung.",
+     "instructions": [
+      "Nimm den natürlichen Einatem wahr und spüre die sanfte Bewegung des Körpers.",
+      "Bemerke den Moment, in dem das Einatmen von selbst ausklingt. Verändere den Atem nicht.",
+      "Lass den Ausatem natürlich geschehen und spüre, wie sich der Körper bewegt.",
+      "Bemerke den Übergang zum nächsten Atemzug, ohne eine Pause zu erzwingen."
+      
      ]
    }
  },
@@ -1738,28 +1579,12 @@ export const vers5262: SUTRA[] =
    "meditationConfig": {
      "type": "gap",
      "title": "Der Raum zwischen zwei Gedanken",
-     "instruction": "Beobachte einen Gedanken, lass ihn ausklingen und bemerke den offenen Moment, bevor ein neuer Gedanke deine Aufmerksamkeit beansprucht. Erzwinge keine Gedankenlosigkeit.",
-     "phases": [
-       {
-         "name": "Ein Gedanke erscheint",
-         "duration": 4,
-         "instruction": "Nimm wahr, welcher Gedanke gerade präsent ist, ohne seine Geschichte weiterzuerzählen."
-       },
-       {
-         "name": "Der Gedanke klingt aus",
-         "duration": 4,
-         "instruction": "Lass den Gedanken auf natürliche Weise enden. Versuche nicht, ihn wegzudrücken."
-       },
-       {
-         "name": "Die offene Mitte",
-         "duration": 4,
-         "instruction": "Bemerke den Moment, in dem du nichts hinzufügen musst. Bleibe entspannt und aufmerksam."
-       },
-       {
-         "name": "Die Entfaltung",
-         "duration": 4,
-         "instruction": "Lass neue Gedanken kommen, ohne dich an sie zu binden. Kehre bei Bedarf sanft zum natürlichen Atem zurück."
-       }
+     "desc": "Beobachte einen Gedanken, lass ihn ausklingen und bemerke den offenen Moment, bevor ein neuer Gedanke deine Aufmerksamkeit beansprucht. Erzwinge keine Gedankenlosigkeit.",
+     "instructions": [
+      "Nimm wahr, welcher Gedanke gerade präsent ist, ohne seine Geschichte weiterzuerzählen.",
+      "Lass den Gedanken auf natürliche Weise enden. Versuche nicht, ihn wegzudrücken.",
+      "Bemerke den Moment, in dem du nichts hinzufügen musst. Bleibe entspannt und aufmerksam.",
+      "Lass neue Gedanken kommen, ohne dich an sie zu binden. Kehre bei Bedarf sanft zum natürlichen Atem zurück."
      ]
    }
  }

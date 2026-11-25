@@ -160,33 +160,13 @@ export const vers137: SUTRA = {
  "meditationConfig": {
    "type": "gap",
    "title": "Das Licht des Gewahrseins",
-   "instruction": "Nimm wahr, was du siehst, hörst und denkst. Richte dann die Aufmerksamkeit auf das Gewahrsein, in dem diese Erfahrungen erscheinen. Suche kein besonderes Erlebnis; erkenne die gegenwärtige Klarheit des Wahrnehmens.",
-   "phases": [
-     {
-       "name": "Ankommen",
-       "duration": 30,
-       "instruction": "Setze dich bequem hin und lass den Atem natürlich fließen. Spüre den Körper und nimm die Geräusche deiner Umgebung wahr."
-     },
-     {
-       "name": "Erscheinungen wahrnehmen",
-       "duration": 40,
-       "instruction": "Bemerke Farben, Klänge, Körperempfindungen und Gedanken. Lass alles so erscheinen, wie es gerade ist, ohne es verändern zu müssen."
-     },
-     {
-       "name": "Das Erkennen bemerken",
-       "duration": 40,
-       "instruction": "Richte die Aufmerksamkeit auf die Tatsache, dass jede Erscheinung erkannt wird. Frage innerlich sanft: Was ist es, wodurch diese Erfahrung gerade bekannt ist? Bleibe offen, ohne eine begriffliche Antwort zu erzwingen."
-     },
-     {
-       "name": "In der Klarheit verweilen",
-       "duration": 40,
-       "instruction": "Lass die Frage los. Verweile bei der einfachen Präsenz des Gewahrseins, während Geräusche, Empfindungen und Gedanken kommen und gehen."
-     },
-     {
-       "name": "Einheit im Alltag",
-       "duration": 30,
-       "instruction": "Nimm wieder den ganzen Körper und den Raum um dich herum wahr. Erkenne, dass auch diese vielfältige Erfahrung im Gewahrsein erscheint, und kehre ruhig in deine Tätigkeit zurück."
-     }
+   "desc": "Nimm wahr, was du siehst, hörst und denkst. Richte dann die Aufmerksamkeit auf das Gewahrsein, in dem diese Erfahrungen erscheinen. Suche kein besonderes Erlebnis; erkenne die gegenwärtige Klarheit des Wahrnehmens.",
+   "instructions": [
+    "Setze dich bequem hin und lass den Atem natürlich fließen. Spüre den Körper und nimm die Geräusche deiner Umgebung wahr.",
+    "Bemerke Farben, Klänge, Körperempfindungen und Gedanken. Lass alles so erscheinen, wie es gerade ist, ohne es verändern zu müssen.",
+    "Richte die Aufmerksamkeit auf die Tatsache, dass jede Erscheinung erkannt wird. Frage innerlich sanft: Was ist es, wodurch diese Erfahrung gerade bekannt ist? Bleibe offen, ohne eine begriffliche Antwort zu erzwingen.",
+    "Lass die Frage los. Verweile bei der einfachen Präsenz des Gewahrseins, während Geräusche, Empfindungen und Gedanken kommen und gehen.",
+    "Nimm wieder den ganzen Körper und den Raum um dich herum wahr. Erkenne, dass auch diese vielfältige Erfahrung im Gewahrsein erscheint, und kehre ruhig in deine Tätigkeit zurück."
    ]
  }
 }

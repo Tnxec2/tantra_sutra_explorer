@@ -236,33 +236,13 @@ export const vers135: SUTRA = {
  "meditationConfig": {
    "type": "gap",
    "title": "Das Spiegelbild und das Gewahrsein",
-   "instruction": "Beobachte Gedanken und Gefühle wie Spiegelbilder auf Wasser. Erkenne sie, ohne sie mit dem wahrnehmenden Gewahrsein gleichzusetzen. Lass zwischen dem Auftauchen eines Gedankens und deiner Reaktion einen stillen Raum entstehen.",
-   "phases": [
-     {
-       "name": "Ankommen",
-       "duration": 30,
-       "instruction": "Sitze bequem und spüre den Kontakt deines Körpers mit dem Untergrund. Lass den Atem natürlich fließen. Du brauchst nichts zu verändern."
-     },
-     {
-       "name": "Das Spiegelbild erkennen",
-       "duration": 40,
-       "instruction": "Bemerke Gedanken, Gefühle und Körperempfindungen, sobald sie auftauchen. Nimm sie wahr, als würden sie sich auf einer Wasseroberfläche spiegeln."
-     },
-     {
-       "name": "Das Wahrnehmen bemerken",
-       "duration": 30,
-       "instruction": "Wende die Aufmerksamkeit sanft dem Gewahrsein zu, in dem die wechselnden Inhalte erscheinen. Suche keine besondere Erfahrung und erzwinge keine gedankenfreie Stille."
-     },
-     {
-       "name": "Raum zwischen Reiz und Reaktion",
-       "duration": 40,
-       "instruction": "Wenn ein Gedanke oder Gefühl auftaucht, warte einen natürlichen Atemzug, bevor du ihm folgst. Erkenne, dass du ihn wahrnehmen kannst, ohne ihm sofort gehorchen zu müssen."
-     },
-     {
-       "name": "Rückkehr in den Alltag",
-       "duration": 30,
-       "instruction": "Nimm den Raum um dich herum und deinen Körper wieder bewusst wahr. Beende die Meditation mit der Absicht, Gedanken ernst zu nehmen, ohne sie automatisch für die ganze Wirklichkeit zu halten."
-     }
+   "desc": "Beobachte Gedanken und Gefühle wie Spiegelbilder auf Wasser. Erkenne sie, ohne sie mit dem wahrnehmenden Gewahrsein gleichzusetzen. Lass zwischen dem Auftauchen eines Gedankens und deiner Reaktion einen stillen Raum entstehen.",
+   "instructions": [
+    "Sitze bequem und spüre den Kontakt deines Körpers mit dem Untergrund. Lass den Atem natürlich fließen. Du brauchst nichts zu verändern.",
+    "Bemerke Gedanken, Gefühle und Körperempfindungen, sobald sie auftauchen. Nimm sie wahr, als würden sie sich auf einer Wasseroberfläche spiegeln.",
+    "Wende die Aufmerksamkeit sanft dem Gewahrsein zu, in dem die wechselnden Inhalte erscheinen. Suche keine besondere Erfahrung und erzwinge keine gedankenfreie Stille.",
+    "Wenn ein Gedanke oder Gefühl auftaucht, warte einen natürlichen Atemzug, bevor du ihm folgst. Erkenne, dass du ihn wahrnehmen kannst, ohne ihm sofort gehorchen zu müssen.",
+    "Nimm den Raum um dich herum und deinen Körper wieder bewusst wahr. Beende die Meditation mit der Absicht, Gedanken ernst zu nehmen, ohne sie automatisch für die ganze Wirklichkeit zu halten."
    ]
  }
 }

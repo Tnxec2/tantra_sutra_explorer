@@ -76,28 +76,14 @@ export const vers29: SUTRA = {
     "meditationConfig": {
         "type": "breath",
         "title": "Durch die Chakras zum höchsten Punkt",
-        "instruction": "Führe die blitzartige Energie stufenweise durch die Zentren bis weit über den Kopf.",
-        "phases": [
-            {
-                "name": "Basis & untere Zentren",
-                "duration": 3,
-                "instruction": "Spüre den Ursprung der Energie im unteren Bereich des Körpers."
-            },
-            {
-                "name": "Aufstieg (Herz & Kehle)",
-                "duration": 4,
-                "instruction": "Lasse die Energie wie einen Blitz durch Brust und Hals aufsteigen."
-            },
-            {
-                "name": "Scheitelpunkt",
-                "duration": 3,
-                "instruction": "Führe den Strahl bis über den Kopf hinaus."
-            },
-            {
-                "name": "Große Herrlichkeit",
-                "duration": 4,
-                "instruction": "Ruhe in der unendlichen Weite des Mahodaya."
-            }
+        "desc": "Führe die blitzartige Energie stufenweise durch die Zentren bis weit über den Kopf.",
+        "instructions": [
+            
+            "Spüre den Ursprung der Energie im unteren Bereich des Körpers.",
+            "Lasse die Energie wie einen Blitz durch Brust und Hals aufsteigen.",
+            "Führe den Strahl bis über den Kopf hinaus.",
+            "Ruhe in der unendlichen Weite des Mahodaya."
+            
         ]
     }
 }

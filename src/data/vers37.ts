@@ -88,28 +88,12 @@ export const vers37: SUTRA = {
 "meditationConfig": {
 "type": "breath",
 "title": "Der feine Feuerpunkt",
-"instruction": "Visualisiere den feinen Licht- und Feuerpunkt im Herzen oder am Scheitel und verweile in seiner Auflösung.",
-"phases": [
-{
-"name": "Sammeln",
-"duration": 4,
-"instruction": "Richte den Atem und die Aufmerksamkeit auf das Herz."
-},
-{
-"name": "Entzündung des Funkens",
-"duration": 4,
-"instruction": "Nimm den feinen, leuchtenden Feuerpunkt in der Mitte wahr."
-},
-{
-"name": "Ausdehnung zum Scheitel",
-"duration": 4,
-"instruction": "Führe den Funken bis an den Scheitelpunkt des Kopfes."
-},
-{
-"name": "Vollständige Auflösung",
-"duration": 4,
-"instruction": "Lasse das Ich im reinen, leuchtenden Raum aufgehen."
-}
+"desc": "Visualisiere den feinen Licht- und Feuerpunkt im Herzen oder am Scheitel und verweile in seiner Auflösung.",
+"instructions": [
+    "Richte den Atem und die Aufmerksamkeit auf das Herz.",
+    "Nimm den feinen, leuchtenden Feuerpunkt in der Mitte wahr.",
+    "Führe den Funken bis an den Scheitelpunkt des Kopfes.",
+    "Lasse das Ich im reinen, leuchtenden Raum aufgehen."
 ]
 }
 }

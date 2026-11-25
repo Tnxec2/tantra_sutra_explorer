@@ -140,28 +140,12 @@ export const vers104114: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Die Weite des Bewusstseins",
-     "instruction": "Sitze bequem und lasse die Aufmerksamkeit über die Grenzen eines einzelnen Wahrnehmungsobjekts hinaus offen werden. Erzeuge keine besondere Erfahrung und versuche nicht, den Körper verschwinden zu lassen. Erkenne einfach, dass vielfältige Eindrücke in einem gemeinsamen Feld des Gewahrseins erscheinen.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Spüre den Körper, den Atem und die Geräusche der Umgebung. Lass die Wahrnehmung zur Ruhe kommen, ohne sie zu verengen."
-       },
-       {
-         "name": "Öffnung",
-         "duration": 4,
-         "instruction": "Nimm gleichzeitig mehrere Sinneseindrücke wahr. Halte keinen davon fest und richte die Aufmerksamkeit nicht ausschließlich auf den Körper."
-       },
-       {
-         "name": "Die Weite",
-         "duration": 6,
-         "instruction": "Vergegenwärtige still: »Überall bin ich« als Einladung, die Grenzen deiner gewohnten Selbstdefinition zu untersuchen, nicht als Behauptung persönlicher Allmacht."
-       },
-       {
-         "name": "Integration",
-         "duration": 4,
-         "instruction": "Kehre zum Atem und zu den konkreten Empfindungen zurück. Nimm die Umgebung bewusst wahr und übertrage die offene Haltung in deine nächste Handlung."
-       }
+     "desc": "Sitze bequem und lasse die Aufmerksamkeit über die Grenzen eines einzelnen Wahrnehmungsobjekts hinaus offen werden. Erzeuge keine besondere Erfahrung und versuche nicht, den Körper verschwinden zu lassen. Erkenne einfach, dass vielfältige Eindrücke in einem gemeinsamen Feld des Gewahrseins erscheinen.",
+     "instructions": [
+      "Spüre den Körper, den Atem und die Geräusche der Umgebung. Lass die Wahrnehmung zur Ruhe kommen, ohne sie zu verengen.",
+      "Nimm gleichzeitig mehrere Sinneseindrücke wahr. Halte keinen davon fest und richte die Aufmerksamkeit nicht ausschließlich auf den Körper.",
+      "Vergegenwärtige still: »Überall bin ich« als Einladung, die Grenzen deiner gewohnten Selbstdefinition zu untersuchen, nicht als Behauptung persönlicher Allmacht.",
+      "Kehre zum Atem und zu den konkreten Empfindungen zurück. Nimm die Umgebung bewusst wahr und übertrage die offene Haltung in deine nächste Handlung."
      ]
    }
  },
@@ -304,28 +288,12 @@ export const vers104114: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Zwischen Wahrnehmung und Gewahrsein",
-     "instruction": "Erkunde den Unterschied zwischen einem einzelnen Wahrnehmungsinhalt und dem Gewahrsein, in dem er erscheint. Es geht nicht darum, Gedanken zu unterdrücken, sondern sie als begrenzte Ereignisse zu erkennen.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Sitze bequem und nimm den natürlichen Atem wahr. Erlaube der Aufmerksamkeit, sich zu stabilisieren."
-       },
-       {
-         "name": "Einen Inhalt erkennen",
-         "duration": 5,
-         "instruction": "Wähle einen Klang, eine Körperempfindung oder einen Gedanken. Erkenne ihn, ohne ihn sofort zu beurteilen."
-       },
-       {
-         "name": "Die Lücke erforschen",
-         "duration": 5,
-         "instruction": "Bemerke, wie der gewählte Inhalt sich verändert. Richte die Aufmerksamkeit auch auf das Gewahrsein, in dem diese Veränderung bemerkt wird."
-       },
-       {
-         "name": "Ruhige Integration",
-         "duration": 4,
-         "instruction": "Lass alle Erfahrungen kommen und gehen. Kehre zum Körper und zur Umgebung zurück und nimm die Unterscheidung zwischen Inhalt und Wahrnehmung mit in den Alltag."
-       }
+     "desc": "Erkunde den Unterschied zwischen einem einzelnen Wahrnehmungsinhalt und dem Gewahrsein, in dem er erscheint. Es geht nicht darum, Gedanken zu unterdrücken, sondern sie als begrenzte Ereignisse zu erkennen.",
+     "instructions": [
+      "Sitze bequem und nimm den natürlichen Atem wahr. Erlaube der Aufmerksamkeit, sich zu stabilisieren.",
+      "Wähle einen Klang, eine Körperempfindung oder einen Gedanken. Erkenne ihn, ohne ihn sofort zu beurteilen.",
+      "Bemerke, wie der gewählte Inhalt sich verändert. Richte die Aufmerksamkeit auch auf das Gewahrsein, in dem diese Veränderung bemerkt wird.",
+      "Lass alle Erfahrungen kommen und gehen. Kehre zum Körper und zur Umgebung zurück und nimm die Unterscheidung zwischen Inhalt und Wahrnehmung mit in den Alltag."
      ]
    }
  },
@@ -473,28 +441,12 @@ export const vers104114: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Die Beziehung des Wahrnehmens",
-     "instruction": "Wähle einen Klang oder eine Körperempfindung und untersuche behutsam die Beziehung zwischen dem Wahrgenommenen und dem Wahrnehmen. Vermeide es, eine besondere Erfahrung erzwingen zu wollen.",
-     "phases": [
-       {
-         "name": "Stabilisierung",
-         "duration": 4,
-         "instruction": "Sitze aufrecht und spüre den Atem. Lass die Aufmerksamkeit ruhig und offen werden."
-       },
-       {
-         "name": "Das Wahrgenommene",
-         "duration": 4,
-         "instruction": "Richte die Aufmerksamkeit auf einen Klang, eine Empfindung oder einen anderen gegenwärtigen Sinneseindruck."
-       },
-       {
-         "name": "Die Beziehung",
-         "duration": 6,
-         "instruction": "Bemerke, wie der Eindruck erkannt wird. Untersuche die Beziehung zwischen dem Eindruck und dem Gewahrsein, ohne sie begrifflich festlegen zu müssen."
-       },
-       {
-         "name": "Offene Wachheit",
-         "duration": 4,
-         "instruction": "Lass den gewählten Eindruck los und nimm die gesamte Umgebung wahr. Kehre mit ruhiger Aufmerksamkeit in den Alltag zurück."
-       }
+     "desc": "Wähle einen Klang oder eine Körperempfindung und untersuche behutsam die Beziehung zwischen dem Wahrgenommenen und dem Wahrnehmen. Vermeide es, eine besondere Erfahrung erzwingen zu wollen.",
+     "instructions": [
+      "Sitze aufrecht und spüre den Atem. Lass die Aufmerksamkeit ruhig und offen werden.",
+      "Richte die Aufmerksamkeit auf einen Klang, eine Empfindung oder einen anderen gegenwärtigen Sinneseindruck.",
+      "Bemerke, wie der Eindruck erkannt wird. Untersuche die Beziehung zwischen dem Eindruck und dem Gewahrsein, ohne sie begrifflich festlegen zu müssen.",
+      "Lass den gewählten Eindruck los und nimm die gesamte Umgebung wahr. Kehre mit ruhiger Aufmerksamkeit in den Alltag zurück."
      ]
    }
  },
@@ -647,28 +599,12 @@ export const vers104114: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Das Selbst im Gegenüber",
-     "instruction": "Beginne mit dem Gewahrsein deines eigenen Körpers und erweitere dann die Aufmerksamkeit auf die Gegenwart anderer Menschen. Erkunde Verbundenheit, ohne anzunehmen, dass du ihre inneren Erfahrungen unmittelbar kennst.",
-     "phases": [
-       {
-         "name": "Eigene Präsenz",
-         "duration": 4,
-         "instruction": "Spüre den Atem, den Körper und die gegenwärtige Stimmung. Nimm deine Erfahrung freundlich wahr."
-       },
-       {
-         "name": "Das Gegenüber",
-         "duration": 4,
-         "instruction": "Stelle dir eine vertraute Person vor oder erinnere dich an eine Begegnung. Erkenne, dass auch sie eine eigene Perspektive und Innenwelt besitzt."
-       },
-       {
-         "name": "Gemeinsame Menschlichkeit",
-         "duration": 6,
-         "instruction": "Vergegenwärtige die gemeinsame Fähigkeit zu fühlen, wahrzunehmen und zu hoffen. Lass Mitgefühl entstehen, ohne die Unterschiede zwischen euch zu leugnen."
-       },
-       {
-         "name": "Handlung aus Verbundenheit",
-         "duration": 4,
-         "instruction": "Frage dich, welche konkrete Handlung Respekt, Fürsorge und Klarheit ausdrücken könnte. Kehre anschließend ruhig zur Umgebung zurück."
-       }
+     "desc": "Beginne mit dem Gewahrsein deines eigenen Körpers und erweitere dann die Aufmerksamkeit auf die Gegenwart anderer Menschen. Erkunde Verbundenheit, ohne anzunehmen, dass du ihre inneren Erfahrungen unmittelbar kennst.",
+     "instructions": [
+      "Spüre den Atem, den Körper und die gegenwärtige Stimmung. Nimm deine Erfahrung freundlich wahr.",
+      "Stelle dir eine vertraute Person vor oder erinnere dich an eine Begegnung. Erkenne, dass auch sie eine eigene Perspektive und Innenwelt besitzt.",
+      "Vergegenwärtige die gemeinsame Fähigkeit zu fühlen, wahrzunehmen und zu hoffen. Lass Mitgefühl entstehen, ohne die Unterschiede zwischen euch zu leugnen.",
+      "Frage dich, welche konkrete Handlung Respekt, Fürsorge und Klarheit ausdrücken könnte. Kehre anschließend ruhig zur Umgebung zurück."
      ]
    }
  },
@@ -816,28 +752,12 @@ export const vers104114: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Der Geist ohne Stütze",
-     "instruction": "Lass den Geist offen, ohne einen bestimmten Gedanken oder Gegenstand festzuhalten. Erlaube Wahrnehmungen, Gedanken und Empfindungen zu erscheinen und wieder zu vergehen, ohne sie gewaltsam zu unterdrücken.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Nimm den Körper und den Atem wahr. Finde eine bequeme, wache Haltung."
-       },
-       {
-         "name": "Stütze erkennen",
-         "duration": 4,
-         "instruction": "Bemerke, woran sich dein Geist festhält: an einem Gedanken, einem Klang oder einer Erwartung. Erkenne diese Ausrichtung, ohne sie zu verurteilen."
-       },
-       {
-         "name": "Offenes Gewahrsein",
-         "duration": 6,
-         "instruction": "Lass die Aufmerksamkeit weniger eng werden. Erlaube allen Eindrücken zu erscheinen, ohne einen davon zum Mittelpunkt machen zu müssen."
-       },
-       {
-         "name": "Rückkehr",
-         "duration": 4,
-         "instruction": "Spüre wieder den Atem und den Körper. Nimm wahr, dass offene Aufmerksamkeit und klares Denken im Alltag miteinander vereinbar sind."
-       }
+     "desc": "Lass den Geist offen, ohne einen bestimmten Gedanken oder Gegenstand festzuhalten. Erlaube Wahrnehmungen, Gedanken und Empfindungen zu erscheinen und wieder zu vergehen, ohne sie gewaltsam zu unterdrücken.",
+     "instructions": [
+      "Nimm den Körper und den Atem wahr. Finde eine bequeme, wache Haltung.",
+      "Bemerke, woran sich dein Geist festhält: an einem Gedanken, einem Klang oder einer Erwartung. Erkenne diese Ausrichtung, ohne sie zu verurteilen.",
+      "Lass die Aufmerksamkeit weniger eng werden. Erlaube allen Eindrücken zu erscheinen, ohne einen davon zum Mittelpunkt machen zu müssen.",
+      "Spüre wieder den Atem und den Körper. Nimm wahr, dass offene Aufmerksamkeit und klares Denken im Alltag miteinander vereinbar sind."
      ]
    }
  },
@@ -985,28 +905,12 @@ export const vers104114: SUTRA[] = [
    "meditationConfig": {
      "type": "sound",
      "title": "Śivo'ham – Ich bin Śiva",
-     "instruction": "Verweile ruhig bei der Formel »Śivo'ham«, wenn sie zu deiner Praxis passt. Verstehe sie als kontemplative Erinnerung an die nichtduale Natur des Bewusstseins und nicht als Behauptung persönlicher Allmacht.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Sitze bequem und nimm den Atem wahr. Lass den Körper entspannt und die Aufmerksamkeit wach werden."
-       },
-       {
-         "name": "Die Formel hören",
-         "duration": 4,
-         "instruction": "Sprich die Formel innerlich langsam oder höre sie in deiner Vorstellung. Bemerke den Klang, ohne eine besondere Wirkung erzwingen zu wollen."
-       },
-       {
-         "name": "In der Bedeutung verweilen",
-         "duration": 6,
-         "instruction": "Lass die Worte allmählich in den Hintergrund treten und erforsche die gegenwärtige Erfahrung des Seins. Halte nicht an einer Vorstellung von persönlicher Größe fest."
-       },
-       {
-         "name": "Integration",
-         "duration": 4,
-         "instruction": "Kehre zum Atem zurück und nimm dir vor, die Einsicht durch eine konkrete Handlung von Klarheit oder Mitgefühl im Alltag auszudrücken."
-       }
+     "desc": "Verweile ruhig bei der Formel »Śivo'ham«, wenn sie zu deiner Praxis passt. Verstehe sie als kontemplative Erinnerung an die nichtduale Natur des Bewusstseins und nicht als Behauptung persönlicher Allmacht.",
+     "instructions": [
+      "Sitze bequem und nimm den Atem wahr. Lass den Körper entspannt und die Aufmerksamkeit wach werden.",
+      "Sprich die Formel innerlich langsam oder höre sie in deiner Vorstellung. Bemerke den Klang, ohne eine besondere Wirkung erzwingen zu wollen.",
+      "Lass die Worte allmählich in den Hintergrund treten und erforsche die gegenwärtige Erfahrung des Seins. Halte nicht an einer Vorstellung von persönlicher Größe fest.",
+      "Kehre zum Atem zurück und nimm dir vor, die Einsicht durch eine konkrete Handlung von Klarheit oder Mitgefühl im Alltag auszudrücken."
      ]
    }
  },
@@ -1159,28 +1063,12 @@ export const vers104114: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Die Vielfalt in einer Grundlage",
-     "instruction": "Nutze das Bild von Wellen, Flammen oder Sonnenlicht, um die Beziehung zwischen einer gemeinsamen Grundlage und vielfältigen Erscheinungen zu erforschen. Bewahre die Unterschiede der Wahrnehmungen, ohne sie als voneinander völlig unabhängig betrachten zu müssen.",
-     "phases": [
-       {
-         "name": "Wahrnehmen",
-         "duration": 4,
-         "instruction": "Sitze ruhig und nimm die Umgebung wahr. Wähle einen Eindruck, etwa einen Klang oder eine Farbe."
-       },
-       {
-         "name": "Die Vielfalt",
-         "duration": 4,
-         "instruction": "Bemerke, wie sich der Eindruck verändert und mit anderen Eindrücken abwechselt. Erlaube jeder Erscheinung ihre Besonderheit."
-       },
-       {
-         "name": "Die Grundlage erforschen",
-         "duration": 6,
-         "instruction": "Untersuche, wie unterschiedliche Eindrücke in deinem Gewahrsein erscheinen. Nutze die Bilder des Verses als Anregung, nicht als zwingenden Beweis."
-       },
-       {
-         "name": "Rückkehr zur Welt",
-         "duration": 4,
-         "instruction": "Nimm die konkrete Umgebung wieder umfassend wahr. Kehre mit Wertschätzung für die Vielfalt des Lebens zu deinen Tätigkeiten zurück."
-       }
+     "desc": "Nutze das Bild von Wellen, Flammen oder Sonnenlicht, um die Beziehung zwischen einer gemeinsamen Grundlage und vielfältigen Erscheinungen zu erforschen. Bewahre die Unterschiede der Wahrnehmungen, ohne sie als voneinander völlig unabhängig betrachten zu müssen.",
+     "instructions": [
+      "Sitze ruhig und nimm die Umgebung wahr. Wähle einen Eindruck, etwa einen Klang oder eine Farbe.",
+      "Bemerke, wie sich der Eindruck verändert und mit anderen Eindrücken abwechselt. Erlaube jeder Erscheinung ihre Besonderheit.",
+      "Untersuche, wie unterschiedliche Eindrücke in deinem Gewahrsein erscheinen. Nutze die Bilder des Verses als Anregung, nicht als zwingenden Beweis.",
+      "Nimm die konkrete Umgebung wieder umfassend wahr. Kehre mit Wertschätzung für die Vielfalt des Lebens zu deinen Tätigkeiten zurück."
      ]
    }
  },
@@ -1333,28 +1221,12 @@ export const vers104114: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Die Stille nach der Bewegung",
-     "instruction": "Erforsche den Übergang von einer leichten, sicheren Bewegung zur Ruhe. Erzeuge weder Schwindel noch einen Sturz. Die Meditation richtet sich auf die natürliche Pause, in der die Bewegung endet.",
-     "phases": [
-       {
-         "name": "Stabiler Beginn",
-         "duration": 4,
-         "instruction": "Nimm eine sichere, bequeme Position ein und spüre den Atem. Achte darauf, dass du dich nicht überforderst."
-       },
-       {
-         "name": "Sanfte Bewegung",
-         "duration": 4,
-         "instruction": "Bewege, falls angenehm, Schultern, Hände oder Füße langsam und kontrolliert. Du kannst die Phase ebenso in vollständiger Ruhe verbringen."
-       },
-       {
-         "name": "Die Bewegung endet",
-         "duration": 4,
-         "instruction": "Kehre zu einer stabilen Position zurück. Bemerke, wie die Bewegung nachlässt und die Aufmerksamkeit den gegenwärtigen Körperzustand wahrnimmt."
-       },
-       {
-         "name": "Ruhiges Verweilen",
-         "duration": 5,
-         "instruction": "Bleibe bequem und aufmerksam. Nimm Atem, Körper und Umgebung wahr. Beende die Übung, wenn Schwindel, Schmerzen oder Unwohlsein auftreten."
-       }
+     "desc": "Erforsche den Übergang von einer leichten, sicheren Bewegung zur Ruhe. Erzeuge weder Schwindel noch einen Sturz. Die Meditation richtet sich auf die natürliche Pause, in der die Bewegung endet.",
+     "instructions": [
+      "Nimm eine sichere, bequeme Position ein und spüre den Atem. Achte darauf, dass du dich nicht überforderst.",
+      "Bewege, falls angenehm, Schultern, Hände oder Füße langsam und kontrolliert. Du kannst die Phase ebenso in vollständiger Ruhe verbringen.",
+      "Kehre zu einer stabilen Position zurück. Bemerke, wie die Bewegung nachlässt und die Aufmerksamkeit den gegenwärtigen Körperzustand wahrnimmt.",
+      "Bleibe bequem und aufmerksam. Nimm Atem, Körper und Umgebung wahr. Beende die Übung, wenn Schwindel, Schmerzen oder Unwohlsein auftreten."
      ]
    }
  },
@@ -1522,28 +1394,12 @@ export const vers104114: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Wenn die Bewegung nachlässt",
-     "instruction": "Lass die gewohnten Anstrengungen für einen kurzen Moment ruhen und beobachte das gegenwärtige Gewahrsein. Bleibe wach und sicher; versuche weder Erschöpfung noch Kontrollverlust zu erzeugen.",
-     "phases": [
-       {
-         "name": "Stabilität",
-         "duration": 4,
-         "instruction": "Nimm eine bequeme Position ein und spüre den Kontakt zum Boden oder zur Sitzfläche."
-       },
-       {
-         "name": "Die Stütze bemerken",
-         "duration": 4,
-         "instruction": "Bemerke, worauf sich deine Aufmerksamkeit stützt. Erkenne eine Technik oder einen Gedanken, ohne dich daran festklammern zu müssen."
-       },
-       {
-         "name": "Offene Ruhe",
-         "duration": 6,
-         "instruction": "Lass die Aufmerksamkeit offen werden. Nimm Geräusche, Atem und Körperempfindungen wahr, ohne einen besonderen Zustand erzwingen zu wollen."
-       },
-       {
-         "name": "Klarheit und Rückkehr",
-         "duration": 4,
-         "instruction": "Spüre den Körper und die Umgebung. Beende die Übung mit einer einfachen, bewussten Handlung und kehre klar in den Alltag zurück."
-       }
+     "desc": "Lass die gewohnten Anstrengungen für einen kurzen Moment ruhen und beobachte das gegenwärtige Gewahrsein. Bleibe wach und sicher; versuche weder Erschöpfung noch Kontrollverlust zu erzeugen.",
+     "instructions": [
+      "Nimm eine bequeme Position ein und spüre den Kontakt zum Boden oder zur Sitzfläche.",
+      "Bemerke, worauf sich deine Aufmerksamkeit stützt. Erkenne eine Technik oder einen Gedanken, ohne dich daran festklammern zu müssen.",
+      "Lass die Aufmerksamkeit offen werden. Nimm Geräusche, Atem und Körperempfindungen wahr, ohne einen besonderen Zustand erzwingen zu wollen.",
+      "Spüre den Körper und die Umgebung. Beende die Übung mit einer einfachen, bewussten Handlung und kehre klar in den Alltag zurück."
      ]
    }
  },
@@ -1696,28 +1552,12 @@ export const vers104114: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Der unbewegte Blick",
-     "instruction": "Lass die Augen in einer bequemen, natürlichen Position ruhen. Blinzle frei und vermeide starres Fixieren. Erforsche, wie eine ruhigere Blickausrichtung deine Aufmerksamkeit beeinflusst.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Sitze bequem und entspanne Gesicht, Stirn und Kiefer. Lass den Blick natürlich ruhen."
-       },
-       {
-         "name": "Sanfte Sammlung",
-         "duration": 4,
-         "instruction": "Richte den Blick auf einen angenehmen, unbewegten Bereich. Blinzle wie gewohnt und halte die Augen nicht gewaltsam offen."
-       },
-       {
-         "name": "Stille Schau",
-         "duration": 5,
-         "instruction": "Nimm wahr, wie Formen und Farben im Gesichtsfeld erscheinen. Wenn Gedanken auftauchen, kehre sanft zum Sehen zurück, ohne den Blick zu erzwingen."
-       },
-       {
-         "name": "Entspannen und integrieren",
-         "duration": 4,
-         "instruction": "Bewege den Blick wieder frei oder schließe die Augen. Spüre den Körper und kehre mit entspanntem Sehen zum Alltag zurück."
-       }
+     "desc": "Lass die Augen in einer bequemen, natürlichen Position ruhen. Blinzle frei und vermeide starres Fixieren. Erforsche, wie eine ruhigere Blickausrichtung deine Aufmerksamkeit beeinflusst.",
+     "instructions": [
+      "Sitze bequem und entspanne Gesicht, Stirn und Kiefer. Lass den Blick natürlich ruhen.",
+      "Richte den Blick auf einen angenehmen, unbewegten Bereich. Blinzle wie gewohnt und halte die Augen nicht gewaltsam offen.",
+      "Nimm wahr, wie Formen und Farben im Gesichtsfeld erscheinen. Wenn Gedanken auftauchen, kehre sanft zum Sehen zurück, ohne den Blick zu erzwingen.",
+      "Bewege den Blick wieder frei oder schließe die Augen. Spüre den Körper und kehre mit entspanntem Sehen zum Alltag zurück."
      ]
    }
  },
@@ -1870,28 +1710,12 @@ export const vers104114: SUTRA[] = [
    "meditationConfig": {
      "type": "sound",
      "title": "Lauschen auf die innere Stille",
-     "instruction": "Richte deine Aufmerksamkeit auf natürliche Klänge und auf die Ruhe zwischen ihnen. Die Übung greift den kontemplativen Sinn des Verses auf, ohne körperliche Öffnungen gewaltsam zu verschließen oder den Atem anzuhalten.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Sitze bequem und atme natürlich. Entspanne Kiefer, Gesicht und Schultern."
-       },
-       {
-         "name": "Äußere Klänge",
-         "duration": 4,
-         "instruction": "Höre die Geräusche der Umgebung, ohne sie zu bewerten oder gezielt zu verfolgen."
-       },
-       {
-         "name": "Zwischen den Klängen",
-         "duration": 6,
-         "instruction": "Bemerke das Nachlassen eines Klanges und die offene Aufmerksamkeit, in der Stille und neue Klänge wahrgenommen werden."
-       },
-       {
-         "name": "Offenes Lauschen",
-         "duration": 4,
-         "instruction": "Lass die Hörwahrnehmung wieder weit werden. Nimm den Atem und den Körper wahr und kehre ruhig in den Alltag zurück."
-       }
+     "desc": "Richte deine Aufmerksamkeit auf natürliche Klänge und auf die Ruhe zwischen ihnen. Die Übung greift den kontemplativen Sinn des Verses auf, ohne körperliche Öffnungen gewaltsam zu verschließen oder den Atem anzuhalten.",
+     "instructions": [
+      "Sitze bequem und atme natürlich. Entspanne Kiefer, Gesicht und Schultern.",
+      "Höre die Geräusche der Umgebung, ohne sie zu bewerten oder gezielt zu verfolgen.",
+      "Bemerke das Nachlassen eines Klanges und die offene Aufmerksamkeit, in der Stille und neue Klänge wahrgenommen werden.",
+      "Lass die Hörwahrnehmung wieder weit werden. Nimm den Atem und den Körper wahr und kehre ruhig in den Alltag zurück."
      ]
    }
  }

@@ -134,28 +134,13 @@ export const vers6374: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Das Ganze in einem Augenblick",
-     "instruction": "Erweitere deine Aufmerksamkeit vom Körper auf den gesamten Wahrnehmungsraum. Lass alles gleichzeitig erscheinen, ohne es gedanklich festzuhalten.",
-     "phases": [
-       {
-         "name": "Den Leib spüren",
-         "duration": 4,
-         "instruction": "Nimm den ganzen Körper mit seinen Empfindungen wahr, ohne einzelne Bereiche bevorzugt festzuhalten."
-       },
-       {
-         "name": "Die Wahrnehmung weiten",
-         "duration": 2,
-         "instruction": "Öffne die Aufmerksamkeit für Geräusche, Licht und den Raum um dich herum."
-       },
-       {
-         "name": "Das Ganze umfassen",
-         "duration": 4,
-         "instruction": "Lass Körper und Umgebung zugleich im Gewahrsein erscheinen. Lockere das Bedürfnis, alles zu benennen."
-       },
-       {
-         "name": "In Offenheit verweilen",
-         "duration": 4,
-         "instruction": "Bleibe für einige Augenblicke empfänglich und wach. Wenn Gedanken auftauchen, lass sie Teil des Erlebens sein."
-       }
+     "desc": "Erweitere deine Aufmerksamkeit vom Körper auf den gesamten Wahrnehmungsraum. Lass alles gleichzeitig erscheinen, ohne es gedanklich festzuhalten.",
+     "instructions": [
+      "Nimm den ganzen Körper mit seinen Empfindungen wahr, ohne einzelne Bereiche bevorzugt festzuhalten.",
+      "Öffne die Aufmerksamkeit für Geräusche, Licht und den Raum um dich herum.",
+      "Lass Körper und Umgebung zugleich im Gewahrsein erscheinen. Lockere das Bedürfnis, alles zu benennen.",
+      "Bleibe für einige Augenblicke empfänglich und wach. Wenn Gedanken auftauchen, lass sie Teil des Erlebens sein."
+      
      ]
    }
  },
@@ -292,28 +277,12 @@ export const vers6374: SUTRA[] = [
    "meditationConfig": {
      "type": "breath",
      "title": "Die stille Schwelle des Atems",
-     "instruction": "Beobachte den natürlichen Atem und die Übergänge zwischen Ein- und Ausatmen. Halte die Luft nicht absichtlich an.",
-     "phases": [
-       {
-         "name": "Einatmen",
-         "duration": 4,
-         "instruction": "Spüre, wie der Atem von selbst einströmt, ohne ihn zu forcieren."
-       },
-       {
-         "name": "Übergang",
-         "duration": 2,
-         "instruction": "Bemerke die natürliche Schwelle zwischen Ein- und Ausatmen. Bleibe entspannt und halte die Luft nicht fest."
-       },
-       {
-         "name": "Ausatmen",
-         "duration": 4,
-         "instruction": "Lass den Atem auf natürliche Weise ausströmen und nimm die Bewegung bewusst wahr."
-       },
-       {
-         "name": "Nachklang",
-         "duration": 4,
-         "instruction": "Spüre die Ruhe nach dem Ausatmen, ohne eine Atempause zu erzwingen. Kehre dann zum natürlichen Rhythmus zurück."
-       }
+     "desc": "Beobachte den natürlichen Atem und die Übergänge zwischen Ein- und Ausatmen. Halte die Luft nicht absichtlich an.",
+     "instructions": [
+      "Spüre, wie der Atem von selbst einströmt, ohne ihn zu forcieren.",
+      "Bemerke die natürliche Schwelle zwischen Ein- und Ausatmen. Bleibe entspannt und halte die Luft nicht fest.",
+      "Lass den Atem auf natürliche Weise ausströmen und nimm die Bewegung bewusst wahr.",
+      "Spüre die Ruhe nach dem Ausatmen, ohne eine Atempause zu erzwingen. Kehre dann zum natürlichen Rhythmus zurück."
      ]
    }
  },
@@ -450,28 +419,12 @@ export const vers6374: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Der innere Nektar",
-     "instruction": "Spüre den Körper als Ganzes und öffne dich für eine stille, nicht erzwungene Empfindung von Fülle.",
-     "phases": [
-       {
-         "name": "Im Körper ankommen",
-         "duration": 4,
-         "instruction": "Spüre den Kontakt zum Boden und nimm den Körper in seiner Gesamtheit wahr."
-       },
-       {
-         "name": "Die innere Quelle erinnern",
-         "duration": 2,
-         "instruction": "Erinnere dich an eine schlichte Erfahrung von Zufriedenheit, ohne ein bestimmtes Gefühl erzwingen zu müssen."
-       },
-       {
-         "name": "Fülle ausdehnen",
-         "duration": 4,
-         "instruction": "Lass die Aufmerksamkeit den gesamten Körper und die Umgebung umfassen."
-       },
-       {
-         "name": "In der Gegenwart ruhen",
-         "duration": 4,
-         "instruction": "Verweile im unmittelbaren Erleben und erlaube angenehmen wie unangenehmen Empfindungen, da zu sein."
-       }
+     "desc": "Spüre den Körper als Ganzes und öffne dich für eine stille, nicht erzwungene Empfindung von Fülle.",
+     "instructions": [
+      "Spüre den Kontakt zum Boden und nimm den Körper in seiner Gesamtheit wahr.",
+      "Erinnere dich an eine schlichte Erfahrung von Zufriedenheit, ohne ein bestimmtes Gefühl erzwingen zu müssen.",
+      "Lass die Aufmerksamkeit den gesamten Körper und die Umgebung umfassen.",
+      "Verweile im unmittelbaren Erleben und erlaube angenehmen wie unangenehmen Empfindungen, da zu sein."
      ]
    }
  },
@@ -603,28 +556,12 @@ export const vers6374: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Der Augenblick des Erwachens",
-     "instruction": "Nutze eine sanfte Unterbrechung des Gewohnten, um die Aufmerksamkeit auf den unmittelbaren gegenwärtigen Augenblick zu richten.",
-     "phases": [
-       {
-         "name": "Gewohnte Bewegung",
-         "duration": 4,
-         "instruction": "Nimm wahr, wie du gewöhnlich atmest und dich im Raum orientierst."
-       },
-       {
-         "name": "Innehalten",
-         "duration": 2,
-         "instruction": "Unterbrich die Handlung sanft und bleibe körperlich entspannt."
-       },
-       {
-         "name": "Wache Präsenz",
-         "duration": 4,
-         "instruction": "Spüre Körper, Geräusche und Raum. Beobachte, was ohne sofortige Erklärung erscheint."
-       },
-       {
-         "name": "Bewusst weitergehen",
-         "duration": 4,
-         "instruction": "Nimm die gewonnene Aufmerksamkeit mit in die nächste Handlung."
-       }
+     "desc": "Nutze eine sanfte Unterbrechung des Gewohnten, um die Aufmerksamkeit auf den unmittelbaren gegenwärtigen Augenblick zu richten.",
+     "instructions": [
+      "Nimm wahr, wie du gewöhnlich atmest und dich im Raum orientierst.",
+      "Unterbrich die Handlung sanft und bleibe körperlich entspannt.",
+      "Spüre Körper, Geräusche und Raum. Beobachte, was ohne sofortige Erklärung erscheint.",
+      "Nimm die gewonnene Aufmerksamkeit mit in die nächste Handlung."
      ]
    }
  },
@@ -761,28 +698,12 @@ export const vers6374: SUTRA[] = [
    "meditationConfig": {
      "type": "breath",
      "title": "Die feine Strömung",
-     "instruction": "Beobachte den natürlichen Atem und die feinen Empfindungen im Körper. Erzwinge keine Atemlenkung und keine energetische Vorstellung.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Spüre die Auflageflächen des Körpers und lass den Atem natürlich fließen."
-       },
-       {
-         "name": "Feine Wahrnehmung",
-         "duration": 2,
-         "instruction": "Nimm leichte Berührungen, Wärme oder Kribbeln wahr, sofern sie vorhanden sind."
-       },
-       {
-         "name": "Den Körper umfassen",
-         "duration": 4,
-         "instruction": "Weite die Aufmerksamkeit auf den gesamten Körper aus und bleibe entspannt."
-       },
-       {
-         "name": "Ruhiges Verweilen",
-         "duration": 4,
-         "instruction": "Lass die Empfindungen kommen und gehen. Atme frei und beende die Übung ohne Eile."
-       }
+     "desc": "Beobachte den natürlichen Atem und die feinen Empfindungen im Körper. Erzwinge keine Atemlenkung und keine energetische Vorstellung.",
+     "instructions": [
+      "Spüre die Auflageflächen des Körpers und lass den Atem natürlich fließen.",
+      "Nimm leichte Berührungen, Wärme oder Kribbeln wahr, sofern sie vorhanden sind.",
+      "Weite die Aufmerksamkeit auf den gesamten Körper aus und bleibe entspannt.",
+      "Lass die Empfindungen kommen und gehen. Atme frei und beende die Übung ohne Eile."
      ]
    }
  },
@@ -919,28 +840,12 @@ export const vers6374: SUTRA[] = [
    "meditationConfig": {
      "type": "breath",
      "title": "Der Atem als Anker",
-     "instruction": "Bleibe in einer sicheren, ruhigen Umgebung und beobachte den natürlichen Atem, während du Gedanken und Gefühle wahrnimmst.",
-     "phases": [
-       {
-         "name": "Sicherheit und Erdung",
-         "duration": 4,
-         "instruction": "Spüre den Kontakt zum Boden und orientiere dich an deiner unmittelbaren Umgebung."
-       },
-       {
-         "name": "Atem wahrnehmen",
-         "duration": 2,
-         "instruction": "Nimm die natürliche Atembewegung wahr, ohne sie anzuhalten oder zu erzwingen."
-       },
-       {
-         "name": "Gefühle einschließen",
-         "duration": 4,
-         "instruction": "Erlaube Gedanken und Empfindungen, aufzutauchen, während du beim Atem bleibst."
-       },
-       {
-         "name": "Mit Klarheit fortfahren",
-         "duration": 4,
-         "instruction": "Weite die Aufmerksamkeit auf den ganzen Körper aus und entscheide bewusst, was als Nächstes hilfreich ist."
-       }
+     "desc": "Bleibe in einer sicheren, ruhigen Umgebung und beobachte den natürlichen Atem, während du Gedanken und Gefühle wahrnimmst.",
+     "instructions": [
+      "Spüre den Kontakt zum Boden und orientiere dich an deiner unmittelbaren Umgebung.",
+      "Nimm die natürliche Atembewegung wahr, ohne sie anzuhalten oder zu erzwingen.",
+      "Erlaube Gedanken und Empfindungen, aufzutauchen, während du beim Atem bleibst.",
+      "Weite die Aufmerksamkeit auf den ganzen Körper aus und entscheide bewusst, was als Nächstes hilfreich ist."
      ]
    }
  },
@@ -1077,28 +982,12 @@ export const vers6374: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Die Bewegung und die Stille",
-     "instruction": "Nimm eine lebendige Empfindung wahr und beobachte, wie sie sich innerhalb eines größeren Feldes des Gewahrseins entfaltet.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Spüre den Körper und den natürlichen Atem."
-       },
-       {
-         "name": "Bewegung erkennen",
-         "duration": 2,
-         "instruction": "Nimm eine gegenwärtige Empfindung oder ein Gefühl wahr, ohne es zu verstärken."
-       },
-       {
-         "name": "Die Erfahrung umfassen",
-         "duration": 4,
-         "instruction": "Beobachte Gefühl, Körper und Atem gemeinsam im Gewahrsein."
-       },
-       {
-         "name": "Integrieren",
-         "duration": 4,
-         "instruction": "Lass die Erfahrung sich verändern und bleibe freundlich, wach und geerdet."
-       }
+     "desc": "Nimm eine lebendige Empfindung wahr und beobachte, wie sie sich innerhalb eines größeren Feldes des Gewahrseins entfaltet.",
+     "instructions": [
+      "Spüre den Körper und den natürlichen Atem.",
+      "Nimm eine gegenwärtige Empfindung oder ein Gefühl wahr, ohne es zu verstärken.",
+      "Beobachte Gefühl, Körper und Atem gemeinsam im Gewahrsein.",
+      "Lass die Erfahrung sich verändern und bleibe freundlich, wach und geerdet."
      ]
    }
  },
@@ -1235,28 +1124,12 @@ export const vers6374: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Die Erinnerung an Freude",
-     "instruction": "Betrachte eine harmlose, angenehme Erinnerung und beobachte die gegenwärtige Empfindung, die daraus entsteht.",
-     "phases": [
-       {
-         "name": "Im Körper ankommen",
-         "duration": 4,
-         "instruction": "Spüre den Boden unter dir und beobachte den natürlichen Atem."
-       },
-       {
-         "name": "Erinnerung auftauchen lassen",
-         "duration": 2,
-         "instruction": "Rufe einen angenehmen, sicheren Augenblick ins Gedächtnis, ohne ihn erzwingen zu müssen."
-       },
-       {
-         "name": "Die Empfindung wahrnehmen",
-         "duration": 4,
-         "instruction": "Bemerke, welche Gefühle und körperlichen Reaktionen jetzt entstehen, ohne sie festzuhalten."
-       },
-       {
-         "name": "Loslassen",
-         "duration": 4,
-         "instruction": "Lass die Erinnerung verblassen und kehre zum gegenwärtigen Körper und Raum zurück."
-       }
+     "desc": "Betrachte eine harmlose, angenehme Erinnerung und beobachte die gegenwärtige Empfindung, die daraus entsteht.",
+     "instructions": [
+      "Spüre den Boden unter dir und beobachte den natürlichen Atem.",
+      "Rufe einen angenehmen, sicheren Augenblick ins Gedächtnis, ohne ihn erzwingen zu müssen.",
+      "Bemerke, welche Gefühle und körperlichen Reaktionen jetzt entstehen, ohne sie festzuhalten.",
+      "Lass die Erinnerung verblassen und kehre zum gegenwärtigen Körper und Raum zurück."
      ]
    }
  },
@@ -1393,28 +1266,12 @@ export const vers6374: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "In der Freude ruhen",
-     "instruction": "Rufe einen angenehmen gegenwärtigen Moment ins Bewusstsein und beobachte die Freude, ohne sie festzuhalten.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Spüre den Körper und nimm den natürlichen Atem wahr."
-       },
-       {
-         "name": "Freude erkennen",
-         "duration": 2,
-         "instruction": "Erinnere dich an einen schönen Moment oder nimm eine gegenwärtige Freude wahr."
-       },
-       {
-         "name": "Aufmerksamkeit vertiefen",
-         "duration": 4,
-         "instruction": "Beobachte die Empfindung der Freude, ohne sie zu analysieren oder zu verstärken."
-       },
-       {
-         "name": "Frei weitergehen",
-         "duration": 4,
-         "instruction": "Lass die Freude sich verändern und kehre mit offener Aufmerksamkeit in den Alltag zurück."
-       }
+     "desc": "Rufe einen angenehmen gegenwärtigen Moment ins Bewusstsein und beobachte die Freude, ohne sie festzuhalten.",
+     "instructions": [
+      "Spüre den Körper und nimm den natürlichen Atem wahr.",
+      "Erinnere dich an einen schönen Moment oder nimm eine gegenwärtige Freude wahr.",
+      "Beobachte die Empfindung der Freude, ohne sie zu analysieren oder zu verstärken.",
+      "Lass die Freude sich verändern und kehre mit offener Aufmerksamkeit in den Alltag zurück."
      ]
    }
  },
@@ -1551,28 +1408,12 @@ export const vers6374: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Die Fülle des Geschmacks",
-     "instruction": "Wähle einen kleinen Bissen oder Schluck und erforsche die unmittelbare Sinneserfahrung mit ruhiger Aufmerksamkeit.",
-     "phases": [
-       {
-         "name": "Vor dem Genuss",
-         "duration": 4,
-         "instruction": "Nimm Farbe, Duft, Temperatur und deine gegenwärtige Stimmung wahr."
-       },
-       {
-         "name": "Bewusst schmecken",
-         "duration": 2,
-         "instruction": "Erfahre den Geschmack und die Textur, ohne dich zu beeilen."
-       },
-       {
-         "name": "Die Erfahrung entfalten",
-         "duration": 4,
-         "instruction": "Bemerke, wie sich der Geschmack verändert und welche Empfindungen im Körper entstehen."
-       },
-       {
-         "name": "Fülle wahrnehmen",
-         "duration": 4,
-         "instruction": "Spüre nach und kehre anschließend zu deiner Mahlzeit oder deinem Getränk zurück."
-       }
+     "desc": "Wähle einen kleinen Bissen oder Schluck und erforsche die unmittelbare Sinneserfahrung mit ruhiger Aufmerksamkeit.",
+     "instructions": [
+      "Nimm Farbe, Duft, Temperatur und deine gegenwärtige Stimmung wahr.",
+      "Erfahre den Geschmack und die Textur, ohne dich zu beeilen.",
+      "Bemerke, wie sich der Geschmack verändert und welche Empfindungen im Körper entstehen.",
+      "Spüre nach und kehre anschließend zu deiner Mahlzeit oder deinem Getränk zurück."
      ]
    }
  },
@@ -1709,28 +1550,12 @@ export const vers6374: SUTRA[] = [
    "meditationConfig": {
      "type": "sound",
      "title": "Im Klang verweilen",
-     "instruction": "Wähle einen natürlichen Klang oder ein Lied und schenke ihm deine ungeteilte Aufmerksamkeit. Beobachte auch sein Verklingen.",
-     "phases": [
-       {
-         "name": "Lauschen",
-         "duration": 4,
-         "instruction": "Richte deine Aufmerksamkeit auf einen vorhandenen Klang, ohne ihn sofort zu benennen."
-       },
-       {
-         "name": "Den Klang auskosten",
-         "duration": 2,
-         "instruction": "Nimm Rhythmus, Klangfarbe und Schwingung unmittelbar wahr."
-       },
-       {
-         "name": "Ganz hören",
-         "duration": 4,
-         "instruction": "Lass den Klang den Mittelpunkt der Aufmerksamkeit bilden und kehre sanft zum Hören zurück, wenn Gedanken auftauchen."
-       },
-       {
-         "name": "Das Verklingen hören",
-         "duration": 4,
-         "instruction": "Bemerke, wie der Klang leiser wird oder endet, und verweile einen Moment in der anschließenden Stille."
-       }
+     "desc": "Wähle einen natürlichen Klang oder ein Lied und schenke ihm deine ungeteilte Aufmerksamkeit. Beobachte auch sein Verklingen.",
+     "instructions": [
+      "Richte deine Aufmerksamkeit auf einen vorhandenen Klang, ohne ihn sofort zu benennen.",
+      "Nimm Rhythmus, Klangfarbe und Schwingung unmittelbar wahr.",
+      "Lass den Klang den Mittelpunkt der Aufmerksamkeit bilden und kehre sanft zum Hören zurück, wenn Gedanken auftauchen.",
+      "Bemerke, wie der Klang leiser wird oder endet, und verweile einen Moment in der anschließenden Stille."
      ]
    }
  },
@@ -1857,28 +1682,12 @@ export const vers6374: SUTRA[] = [
    "meditationConfig": {
      "type": "gap",
      "title": "Bei der Zufriedenheit verweilen",
-     "instruction": "Erkenne einen kleinen Moment des Wohlseins und richte deine Aufmerksamkeit freundlich auf die gegenwärtige Erfahrung.",
-     "phases": [
-       {
-         "name": "Ankommen",
-         "duration": 4,
-         "instruction": "Spüre den Körper und den natürlichen Atem."
-       },
-       {
-         "name": "Zufriedenheit erkennen",
-         "duration": 2,
-         "instruction": "Erinnere dich an einen angenehmen Augenblick oder nimm ein gegenwärtiges Gefühl von Genügen wahr."
-       },
-       {
-         "name": "Aufmerksamkeit halten",
-         "duration": 4,
-         "instruction": "Verweile bei der Empfindung, ohne sie zu verstärken oder festzuhalten."
-       },
-       {
-         "name": "Offen weitergehen",
-         "duration": 4,
-         "instruction": "Lass die Erfahrung sich verändern und nimm die offene Aufmerksamkeit mit in den Alltag."
-       }
+     "desc": "Erkenne einen kleinen Moment des Wohlseins und richte deine Aufmerksamkeit freundlich auf die gegenwärtige Erfahrung.",
+     "instructions": [
+      "Spüre den Körper und den natürlichen Atem.",
+      "Erinnere dich an einen angenehmen Augenblick oder nimm ein gegenwärtiges Gefühl von Genügen wahr.",
+      "Verweile bei der Empfindung, ohne sie zu verstärken oder festzuhalten.",
+      "Lass die Erfahrung sich verändern und nimm die offene Aufmerksamkeit mit in den Alltag."
      ]
    }
  }

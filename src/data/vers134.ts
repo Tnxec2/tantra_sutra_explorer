@@ -253,28 +253,12 @@ export const vers134: SUTRA = {
  "meditationConfig": {
    "type": "gap",
    "title": "Die Offenheit zwischen den Erscheinungen",
-   "instruction": "Beobachte, wie Gedanken, Empfindungen und Wahrnehmungen auftauchen und vergehen. Suche nicht nach einem erzwungenen Zustand der Leere. Richte deine Aufmerksamkeit auf die Offenheit, in der alle Erfahrungen erscheinen, und kehre sanft dorthin zurück, wenn du dich in Gedanken verlierst.",
-   "phases": [
-     {
-       "name": "Ankommen",
-       "duration": 4,
-       "instruction": "Sitze bequem und spüre deinen Körper. Nimm Geräusche, Berührungen und die natürliche Atmung wahr. Versuche nichts zu verändern."
-     },
-     {
-       "name": "Erscheinungen beobachten",
-       "duration": 4,
-       "instruction": "Lass Gedanken, Gefühle und Sinneseindrücke auftauchen. Erkenne jeden Inhalt als eine vorübergehende Erfahrung, ohne ihn festzuhalten oder zurückzuweisen."
-     },
-     {
-       "name": "Die Übergänge bemerken",
-       "duration": 4,
-       "instruction": "Achte sanft auf die Momente, in denen ein Gedanke endet oder ein Geräusch verklingt. Wenn keine klare Lücke erkennbar ist, ruhe einfach in der offenen Aufmerksamkeit."
-     },
-     {
-       "name": "In Offenheit verweilen",
-       "duration": 4,
-       "instruction": "Lass die Aufmerksamkeit weit und mühelos werden. Wahrnehmungen dürfen erscheinen, ohne dass du ihnen folgen musst. Beende die Meditation ruhig und nimm diese offene Haltung mit in den Alltag."
-     }
+   "desc": "Beobachte, wie Gedanken, Empfindungen und Wahrnehmungen auftauchen und vergehen. Suche nicht nach einem erzwungenen Zustand der Leere. Richte deine Aufmerksamkeit auf die Offenheit, in der alle Erfahrungen erscheinen, und kehre sanft dorthin zurück, wenn du dich in Gedanken verlierst.",
+   "instructions": [
+    "Sitze bequem und spüre deinen Körper. Nimm Geräusche, Berührungen und die natürliche Atmung wahr. Versuche nichts zu verändern.",
+    "Lass Gedanken, Gefühle und Sinneseindrücke auftauchen. Erkenne jeden Inhalt als eine vorübergehende Erfahrung, ohne ihn festzuhalten oder zurückzuweisen.",
+    "Achte sanft auf die Momente, in denen ein Gedanke endet oder ein Geräusch verklingt. Wenn keine klare Lücke erkennbar ist, ruhe einfach in der offenen Aufmerksamkeit.",
+    "Lass die Aufmerksamkeit weit und mühelos werden. Wahrnehmungen dürfen erscheinen, ohne dass du ihnen folgen musst. Beende die Meditation ruhig und nimm diese offene Haltung mit in den Alltag."
    ]
  }
 }

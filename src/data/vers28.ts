@@ -81,28 +81,12 @@ export const vers28: SUTRA = {
     "meditationConfig": {
         "type": "breath",
         "title": "Das Aufsteigen zum zwölften Zentrum",
-        "instruction": "Führe den feinen Energiestrom mit dem Einatmen nach oben und lasse ihn im Raum über dem Kopf in Stille vergehen.",
-        "phases": [
-            {
-                "name": "Wurzel (Ursprung)",
-                "duration": 3,
-                "instruction": "Richte den Fokus auf den untersten Punkt und spüre den feinen Impuls."
-            },
-            {
-                "name": "Aufstieg",
-                "duration": 4,
-                "instruction": "Lasse die Lichtenergie sanft und strahlend nach oben steigen."
-            },
-            {
-                "name": "Das Zwölfte Zentrum",
-                "duration": 3,
-                "instruction": "Verweile im unendlichen Raum über dem Scheitel."
-            },
-            {
-                "name": "Auflösung",
-                "duration": 4,
-                "instruction": "Erlebe, wie die Energie in der reinen Stille verschmilzt."
-            }
+        "desc": "Führe den feinen Energiestrom mit dem Einatmen nach oben und lasse ihn im Raum über dem Kopf in Stille vergehen.",
+        "instructions": [
+            "Richte den Fokus auf den untersten Punkt und spüre den feinen Impuls.",
+            "Lasse die Lichtenergie sanft und strahlend nach oben steigen.",
+            "Verweile im unendlichen Raum über dem Scheitel.",
+            "Erlebe, wie die Energie in der reinen Stille verschmilzt."
         ]
     }
 }
