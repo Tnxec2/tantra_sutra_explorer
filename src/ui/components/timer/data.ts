@@ -34,5 +34,5 @@ export const musicSounds: SoundOption[] = [
   { file: "golden_om_deep-om.mp3", image: "golden_om_deep-om.jpg" },
 ];
 
-export const soundPath = (file: string) => `/assets/sounds/${file}`;
-export const imagePath = (file: string) => `/assets/images/${file}`;
+export const soundPath = (file: string) => `./assets/sounds/${file}`;
+export const imagePath = (file: string) => `./assets/images/${file}`;
