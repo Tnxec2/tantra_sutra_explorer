@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { Clock3, Pause, Play, Plus, RotateCcw, X } from "lucide-react";
+import { Clock3, Pause, Play, RotateCcw, SlidersHorizontal, X } from "lucide-react";
 import { TimerProfile } from "./timerTypes";
 import { imagePath, musicSounds, soundPath } from "./data";
 import { blankProfile, formatTime, loadProfiles, saveProfiles } from "./helper";
 import { MeditationTimerSettings } from "./TimerSettings";
+import { TImerList } from "./TimerList";
 
 
 
@@ -12,6 +13,7 @@ import { MeditationTimerSettings } from "./TimerSettings";
 export function MeditationTimer({ onClose }: { onClose: () => void }) {
   const [profiles, setProfiles] = useState<TimerProfile[]>(loadProfiles);
   const [selectedId, setSelectedId] = useState("");
+  const [activeTab, setActiveTab] = useState<"timer" | "settings">("timer");
   const [runState, setRunState] = useState<"idle" | "delay" | "running" | "paused" | "complete">("idle");
   const [pausedFrom, setPausedFrom] = useState<"delay" | "running">("running");
   const [remainingMs, setRemainingMs] = useState(0);
@@ -225,85 +227,123 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
           </button>
         </header>
 
-        <div className="grid min-h-0 flex-1 overflow-y-auto lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)]">
-          <div className="space-y-6 p-5 sm:p-7">
-            <div className="flex items-center gap-2 overflow-x-auto pb-1">
-              {profiles.map(profile => (
-                <button
-                  key={profile.id}
-                  onClick={() => { if (!isLocked) { setSelectedId(profile.id); resetTimer(); } }}
-                  disabled={isLocked}
-                  className={`max-w-48 truncate rounded-full border px-4 py-2 text-sm transition ${profile.id === selected.id ? "border-amber-200/50 bg-amber-200/15 text-amber-100" : "border-white/10 bg-white/[0.04] text-slate-400 hover:bg-white/10"} disabled:cursor-not-allowed`}
-                >{profile.name || "Unbenannter Timer"}</button>
-              ))}
-              <button onClick={addProfile} disabled={isLocked} aria-label="Neuen Timer hinzufügen" className="shrink-0 rounded-full border border-dashed border-white/20 p-2 text-slate-400 transition hover:border-amber-200/40 hover:text-amber-100 disabled:opacity-40">
-                <Plus className="h-4 w-4" />
-              </button>
-            </div>
+        <div role="tablist" aria-label="Timeransicht" className="grid grid-cols-2 gap-1 border-b border-white/10 bg-black/10 p-2">
+          <button
+            id="meditation-timer-tab"
+            type="button"
+            role="tab"
+            aria-selected={activeTab === "timer"}
+            aria-controls="meditation-timer-panel"
+            onClick={() => setActiveTab("timer")}
+            className={`flex items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-medium transition ${activeTab === "timer" ? "border border-amber-300/25 bg-amber-300/10 text-amber-100 shadow-inner" : "text-slate-400 hover:bg-white/[0.04] hover:text-slate-200"}`}
+          >
+            <Clock3 className="h-4 w-4" />
+            Timer
+          </button>
+          <button
+            id="meditation-settings-tab"
+            type="button"
+            role="tab"
+            aria-selected={activeTab === "settings"}
+            aria-controls="meditation-settings-panel"
+            onClick={() => setActiveTab("settings")}
+            className={`flex items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-medium transition ${activeTab === "settings" ? "border border-amber-300/25 bg-amber-300/10 text-amber-100 shadow-inner" : "text-slate-400 hover:bg-white/[0.04] hover:text-slate-200"}`}
+          >
+            <SlidersHorizontal className="h-4 w-4" />
+            Einstellungen
+          </button>
+        </div>
 
-            <div className={`relative overflow-hidden rounded-3xl border border-white/10 px-5 py-8 text-center shadow-inner sm:py-10 ${musicCover ? "bg-[#090810]" : "bg-gradient-to-br from-white/[0.09] to-white/[0.025]"}`}>
-              {musicCover && (
-                <>
-                  <div
-                    aria-hidden="true"
-                    className="absolute inset-0 bg-cover bg-center transition-opacity duration-500"
-                    style={{ backgroundImage: `url("${imagePath(musicCover)}")`, opacity: 0.55 }}
-                  />
-                  <div
-                    aria-hidden="true"
-                    className="absolute inset-0 bg-gradient-to-br from-[#090810]/70 via-[#090810]/60 to-[#120c20]/75"
-                  />
-                </>
-              )}
-              <div className="pointer-events-none absolute -right-10 -top-16 h-48 w-48 rounded-full bg-violet-400/10 blur-3xl" />
-              <div className="relative z-10 mx-auto mb-5 flex h-48 w-48 items-center justify-center sm:h-56 sm:w-56">
-                <svg className="absolute inset-0 h-full w-full -rotate-90" viewBox="0 0 100 100" aria-hidden="true">
-                  <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="1.5" />
-                  <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(252,211,77,0.9)" strokeWidth="1.5" strokeLinecap="round" strokeDasharray={2 * Math.PI * 46} strokeDashoffset={2 * Math.PI * 46 * (1 - progress)} className="transition-[stroke-dashoffset] duration-300" />
-                </svg>
-                <div className="flex flex-col items-center">
-                  <span className="font-mono text-4xl font-light tracking-wider text-white sm:text-5xl">{timerDisplay}</span>
-                  <span className="mt-2 text-[10px] uppercase tracking-[0.3em] text-amber-200/70">{runState === "delay" || (runState === "paused" && pausedFrom === "delay") ? "Start in" : "verbleibend"}</span>
+        <div className="min-h-0 flex-1 overflow-y-auto">
+          <div
+            id="meditation-timer-panel"
+            role="tabpanel"
+            aria-labelledby="meditation-timer-tab"
+            hidden={activeTab !== "timer"}
+            className="animate-fadeIn"
+          >
+            <div className="mx-auto w-full max-w-3xl space-y-6 p-5 sm:p-7">
+              <div className={`relative overflow-hidden rounded-3xl border border-white/10 px-5 py-8 text-center shadow-inner sm:py-10 ${musicCover ? "bg-[#090810]" : "bg-gradient-to-br from-white/[0.09] to-white/[0.025]"}`}>
+                {musicCover && (
+                  <>
+                    <div
+                      aria-hidden="true"
+                      className="absolute inset-0 bg-cover bg-center transition-opacity duration-500"
+                      style={{ backgroundImage: `url("${imagePath(musicCover)}")`, opacity: 0.55 }}
+                    />
+                    <div
+                      aria-hidden="true"
+                      className="absolute inset-0 bg-gradient-to-br from-[#090810]/70 via-[#090810]/60 to-[#120c20]/75"
+                    />
+                  </>
+                )}
+                <div className="pointer-events-none absolute -right-10 -top-16 h-48 w-48 rounded-full bg-violet-400/10 blur-3xl" />
+                <div className="relative z-10 mx-auto mb-5 flex h-48 w-48 items-center justify-center sm:h-56 sm:w-56">
+                  <svg className="absolute inset-0 h-full w-full -rotate-90" viewBox="0 0 100 100" aria-hidden="true">
+                    <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="1.5" />
+                    <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(252,211,77,0.9)" strokeWidth="1.5" strokeLinecap="round" strokeDasharray={2 * Math.PI * 46} strokeDashoffset={2 * Math.PI * 46 * (1 - progress)} className="transition-[stroke-dashoffset] duration-300" />
+                  </svg>
+                  <div className="flex flex-col items-center">
+                    <span className="font-mono text-4xl font-light tracking-wider text-white sm:text-5xl">{timerDisplay}</span>
+                    <span className="mt-2 text-[10px] uppercase tracking-[0.3em] text-amber-200/70">{runState === "delay" || (runState === "paused" && pausedFrom === "delay") ? "Start in" : "verbleibend"}</span>
+                  </div>
+                </div>
+                <p className="relative z-10 text-sm font-medium text-amber-50 drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">{phaseLabel}</p>
+                <p className="relative z-10 mt-1 text-xs text-white/85 drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">{selected.name}</p>
+                <div className="relative z-10 mt-6 flex justify-center gap-3">
+                  {(runState === "idle" || runState === "complete") && (
+                    <button onClick={startTimer} className="flex items-center gap-2 rounded-full bg-gradient-to-r from-amber-300 to-amber-500 px-6 py-3 text-sm font-semibold text-[#241b18] shadow-lg shadow-amber-900/20 transition hover:brightness-110">
+                      <Play className="h-4 w-4 fill-current" /> Meditation starten
+                    </button>
+                  )}
+                  {(runState === "delay" || runState === "running") && (
+                    <button onClick={pauseTimer} className="flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/15">
+                      <Pause className="h-4 w-4" /> Pause
+                    </button>
+                  )}
+                  {runState === "paused" && (
+                    <button onClick={resumeTimer} className="flex items-center gap-2 rounded-full bg-gradient-to-r from-amber-300 to-amber-500 px-6 py-3 text-sm font-semibold text-[#241b18] transition hover:brightness-110">
+                      <Play className="h-4 w-4 fill-current" /> Fortsetzen
+                    </button>
+                  )}
+                  {runState !== "idle" && (
+                    <button onClick={resetTimer} aria-label="Timer zurücksetzen" className="rounded-full border border-white/10 p-3 text-slate-300 transition hover:bg-white/10">
+                      <RotateCcw className="h-4 w-4" />
+                    </button>
+                  )}
                 </div>
               </div>
-              <p className="relative z-10 text-sm font-medium text-amber-50 drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">{phaseLabel}</p>
-              <p className="relative z-10 mt-1 text-xs text-white/85 drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">{selected.name}</p>
-              <div className="relative z-10 mt-6 flex justify-center gap-3">
-                {(runState === "idle" || runState === "complete") && (
-                  <button onClick={startTimer} className="flex items-center gap-2 rounded-full bg-gradient-to-r from-amber-300 to-amber-500 px-6 py-3 text-sm font-semibold text-[#241b18] shadow-lg shadow-amber-900/20 transition hover:brightness-110">
-                    <Play className="h-4 w-4 fill-current" /> Meditation starten
-                  </button>
-                )}
-                {(runState === "delay" || runState === "running") && (
-                  <button onClick={pauseTimer} className="flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/15">
-                    <Pause className="h-4 w-4" /> Pause
-                  </button>
-                )}
-                {runState === "paused" && (
-                  <button onClick={resumeTimer} className="flex items-center gap-2 rounded-full bg-gradient-to-r from-amber-300 to-amber-500 px-6 py-3 text-sm font-semibold text-[#241b18] transition hover:brightness-110">
-                    <Play className="h-4 w-4 fill-current" /> Fortsetzen
-                  </button>
-                )}
-                {runState !== "idle" && (
-                  <button onClick={resetTimer} aria-label="Timer zurücksetzen" className="rounded-full border border-white/10 p-3 text-slate-300 transition hover:bg-white/10">
-                    <RotateCcw className="h-4 w-4" />
-                  </button>
-                )}
-              </div>
+              {audioError && <p role="alert" className="rounded-xl border border-rose-300/20 bg-rose-400/10 px-4 py-3 text-xs text-rose-200">{audioError}</p>}
+              <p className="text-center text-xs text-slate-500">
+                {runState === "delay" ? "Die Startpause schenkt dir Zeit, anzukommen." : `Gesamtdauer: ${selected.durationMinutes} Minuten`}
+              </p>
             </div>
-            {audioError && <p role="alert" className="rounded-xl border border-rose-300/20 bg-rose-400/10 px-4 py-3 text-xs text-rose-200">{audioError}</p>}
-            <p className="text-center text-xs text-slate-500">
-              {runState === "delay" ? "Die Startpause schenkt dir Zeit, anzukommen." : `Gesamtdauer: ${selected.durationMinutes} Minuten`}
-            </p>
           </div>
 
-          <MeditationTimerSettings
-            selected={selected}
-            updateProfile={updateProfile}
-            isLocked={isLocked}
-            canDelete={profiles.length > 1}
-            removeProfile={removeProfile}
-          />
+          <div
+            id="meditation-settings-panel"
+            role="tabpanel"
+            aria-labelledby="meditation-settings-tab"
+            hidden={activeTab !== "settings"}
+            className="animate-fadeIn"
+          >
+            <div className="mx-auto w-full max-w-2xl space-y-5 p-5 sm:p-7">
+              <TImerList 
+                selected={selected}
+                profiles={profiles}
+                addProfile={addProfile}
+                openProfile={(id) => {setSelectedId(id); resetTimer(); }}
+                isLocked={isLocked}
+              />
+              <MeditationTimerSettings
+                selected={selected}
+                updateProfile={updateProfile}
+                isLocked={isLocked}
+                canDelete={profiles.length > 1}
+                removeProfile={removeProfile}
+              />
+            </div>
+          </div>
         </div>
       </section>
     </div>

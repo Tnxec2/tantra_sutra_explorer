@@ -62,7 +62,7 @@ export function MeditationTimerSettings({ selected, isLocked, canDelete, removeP
     };
 
     return (
-        <div className="space-y-5 border-t border-white/10 bg-black/10 p-5 sm:p-7 lg:border-l lg:border-t-0">
+        <div className="space-y-5 rounded-2xl border border-white/10 bg-black/10 p-5 sm:p-7">
             <div className="flex items-center justify-between">
                 <div>
                     <h3 className="font-serif text-lg text-amber-50">Timer gestalten</h3>
