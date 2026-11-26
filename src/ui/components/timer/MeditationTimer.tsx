@@ -21,7 +21,7 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
   const [audioError, setAudioError] = useState("");
   const remainingRef = useRef(0);
   const deadlineRef = useRef(0);
-  const lastIntervalRef = useRef(0);
+  const playedIntervalsRef = useRef<Record<string, number>>({});
   const musicRef = useRef<HTMLAudioElement | null>(null);
 
   const selected = profiles.find(profile => profile.id === selectedId) ?? profiles[0];
@@ -66,7 +66,7 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
     remainingRef.current = durationMs;
     setRemainingMs(durationMs);
     setElapsedMs(0);
-    lastIntervalRef.current = 0;
+    playedIntervalsRef.current = {};
     setRunState("running");
     setAudioError("");
     playSound(selected.startSound);
@@ -86,12 +86,18 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
 
       const elapsed = durationMs - nextRemaining;
       setElapsedMs(elapsed);
-      const intervalNumber = selected.intervalMinutes > 0
-        ? Math.floor(elapsed / (selected.intervalMinutes * 60_000))
-        : 0;
-      if (nextRemaining > 0 && intervalNumber > lastIntervalRef.current) {
-        lastIntervalRef.current = intervalNumber;
-        playSound(selected.intervalSound);
+      if (nextRemaining > 0) {
+        let intervalSoundToPlay: string | null = null;
+        selected.intervalSounds.forEach(interval => {
+          if (interval.intervalMinutes <= 0) return;
+          const intervalNumber = Math.floor(elapsed / (interval.intervalMinutes * 60_000));
+          const previousNumber = playedIntervalsRef.current[interval.id] ?? 0;
+          if (intervalNumber > previousNumber) {
+            if (interval.repeat || previousNumber === 0) intervalSoundToPlay = interval.file;
+            playedIntervalsRef.current[interval.id] = intervalNumber;
+          }
+        });
+        if (intervalSoundToPlay) playSound(intervalSoundToPlay);
       }
       if (nextRemaining <= 0) {
         stopMusic();
@@ -117,7 +123,7 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [onClose]);
 
-  const updateProfile = (key: keyof TimerProfile, value: string | number) => {
+  const updateProfile = (key: keyof TimerProfile, value: TimerProfile[keyof TimerProfile]) => {
     if (!selected) return;
     setProfiles(current => current.map(profile =>
       profile.id === selected.id ? { ...profile, [key]: value } : profile
@@ -220,7 +226,10 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
         role="dialog"
         aria-modal="true"
         aria-labelledby="meditation-timer-title"
-        className="flex max-h-[94vh] w-full max-w-5xl flex-col overflow-hidden rounded-3xl border border-white/15 bg-[#17142b]/80 text-slate-100 shadow-[0_30px_100px_rgba(0,0,0,0.65)] backdrop-blur-2xl"
+        className="flex max-h-[94vh] w-full max-w-5xl flex-col overflow-hidden rounded-3xl 
+        border border-white/15
+         bg-[#17142b]/80 text-slate-100 
+         shadow-[0_30px_100px_rgba(0,0,0,0.65)] backdrop-blur-2xl"
       >
         <header className="flex items-center justify-between border-b border-white/10 px-5 py-4 sm:px-7">
           <div className="flex items-center gap-3">
@@ -228,11 +237,13 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
               <Clock3 className="h-5 w-5" />
             </div>
             <div>
-              <h2 id="meditation-timer-title" className="font-serif text-xl font-semibold text-amber-50 sm:text-2xl">Meditationstimer</h2>
+              <h2 id="meditation-timer-title" className="font-serif text-xl font-semibold text-amber-50 
+              sm:text-2xl">Meditationstimer</h2>
               <p className="text-xs text-slate-400">Dein eigener Raum für Stille</p>
             </div>
           </div>
-          <button onClick={onClose} aria-label="Timer schließen" className="rounded-full p-2 text-slate-400 transition hover:bg-white/10 hover:text-white">
+          <button onClick={onClose} aria-label="Timer schließen" 
+          className="rounded-full p-2 text-slate-400 transition hover:bg-white/10 hover:text-white">
             <X className="h-5 w-5" />
           </button>
         </header>

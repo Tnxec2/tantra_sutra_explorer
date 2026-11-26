@@ -16,7 +16,7 @@ export function TImerList({ selected, profiles, isLocked, openProfile, addProfil
 
 
     return (
-        <div className="flex items-center gap-2 overflow-x-auto pb-1">
+        <div className="flex flex-wrap items-center gap-2 overflow-y-auto pb-1">
             {profiles.map(profile => (
                 <button
                     key={profile.id}

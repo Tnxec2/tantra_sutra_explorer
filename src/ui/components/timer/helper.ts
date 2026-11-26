@@ -1,4 +1,4 @@
-import { TimerProfile } from "./timerTypes";
+import { IntervalSound, TimerProfile } from "./timerTypes";
 
 const STORAGE_KEY = "tantra_sutras_explorer.meditation_timers";
 const SELECTED_PROFILE_KEY = "tantra_sutras_explorer.selected_meditation_timer";
@@ -26,13 +26,70 @@ export const blankProfile = (): TimerProfile => ({
   id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
   name: "Meine Meditation",
   durationMinutes: 20,
-  intervalMinutes: 5,
   startPauseSeconds: 10,
   startSound: "bell_ombu.mp3",
-  intervalSound: "bell_basu.mp3",
+  intervalSounds: [blankIntervalSound()],
   endSound: "bell_ombu.mp3",
   music: "",
 });
+
+export const blankIntervalSound = (): IntervalSound => ({
+  id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+  file: "bell_basu.mp3",
+  intervalMinutes: 5,
+  repeat: true,
+});
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null;
+}
+
+function isIntervalSound(value: unknown): value is IntervalSound {
+  return isRecord(value) &&
+    typeof value.id === "string" &&
+    typeof value.file === "string" &&
+    typeof value.intervalMinutes === "number" &&
+    typeof value.repeat === "boolean";
+}
+
+function parseProfile(value: unknown): TimerProfile | null {
+  if (!isRecord(value) ||
+    typeof value.id !== "string" ||
+    typeof value.name !== "string" ||
+    typeof value.durationMinutes !== "number" ||
+    typeof value.startPauseSeconds !== "number" ||
+    typeof value.startSound !== "string" ||
+    typeof value.endSound !== "string" ||
+    typeof value.music !== "string") {
+    return null;
+  }
+
+  let intervalSounds: IntervalSound[];
+  if (Array.isArray(value.intervalSounds)) {
+    intervalSounds = value.intervalSounds.filter(isIntervalSound);
+  } else if (typeof value.intervalSound === "string" && typeof value.intervalMinutes === "number") {
+    intervalSounds = value.intervalMinutes > 0 && value.intervalSound
+      ? [{
+        ...blankIntervalSound(),
+        file: value.intervalSound,
+        intervalMinutes: value.intervalMinutes,
+      }]
+      : [];
+  } else {
+    return null;
+  }
+
+  return {
+    id: value.id,
+    name: value.name,
+    durationMinutes: value.durationMinutes,
+    startPauseSeconds: value.startPauseSeconds,
+    startSound: value.startSound,
+    intervalSounds,
+    endSound: value.endSound,
+    music: value.music,
+  };
+}
 
 export function loadProfiles(): TimerProfile[] {
   try {
@@ -40,16 +97,7 @@ export function loadProfiles(): TimerProfile[] {
     if (!saved) return [blankProfile()];
     const parsed: unknown = JSON.parse(saved);
     if (Array.isArray(parsed) && parsed.length > 0) {
-      const profiles = parsed.filter((profile): profile is TimerProfile =>
-        typeof profile === "object" && profile !== null &&
-        typeof profile.id === "string" && typeof profile.name === "string" &&
-        typeof profile.durationMinutes === "number" &&
-        typeof profile.intervalMinutes === "number" &&
-        typeof profile.startPauseSeconds === "number" &&
-        typeof profile.startSound === "string" &&
-        typeof profile.intervalSound === "string" &&
-        typeof profile.endSound === "string" && typeof profile.music === "string"
-      );
+      const profiles = parsed.map(parseProfile).filter((profile): profile is TimerProfile => profile !== null);
       if (profiles.length > 0) return profiles;
     }
   } catch (error) {
