@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Clock3, Pause, Play, RotateCcw, SlidersHorizontal, X } from "lucide-react";
 import { TimerProfile } from "./timerTypes";
 import { imagePath, musicSounds, soundPath } from "./data";
-import { blankProfile, formatTime, loadProfiles, saveProfiles } from "./helper";
+import { blankProfile, formatTime, loadProfiles, loadSelectedProfileId, saveProfiles, saveSelectedProfileId } from "./helper";
 import { MeditationTimerSettings } from "./TimerSettings";
 import { TImerList } from "./TimerList";
 
@@ -12,7 +12,7 @@ import { TImerList } from "./TimerList";
 
 export function MeditationTimer({ onClose }: { onClose: () => void }) {
   const [profiles, setProfiles] = useState<TimerProfile[]>(loadProfiles);
-  const [selectedId, setSelectedId] = useState("");
+  const [selectedId, setSelectedId] = useState<string>(loadSelectedProfileId);
   const [activeTab, setActiveTab] = useState<"timer" | "settings">("timer");
   const [runState, setRunState] = useState<"idle" | "delay" | "running" | "paused" | "complete">("idle");
   const [pausedFrom, setPausedFrom] = useState<"delay" | "running">("running");
@@ -35,6 +35,15 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
       setAudioError(e.message)
     }
   }, [profiles]);
+
+  useEffect(() => {
+    if (!selected) return;
+    try {
+      saveSelectedProfileId(selected.id);
+    } catch (error) {
+      setAudioError(error instanceof Error ? error.message : "Das Timerprofil konnte nicht gespeichert werden.");
+    }
+  }, [selected.id]);
 
   const playSound = (file: string) => {
     if (!file) return;
@@ -90,7 +99,7 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
       const intervalNumber = selected.intervalMinutes > 0
         ? Math.floor(elapsed / (selected.intervalMinutes * 60_000))
         : 0;
-      if (intervalNumber > lastIntervalRef.current) {
+      if (nextRemaining > 0 && intervalNumber > lastIntervalRef.current) {
         lastIntervalRef.current = intervalNumber;
         playSound(selected.intervalSound);
       }
@@ -107,7 +116,7 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
 
   useEffect(() => () => {
     stopMusic();
-    // previewRef.current?.pause();
+    //previewRef.current?.pause();
   }, []);
 
   useEffect(() => {
@@ -204,7 +213,7 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
   return (
     <div
       className="fixed inset-0 z-[60] flex items-center justify-center bg-[#080614]/80 p-3 backdrop-blur-md sm:p-6"
-      onMouseDown={event => { if (event.target === event.currentTarget) onClose(); }}
+      // onMouseDown={event => { if (event.target === event.currentTarget) onClose(); }}
     >
       <section
         role="dialog"

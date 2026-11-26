@@ -1,6 +1,25 @@
 import { TimerProfile } from "./timerTypes";
 
 const STORAGE_KEY = "tantra_sutras_explorer.meditation_timers";
+const SELECTED_PROFILE_KEY = "tantra_sutras_explorer.selected_meditation_timer";
+
+export function loadSelectedProfileId(): string {
+  try {
+    return localStorage.getItem(SELECTED_PROFILE_KEY) ?? "";
+  } catch (error) {
+    console.error("Das zuletzt ausgewählte Timerprofil konnte nicht geladen werden.", error);
+    return "";
+  }
+}
+
+export function saveSelectedProfileId(profileId: string) {
+  try {
+    localStorage.setItem(SELECTED_PROFILE_KEY, profileId);
+  } catch (error) {
+    console.error("Das zuletzt ausgewählte Timerprofil konnte nicht gespeichert werden.", error);
+    throw Error("Das zuletzt ausgewählte Timerprofil konnte nicht gespeichert werden.");
+  }
+}
 
 
 export const blankProfile = (): TimerProfile => ({
