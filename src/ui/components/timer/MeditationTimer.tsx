@@ -70,16 +70,6 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
     setRunState("running");
     setAudioError("");
     playSound(selected.startSound);
-    if (selected.music) {
-      const music = new Audio(soundPath(selected.music));
-      music.loop = true;
-      music.volume = 0.35;
-      musicRef.current = music;
-      music.play().catch(error => {
-        console.error(`Hintergrundmusik konnte nicht abgespielt werden: ${selected.music}`, error);
-        setAudioError("Die Hintergrundmusik konnte nicht abgespielt werden.");
-      });
-    }
   };
 
   useEffect(() => {
@@ -159,6 +149,17 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
   };
 
   const startTimer = () => {
+    setAudioError("");
+    if (selected.music) {
+      const music = new Audio(soundPath(selected.music));
+      music.loop = true;
+      music.volume = 0.35;
+      musicRef.current = music;
+      music.play().catch(error => {
+        console.error(`Hintergrundmusik konnte nicht abgespielt werden: ${selected.music}`, error);
+        setAudioError("Die Hintergrundmusik konnte nicht abgespielt werden.");
+      });
+    }
     if (selected.startPauseSeconds > 0) {
       const delay = selected.startPauseSeconds * 1000;
       remainingRef.current = delay;
