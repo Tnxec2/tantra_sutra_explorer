@@ -99,7 +99,7 @@ export const CustomSelect = ({ value, options, onChange, label }: {
                     }
                 }}
                 className="flex w-full items-center justify-between gap-2 rounded-lg border border-amber-500/30
-                bg-[#1b1537] px-3 py-2 text-left text-sm font-serif text-amber-200
+                bg-theme-raised px-3 py-2 text-left text-sm font-serif text-amber-200
                 hover:border-amber-400/60 focus:outline-none focus:border-amber-400"
             >
                 <span className="truncate">{selectedOption?.label ?? label}</span>
@@ -118,7 +118,7 @@ export const CustomSelect = ({ value, options, onChange, label }: {
                     ml-2 
                     mr-2
                     rounded-lg border border-amber-500/30 
-                    bg-[#1b1537] p-1 shadow-xl"
+                    bg-theme-raised p-1 shadow-xl"
                 >
                     {options.map((option, index) => (
                         <div

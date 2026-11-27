@@ -14,7 +14,7 @@ export const Button = ({ icon, onClick, title, disabled, children }: {
             onClick={() => { if (onClick) onClick() }}
             title={title}
             aria-label={title}
-            className="p-2 rounded-lg bg-[#1b1537] hover:bg-amber-500/20 border
+            className="p-2 rounded-lg bg-theme-raised hover:bg-amber-500/20 border
             border-amber-500/30 text-amber-300 transition-all flex items-center gap-1.5
             text-xs shrink-0"
         >

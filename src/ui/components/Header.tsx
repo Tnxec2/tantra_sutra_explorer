@@ -3,21 +3,24 @@ import { SUTRA } from "../../model/Sutra"
 import { VERSION } from "../../index"
 import { Button } from "../shared/Button"
 import { CustomSelect } from "../shared/CustomSelect"
+import { APP_THEMES, AppTheme, isAppTheme } from "../shared/theme"
 
 
 
-export const Header = ({ activeSutraId, handleSelectSutra, sutras, onOpenSearch, onOpenRandomPractice, onOpenMeditationTimer }:
+export const Header = ({ activeSutraId, handleSelectSutra, sutras, onOpenSearch, onOpenRandomPractice, onOpenMeditationTimer, theme, onThemeChange }:
     {
         sutras: SUTRA[],
         activeSutraId: string,
         handleSelectSutra: (id: string) => void,
         onOpenSearch: () => void,
         onOpenRandomPractice: () => void,
-        onOpenMeditationTimer: () => void
+        onOpenMeditationTimer: () => void,
+        theme: AppTheme,
+        onThemeChange: (theme: AppTheme) => void
     }) => {
 
     return <>
-        <header className="relative z-20 w-full px-4 md:px-8 py-4 bg-[#14102b]/60
+        <header className="relative z-20 w-full px-4 md:px-8 py-4 bg-theme-surface/60
       backdrop-blur-md border-b border-amber-500/15 flex flex-col md:flex-row items-center 
       justify-between gap-4">
             <div className="flex items-center space-x-3">
@@ -35,7 +38,7 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras, onOpenSearch,
                 </div>
             </div>
 
-            <div className="flex items-center gap-2 sm:gap-3 w-full md:w-auto justify-end">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3 w-full md:w-auto justify-end">
                 <CustomSelect
                     value={activeSutraId}
                     onChange={handleSelectSutra}
@@ -58,6 +61,22 @@ export const Header = ({ activeSutraId, handleSelectSutra, sutras, onOpenSearch,
                 <Button title="Meditationstimer öffnen"
                         onClick={onOpenMeditationTimer}
                         icon={<Clock3 className="w-4 h-4" />} >Timer</Button>
+                <label className="sr-only sm:not-sr-only sm:text-xs sm:text-slate-400" htmlFor="theme-select">Farbschema</label>
+                <select
+                    id="theme-select"
+                    aria-label="Farbschema"
+                    value={theme}
+                    onChange={event => {
+                        if (isAppTheme(event.target.value)) onThemeChange(event.target.value);
+                    }}
+                    className="min-h-10 rounded-lg border border-amber-500/30 bg-theme-raised px-3 py-2 text-xs text-amber-200 outline-none transition focus:border-amber-400"
+                >
+                    {APP_THEMES.map(option => (
+                        <option key={option.value} value={option.value} className="bg-theme-surface text-theme-text">
+                            {option.label}
+                        </option>
+                    ))}
+                </select>
             </div>
         </header>
 

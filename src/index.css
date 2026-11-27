@@ -2,10 +2,138 @@
 @tailwind components;
 @tailwind utilities;
 
+:root,
+:root[data-theme="night"] {
+    color-scheme: dark;
+    --theme-bg: 11 9 26;
+    --theme-surface: 20 16 43;
+    --theme-raised: 27 21 55;
+    --theme-input: 11 9 26;
+    --theme-text: 226 232 240;
+    --theme-text-strong: 254 243 199;
+    --theme-muted: 148 163 184;
+    --theme-border: 51 65 85;
+    --theme-accent-text: 253 230 138;
+    --theme-accent-light: 252 211 77;
+    --theme-accent: 212 175 55;
+    --theme-accent-strong: 217 119 6;
+    --theme-accent-dark: 146 64 14;
+    --theme-on-accent: 36 27 24;
+    --theme-glow: 88 28 135;
+    --theme-overlay: 8 6 20;
+    --theme-particle: #d4af37;
+}
+
+:root[data-theme="forest"] {
+    color-scheme: dark;
+    --theme-bg: 10 25 21;
+    --theme-surface: 17 42 34;
+    --theme-raised: 25 58 45;
+    --theme-input: 10 25 21;
+    --theme-text: 226 238 230;
+    --theme-text-strong: 220 252 231;
+    --theme-muted: 156 179 165;
+    --theme-border: 55 82 66;
+    --theme-accent-text: 187 247 208;
+    --theme-accent-light: 134 239 172;
+    --theme-accent: 74 222 128;
+    --theme-accent-strong: 22 163 74;
+    --theme-accent-dark: 20 83 45;
+    --theme-on-accent: 10 35 23;
+    --theme-glow: 20 83 45;
+    --theme-overlay: 5 17 13;
+    --theme-particle: #4ade80;
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+    --theme-bg: 248 250 252;
+    --theme-surface: 255 255 255;
+    --theme-raised: 241 245 249;
+    --theme-input: 255 255 255;
+    --theme-text: 51 65 85;
+    --theme-text-strong: 30 41 59;
+    --theme-muted: 100 116 139;
+    --theme-border: 203 213 225;
+    --theme-accent-text: 146 64 14;
+    --theme-accent-light: 245 158 11;
+    --theme-accent: 217 119 6;
+    --theme-accent-strong: 180 83 9;
+    --theme-accent-dark: 120 53 15;
+    --theme-on-accent: 255 255 255;
+    --theme-glow: 196 181 253;
+    --theme-overlay: 15 23 42;
+    --theme-particle: #b45309;
+}
+
+:root[data-theme="gold"] {
+    color-scheme: dark;
+    --theme-bg: 24 18 10;
+    --theme-surface: 43 33 17;
+    --theme-raised: 59 44 20;
+    --theme-input: 20 15 8;
+    --theme-text: 245 237 217;
+    --theme-text-strong: 255 243 199;
+    --theme-muted: 194 176 135;
+    --theme-border: 100 77 35;
+    --theme-accent-text: 254 243 199;
+    --theme-accent-light: 250 204 21;
+    --theme-accent: 234 179 8;
+    --theme-accent-strong: 202 138 4;
+    --theme-accent-dark: 133 77 14;
+    --theme-on-accent: 38 29 10;
+    --theme-glow: 120 53 15;
+    --theme-overlay: 14 10 5;
+    --theme-particle: #facc15;
+}
+
+:root[data-theme="sea"] {
+    color-scheme: dark;
+    --theme-bg: 7 22 33;
+    --theme-surface: 11 42 57;
+    --theme-raised: 15 58 76;
+    --theme-input: 7 22 33;
+    --theme-text: 220 242 248;
+    --theme-text-strong: 207 250 254;
+    --theme-muted: 139 180 192;
+    --theme-border: 38 90 106;
+    --theme-accent-text: 165 243 252;
+    --theme-accent-light: 103 232 249;
+    --theme-accent: 6 182 212;
+    --theme-accent-strong: 8 145 178;
+    --theme-accent-dark: 21 94 117;
+    --theme-on-accent: 8 30 37;
+    --theme-glow: 14 116 144;
+    --theme-overlay: 2 15 23;
+    --theme-particle: #22d3ee;
+}
+
+:root[data-theme="rose"] {
+    color-scheme: dark;
+    --theme-bg: 30 12 23;
+    --theme-surface: 53 20 40;
+    --theme-raised: 73 27 52;
+    --theme-input: 29 11 23;
+    --theme-text: 248 228 236;
+    --theme-text-strong: 255 228 230;
+    --theme-muted: 190 151 167;
+    --theme-border: 110 53 74;
+    --theme-accent-text: 255 205 218;
+    --theme-accent-light: 251 113 133;
+    --theme-accent: 244 63 94;
+    --theme-accent-strong: 190 24 93;
+    --theme-accent-dark: 136 19 55;
+    --theme-on-accent: 45 12 25;
+    --theme-glow: 136 19 55;
+    --theme-overlay: 20 5 13;
+    --theme-particle: #fb7185;
+}
+
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: #0b091a;
-    color: #e2e8f0;
+    background-color: rgb(var(--theme-bg));
+    color: rgb(var(--theme-text));
     overflow-x: hidden;
     overflow-y: auto;
+    transition: background-color 200ms ease, color 200ms ease;
 }

@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useLayoutEffect, useMemo } from 'react';
 
 
 import { SUTRA } from './model/Sutra';
@@ -14,6 +14,7 @@ import { hasDynamicIcon } from './ui/components/DynamicIcon';
 import { RandomPractice, SavedData, saveRandomSutra } from './ui/components/RandomPractice';
 import { DailyPracticeSearch } from './ui/components/DailyPracticeSearch';
 import { MeditationTimer } from './ui/components/timer/MeditationTimer';
+import { AppTheme, isAppTheme } from './ui/shared/theme';
 
 
 
@@ -23,6 +24,11 @@ function initParticles() {
   if (canvas == null) return;
 
   const ctx = canvas.getContext('2d');
+  if (ctx == null) return;
+
+  const particleColor = getComputedStyle(document.documentElement)
+    .getPropertyValue('--theme-particle')
+    .trim();
 
   function resize() {
     canvas.width = window.innerWidth;
@@ -40,6 +46,7 @@ function initParticles() {
     speedX: (Math.random() - 0.5) * 0.2
   }));
 
+  let animationFrame = 0;
   function animate() {
 
     if (ctx == null) return;
@@ -55,15 +62,22 @@ function initParticles() {
 
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(212, 175, 55, ${p.alpha})`;
+      ctx.globalAlpha = p.alpha;
+      ctx.fillStyle = particleColor;
       ctx.shadowBlur = 10;
-      ctx.shadowColor = '#d4af37';
+      ctx.shadowColor = particleColor;
       ctx.fill();
     });
 
-    requestAnimationFrame(animate);
+    ctx.globalAlpha = 1;
+    animationFrame = requestAnimationFrame(animate);
   }
   animate();
+
+  return () => {
+    window.removeEventListener('resize', resize);
+    cancelAnimationFrame(animationFrame);
+  };
 }
 
 
@@ -87,6 +101,14 @@ function App() {
   const [initialSearchTag, setInitialSearchTag] = useState<string | undefined>();
   const [isRandomPracticeOpen, setIsRandomPracticeOpen] = useState(false)
   const [isMeditationTimerOpen, setIsMeditationTimerOpen] = useState(false)
+  const [theme, setTheme] = useState<AppTheme>(() => {
+    const savedTheme = localStorage.getItem('tantra_sutras_explorer.theme');
+    return isAppTheme(savedTheme) ? savedTheme : 'night';
+  });
+  const [systemTheme, setSystemTheme] = useState<'night' | 'light'>(() =>
+    window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'night'
+  );
+  const activeTheme = theme === 'auto' ? systemTheme : theme;
   //debugDynamicIcons(sutras);
   
   const [activeSutraId, setActiveSutraId] = useState(() => {
@@ -118,9 +140,26 @@ function App() {
     localStorage.setItem(KEY_ACTIVE_SLIDE, activeSlide.toString());
   }, [activeSlide]);
 
+  useLayoutEffect(() => {
+    document.documentElement.dataset.theme = activeTheme;
+  }, [activeTheme]);
+
   useEffect(() => {
-    initParticles();
+    localStorage.setItem('tantra_sutras_explorer.theme', theme);
+  }, [theme]);
+
+  useEffect(() => {
+    const colorScheme = window.matchMedia('(prefers-color-scheme: light)');
+    const updateSystemTheme = (event: MediaQueryListEvent) => {
+      setSystemTheme(event.matches ? 'light' : 'night');
+    };
+
+    setSystemTheme(colorScheme.matches ? 'light' : 'night');
+    colorScheme.addEventListener('change', updateSystemTheme);
+    return () => colorScheme.removeEventListener('change', updateSystemTheme);
   }, []);
+
+  useEffect(() => initParticles(), [activeTheme]);
 
   // Reset slide when switching sutra
   const handleSelectSutra = (id: string) => {
@@ -129,8 +168,8 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0b091a] text-slate-100 font-sans flex flex-col 
-    justify-between relative overflow-x-hidden">
+    <div className="min-h-screen bg-theme-bg text-theme-text font-sans flex flex-col
+    justify-between relative overflow-x-hidden transition-colors duration-200">
       <canvas id="canvas-particles" className="absolute inset-0 z-0 pointer-events-none opacity-40"></canvas>
 
       {/* Background Ambient Glows */}
@@ -148,6 +187,8 @@ function App() {
         }}
         onOpenRandomPractice={() => setIsRandomPracticeOpen(true)}
         onOpenMeditationTimer={() => setIsMeditationTimerOpen(true)}
+        theme={theme}
+        onThemeChange={setTheme}
       />
 
       {/* MAIN CONTAINER */}

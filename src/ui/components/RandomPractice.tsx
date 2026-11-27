@@ -121,9 +121,9 @@ export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose, o
             role="dialog"
             aria-modal="true"
             aria-labelledby="random-practice-title"
-            className="w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl border border-amber-500/30 bg-[#14102b] shadow-2xl"
+            className="w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl border border-amber-500/30 bg-theme-surface shadow-2xl"
         >
-            <div className="flex items-center justify-between gap-4 border-b border-amber-500/20 bg-[#1b1537] p-4">
+            <div className="flex items-center justify-between gap-4 border-b border-amber-500/20 bg-theme-raised p-4">
                 <h2 id="random-practice-title" className="font-serif font-bold text-amber-100">
                     Zufällige Alltagspraxis
                 </h2>
@@ -133,7 +133,7 @@ export const RandomPractice = ({ sutras, disabled, handleSelectSutra, onClose, o
                     disabled={disabled}
                     title="Zufällige Alltagspraxis anzeigen"
                     aria-label="Zufällige Alltagspraxis anzeigen"
-                    className="p-2 rounded-lg bg-[#1b1537] hover:bg-amber-500/20 border
+                    className="p-2 rounded-lg bg-theme-raised hover:bg-amber-500/20 border
             border-amber-500/30 text-amber-300 transition-all flex items-center gap-1.5
             text-xs shrink-0 disabled:opacity-40 disabled:cursor-not-allowed"
                 >

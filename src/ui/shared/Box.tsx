@@ -10,7 +10,7 @@ export const TextBoxBordered = ({icon, title, children}: {
 }) => {
     return (
         <div className="text-sm text-slate-200 leading-relaxed
-         bg-[#0b091a]/60 
+         bg-theme-input/60
          p-2.5 
          rounded-lg border border-slate-800">
             { icon &&  <div className="p-2 rounded-lg bg-amber-500/10 text-amber-400">{icon}</div>}

@@ -219,7 +219,7 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
 
   return (
     <div
-      className="fixed inset-0 z-[60] flex items-center justify-center bg-[#080614]/80 p-3 backdrop-blur-md sm:p-6"
+      className="fixed inset-0 z-[60] flex items-center justify-center bg-theme-overlay/80 p-3 backdrop-blur-md sm:p-6"
       // onMouseDown={event => { if (event.target === event.currentTarget) onClose(); }}
     >
       <section
@@ -227,11 +227,11 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
         aria-modal="true"
         aria-labelledby="meditation-timer-title"
         className="flex max-h-[94vh] w-full max-w-5xl flex-col overflow-hidden rounded-3xl 
-        border border-white/15
-         bg-[#17142b]/80 text-slate-100 
+        border border-theme-border/50
+         bg-theme-surface/90 text-theme-text
          shadow-[0_30px_100px_rgba(0,0,0,0.65)] backdrop-blur-2xl"
       >
-        <header className="flex items-center justify-between border-b border-white/10 px-5 py-4 sm:px-7">
+        <header className="flex items-center justify-between border-b border-theme-border/40 px-5 py-4 sm:px-7">
           <div className="flex items-center gap-3">
             <div className="rounded-2xl border border-amber-300/20 bg-amber-300/10 p-2.5 text-amber-200">
               <Clock3 className="h-5 w-5" />
@@ -243,12 +243,12 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
             </div>
           </div>
           <button onClick={onClose} aria-label="Timer schließen" 
-          className="rounded-full p-2 text-slate-400 transition hover:bg-white/10 hover:text-white">
+          className="rounded-full p-2 text-slate-400 transition hover:bg-theme-raised hover:text-theme-text-strong">
             <X className="h-5 w-5" />
           </button>
         </header>
 
-        <div role="tablist" aria-label="Timeransicht" className="grid grid-cols-2 gap-1 border-b border-white/10 bg-black/10 p-2">
+        <div role="tablist" aria-label="Timeransicht" className="grid grid-cols-2 gap-1 border-b border-theme-border/40 bg-theme-raised/40 p-2">
           <button
             id="meditation-timer-tab"
             type="button"
@@ -256,7 +256,7 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
             aria-selected={activeTab === "timer"}
             aria-controls="meditation-timer-panel"
             onClick={() => setActiveTab("timer")}
-            className={`flex items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-medium transition ${activeTab === "timer" ? "border border-amber-300/25 bg-amber-300/10 text-amber-100 shadow-inner" : "text-slate-400 hover:bg-white/[0.04] hover:text-slate-200"}`}
+            className={`flex items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-medium transition ${activeTab === "timer" ? "border border-amber-300/25 bg-amber-300/10 text-amber-100 shadow-inner" : "text-slate-400 hover:bg-theme-raised hover:text-slate-200"}`}
           >
             <Clock3 className="h-4 w-4" />
             Timer
@@ -268,7 +268,7 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
             aria-selected={activeTab === "settings"}
             aria-controls="meditation-settings-panel"
             onClick={() => setActiveTab("settings")}
-            className={`flex items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-medium transition ${activeTab === "settings" ? "border border-amber-300/25 bg-amber-300/10 text-amber-100 shadow-inner" : "text-slate-400 hover:bg-white/[0.04] hover:text-slate-200"}`}
+            className={`flex items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-medium transition ${activeTab === "settings" ? "border border-amber-300/25 bg-amber-300/10 text-amber-100 shadow-inner" : "text-slate-400 hover:bg-theme-raised hover:text-slate-200"}`}
           >
             <SlidersHorizontal className="h-4 w-4" />
             Einstellungen
@@ -284,7 +284,7 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
             className="animate-fadeIn"
           >
             <div className="mx-auto w-full max-w-3xl space-y-6 p-5 sm:p-7">
-              <div className={`relative overflow-hidden rounded-3xl border border-white/10 px-5 py-8 text-center shadow-inner sm:py-10 ${musicCover ? "bg-[#090810]" : "bg-gradient-to-br from-white/[0.09] to-white/[0.025]"}`}>
+              <div className={`relative overflow-hidden rounded-3xl border border-theme-border/40 px-5 py-8 text-center shadow-inner sm:py-10 ${musicCover ? "bg-theme-overlay" : "bg-gradient-to-br from-theme-raised to-theme-surface"}`}>
                 {musicCover && (
                   <>
                     <div
@@ -294,41 +294,41 @@ export function MeditationTimer({ onClose }: { onClose: () => void }) {
                     />
                     <div
                       aria-hidden="true"
-                      className="absolute inset-0 bg-gradient-to-br from-[#090810]/70 via-[#090810]/60 to-[#120c20]/75"
+                      className="absolute inset-0 bg-gradient-to-br from-theme-overlay/70 via-theme-overlay/60 to-theme-surface/75"
                     />
                   </>
                 )}
                 <div className="pointer-events-none absolute -right-10 -top-16 h-48 w-48 rounded-full bg-violet-400/10 blur-3xl" />
                 <div className="relative z-10 mx-auto mb-5 flex h-48 w-48 items-center justify-center sm:h-56 sm:w-56">
                   <svg className="absolute inset-0 h-full w-full -rotate-90" viewBox="0 0 100 100" aria-hidden="true">
-                    <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="1.5" />
-                    <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(252,211,77,0.9)" strokeWidth="1.5" strokeLinecap="round" strokeDasharray={2 * Math.PI * 46} strokeDashoffset={2 * Math.PI * 46 * (1 - progress)} className="transition-[stroke-dashoffset] duration-300" />
+                    <circle cx="50" cy="50" r="46" fill="none" stroke="rgb(var(--theme-border) / 0.5)" strokeWidth="1.5" />
+                    <circle cx="50" cy="50" r="46" fill="none" stroke="rgb(var(--theme-accent) / 0.9)" strokeWidth="1.5" strokeLinecap="round" strokeDasharray={2 * Math.PI * 46} strokeDashoffset={2 * Math.PI * 46 * (1 - progress)} className="transition-[stroke-dashoffset] duration-300" />
                   </svg>
                   <div className="flex flex-col items-center">
-                    <span className="font-mono text-4xl font-light tracking-wider text-white sm:text-5xl">{timerDisplay}</span>
+                    <span className={`font-mono text-4xl font-light tracking-wider sm:text-5xl ${musicCover ? "text-white" : "text-theme-text-strong"}`}>{timerDisplay}</span>
                     <span className="mt-2 text-[10px] uppercase tracking-[0.3em] text-amber-200/70">{runState === "delay" || (runState === "paused" && pausedFrom === "delay") ? "Start in" : "verbleibend"}</span>
                   </div>
                 </div>
-                <p className="relative z-10 text-sm font-medium text-amber-50 drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">{phaseLabel}</p>
-                <p className="relative z-10 mt-1 text-xs text-white/85 drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">{selected.name}</p>
+                <p className={`relative z-10 text-sm font-medium drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)] ${musicCover ? "text-white" : "text-theme-text-strong"}`}>{phaseLabel}</p>
+                <p className={`relative z-10 mt-1 text-xs drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)] ${musicCover ? "text-white/85" : "text-theme-muted"}`}>{selected.name}</p>
                 <div className="relative z-10 mt-6 flex justify-center gap-3">
                   {(runState === "idle" || runState === "complete") && (
-                    <button onClick={startTimer} className="flex items-center gap-2 rounded-full bg-gradient-to-r from-amber-300 to-amber-500 px-6 py-3 text-sm font-semibold text-[#241b18] shadow-lg shadow-amber-900/20 transition hover:brightness-110">
+                    <button onClick={startTimer} className="flex items-center gap-2 rounded-full bg-gradient-to-r from-theme-accent-light to-theme-accent px-6 py-3 text-sm font-semibold text-theme-on-accent shadow-lg shadow-amber-900/20 transition hover:brightness-110">
                       <Play className="h-4 w-4 fill-current" /> Meditation starten
                     </button>
                   )}
                   {(runState === "delay" || runState === "running") && (
-                    <button onClick={pauseTimer} className="flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/15">
+                    <button onClick={pauseTimer} className="flex items-center gap-2 rounded-full border border-theme-border/50 bg-theme-raised px-6 py-3 text-sm font-medium text-theme-text transition hover:bg-theme-surface">
                       <Pause className="h-4 w-4" /> Pause
                     </button>
                   )}
                   {runState === "paused" && (
-                    <button onClick={resumeTimer} className="flex items-center gap-2 rounded-full bg-gradient-to-r from-amber-300 to-amber-500 px-6 py-3 text-sm font-semibold text-[#241b18] transition hover:brightness-110">
+                    <button onClick={resumeTimer} className="flex items-center gap-2 rounded-full bg-gradient-to-r from-theme-accent-light to-theme-accent px-6 py-3 text-sm font-semibold text-theme-on-accent transition hover:brightness-110">
                       <Play className="h-4 w-4 fill-current" /> Fortsetzen
                     </button>
                   )}
                   {runState !== "idle" && (
-                    <button onClick={resetTimer} aria-label="Timer zurücksetzen" className="rounded-full border border-white/10 p-3 text-slate-300 transition hover:bg-white/10">
+                    <button onClick={resetTimer} aria-label="Timer zurücksetzen" className="rounded-full border border-theme-border/40 p-3 text-slate-300 transition hover:bg-theme-raised">
                       <RotateCcw className="h-4 w-4" />
                     </button>
                   )}

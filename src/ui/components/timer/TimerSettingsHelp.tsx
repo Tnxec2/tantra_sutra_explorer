@@ -23,7 +23,7 @@ export function TimerSettingsHelp() {
                 onClick={() => setIsOpen(true)}
                 aria-label="Hilfe zu den Timer-Einstellungen öffnen"
                 className="flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-xs text-slate-400 
-                transition hover:bg-white/10 hover:text-amber-100"
+                transition hover:bg-theme-raised hover:text-amber-100"
             >
                 <CircleHelp className="h-4 w-4" />
                 Hilfe
@@ -35,9 +35,9 @@ export function TimerSettingsHelp() {
                         role="dialog"
                         aria-modal="true"
                         aria-labelledby="timer-settings-help-title"
-                        className="flex max-h-[90vh] w-full max-w-2xl flex-col overflow-hidden rounded-2xl border border-amber-500/30 bg-[#14102b] shadow-2xl"
+                        className="flex max-h-[90vh] w-full max-w-2xl flex-col overflow-hidden rounded-2xl border border-amber-500/30 bg-theme-surface shadow-2xl"
                     >
-                        <header className="flex items-center justify-between gap-4 border-b border-amber-500/20 bg-[#1b1537] p-4 sm:p-5">
+                        <header className="flex items-center justify-between gap-4 border-b border-amber-500/20 bg-theme-raised p-4 sm:p-5">
                             <div>
                                 <h2 id="timer-settings-help-title" className="font-serif text-lg font-bold text-amber-100">
                                     Hilfe zu den Timer-Einstellungen
@@ -117,11 +117,11 @@ export function TimerSettingsHelp() {
                             </section>
                         </div>
 
-                        <footer className="flex justify-end border-t border-white/10 p-4">
+                        <footer className="flex justify-end border-t border-theme-border/40 p-4">
                             <button
                                 type="button"
                                 onClick={() => setIsOpen(false)}
-                                className="rounded-xl bg-gradient-to-r from-amber-300 to-amber-500 px-4 py-2.5 text-sm font-semibold text-[#241b18] transition hover:brightness-110"
+                                className="rounded-xl bg-gradient-to-r from-theme-accent-light to-theme-accent px-4 py-2.5 text-sm font-semibold text-theme-on-accent transition hover:brightness-110"
                             >
                                 Verstanden
                             </button>

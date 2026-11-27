@@ -17,8 +17,8 @@ export const CustomSutraEditor = ({ initJsonText, jsonError, close, onSave }:
     };
 
     return <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-        <div className="bg-[#14102b] border border-amber-500/30 rounded-2xl w-full max-w-3xl max-h-[90vh] flex flex-col overflow-hidden shadow-2xl">
-            <div className="p-4 border-b border-amber-500/20 flex justify-between items-center bg-[#1b1537]">
+        <div className="bg-theme-surface border border-amber-500/30 rounded-2xl w-full max-w-3xl max-h-[90vh] flex flex-col overflow-hidden shadow-2xl">
+            <div className="p-4 border-b border-amber-500/20 flex justify-between items-center bg-theme-raised">
                 <div className="flex items-center space-x-2 text-amber-200 font-serif font-bold">
                     <Code className="w-5 h-5 text-amber-400" />
                     <span>Sutra-Datenbank Bearbeiten (JSON)</span>
@@ -45,11 +45,11 @@ export const CustomSutraEditor = ({ initJsonText, jsonError, close, onSave }:
                 <textarea
                     value={jsonText}
                     onChange={(e) => setJsonText(e.target.value)}
-                    className="w-full h-80 bg-[#0b091a] text-amber-100 font-mono text-xs p-3 rounded-lg border border-amber-500/20 focus:outline-none focus:border-amber-400"
+                    className="w-full h-80 bg-theme-input text-amber-100 font-mono text-xs p-3 rounded-lg border border-amber-500/20 focus:outline-none focus:border-amber-400"
                 />
             </div>
 
-            <div className="p-4 border-t border-amber-500/20 flex justify-end space-x-3 bg-[#1b1537]">
+            <div className="p-4 border-t border-amber-500/20 flex justify-end space-x-3 bg-theme-raised">
                 <button
                     onClick={() => close()}
                     className="px-4 py-2 rounded-lg text-xs text-slate-300 hover:bg-slate-800"
@@ -58,7 +58,7 @@ export const CustomSutraEditor = ({ initJsonText, jsonError, close, onSave }:
                 </button>
                 <button
                     onClick={handleSaveJson}
-                    className="px-5 py-2 rounded-lg text-xs font-semibold bg-gradient-to-r from-amber-600 to-amber-500 text-slate-900 hover:brightness-110 flex items-center space-x-1.5"
+                    className="px-5 py-2 rounded-lg text-xs font-semibold bg-gradient-to-r from-amber-600 to-amber-500 text-theme-on-accent hover:brightness-110 flex items-center space-x-1.5"
                 >
                     <Check className="w-4 h-4" />
                     <span>Änderungen Übernehmen</span>

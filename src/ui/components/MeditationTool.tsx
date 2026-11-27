@@ -33,7 +33,7 @@ export function MeditationTool({ config }: { config: MeditationConfig}) {
                 {config.instructions.map((instruction, index) => (
                   <li
                     key={`${index}-${instruction}`}
-                    className="flex items-start gap-3 rounded-xl border border-white/[0.07] bg-white/[0.035] p-3.5 transition-colors hover:border-amber-400/20 hover:bg-white/[0.055]"
+                    className="flex items-start gap-3 rounded-xl border border-theme-border/40 bg-theme-raised/40 p-3.5 transition-colors hover:border-amber-400/20 hover:bg-theme-raised"
                   >
                     <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-amber-400/20 bg-amber-400/10 font-mono text-xs text-amber-200">
                       {(index + 1).toString().padStart(2, "0")}

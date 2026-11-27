@@ -45,6 +45,12 @@ export const ShareMenu = ({ title, markdownContent, targetRef }: ShareMenuProps)
     const clone = target.cloneNode(true) as HTMLElement
     const originalElements = [target, ...Array.from(target.querySelectorAll("*"))]
     const clonedElements = [clone, ...Array.from(clone.querySelectorAll("*"))]
+    const surfaceColor = getComputedStyle(document.documentElement)
+      .getPropertyValue("--theme-surface")
+      .trim()
+      .split(/\s+/)
+      .join(", ")
+    const exportBackground = `rgb(${surfaceColor})`
     originalElements.forEach((element, index) => {
       const computedStyle = window.getComputedStyle(element)
       const inlineStyle = (clonedElements[index] as HTMLElement).style
@@ -58,7 +64,7 @@ export const ShareMenu = ({ title, markdownContent, targetRef }: ShareMenuProps)
     clone.setAttribute("xmlns", "http://www.w3.org/1999/xhtml")
     clone.style.width = `${width}px`
     clone.style.margin = "0"
-    clone.style.backgroundColor = "#14102b"
+    clone.style.backgroundColor = exportBackground
     const originalPosition = clone.style.position
     const originalTop = clone.style.top
     const originalLeft = clone.style.left
@@ -94,7 +100,7 @@ export const ShareMenu = ({ title, markdownContent, targetRef }: ShareMenuProps)
     const context = canvas.getContext("2d")
     if (!context) throw new Error("PNG-Erstellung wird in diesem Browser nicht unterstützt.")
     context.scale(scale, scale)
-    context.fillStyle = "#14102b"
+    context.fillStyle = exportBackground
     context.fillRect(0, 0, width, height)
     context.drawImage(image, 0, 0, width, height)
 
@@ -182,29 +188,29 @@ export const ShareMenu = ({ title, markdownContent, targetRef }: ShareMenuProps)
           aria-haspopup="menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen(open => !open)}
-          className="rounded-lg p-2 text-slate-400 hover:bg-white/10 hover:text-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400"
+          className="rounded-lg p-2 text-slate-400 hover:bg-theme-raised hover:text-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400"
         >
           <Ellipsis className="h-5 w-5" aria-hidden="true" />
         </button>
         {menuOpen && (
-          <div role="menu" className="absolute right-0 z-20 mt-1 min-w-52 rounded-lg border border-slate-700 bg-[#14102b] p-1 shadow-xl">
-            <button type="button" role="menuitem" onClick={saveAsPng} className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-sm text-slate-200 hover:bg-white/10">
+          <div role="menu" className="absolute right-0 z-20 mt-1 min-w-52 rounded-lg border border-slate-700 bg-theme-surface p-1 shadow-xl">
+            <button type="button" role="menuitem" onClick={saveAsPng} className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-sm text-slate-200 hover:bg-theme-raised">
               <Download className="h-4 w-4" aria-hidden="true" />
               Screenshot speichern
             </button>
-            <button type="button" role="menuitem" onClick={sharePng} className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-sm text-slate-200 hover:bg-white/10">
+            <button type="button" role="menuitem" onClick={sharePng} className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-sm text-slate-200 hover:bg-theme-raised">
               <ImageIcon className="h-4 w-4" aria-hidden="true" />
               PNG-Bild teilen
             </button>
-            <button type="button" role="menuitem" onClick={() => share("html")} className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-sm text-slate-200 hover:bg-white/10">
+            <button type="button" role="menuitem" onClick={() => share("html")} className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-sm text-slate-200 hover:bg-theme-raised">
               <Code2 className="h-4 w-4" aria-hidden="true" />
               HTML-Text teilen
             </button>
-            <button type="button" role="menuitem" onClick={() => share("text")} className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-sm text-slate-200 hover:bg-white/10">
+            <button type="button" role="menuitem" onClick={() => share("text")} className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-sm text-slate-200 hover:bg-theme-raised">
               <FileText className="h-4 w-4" aria-hidden="true" />
               Plain Text teilen
             </button>
-            <button type="button" role="menuitem" onClick={() => share("markdown")} className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-sm text-slate-200 hover:bg-white/10">
+            <button type="button" role="menuitem" onClick={() => share("markdown")} className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-sm text-slate-200 hover:bg-theme-raised">
               <FileCode2 className="h-4 w-4" aria-hidden="true" />
               Markdown-Text teilen
             </button>
@@ -215,7 +221,7 @@ export const ShareMenu = ({ title, markdownContent, targetRef }: ShareMenuProps)
         <div
           role="status"
           aria-live="polite"
-          className="fixed bottom-5 left-1/2 z-[100] -translate-x-1/2 rounded-lg border border-amber-500/40 bg-[#14102b] px-4 py-3 text-center text-sm text-slate-100 shadow-2xl"
+          className="fixed bottom-5 left-1/2 z-[100] -translate-x-1/2 rounded-lg border border-amber-500/40 bg-theme-surface px-4 py-3 text-center text-sm text-slate-100 shadow-2xl"
         >
           {message}
         </div>

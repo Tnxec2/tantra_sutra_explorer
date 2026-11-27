@@ -6,7 +6,7 @@ type T = {
 
 export const Card = ({children}: T) => {
     return (
-        <div className="bg-[#14102b]/50 
+        <div className="bg-theme-surface/50
         backdrop-blur-md 
         p-3.5 
         rounded-xl 

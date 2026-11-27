@@ -102,9 +102,9 @@ export const DailyPracticeSearch = ({
                 role="dialog"
                 aria-modal="true"
                 aria-labelledby="daily-practice-search-title"
-                className="w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl border border-amber-500/30 bg-[#14102b] shadow-2xl"
+                className="w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl border border-amber-500/30 bg-theme-surface shadow-2xl"
             >
-                <div className="flex items-center justify-between gap-4 border-b border-amber-500/20 bg-[#1b1537] p-4">
+                <div className="flex items-center justify-between gap-4 border-b border-amber-500/20 bg-theme-raised p-4">
                     <h2 id="daily-practice-search-title" className="font-serif font-bold text-amber-100">
                         Alltagspraktiken suchen
                     </h2>
@@ -123,7 +123,7 @@ export const DailyPracticeSearch = ({
                         <label htmlFor="daily-practice-tag" className="mb-2 block text-sm font-medium text-amber-200">
                             Tag auswählen oder eingeben
                         </label>
-                        <div className="flex items-center gap-2 rounded-lg border border-amber-500/30 bg-[#0b091a]/70 px-3 focus-within:border-amber-400">
+                        <div className="flex items-center gap-2 rounded-lg border border-amber-500/30 bg-theme-input/70 px-3 focus-within:border-amber-400">
                             <Search className="h-4 w-4 shrink-0 text-amber-400" aria-hidden="true" />
                             <input
                                 id="daily-practice-tag"
@@ -162,7 +162,7 @@ export const DailyPracticeSearch = ({
                             <ul
                                 role="listbox"
                                 aria-label="Passende Tags"
-                                className="fixed z-10 mt-1 max-h-52 w-auto overflow-y-auto rounded-lg border border-amber-500/25 bg-[#1b1537] p-1 shadow-xl"
+                                className="fixed z-10 mt-1 max-h-52 w-auto overflow-y-auto rounded-lg border border-amber-500/25 bg-theme-raised p-1 shadow-xl"
                             >
                                 {suggestions.map(tag => (
                                     <li key={tag}>
@@ -199,7 +199,7 @@ export const DailyPracticeSearch = ({
                                                 className={`w-full rounded-lg border p-3 text-left transition-colors ${
                                                     selectedPractice?.key === result.key
                                                         ? "border-amber-400/60 bg-amber-500/10"
-                                                        : "border-slate-800 bg-[#0b091a]/50 hover:border-amber-500/40"
+                                                        : "border-slate-800 bg-theme-input/50 hover:border-amber-500/40"
                                                 }`}
                                             >
                                                 <span className="block font-medium text-amber-100">
@@ -217,7 +217,7 @@ export const DailyPracticeSearch = ({
                     )}
 
                     {selectedPractice && (
-                        <article className="space-y-4 rounded-xl border border-amber-500/25 bg-[#0b091a]/60 p-4">
+                        <article className="space-y-4 rounded-xl border border-amber-500/25 bg-theme-input/60 p-4">
                             <h3 className="font-serif text-lg font-bold text-amber-100">
                                 {selectedPractice.practice.title}
                             </h3>

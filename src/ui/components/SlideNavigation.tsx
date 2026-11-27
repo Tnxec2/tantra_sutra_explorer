@@ -10,7 +10,7 @@ const tabs: { id: number; label: string; mobileLabel: string; icon: LucideIcon }
 export const SlideNavigation = ({ activeSlide, setActiveSlide }:
     { activeSlide: number, setActiveSlide: (id: number) => void }) => (
     <nav aria-label="Inhaltsabschnitte" className="flex justify-center mb-6">
-        <div className="grid grid-cols-2 gap-1 w-full max-w-sm p-1 rounded-xl bg-[#14102b]/80 border border-amber-500/15 backdrop-blur-md sm:inline-flex sm:w-auto sm:max-w-full">
+        <div className="grid grid-cols-2 gap-1 w-full max-w-sm p-1 rounded-xl bg-theme-surface/80 border border-amber-500/15 backdrop-blur-md sm:inline-flex sm:w-auto sm:max-w-full">
             {tabs.map(tab => {
                 const Icon = tab.icon;
                 const isActive = activeSlide === tab.id;

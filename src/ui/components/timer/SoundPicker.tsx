@@ -53,8 +53,8 @@ export function SoundPicker({ title, icon, value, sounds, disabled, allowNone, p
             <div className="flex items-center gap-2 text-xs font-medium text-slate-300">
                 {icon}<span>{title}</span>
             </div>
-            <div className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.035] p-2">
-                <div className="h-10 w-12 shrink-0 overflow-hidden rounded-lg bg-white/5">
+            <div className="flex items-center gap-2 rounded-xl border border-theme-border/40 bg-theme-raised/40 p-2">
+                <div className="h-10 w-12 shrink-0 overflow-hidden rounded-lg bg-theme-raised">
                     {selectedSound?.image
                         ? <img src={imagePath(selectedSound.image)} alt="" className="h-full w-full object-cover" />
                         : <div className="flex h-full items-center justify-center text-slate-600">
@@ -70,7 +70,7 @@ export function SoundPicker({ title, icon, value, sounds, disabled, allowNone, p
                         setIsOpen(true);
                     }}
                     disabled={disabled}
-                    className="rounded-lg border border-white/10 px-3 py-2 text-xs text-amber-100 transition hover:bg-white/10 disabled:opacity-50"
+                    className="rounded-lg border border-theme-border/40 px-3 py-2 text-xs text-amber-100 transition hover:bg-theme-raised disabled:opacity-50"
                 >
                     Auswählen
                 </button>
@@ -87,9 +87,9 @@ export function SoundPicker({ title, icon, value, sounds, disabled, allowNone, p
                         role="dialog"
                         aria-modal="true"
                         aria-labelledby="sound-picker-title"
-                        className="flex max-h-[90vh] w-full max-w-3xl flex-col overflow-hidden rounded-2xl border border-amber-500/30 bg-[#14102b] shadow-2xl"
+                        className="flex max-h-[90vh] w-full max-w-3xl flex-col overflow-hidden rounded-2xl border border-amber-500/30 bg-theme-surface shadow-2xl"
                     >
-                        <div className="flex items-center justify-between gap-4 border-b border-amber-500/20 bg-[#1b1537] p-4">
+                        <div className="flex items-center justify-between gap-4 border-b border-amber-500/20 bg-theme-raised p-4">
                             <div>
                                 <h2 id="sound-picker-title" className="font-serif font-bold text-amber-100">
                                     {title} auswählen
@@ -113,9 +113,9 @@ export function SoundPicker({ title, icon, value, sounds, disabled, allowNone, p
                                         type="button"
                                         aria-pressed={draftValue === ""}
                                         onClick={() => setDraftValue("")}
-                                        className={`flex items-center gap-3 rounded-xl border p-3 text-left transition ${draftValue === "" ? "border-amber-300/60 bg-amber-300/10" : "border-white/10 bg-white/[0.03] hover:bg-white/[0.07]"}`}
+                                        className={`flex items-center gap-3 rounded-xl border p-3 text-left transition ${draftValue === "" ? "border-amber-300/60 bg-amber-300/10" : "border-theme-border/40 bg-theme-raised/40 hover:bg-theme-raised"}`}
                                     >
-                                        <div className="flex h-14 w-16 shrink-0 items-center justify-center rounded-lg bg-white/5 text-slate-500">
+                                        <div className="flex h-14 w-16 shrink-0 items-center justify-center rounded-lg bg-theme-raised text-slate-500">
                                             <Music2 className="h-5 w-5" />
                                         </div>
                                         <span className="min-w-0 flex-1 text-sm text-slate-200">Keine Musik</span>
@@ -125,7 +125,7 @@ export function SoundPicker({ title, icon, value, sounds, disabled, allowNone, p
                                 {sounds.map(sound => (
                                     <div
                                         key={sound.file}
-                                        className={`flex items-center gap-3 rounded-xl border p-3 transition ${draftValue === sound.file ? "border-amber-300/60 bg-amber-300/10" : "border-white/10 bg-white/[0.03]"}`}
+                                        className={`flex items-center gap-3 rounded-xl border p-3 transition ${draftValue === sound.file ? "border-amber-300/60 bg-amber-300/10" : "border-theme-border/40 bg-theme-raised/40"}`}
                                     >
                                         <button
                                             type="button"
@@ -133,7 +133,7 @@ export function SoundPicker({ title, icon, value, sounds, disabled, allowNone, p
                                             onClick={() => setDraftValue(sound.file)}
                                             className="flex min-w-0 flex-1 items-center gap-3 text-left"
                                         >
-                                            <div className="h-14 w-16 shrink-0 overflow-hidden rounded-lg bg-white/5">
+                                            <div className="h-14 w-16 shrink-0 overflow-hidden rounded-lg bg-theme-raised">
                                                 {sound.image && <img src={imagePath(sound.image)} alt="" className="h-full w-full object-cover" />}
                                             </div>
                                             <span className="min-w-0 flex-1 truncate text-sm text-slate-200">{soundLabel(sound.file)}</span>
@@ -152,18 +152,18 @@ export function SoundPicker({ title, icon, value, sounds, disabled, allowNone, p
                             </div>
                         </div>
 
-                        <div className="flex justify-end gap-3 border-t border-white/10 p-4">
+                        <div className="flex justify-end gap-3 border-t border-theme-border/40 p-4">
                             <button
                                 type="button"
                                 onClick={closePicker}
-                                className="rounded-xl border border-white/10 px-4 py-2.5 text-sm text-slate-300 transition hover:bg-white/10"
+                                className="rounded-xl border border-theme-border/40 px-4 py-2.5 text-sm text-slate-300 transition hover:bg-theme-raised"
                             >
                                 Abbrechen
                             </button>
                             <button
                                 type="button"
                                 onClick={confirmSelection}
-                                className="rounded-xl bg-gradient-to-r from-amber-300 to-amber-500 px-4 py-2.5 text-sm font-semibold text-[#241b18] transition hover:brightness-110"
+                                className="rounded-xl bg-gradient-to-r from-theme-accent-light to-theme-accent px-4 py-2.5 text-sm font-semibold text-theme-on-accent transition hover:brightness-110"
                             >
                                 Übernehmen
                             </button>
