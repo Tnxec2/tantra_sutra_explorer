@@ -10,6 +10,8 @@ export const bellSounds: SoundOption[] = [
   { file: "bell_shurong.mp3", image: "shurong.png" },
   { file: "bell_wood_block.mp3", image: "wood_block.png" },
   { file: "bell_zhada.mp3", image: "zhada.png" },
+  { file: "bell_pan-flute.mp3", image: "Pan_Flute.png" },
+  { file: "bell_bansuri.mp3", image: "Bansuri.png" },
 ];
 
 export const musicSounds: SoundOption[] = [
